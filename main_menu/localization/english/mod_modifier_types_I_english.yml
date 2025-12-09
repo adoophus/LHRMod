@@ -1,0 +1,5 @@
+﻿l_english:
+ MODIFIER_TYPE_NAME_monthly_towards_unitary: "Monthly Progress to Unitary"
+ MODIFIER_TYPE_DESC_monthly_towards_unitary: "This impacts the change towards the unity societal value."
+ MODIFIER_TYPE_NAME_monthly_towards_federalism: "Monthly Progress to Federalism"
+ MODIFIER_TYPE_DESC_monthly_towards_federalism: "This impacts the change towards the federalism societal value."

@@ -1,0 +1,14 @@
+societal_value_push_unitary = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	monthly_towards_unitary = societal_value_huge_monthly_move
+}
+societal_value_push_federalism = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	monthly_towards_federalism = societal_value_huge_monthly_move
+}

@@ -1,0 +1,12 @@
+﻿{
+	"name":	"LHR Mod",
+	"id":	"LHRM",
+	"version":	"1.0",
+	"supported_game_version":	"1.0.8",
+	"short_description":	"This mod is used for the LHR Multiplayer games.",
+	"tags":	["Multiplayer"],
+	"relationships":	[],
+	"game_custom_data":	{
+		"multiplayer_synchronized" : true
+}
+}

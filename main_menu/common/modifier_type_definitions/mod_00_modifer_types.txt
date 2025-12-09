@@ -1,0 +1,17 @@
+monthly_towards_unitary={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+
+monthly_towards_federalism={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}

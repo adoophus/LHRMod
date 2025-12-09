@@ -1,0 +1,36 @@
+has_societal_value_push = {
+	OR = {
+		has_country_modifier = societal_value_push_centralization
+		has_country_modifier = societal_value_push_decentralization
+		has_country_modifier = societal_value_push_unitary
+		has_country_modifier = societal_value_push_federalism
+		has_country_modifier = societal_value_push_traditionalist
+		has_country_modifier = societal_value_push_innovative
+		has_country_modifier = societal_value_push_spiritualist
+		has_country_modifier = societal_value_push_humanist
+		has_country_modifier = societal_value_push_aristocracy
+		has_country_modifier = societal_value_push_plutocracy
+		has_country_modifier = societal_value_push_serfdom
+		has_country_modifier = societal_value_push_free_subjects
+		has_country_modifier = societal_value_push_mercantilism
+		has_country_modifier = societal_value_push_free_trade
+		has_country_modifier = societal_value_push_belligerent
+		has_country_modifier = societal_value_push_conciliatory
+		has_country_modifier = societal_value_push_quality
+		has_country_modifier = societal_value_push_quantity
+		has_country_modifier = societal_value_push_offensive
+		has_country_modifier = societal_value_push_defensive
+		has_country_modifier = societal_value_push_land
+		has_country_modifier = societal_value_push_naval
+		has_country_modifier = societal_value_push_capital_economy
+		has_country_modifier = societal_value_push_traditional_economy
+		has_country_modifier = societal_value_push_individualism
+		has_country_modifier = societal_value_push_communalism
+		has_country_modifier = societal_value_push_outward
+		has_country_modifier = societal_value_push_inward
+		has_country_modifier = societal_value_push_sinicized
+		has_country_modifier = societal_value_push_unsinicized
+		has_country_modifier = societal_value_push_absolutism
+		has_country_modifier = societal_value_push_liberalism
+	}
+}

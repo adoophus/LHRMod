@@ -1,0 +1,138 @@
+reset_all_societal_values = {
+	reset_societal_value = { type = centralization_vs_decentralization }
+	reset_societal_value = { type = unitary_vs_federalism }
+	reset_societal_value = { type = traditionalist_vs_innovative }
+	reset_societal_value = { type = spiritualist_vs_humanist }
+	reset_societal_value = { type = aristocracy_vs_plutocracy }
+	reset_societal_value = { type = serfdom_vs_free_subjects }
+	reset_societal_value = { type = mercantilism_vs_free_trade }
+	reset_societal_value = { type = belligerent_vs_conciliatory }
+	reset_societal_value = { type = quality_vs_quantity }
+	reset_societal_value = { type = offensive_vs_defensive }
+	reset_societal_value = { type = land_vs_naval }
+	reset_societal_value = { type = capital_economy_vs_traditional_economy }
+	reset_societal_value = { type = individualism_vs_communalism }
+	reset_societal_value = { type = outward_vs_inward }
+}
+
+setup_societal_values = {
+	hidden_effect = { reset_all_societal_values = yes }
+	change_societal_value = { type = centralization_vs_decentralization value = $centralization_vs_decentralization$ }
+	change_societal_value = { type = unitary_vs_federalism value = $unitary_vs_federalism$ }
+	change_societal_value = { type = traditionalist_vs_innovative value = $traditionalist_vs_innovative$ }
+	change_societal_value = { type = spiritualist_vs_humanist value = $spiritualist_vs_humanist$ }
+	change_societal_value = { type = aristocracy_vs_plutocracy value = $aristocracy_vs_plutocracy$ }
+	change_societal_value = { type = serfdom_vs_free_subjects value = $serfdom_vs_free_subjects$ }
+	change_societal_value = { type = mercantilism_vs_free_trade value = $mercantilism_vs_free_trade$ }
+	change_societal_value = { type = belligerent_vs_conciliatory value = $belligerent_vs_conciliatory$ }
+	change_societal_value = { type = quality_vs_quantity value = $quality_vs_quantity$ }
+	change_societal_value = { type = offensive_vs_defensive value = $offensive_vs_defensive$ }
+	change_societal_value = { type = land_vs_naval value = $land_vs_naval$ }
+	change_societal_value = { type = capital_economy_vs_traditional_economy value = $capital_economy_vs_traditional_economy$ }
+	change_societal_value = { type = individualism_vs_communalism value = $individualism_vs_communalism$ }
+	change_societal_value = { type = outward_vs_inward value = $outward_vs_inward$ }
+}
+
+apply_societal_value_push_modifiers = {
+	custom_description = {
+		text = apply_societal_value_push_modifiers
+		object = $country$
+		value = $years$
+		if = { limit = { $country$ = { societal_value:centralization_vs_decentralization > 0 } }
+			add_country_modifier = { modifier = societal_value_push_centralization years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_decentralization years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:unitary_vs_federalism > 0 } }
+			add_country_modifier = { modifier = societal_value_push_unitary years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_federalism years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:traditionalist_vs_innovative > 0 } }
+			add_country_modifier = { modifier = societal_value_push_traditionalist years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_innovative years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:spiritualist_vs_humanist > 0 } }
+			add_country_modifier = { modifier = societal_value_push_spiritualist years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_humanist years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:aristocracy_vs_plutocracy > 0 } }
+			add_country_modifier = { modifier = societal_value_push_aristocracy years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_plutocracy years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:serfdom_vs_free_subjects > 0 } }
+			add_country_modifier = { modifier = societal_value_push_serfdom years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_free_subjects years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:mercantilism_vs_free_trade > 0 } }
+			add_country_modifier = { modifier = societal_value_push_mercantilism years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_free_trade years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:belligerent_vs_conciliatory > 0 } }
+			add_country_modifier = { modifier = societal_value_push_belligerent years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_conciliatory years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:quality_vs_quantity > 0 } }
+			add_country_modifier = { modifier = societal_value_push_quality years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_quantity years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:offensive_vs_defensive > 0 } }
+			add_country_modifier = { modifier = societal_value_push_offensive years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_defensive years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:land_vs_naval > 0 } }
+			add_country_modifier = { modifier = societal_value_push_land years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_naval years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:capital_economy_vs_traditional_economy > 0 } }
+			add_country_modifier = { modifier = societal_value_push_capital_economy years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_traditional_economy years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:individualism_vs_communalism > 0 } }
+			add_country_modifier = { modifier = societal_value_push_individualism years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_communalism years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:outward_vs_inward > 0 } }
+			add_country_modifier = { modifier = societal_value_push_outward years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_inward years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:sinicized_vs_unsinicized > 0 } }
+			add_country_modifier = { modifier = societal_value_push_sinicized years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_unsinicized years = $years$ size = $size$ }
+		}
+		if = { limit = { $country$ = { societal_value:absolutism_vs_liberalism > 0 } }
+			add_country_modifier = { modifier = societal_value_push_absolutism years = $years$ size = $size$ }
+		}
+		else = {
+			add_country_modifier = { modifier = societal_value_push_liberalism years = $years$ size = $size$ }
+		}
+	}
+}

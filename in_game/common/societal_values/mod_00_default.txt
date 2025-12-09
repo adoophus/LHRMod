@@ -1,0 +1,51 @@
+unitary_vs_federalism = {
+    left_modifier = { # Unitary (Homogenization & Central Authority)
+        
+        # BUFFS: Uniformity and Speed
+		global_distance_from_capital_cost_modifier = -0.1
+        province_integration_speed = 0.25 # Faster integration of provinces
+        culture_conversion_cost = -0.10 # Cheaper cultural conversion
+        administrative_efficiency = 0.05 # Single legal system increases central efficiency
+        land_force_limit_modifier = 0.05 # Unified military control allows higher force limit
+        
+        # MALICE: Rigidity and Limited Scope
+		        global_integration_speed_modifier = 0.2
+        global_relations_limit = -1 # Less capacity/need for complex external diplomatic management
+        subject_loyalty = -20 # Stifled subjects are less loyal
+    }
+    right_modifier = { # Federalism (Flexibility & Diverse Rights)
+        
+        # BUFFS: Diplomatic Scope and Goodwill
+        global_relations_limit = 1 # Higher capacity for managing complex relationships
+        improve_relations_modifier = 0.10 # Better at fostering goodwill with regions/neighbors
+        subject_loyalty = 20 # Subjects are more loyal due to regional rights
+        subject_pays_trade_company_cost_modifier = 0.10
+        subject_pays_vassal_cost_modifier = 0.25
+        # MALICE: Conflict and Slowness
+        global_integration_speed_modifier = -0.2
+
+    }
+}
+
+centralization_vs_decentralization = {
+    left_modifier = { # Centralization (More money, less recovery, more crown power)    
+        # BUFFS
+        global_crown_estate_power = 0.3 
+        global_estate_max_tax = 0.05 
+        
+        # MALICE
+        global_estate_satisfaction_recovery = -0.002
+		global_devastation_recovery = -0.002
+		##global_nobles_city_desired_pop = 0.01
+    }
+    right_modifier = { # Decentralization (Less money, more fighting base, better rural scaling)
+        # BUFFS: Local Happiness and Military
+        global_estate_target_satisfaction = 0.05 # Local power boosts estate happiness
+        global_levy_size_modifier = 0.25
+        global_monthly_prosperity = 0.0020
+		global_laborers_rural_desired_pop = 0.250
+
+        # MALICE
+        estate_enrichment = 0.05
+    }
+}
