@@ -12,3 +12,84 @@ societal_value_push_federalism = {
 	}
 	monthly_towards_federalism = societal_value_huge_monthly_move
 }
+hes_reduce_inflation = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	monthly_inflation = -0.0015
+}
+hes_religious_rights_protected = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	monthly_religious_influence = 0.1
+}
+hes_refused_noble_concessions = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	global_crown_estate_power = 0.25
+	monthly_prestige = 0.1
+}
+hes_accepted_noble_concessions = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	global_nobles_estate_power = 0.25
+	monthly_towards_decentralization = 0.2
+}
+hes_holy_water_supported = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	game_data = {
+		category = location
+	}
+	local_disease_resistance = 0.15
+}
+hes_post_plague_centralization = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	global_estate_max_tax = 0.1
+	global_peasants_estate_power = 1
+	global_crown_estate_power = 0.25
+	monthly_towards_centralization = 0.1
+}
+hes_missed_centralization = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	global_estate_target_satisfaction = 0.05
+	global_monthly_prosperity = 0.002
+	monthly_towards_decentralization = 0.2
+}
+hes_land_age_2 = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	nobles_estate_target_satisfaction = -0.05
+	monthly_towards_land = 0.3
+}
+hes_land_age_3 = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	burghers_estate_target_satisfaction = -0.05
+	nobles_estate_target_satisfaction = -0.1
+	monthly_towards_land = 0.4
+}
+hes_morale_age_3 = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	land_morale_modifier = 0.10
+}
+hes_erosion_of_trust = {
+	potential = {
+		has_or_had_tag = HES
+	}
+	   	bank_interest = 0.02
+}
+
+

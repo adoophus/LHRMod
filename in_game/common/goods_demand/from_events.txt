@@ -1,0 +1,14 @@
+hes_print_coins_1 = {
+	goods_gold = 0.4
+	
+
+	hidden = no
+	category = special_demands
+}
+
+hes_print_coins_2 = {
+	goods_gold = 0.1
+	iron = 0.3
+	hidden = no
+	category = special_demands
+}

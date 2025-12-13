@@ -1,0 +1,206 @@
+hes_hofkanzlei = {
+	pop_type = nobles
+	max_levels = 1
+	employment_size = 0.25
+	category = cultural_category
+	town = yes
+	city = yes
+	location_potential = {
+		is_capital = yes
+	}
+	country_potential = {
+		tag = HES
+	}
+	expensive = yes
+
+	build_time = cultural_building_time
+	build_time = cultural_building_time
+	
+	capital_country_modifier = {
+		army_infantry_power = 0.1
+	}
+
+	modifier = {
+		local_mercenaries_modifier = 0.25
+	}
+
+	unique_production_methods = {
+		hes_hofkanzlei_maintenance = {
+			cloth = 0.2
+			jewelry = 0.05
+			paper = 0.25
+			marble = 0.1
+			fine_cloth = 0.1
+			
+			category = building_maintenance
+		}
+	}
+	construction_demand = venetian_palaces_construction
+}
+
+hes_st_elizabeth = {
+	is_foreign = yes
+	pop_type = clergy
+	max_levels = 1
+	
+	employment_size = 0.2
+	
+	category = cultural_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	build_time = cultural_building_time
+	graphical_tags = { medium_religious }
+	allow = {
+		custom_tooltip = {
+			text = hes_st_elizabeth_why
+			always = no
+		}
+	}
+	can_destroy = {
+		always = no
+	}
+	can_close = no
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	modifier = {
+		gold_to_building_owner = 0.4
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+		local_max_literacy = 5
+		local_monthly_development = 0.005
+	}
+	on_built = {
+		change_building_owner = c:TEU
+	}
+	unique_production_methods = {
+		cathedral_maintenance = {
+			glass = 0.05
+			cloth = 0.05
+			gold = 0.025
+			paper = 0.1
+			copper = 0.05
+			tools = 0.05
+			category = building_maintenance
+		}
+	}
+
+
+	construction_demand = cathedral_construction 
+}
+
+hes_st_elizabeth_teutonic = {
+	is_foreign = yes
+	pop_type = clergy
+	max_levels = 1
+	
+	employment_size = 0.2
+	
+	category = cultural_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	build_time = cultural_building_time
+	graphical_tags = { medium_religious }
+	allow = {
+		custom_tooltip = {
+			text = hes_st_elizabeth_why
+			always = no
+		}
+	}
+	can_destroy = {
+		always = no
+	}
+	can_close = no
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	modifier = {
+		gold_to_building_owner = 0.4
+		manpower_to_building_owner = 0.015
+		local_monthly_development = -0.005
+		local_levy_size_modifier = 0.33
+	}
+	on_built = {
+		change_building_owner = c:TEU
+	}
+	unique_production_methods = {
+		cathedral_maintenance = {
+			glass = 0.05
+			cloth = 0.1
+			gold = 0.025
+			paper = 0.1
+			copper = 0.05
+			tools = 0.05
+			weaponry = 0.1
+			category = building_maintenance
+		}
+	}
+
+
+	construction_demand = cathedral_construction 
+}
+
+hes_st_elizabeth_nationalized = {
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+	
+	employment_size = 0.2
+	
+	category = cultural_category
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	build_time = cultural_building_time
+	graphical_tags = { medium_religious }
+	allow = {
+		custom_tooltip = {
+			text = hes_st_elizabeth_why
+			always = no
+		}
+	}
+	can_destroy = {
+		always = no
+	}
+	can_close = no
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	modifier = {
+		local_monthly_development = 0.01
+		local_cultural_tradition = 1
+		local_cultural_influence = 1
+		local_max_literacy = 30
+	}
+	unique_production_methods = {
+		cathedral_maintenance = {
+			glass = 0.05
+			cloth = 0.1
+			gold = 0.025
+			paper = 0.1
+			copper = 0.05
+			tools = 0.05
+			category = building_maintenance
+		}
+	}
+
+
+	construction_demand = cathedral_construction 
+}

@@ -1,0 +1,16 @@
+country_flavor = {
+	type = country
+
+	text = {
+		localization_key = rank_count_landgraviate
+		trigger = {
+			tag = HES
+			OR = {
+				country_rank_is_duchy = yes
+				country_rank_is_county = yes
+			}
+
+			government_type = government_type:monarchy
+		}
+	}
+}

@@ -7,3 +7,80 @@
  unitary_vs_federalism_desc: "The unitary system grants full authority to the central government, whereas the federal system shares control across its constituent regions."
  unitary_focus: "Unitary"
  federalism_focus: "Federalism"
+
+
+#
+# HESSE
+#
+hes.asserting.authority.tt: "The Ruler of Hesse has curbed the authority of the estates"
+
+### HESSE ADVANCES ###
+
+# AGE 1 - GAME START (Traditions)
+hes_marburg_university: "Philipps-Universität"
+hes_marburg_university_desc: "The establishment of the Philipps-Universität [ShowLocationName('marburg')] in 1327 marks Hesse's commitment to academic excellence. This institutional investment dramatically improves the quality of state administration and learning, making the adoption of new concepts swifter."
+
+hes_noble_sponsored_forts: "Burgverstärkung"
+hes_noble_sponsored_forts_desc: "To maintain their feudal autonomy, the Hessian Nobility agree to bear the primary financial burden for constructing and maintaining key regional fortifications. This ancient agreement allows the Landgrave to leverage the noble's wealth for defense, significantly reducing the cost of building new forts and lowering the standing upkeep of the national border defenses, while preserving the noble's localized military authority."
+
+# AGE 2 - RENAISSANCE
+hes_pre_modern_hessian_army: "Early Mercenary System"
+hes_pre_modern_hessian_army_desc: "Before the age of standing armies, the Landgrave began the long tradition of cultivating and hiring military professionals. Early administrative frameworks are established to organize and pay these forces, making their services more reliable and occasionally allowing for the discreet acquisition of experienced foreign units."
+
+hes_economic_reforms: "Finanzreform"
+hes_economic_reforms_desc: "The rise of strong towns like [ShowLocationName('kassel')] necessitates greater financial sophistication. Early reforms focus on reducing the burden of debt and establishing a basic, structured financial bureaucracy to improve fiscal stability and reduce transactional friction within the state."
+
+# AGE 3 - DISCOVERY
+hes_modern_hessian_army: "Drill and Discipline"
+hes_modern_hessian_army_desc: "Learning from the Landsknecht and foreign military schools, the Hessian forces began to adopt standardized training methods. This commitment to drill creates a smaller, but noticeably higher quality army, ready to withstand the shocks of battle."
+
+hes_early_church_control: "Kirchenregiment"
+hes_early_church_control_desc: "Before the formal break with the Catholic Church, the Landgrave successfully asserted his rights to control the local Church's temporal affairs. This central authority simplifies administrative changes, especially later religious ones, and ensures the local clergy aligns with state interests."
+
+hes_skilled_artisan_influx: "Skilled German Migrants"
+hes_skilled_artisan_influx_desc: "Economic instability and local conflicts across the Holy Roman Empire drove skilled workers to the stable, central territories of [ShowAreaName('hesse_area')]. Their incorporation boosts the efficiency of local production and allows for a broader policy of planned migration."
+
+# AGE 4 - REFORMATION
+hes_schmalkaldic_leadership: "Schmalkaldic League"
+hes_schmalkaldic_leadership_desc: "The Landgrave, Philip I, earned the moniker 'The Magnanimous' not just for his faith, but for his decisive political and military action. As a co-founder and leading strategist of the Schmalkaldischer Bund (Schmalkaldic League) in 1531, Hesse provided the vital military and diplomatic backbone necessary for the coalition of Protestant princes and Imperial cities to survive the Emperor's pressure. Philip's personal commitment to defending the Reformation ensured that the League had the necessary military leadership and resources to field a significant army. This pivotal role transformed Hesse from a peripheral landgraviate into a central, respected diplomatic player within the Holy Roman Empire, granting the Landgrave undeniable influence and military prestige among the Protestant world. Though eventually defeated, the League permanently secured the Reformation's political foothold."
+
+hes_professional_landmiliz: "Landmiliz"
+hes_professional_landmiliz_desc: "Moving beyond pure mercenary reliance, Hesse formalizes the structure of its standing force (the Landmiliz). Though often hired out, this permanent framework significantly improves the state's capacity to raise and maintain a substantial pool of national reserves and manpower."
+
+hesse_monarchy_reform: "Landgravial Principalities"
+hesse_monarchy_reform_desc: "The Landgravial court, established in 1324, finds its authority constantly fragmented by the powerful feudal rights of the nobility and the independence of wealthy urban centers. Though the Crown perpetually seeks to extend its central jurisdiction, its efforts are continuously undermined by the deep-seated Nobility. However, the Landgrave's direct administrative control over the Crownlands is efficient, allowing the peasantry to be leveraged as a moderate yet consistent source of state revenue, which grants the Crown a precarious financial stability."
+
+
+## HESSE PRIVILEGES
+
+hesse_1: "Road Patronage"
+hesse_1_desc: "The nobles retain the right to construct and maintain the key regional roads passing through their territories. This system places the burden of infrastructure development on the nobility, effectively leveraging their private wealth for public use, though it ultimately reinforces their localized political power."
+
+hesse_2: "Burgrecht"
+hesse_2_desc: "The ancient customary right of Burgrecht grants the Hessian nobility significant feudal independence, allowing them to maintain localized jurisdiction and command their own military retinues. This dominance grants them profound political power and anchors the Landgraviate's military strength to a traditional, yet massive, pool of feudal manpower. The Landgrave must consistently attend to the noble's satisfaction to prevent internal challenges to his authority."
+
+# Tooltip for Revocation Condition
+hes.asserting.authority.tt: "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the Noble Estate's power. This must first be established through a decisive act of state."
+
+# CLERGY ESTATE
+
+hesse_3: "Kirchenzins"
+hesse_3_desc: "The Church in Hesse, often answering to external Archbishoprics like Mainz, retains significant financial autonomy. Local parishes and monasteries collect the Tithe and various rents, which remain outside the state's treasury. This autonomy greatly inflates the political power of the Clergy, hinders the Landgrave's revenue base, and makes any centralizing reforms within the Church structure significantly more costly."
+hesse_3_revoke_condition: "The Landgrave has successfully integrated the Church structure and adopted the Advancements that grant the Crown institutional control over religious affairs."
+
+# PEASANTRY ESTATE
+
+hesse_4: "Bildung"
+hesse_4_desc: "The Hessian peasantry, through strong communal institutions and an early, widespread appreciation for education, maintain rights that encourage learning and social mobility. This focus on local education and literacy drastically improves the overall standard of the peasantry, granting them strong political power and making serfdom harder to enforce."
+hesse_4_revoke_condition: "The Crown has successfully initiated core mercantile Advancements and adopted government reforms focusing on a centralized national economy."
+
+
+ #Hesse Cabinet Actions
+hes_persuade_mercenaries: "Standardize Mercenary Contracts"
+hes_persuade_mercenaries_desc: "Hesse's bureaucratic expertise is used to draft highly favorable and professional contracts for our mercenary companies. This assures them of reliable pay and fair treatment, improving both the state's reputation and reducing the cost of retaining them."
+hes_persuade_mercenariesy_action: "$hes_persuade_mercenaries$"
+hes_persuade_mercenaries_active: "Standardizing Mercenary Contracts"
+hes_persuade_mercenaries_progress: "$hes_persuade_mercenaries_active$"
+hes_persuade_mercenaries_wordier: "$hes_persuade_mercenaries_active$"
+hes_persuade_mercenaries_long_wordier: "The Landgrave's Chancellery is working to secure long-term, cost-effective maintenance agreements with all Hessian mercenary companies."
+hes_persuade_mercenaries_tooltip: "Reduces mercenary maintenance cost and signals reliability."

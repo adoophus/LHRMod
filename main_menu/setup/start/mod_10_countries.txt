@@ -1,0 +1,60 @@
+countries = {
+	countries = {
+		HES = {	#Hesse
+			own_control_core = {
+				kassel rotenburg eschwege frankenberg marburg alsfeld
+				giessen melsungen korbach ziegenhain
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			government = {
+
+				ruler = hes_heinrich_ii_hesse
+
+				ruler_term = {	character = hes_otto_i_hesse start_date = 1308.1.1 end_date = 1328.1.17 regnal_number = 1	}
+				ruler_term = {	character = hes_heinrich_ii_hesse start_date = 1328.1.17 regnal_number = 2	}
+
+				regnal_numbers = {
+					name_otto = 1
+					name_henry = 2
+				}
+				reforms = {
+					hesse_monarchy_reform
+				}
+				privilege = {
+					hesse_2
+					hesse_3
+				}
+
+				land_vs_naval = -50
+				quality_vs_quantity = 15
+			}
+
+			tolerated_cultures = {
+				angrian
+			}
+
+			country_rank = rank_county
+			capital = kassel
+			dynasty = hessen_dynasty
+
+			variables = {
+				data = {
+					{
+					flag = "hes_asserting_authority"
+					data = {
+						type = boolean
+						identity = 1
+					}
+				}
+			}
+		}
+		}
+		WDE = {}
+		ZIG = {}
+	}
+}

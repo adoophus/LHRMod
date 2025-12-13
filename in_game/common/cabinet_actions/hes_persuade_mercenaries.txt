@@ -1,0 +1,11 @@
+hes_persuade_mercenaries = {
+	potential = {
+		tag = HES
+	}
+	ability = mil 
+	allow_multiple = no
+		country_modifier = {
+		diplomatic_reputation = 1
+		mercenary_maintenance_cost = -0.15
+	}
+}

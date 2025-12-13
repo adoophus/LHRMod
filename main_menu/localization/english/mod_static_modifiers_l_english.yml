@@ -1,3 +1,28 @@
 ﻿l_english:
  STATIC_MODIFIER_NAME_societal_value_push_unitary: "Societal Push for $unitary_focus$"
  STATIC_MODIFIER_NAME_societal_value_push_federalism: "Societal Push for $federalism_focus$"
+ STATIC_MODIFIER_NAME_hes_reduce_inflation: "Hessian Economic Stability"
+ STATIC_MODIFIER_NAME_hes_religious_rights_protected: "Ecclesiastical Guarantees"
+
+STATIC_MODIFIER_NAME_hes_accepted_noble_concessions: "Costly Compromise of the Landgrave"
+STATIC_MODIFIER_DESC_hes_accepted_noble_concessions: "By paying a massive indemnity, the Landgrave has secured the loyalty of the nobles and successfully restructured their military obligations. While financially painful, the foundations for a more professional military system have been laid, paving the way for later centralized reforms."
+
+STATIC_MODIFIER_NAME_hes_refused_noble_concessions: "Stubborn Refusal"
+STATIC_MODIFIER_DESC_hes_refused_noble_concessions: "The Landgrave's refusal to concede to the demands of the Sternerbund was a show of great prestige and defiance, but it has shattered the peace. The nobility remain deeply dissatisfied and openly challenge the Landgrave's authority, making any future attempts at centralization difficult until this dissent is dealt with."
+
+STATIC_MODIFIER_NAME_hes_holy_water_supported: "Blessing of Purification"
+STATIC_MODIFIER_DESC_hes_holy_water_supported: "The Landgrave's support for the popular, faith-driven handwashing ritual has brought psychological and accidentally hygienic benefits to the populace. While this greatly calms the population and reduces the spread of pestilence, the clerical authorities remain deeply offended by the profane use of consecrated water."
+
+STATIC_MODIFIER_NAME_hes_land_age_2: "Iron Hedges"
+STATIC_MODIFIER_DESC_hes_land_age_2: "A vast system of defensive earthworks and hedges now encloses the Landgraviate. While this physically consolidates our territory and secures the border, the nobility deeply resents this encroachment on their traditional local autonomy."
+
+STATIC_MODIFIER_NAME_hes_land_age_3: "Urban-Funded Consolidation"
+STATIC_MODIFIER_DESC_hes_land_age_3: "The Landgrave is aggressively purchasing noble estates using forced loans and heavy taxes levied on the cities. This rapid territorial expansion has alienated both the Burghers, who pay the price, and the Nobles, who lose their ancestral lands."
+
+# Static Modifier
+STATIC_MODIFIER_NAME_hes_morale_age_3: "Hessian Vanguards"
+STATIC_MODIFIER_DESC_hes_morale_age_3: "Gott mit uns."
+
+# Static Modifier
+STATIC_MODIFIER_NAME_hes_erosion_of_trust: "Erosion of Trust"
+STATIC_MODIFIER_DESC_hes_erosion_of_trust: "Following the exposure of the currency fraud, the Landgrave's reputation as a reliable financial actor has been severely damaged. Merchants across the Empire now view Hessian coinage with suspicion, and the Crown's credit is significantly diminished."

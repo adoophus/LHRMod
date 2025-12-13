@@ -1,0 +1,235 @@
+﻿l_english:
+flavor_hes.1.title: "The Landgrave Asserts His Authority"
+flavor_hes.1.desc: "Our courts and chanceries are finally strong enough to mount a significant challenge to the autonomous powers within the Landgraviate. For generations, the power of our government has been constrained by entrenched privilege, whether by the feudal independence of the knightly class or the ancient fiscal exemptions claimed by the Church. Now, backed by capable administrators and lawyers, the Landgrave has the political opportunity to revoke one of these primary obstacles to true centralized rule."
+
+# Historical Information linking the event to key struggles for centralization
+flavor_hes.1.historical_info: "This period represents the Landgraves' long struggle for administrative unity. Following the ascension of Heinrich II, the powerful nobility regularly challenged the Landgrave's authority, demanding confirmation of their ancient rights and privileges. Conversely, the Landgraves repeatedly sought to curb the fiscal autonomy of the Church, viewing the tithe as revenue vital to the growing state."
+
+# Option A: Revoke Noble Privilege (hesse_2: Castle Rights and Noble Exemption)
+flavor_hes.1.a: "No more uncontrolled rights."
+flavor_hes.1.a.tt1: "Demand payment from the nobility."
+
+# Option B: Revoke Clergy Privilege (hesse_3: Tithe Control and Church Autonomy)
+flavor_hes.1.b: "Foreign actors be damned."
+flavor_hes.1.b.tt1: "Remove foreign influence over the clergy."
+
+# Option C: Do Nothing
+flavor_hes.1.c: "Let us proceed with caution."
+
+flavor_hes.2.title: "The [ShowLocationName('korbach')] Bullion Flood"
+flavor_hes.2.desc: "Our long-established mining operations in [ShowLocationName('korbach')], while immensely profitable, are beginning to critically destabilize the national economy. The constant, massive influx of bullion is fundamentally devaluing our coinage, causing runaway inflation and social instability as the cost of basic goods skyrockets. We must choose between fiscal prudence or immediate treasury needs as the economic chaos threatens to tear at the fabric of the Landgraviate."
+
+# Historical Information linking the event to Korbach's economic challenge
+flavor_hes.2.historical_info: "Mining in the region of Waldeck-Korbach, particularly for silver and gold, dates back to the 13th century and was crucial to the regional economy. However, the medieval system of coinage struggled to cope with a sudden, large increase in bullion supply. Rulers frequently debased coinage or seized private wealth to fund their wars, actions which invariably led to chronic inflation and massive social distress, as seen in numerous periods across the Holy Roman Empire."
+
+# Option A: Stabilize (Gives high stability and inflation reduction)
+flavor_hes.2.a: "Initiate a painful currency stabilization policy."
+
+# Option B: Reckless Seizure (Gives high gold, massive stability loss)
+flavor_hes.2.b: "Seize the flow of gold for the treasury, damn the consequences!"
+
+flavor_hes.3.title: "The [ShowLocationName('marburg')] Charter"
+flavor_hes.3.desc: "The settlement of [ShowLocationName('marburg')] has long been an important local center due to the abbey known as St. Elizabeth's Church. However, the growing population of burghers and surrounding peasants are now petitioning the Landgrave for a formal market charter, demanding to be recognized as a Town and be granted self-governance rights. The local clergy often resist the rise of independent towns that threaten their influence, however an opportunity to formalize infrastructure and boost regional trade should not be missed lightly."
+
+flavor_hes.3.historical_info: "[ShowLocationName('marburg')], the former seat of the Landgraviate of Thuringia, held immense strategic and religious importance due to the Shrine of St. Elizabeth, making it a powerful center long before the Reformation. Its early development was often marked by friction between the established ecclesiastical authorities and the growing economic interests of the urban community. Formal recognition as a town was vital for securing political autonomy and trade routes."
+
+# Option A: Promote Marburg (Mechanically: change_location_rank = location_rank:town)
+flavor_hes.3.a: "Grant the charter and recognize [ShowLocationName('marburg')] as a Town."
+flavor_hes.3.a.tt1: "The estates take on the majority of the cost"
+
+# Option B: Maintain Status Quo (Mechanically: Do nothing)
+flavor_hes.3.b: "Refuse the petition; the current feudal arrangement must be upheld!"
+
+hesse_uprising: "Star League"
+
+flavor_hes.4.title: "The Sternerbund Demands Concessions"
+flavor_hes.4.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] made attempts to centralize military administration and they have been met with fierce resistance from the most powerful noble families in the Ritterschaft. They have banded together in a dangerous coalition called the Sternerbund, presenting us with an ultimatum. We must either pay an enormous indemnity to secure their loyalty and reform their old feudal privileges, or face an open, coordinated rebellion designed to shatter the Landgraviate's fragile unity and preserve their independence."
+
+flavor_hes.4.historical_info: "In the late 14th century, the Hessian nobility quickly consolidated their power, culminating in the 1370s with the formation of the Star League. This powerful coalition was designed to oppose the Landgrave's attempts at centralization and taxation. Confronting the League militarily proved disastrously expensive, often forcing the Landgraves to make crippling financial and political concessions to regain control."
+
+# Option A: Historical Compromise/Reform
+flavor_hes.4.a: "Pay the indemnity and reform the Noble's privileges."
+hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] will permanently double (#w +100%#!):\n\- #r -5.00%#! [ShowModifierTypeName('nobles_estate_max_tax')]\n\- #g +10.00%#! [manpower_with_icon|e] \n\- #w +0.10#! monthly trend towards [ShowSocietyDirectionName('aristocracy')] \n\- #w +0.025#! monthly trend towards [ShowSocietyDirectionName('quantity')]"
+
+# Option B: Confrontation/Civil War
+flavor_hes.4.b: "Refuse their demands; we will not yield to treason."
+hes_refused_noble_concessions: "Refused Noble Concessions"
+hesse_uprising: "Sternerbund Rebellion"
+
+flavor_hes.5.title: "Establishment of the Hofkanzlei"
+flavor_hes.5.desc: "With the major crisis of the nobility now settled, the Landgrave must focus on building a permanent, loyal administrative structure. The current feudal system relies too heavily on local lords and external clerical courts. By funding and empowering a central **Hofkanzlei** (Court Chancery) in Kassel, we can bypass many entrenched local interests and ensure that the Landgrave's writ is executed consistently throughout the territory, albeit at a continuous investment cost."
+
+flavor_hes.5.historical_info: "Under Landgrave Ludwig I (r. 1413-1458), Hesse made significant progress in judicial and administrative centralization. The establishment of the **Hofkanzlei** and the creation of a standing court were critical steps in transforming the Landgraviate from a fractured feudal entity into a more modern territorial state, able to effectively enforce its laws."
+
+# Option A: Invest in long-term centralization
+flavor_hes.5.a: "Fund the Hofkanzlei and create a permanent administrative cadre."
+STATIC_MODIFIER_NAME_hes_kassel_chancery_focus: "Hofkanzlei Administration"
+STATIC_MODIFIER_DESC_hes_kassel_chancery_focus: "The central administrative body in Kassel has been empowered, providing a permanent, minor boost to administrative efficiency."
+
+# Option B: Reinvest the funds elsewhere
+flavor_hes.5.b: "Demand the funds be immediately reinvested into the state treasury."
+
+flavor_hes.6.title: "The Iron Chancellor: Gottfried von Beust"
+flavor_hes.hes_hired_beust: "Chancellor Gottfried von Beust Retained"
+flavor_hes.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] requires absolute loyalty and competence to manage his continuous feuds and massive debts. [gottfried_von_beust.GetName], a stern and unyielding cleric, has served as a pivotal figure in the Hofkanzlei. Known for his austere methods, he is uniquely capable of managing the state's chaotic finances and consolidating records. However, the methods of [gottfried_von_beust.GetShortName] are unpopular, and retaining him means relying heavily on the clerical estate for administration."
+flavor_hes.6.historical_info: "Gottfried von Beust served [ROOT.GetCountry.GetGovernment.GetRuler.GetName] during the turbulent middle of his reign (c. 1340s-1360s). As Chancellor, he was responsible for running the Landgrave's central administration, ensuring the state functioned despite Heinrich's near-constant involvement in costly feuds and military expenditures. The ability of medieval princes to centralize power rested heavily on the competence and loyalty of such chief administrators."
+flavor_hes.6.a: "Make [gottfried_von_beust.GetLastName] one of our chief advisors."
+flavor_hes.6.a.tt1: "[gottfried_von_beust.GetShortName] may #g significantly#! reduce the power of other estates in the future, should he survive the [ShowSituationName('black_death')]. "
+flavor_hes.6.b: "The personal coffers of [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] are getting quite light."
+
+
+flavor_hes.7.title: "The Iron Chancellor: The Holy Handwashing"
+
+flavor_hes.7.desc: "As the terrifying new pestilence sweeps through [GetCountry('HES').GetName], the population has grown desperate for any form of protection. Seeking spiritual solace, [GetCharacter('gottfried_von_beust').GetShortName] has begun instructing peasants and burghers to rigorously cleanse their hands with holy water before all daily activities and meals. While the population embraces this ritual purification with fervor, the local Clergy is outraged. They claim the widespread, mundane use of holy water desecrates the consecrated fluid and severely diminishes the Church's authority over solemn sacraments."
+
+flavor_hes.7.historical_info: "The mid-14th century [ShowSituationName('black_death')] decimated Europe, but medieval medical understanding failed to grasp the role of hygiene in disease transmission. Ironically, forcing the population to wash their hands, even for purely ritualistic reasons, would have accidentally reduced the spread of bacterial and viral pathogens. This accidental public health benefit, driven by spiritual fear, would have provided a temporary, noticeable benefit to afflicted communities, while simultaneously causing friction with the clerical establishment over control of consecrated materials."
+
+flavor_hes.7.a: "Support the new ritual; the population must be calmed."
+
+flavor_hes.7.b: "The use of holy water must remain sacred."
+
+flavor_hes.8.title: "The Iron Chancellor: Salvation"
+
+flavor_hes.8.desc: "The Landgrave's decision regarding the use of holy water has ignited a storm of controversy. The powerful clerical hierarchy, incensed by the perceived desecration of a sacrament, has targeted [GetCharacter('gottfried_von_beust').GetShortName]. The Church insists that his actions have rendered him unfit for service and that he must be permanently removed from the Landgrave's court. We must choose between protecting our loyal Chancellor and avoiding a potentially catastrophic schism with the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
+
+flavor_hes.8.historical_info: "Medieval politics frequently saw high-ranking administrators caught between the secular needs of the prince and the powerful privileges of the Church, particularly if the administrator was a cleric himself. Such officials, like [GetCharacter('gottfried_von_beust').GetLastName], often served as lightning rods for opposition, and their fate frequently determined the political alignment of the ruler. Landgraves could rarely afford open, protracted feuds with the ecclesiastical power structure."
+
+# Option A: Protect the Chancellor (Kick him from the Clergy Estate, keep him as a character, punish the Clergy)
+# This path implies von Beust is stripped of his clerical status but retains loyalty to the Crown.
+flavor_hes.8.a: "[GetCharacter('gottfried_von_beust').GetShortName] is loyal to the Crown!"
+flavor_hes.8.a.tt1: "Should [gottfried_von_beust.GetShortName] continue to live, they will #g significantly#! exploit the estates after the [ShowSituationName('black_death')]. "
+
+# Option B: Sacrifice the Chancellor (Execute him, satisfy the Clergy, lose the powerful character)
+flavor_hes.8.b: "The political cost is too high. Deliver [GetCharacter('gottfried_von_beust').GetShortName] to the gallows."
+flavor_hes.8.b.tt1: "[gottfried_von_beust.GetShortName] will not reduce the power of the estates."
+
+flavor_hes.9.title: "Codification of State Power" # <- NEW TITLE
+
+flavor_hes.9.desc: "The catastrophic depopulation caused by the [ShowSituationName('black_death')] has fundamentally destabilized the traditional power of the great estates. With vast amounts of land unworked and fewer hands available, estate holdings are temporarily diminished. [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName], empowered by the administrative groundwork of officials like [gottfried_von_beust.GetShortName], can now move decisively. By standardizing law and centralizing tax records now, we can seize this momentary crisis to establish a new, durable norm of Crown authority over local [privileges_with_icon|e]."
+
+flavor_hes.9.historical_info: "The [ShowSituationName('black_death')] created severe labor shortages across [ShowContinentName('europe')] (c. 1347-1351), temporarily shifting power away from landholders toward the centralized territorial princes. Landgraves who capitalized on this period were able to enforce standardization, secure better control over feudal taxation, and limit the ability of the Nobility and Clergy to maintain their traditional independent rights."
+
+# Option A: Acknowledge the administrative achievement and accept the temporary benefit
+flavor_hes.9.a: "Enforce a new norm of central authority."
+STATIC_MODIFIER_NAME_hes_post_plague_centralization: "Post-Plague Administrative Assertiveness"
+STATIC_MODIFIER_DESC_hes_post_plague_centralization: "The Landgrave seized the unique political and economic chaos following the [ShowSituationName('black_death')] to assert Crown authority. This temporary advantage severely restricts the traditional power and independent jurisdiction of the Nobility and Clergy, increasing the efficiency of the central administration."
+
+flavor_hes.9.b: "We lack the political capital to enforce such sweeping change."
+STATIC_MODIFIER_NAME_hes_missed_centralization: "Failure of Post-Plague Edicts"
+STATIC_MODIFIER_DESC_hes_missed_centralization: "#italic The Landgrave's Chancery hesitated#!, allowing the estates time to recover their footing after the [ShowSituationName('black_death')]. The crucial, fleeting moment to assert decisive central authority has passed, and we must once again contend with the full weight of feudal privilege."
+
+flavor_hes.10.title: "The Shrine of the Saint and the Teutonic Order"
+
+flavor_hes.10.desc: "The sacred resting place of [hes_saint_elisabeth_of_hungary.GetName] in [ShowLocationName('marburg')] has long been a source of pilgrimage. To secure its future and ensure its proper maintenance as a site of international importance, [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] must formally establish a permanent, specialized administration. The [GetCountry('TEU').GetLongName] already serve as the guardian of the site, and with a royal decree, have agreed to fund it's construction. While this guarantees the church's magnificence, it establishes a powerful foreign entity right in the heart of [GetCountry('HES').GetName]."
+
+flavor_hes.10.historical_info: "The site of Saint Elizabeth of [GetCountry('HUN').GetName] in [ShowLocationName('marburg')], consecrated in 1283, was eventually the first truly Gothic church built in the German-speaking territories. Its construction and the maintenance of the saint's shrine were granted to [GetCountry('TEU').GetName] in 1318. This grant of jurisdiction was fundamental to the Order's strength in the Holy Roman Empire, giving them independent wealth and autonomous authority within the Landgraviate of [GetCountry('HES').GetName]."
+
+# Option A: Grant the building and jurisdiction to the Teutonic Order
+flavor_hes.10.a: "Grant the shrine and its jurisdiction to [GetCountry('TEU').GetNameWithFlag]" # Historical Option
+flavor_hes.10.a.tt1: "The building will be owned by [GetCountry('TEU').GetLongNameWithFlag]."
+
+hes_st_elizabeth: "Elisabethkirche" #
+hes_st_elizabeth_desc: "A magnificent Gothic shrine housing the relics of Saint Elizabeth. Managed by the Teutonic Order, it draws pilgrims from across Christendom, bringing immense prestige and clerical wealth." 
+hes_st_elizabeth_teutonic: "Elisabethkirche Bailiwick" #
+hes_st_elizabeth_teutonic_desc: "A fortified administrative headquarters for the Teutonic Order. This militarized enclave enforces its own laws and taxes, serving as a defiant symbol of foreign authority within Hesse." 
+hes_st_elizabeth_nationalized: "St. Elisabethkirche"
+hes_st_elizabeth_nationalized_desc: "Secularized and reclaimed by the Crown, this massive structure now serves as the central Hessian repository, housing state archives and securing the Landgrave's administrative sovereignty."
+hes_st_elizabeth_why: "The Elisabethkirche can only be built by an event."
+
+
+flavor_hes.11.title: "The Marburg Ultimatum"
+
+flavor_hes.11.desc: "The [GetCountry('TEU').GetLongNameWithFlag] has finally dropped their mask of piety. Armed and defiant, [GetCountry('TEU').GetGovernment.GetRuler.GetName] demands that we formally recognize the Elisabethkirche as a sovereign fortress, a 'Bailiwick' entirely exempt from our laws and taxes. #italic Their knights already ride through [ShowLocationName('marburg')] as if they were its masters#!, treating our authority with open contempt. [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] stands at a crossroads: we can shrink before their demands, or we can find the courage to cast these foreign intruders out and reclaim the heart of [GetCountry('HES').GetName] for the Crown."
+
+flavor_hes.11.historical_info: "While the Teutonic Order was initially entitled to the shrine of St. Elizabeth, their presence evolved into an aggressive 'state within a state.' By the mid-14th century, the Order frequently used its military prestige and international wealth to bully local rulers into granting them autonomous jurisdictions. Standing against the Order was a high-stakes act of resistance; it meant challenging a powerful military-religious organization that could rally the Pope and the Emperor against any Landgrave bold enough to seize their 'sacred' holdings."
+
+# Option A: Allow the Order to militarize (State 2: Marburg Bailiwick of the Teutonic Order)
+flavor_hes.11.a: "Permit the Order to establish a permanent, armed bailiwick."
+flavor_hes.11.a.tt1: "The [GetCountry('TEU').GetLongNameWithFlag] seize the Elisabethkirche."
+
+
+# Option B: Seize the building and nationalize it (State 3: The Landgrave's Territorial Archive)
+flavor_hes.11.b: "Expel the Order."
+flavor_hes.11.b.tt: "[GetCountry('HES').GetLongNameWithFlag] nationalizes the Elisabethkirche."
+flavor_hes.11.tt: "The original building will be destroyed."
+
+# TO no more - free nationalise
+flavor_hes.12.title: "The Breaking of the Black Cross"
+
+flavor_hes.12.desc: "The once-mighty [GetCountry('TEU').GetLongNameWithFlag] has finally crumbled, leaving their vast holdings defenseless and without a master. We need no longer ask for permission or negotiate terms. The gates of the Elisabethkirche are open, and we shall move in to reclaim the site as a permanent asset of the Hessian state."
+
+flavor_hes.12.a: "Reclaim the shrine for the Crown."
+flavor_hes.12.a.tt: "We seize the Elisabethkirche from the dying corpse of the [GetCountry('TEU').GetLongNameWithFlag]"
+flavor_hes.12.historical_info: "The collapse and secularization of the Teutonic Order triggered a swift scramble for their properties across the Holy Roman Empire. Local princes, who had long resented the Order's tax-exempt status and foreign jurisdiction, moved immediately to nationalize these enclaves."
+
+flavor_hes.13.title: "Replace"
+flavor_hes.13.desc: "Replace"
+flavor_hes.13.historical_info: "Replace"
+flavor_hes.13.a: "Replace"
+flavor_hes.13.b: "Replace"
+
+flavor_hes.14.title: "Replace"
+flavor_hes.14.desc: "Replace"
+flavor_hes.14.historical_info: "Replace"
+flavor_hes.14.a: "Replace"
+flavor_hes.14.b: "Replace"
+
+flavor_hes.16.title: "Expansion of the Landgraben"
+
+flavor_hes.16.desc: "To transform our scattered estates into a true state, we must physically carve our borders into the earth. By constructing the Landgraben, we can construct a massive network of ditches and impenetrable hornbeam hedges, funneling trade through our checkpoints and stifle the independence of the local nobility."
+flavor_hes.16.historical_info: "Under Landgrave Hermann II (r. 1376-1413), [GetCountry('HES').GetName] began the systematic construction of the Landgraben. These were not just military defenses, but administrative tools used to define the borders against the fragmented holdings of the Knights' societies, such as the Sternerbund, who viewed these hedges as a direct threat to their feudal freedom."
+
+flavor_hes.16.a: "Carve our authority into the landscape."
+flavor_hes.16.b: "The cost is too high for now."
+
+flavor_hes.17.title: "The Ransom of the Knighthood"
+
+flavor_hes.17.desc: "Our cities are overflowing with coin while the country knights sink into debt. By demanding 'extraordinary contributions' from our Burghers, we can buy out the titles and mortgaged lands of the failing nobility. We shall expand the state using urban gold, effectively using one estate to dismantle the other."
+
+flavor_hes.17.a: "Squeeze the cities to buy the land."
+flavor_hes.17.b: "The burden on the estates is too great."
+flavor_hes.17.historical_info: "In the 15th century, the Hessian Landgraves frequently used the Landbede, a territorial tax, to target the wealth of towns like Kassel and Marburg. This liquidity allowed the Crown to foreclose on the debts of the Ritterschaft. This strategy successfully unified the territory but led to deep-seated resentment in the urban councils, who felt they were being used as the Crown's private bank."
+
+flavor_hes.18.title: "The Iron Knight of Dalwigk"
+
+flavor_hes.18.desc: "[reinhard_von_dalwigk.GetShortName] is a man of blood and iron. A master of warfare, he has offered his sword and his expertise in the 'dirty war' of feuds to the Landgraviate. His methods are brutal, and his loyalty is as sharp as his blade, but with him at the head of our vanguard, no castle or village in Mainz will be safe from our reach."
+
+flavor_hes.18.a: "Let him loose upon our enemies."
+flavor_hes.18.a.tt: "[reinhard_von_dalwigk.GetShortName] will join our army as a General with exceptional raiding capabilities."
+
+flavor_hes.18.historical_info: "[reinhard_von_dalwigk.GetName] was a legendary knightly commander in 15th-century Hesse. Known for his tactical brilliance in small-scale warfare and sieges, he was a key figure in the Mainz Diocesan Feud. His ability to coordinate rapid strikes and exploit noble rivalries made him the most feared Hessian commander of his era, though his aggressive nature often brought him into conflict with the very laws he was hired to enforce."
+
+flavor_hes.19.title: "Reputation of the Iron Banner"
+
+flavor_hes.19.desc: "Our soldiers now recognize that their loyalty is owed not to their local knightly master, but directly to the [GetCountry('HES').GetLongNameWithFlag]. Through years of rigorous training and successful campaigns, a profound sense of purpose has settled upon the ranks. This growing unwavering commitment to [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] ensures that our forces remain resolute and highly effective, providing them with a confidence that distinguishes them from the old feudal levies."
+
+flavor_hes.19.a: "We are the greatest!"
+
+flavor_hes.19.historical_info: "[GetCountry('HES').GetName] troops earned significant prestige through a series of victories in the 15th century, most notably during the final phases of the devastating Mainz Diocesan Feud. This established the Hessian military as one of the most reliable fighting forces in the region, a reputation that boosted recruitment and morale."
+
+flavor_hes.20.title: "Landgrave's Gambit"
+
+flavor_hes.20.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been presented with an opportunity to let everyone be reminded of their rulership. If there is a wish for new coins to be minted for the realm, there is a master of the craft that can be hired. Not only will the mintage be exquisite, it will be adorned with a glorious portrait of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+
+flavor_hes.20.a: "Mint the coins for glory."
+flavor_hes.20.b: "Debase the mints with less precious metals for profit."
+flavor_hes.20.b.tt: "The people may discover this in the future."
+flavor_hes.20.c: "No, there's no need for this."
+hes_print_coins_1: "Hesse - Minting Coins"
+hes_print_coins_2: "Hesse - Debasing Mint"
+
+flavor_hes.21.title: "The Landgrave's Fraud"
+
+flavor_hes.21.desc: "A prominent merchant in [ShowLocationName('kassel')], [annoying_bloke.GetName], a man whose wealth and reputation rely on the integrity of our mint, has publicly exposed the debasement of the Landgrave's coinage! He displays samples of our 'gold' coins, hammered thin to reveal the base metals beneath. Merchants across [GetCountry('HES').GetName] and the Empire are demanding fair payment, and panic is spreading through the markets."
+
+flavor_hes.21.a: "Pay the political price for our short-sightedness."
+
+flavor_hes.21.historical_info: "Currency fraud by rulers was a serious violation of medieval and early modern law, often leading to revolts and diplomatic crises. When exposed, the immediate result was a severe erosion of the Crown's credit and financial reputation, requiring massive concessions to merchants to restore stability."
+
+flavor_hes.22.title: "The River Authority"
+
+flavor_hes.22.desc: "Our fragmented river toll system, currently controlled by a patchwork of local lords, stifles trade and limits state revenue. To truly unify Hesse and secure its economic potential, we must enact a comprehensive law that grants the Crown ultimate jurisdiction over all river navigation and commerce."
+
+flavor_hes.22.a: "Establish the Flusszollordnung."
+
+flavor_hes.22.historical_info: "In the late medieval period, territorial princes, including the Landgraves of Hesse, aggressively sought to eliminate local tolls and establish universal customs laws on vital waterways like the Fulda and Weser rivers. This was a core component of state centralization."

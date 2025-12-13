@@ -1,0 +1,19 @@
+hesse_3 = {
+    estate = clergy_estate
+    potential = { tag = HES }
+    
+    can_revoke = {
+		custom_tooltip = {
+			text = "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the clergy's power. This must first be established through a decisive act of state."
+			not = { has_variable = hes_asserting_authority }
+		}
+    }
+    
+    country_modifier = {
+        global_clergy_estate_power = 1
+        clergy_estate_target_satisfaction = 0.05
+		monthly_towards_individualism = 0.2
+		clergy_estate_agenda_impact = 0.1
+		monthly_prestige = -0.05
+    }
+}

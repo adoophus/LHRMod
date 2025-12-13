@@ -1,0 +1,90 @@
+# AGE 1 - GAME START
+
+hes_marburg_university = {
+    age = age_1_traditions
+    icon = anatomy_advance
+    potential = { has_or_had_tag = HES }
+    research_speed_modifier = 0.15
+
+    requires = chancery_advance
+}
+
+hes_noble_sponsored_forts = {
+    icon = fortified_towns
+    age = age_1_traditions
+    potential = { has_or_had_tag = HES }
+    global_fort_build_buildings_cost = -0.25
+    fort_maintenance_cost = -0.1
+
+    requires = chancery_advance
+}
+
+# AGE 2
+
+hes_pre_modern_hessian_army = {
+    age = age_2_renaissance
+    icon = army_country_diplo_range_advance
+    potential = { has_or_had_tag = HES }
+    hire_mercenary_premium_cost_modifier = -0.15
+    requires = recruitment_law_advance
+}
+
+hes_economic_reforms = {
+    age = age_2_renaissance
+    potential = { has_or_had_tag = HES }
+    icon = bohemian_thaler
+   	bank_interest = -0.01
+
+    requires = banking_advance
+}
+
+# AGE 3
+
+hes_modern_hessian_army = {
+    age = age_3_discovery
+    icon = goose_step
+    potential = { has_or_had_tag = HES }
+    discipline = 0.05
+
+    requires = recruitment_law_advance
+}
+
+hes_early_church_control = {
+    age = age_3_discovery
+    potential = { has_or_had_tag = HES }
+    icon=beyond_the_borders
+    change_liturgical_language_cost_modifier = -1
+	clergy_estate_target_satisfaction = 0.05
+    
+    requires = print_culture
+}
+
+hes_skilled_artisan_influx = {
+    age = age_3_discovery
+    potential = { has_or_had_tag = HES }
+    icon = artisan_migration
+    global_production_efficiency = 0.025
+    enables_german_migration = yes
+    requires = improved_book_binding
+}
+
+
+# AGE 4
+hes_schmalkaldic_leadership = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = HES }
+	requires = imperial_ambitions
+	power_projection = 20
+	prestige_from_land_battle = 1
+	monthly_religious_influence = 0.15
+    icon = hun_castle_warriors
+	
+}
+
+hes_professional_landmiliz = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = HES }
+    icon= expansive_policies
+	requires = unlock_pikemen_advance
+	global_manpower_modifier = 0.15
+}

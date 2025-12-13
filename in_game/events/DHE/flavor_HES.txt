@@ -1,0 +1,901 @@
+namespace = flavor_hes
+
+#rail road shit
+#1 privilege removal 1342 - 100%
+flavor_hes.1 = { 
+	type = country_event
+	title = flavor_hes.1.title
+	desc = flavor_hes.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1342.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		tag = HES
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_hes.1.a
+		custom_tooltip = flavor_hes.1.a.tt1
+		revoke_estate_privilege = estate_privilege:hesse_2
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.1 }
+		remove_variable = hes_asserting_authority
+	}
+
+	option = {
+		name = flavor_hes.1.b
+		custom_tooltip = flavor_hes.1.b.tt1
+		revoke_estate_privilege = estate_privilege:hesse_3
+		historical_option = yes
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.15 }
+		reverse_add_opinion = { target = c:MAI modifier = jan_hus_executed_boh }
+		remove_variable = hes_asserting_authority
+	}
+
+	option = {
+		name = flavor_hes.1.c
+
+		# Do nothing
+	}
+
+	historical_info = flavor_hes.1.historical_info
+}
+
+# 2 reduce inflation event 1338 - 100%
+flavor_hes.2 = { 
+	type = country_event
+	title = flavor_hes.2.title
+	desc = flavor_hes.2.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1338.2.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+    }
+	trigger = {
+		tag = HES
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:clergy_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		historical_option = yes
+		name = flavor_hes.2.a
+		add_country_modifier = { modifier = hes_reduce_inflation years = 15 mode = add }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.1 }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.1 }
+		add_stability = 7
+	}
+
+	option = {
+		name = flavor_hes.2.b
+
+		add_stability = -7
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 50
+		}
+		
+	}
+
+	historical_info = flavor_hes.2.historical_info
+}
+
+# 3 marburg city upgrade 1345 - 100%
+flavor_hes.3 = { 
+	type = country_event
+	title = flavor_hes.3.title
+	desc = flavor_hes.3.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1345.4.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		tag = HES
+		owns = location:marburg
+		location:marburg = {
+			limit = { 
+				NOT = { 
+					OR = {
+						location_rank = location_rank:town
+						location_rank = location_rank:city
+					} 
+				}
+			}
+		}
+	}
+	image = "gfx/interface/illustrations/institutions/feudalism.dds"
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		historical_option = yes
+		name = flavor_hes.3.a
+		location:marburg = {
+			if = {
+				change_location_rank = location_rank:town
+			}
+			change_prosperity = prosperity_very_weak_bonus
+		}
+		add_gold = {
+			value = -81.33
+		}
+		add_gold_to_estate = {
+			estate_type = estate_type:burghers_estate
+			value = -210.43
+		}
+		
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.2 }
+	}
+	option = {
+		name = flavor_hes.3.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.2 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.2 }
+		add_country_modifier = { modifier = hes_religious_rights_protected years = 25 mode = add }
+	}
+
+	historical_info = flavor_hes.3.historical_info
+}
+
+# 4 upgrade privileges 1365 - 20%
+flavor_hes.4 = { 
+	type = country_event
+	title = flavor_hes.4.title
+	desc = flavor_hes.4.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1365.1.1
+		to = 1800.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		tag = HES
+	}
+
+	image = "gfx/interface/illustrations/advances/age_1_traditions.dds"
+
+	option = {
+		name = flavor_hes.4.a
+		change_gold_effect = { scale = -12 }
+		add_country_modifier = { modifier = hes_accepted_noble_concessions years = 30 mode = add }
+		custom_tooltip = hes_upgrade_privilege.a
+		set_variable = hes_reform_burgrecht
+		grant_estate_privilege = estate_privilege:hesse_3
+	}
+
+	option = {
+		name = flavor_hes.4.b
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+		add_country_modifier = { modifier = hes_refused_noble_concessions years = 30 mode = add }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.1 }
+		show_as_tooltip = {
+			create_rebel = {
+				category = estate
+				estate = nobles_estate
+				name = hesse_uprising
+				save_scope_as = hesse_uprising
+				culture = culture:rhine_franconian
+				religion = root.religion
+			}
+
+			location:kassel.province = {
+				every_location_in_province = {
+					limit = { 
+						owner ?= ROOT
+						NOT = {
+							OR = {
+								location_rank = location_rank:town
+								location_rank = location_rank:city
+							}
+						}
+					}
+					every_pop = { 
+						limit = {
+							owner = root
+							OR = {
+								pop_type = pop_type:nobles
+							}
+							culture = culture:rhine_franconian
+						}
+						add_pop_satisfaction = -1
+						change_pop_allegiance = scope:hesse_uprising
+					}
+				}
+			}
+			scope:hesse_uprising = {
+				add_rebel_progress = 0.5
+			}
+		}
+	}
+
+	historical_info = flavor_hes.4.historical_info
+}
+
+# 5 NOT FINISHED reward for conquest of vogelsberg
+flavor_hes.5 = {
+    type = country_event
+    title = flavor_hes.5.title
+    desc = flavor_hes.5.desc
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = HES
+        from = 1800.1.1
+        to = 1810.1.1 
+        monthly_chance = 0
+    }
+    trigger = {
+        tag = HES
+    }
+
+    option = {
+        name = flavor_hes.5.a
+        historical_option = yes
+    }
+
+    option = {
+        name = flavor_hes.5.b
+    }
+
+    historical_info = flavor_hes.5.historical_info
+}
+
+# 6 Gottfried von Beust spawning 1337 - 25%
+flavor_hes.6 = {
+    type = country_event
+    title = flavor_hes.6.title
+    desc = flavor_hes.6.desc
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = HES
+        from = 1337.1.1 
+        to = 1360.1.1
+        monthly_chance = 25
+    }
+    trigger = {
+        tag = HES
+    }
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+    immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+        create_character = {
+            first_name = "Gottfried"
+			last_name = "von Beust"
+            nickname = "the Iron"
+            culture = culture:rhine_franconian
+            religion = root.religion
+            gender = male
+			estate = estate_type:clergy_estate
+			birth_location = location:kassel
+            is_historical = yes
+            birth = 1324.1.1 # Estimated
+            adm = 98
+            dip = 39
+            mil = 25
+            add_trait = trait:goal_oriented
+            save_scope_as = gottfried_von_beust
+			script = gottfried_von_beust
+			create_in_limbo = yes
+        }
+    }
+
+    option = {
+        name = flavor_hes.6.a
+		custom_tooltip = flavor_hes.6.a.tt1
+        historical_option = yes
+        scope:gottfried_von_beust = { move_country = root }
+		change_gold_effect = { scale = -3 }
+	    add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
+	    add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+    }
+    option = {
+        name = flavor_hes.6.b
+
+		change_gold_effect = { scale = 3 }
+		hidden_effect = { kill_character_silently = scope:gottfried_von_beust }
+    }
+
+	historical_info = flavor_hes.6.historical_info
+}
+
+# 7 gottfried gets the boys to wash the hands, absolute legend 1340 - 50%
+flavor_hes.7 = {
+    type = country_event
+    title = flavor_hes.7.title
+    desc = flavor_hes.7.desc
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = HES
+        from = 1340.1.1 
+        to = 1365.1.1
+        monthly_chance = 50
+    }
+    trigger = {
+        tag = HES
+		exists = character:gottfried_von_beust
+		character:gottfried_von_beust = { is_alive = yes }
+		is_situation_active = situation:black_death
+    }
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+    immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+        character:gottfried_von_beust = { save_scope_as = gottfried_von_beust }
+    }
+
+    option = {
+        name = flavor_hes.7.a
+		custom_tooltip = flavor_hes.7.a.tt1
+
+		location:kassel.province = {
+			every_location_in_province = {
+				add_location_modifier = { modifier = hes_holy_water_supported years = 10 mode = add }  
+			}
+		}
+	    add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.2 }
+		reverse_add_opinion = { target = c:PAP modifier = jan_hus_executed_boh }
+		add_prestige = -10
+		set_variable = hes_wash_hands
+    }
+    option = {
+		historical_option = yes
+        name = flavor_hes.7.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.1 }
+    }
+
+	historical_info = flavor_hes.7.historical_info
+}
+
+# 8 shit getting real, clergy wants to kill gottfried, after wash hands - 25%
+flavor_hes.8 = {
+	type = country_event
+	title = flavor_hes.8.title
+	desc = flavor_hes.8.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		tag = HES
+		has_variable = hes_wash_hands
+		exists = character:gottfried_von_beust
+		character:gottfried_von_beust = { is_alive = yes }
+	}
+
+	illustration_tags = {
+        10 = angry
+        10 = exterior
+    }
+
+    immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		character:gottfried_von_beust = { save_scope_as = gottfried_von_beust }
+	}
+	option = {
+		custom_tooltip = flavor_hes.8.a.tt1
+		name = flavor_hes.8.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.2 }
+	}
+
+	option = {
+		name = flavor_hes.8.b
+		custom_tooltip = flavor_hes.8.b.tt1
+		kill_character = scope:gottfried_von_beust
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.2 }
+		location:kassel.province = {
+			every_location_in_province = {
+				remove_location_modifier = hes_holy_water_supported
+			}
+		}
+	}
+
+	historical_info = flavor_hes.8.historical_info
+}
+
+# 9 gottfried centralizes the country after black death, 1352 - 100%
+flavor_hes.9 = {
+	type = country_event
+	title = flavor_hes.9.title
+	desc = flavor_hes.9.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1352.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	image = "gfx/interface/illustrations/situation/black_death.dds"
+	trigger = {
+		tag = HES
+		exists = character:gottfried_von_beust
+		character:gottfried_von_beust = { is_alive = yes }
+	}
+	immediate = {
+		character:gottfried_von_beust = { save_scope_as = gottfried_von_beust }
+	}
+	option = {
+		name = flavor_hes.9.a
+		change_gold_effect = { scale = -15 }
+		add_country_modifier = { modifier = hes_post_plague_centralization years = 20 mode = add }
+		historical_option = yes	
+	}
+
+	option = {
+		name = flavor_hes.9.b
+		add_country_modifier = { modifier = hes_missed_centralization years = 20 mode = add }
+	}
+
+	historical_info = flavor_hes.9.historical_info
+}
+
+# 10 create st elizabeth cathedral 1340 - 100%
+flavor_hes.10 = {
+	type = country_event
+	title = flavor_hes.10.title
+	desc = flavor_hes.10.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1340.9.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		tag = HES
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		character:hun_saint_elisabeth_of_hungary = {
+			save_scope_as = hes_saint_elisabeth_of_hungary
+			script = hes_saint_elisabeth_of_hungary
+		}
+
+	}
+
+	option = {
+		name = flavor_hes.10.a
+		custom_tooltip = flavor_hes.10.a.tt1
+
+		location:marburg = {
+			construct_building = {
+				building_type = building_type:hes_st_elizabeth
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_parliament_agenda"
+				instant = yes
+			}
+		}
+
+		reverse_add_opinion = { target = c:TEU modifier = opinion_congratulated_new_primas_germaniae }
+		reverse_add_opinion = { target = c:HUN modifier = opinion_congratulated_new_primas_germaniae }
+		historical_option = yes	
+	}
+
+	historical_info = flavor_hes.10.historical_info
+}
+
+# 11 teutonic order moves to benefit more from the cathedral 1362 - 100%
+flavor_hes.11 = {
+	type = country_event
+	title = flavor_hes.11.title
+	desc = flavor_hes.11.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1362.9.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		tag = HES
+	}
+
+    immediate = {
+		c:TEU = {
+			save_scope_as = target_country
+			ruler = {
+				save_scope_as = target_ruler
+			}
+		}
+
+	}
+	image = "gfx/interface/illustrations/situation/western_schism.dds"
+	option = {
+		custom_tooltip = flavor_hes.11.a.tt1
+		name = flavor_hes.11.a
+		location:marburg = {
+			destroy_building = "building(building_type:hes_st_elizabeth|c:TEU)"
+			construct_building = {
+				building_type = building_type:hes_st_elizabeth_teutonic
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_parliament_agenda"
+				instant = yes
+			}
+		}
+		custom_tooltip = flavor_hes.11.tt
+		set_variable = hes_resolved_elizabeth
+	}
+
+	option = {
+		custom_tooltip = flavor_hes.11.b.tt
+		name = flavor_hes.11.b
+		location:marburg = {
+			destroy_building = "building(building_type:hes_st_elizabeth|c:TEU)"
+			construct_building = {
+				building_type = building_type:hes_st_elizabeth_nationalized
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_parliament_agenda"
+				instant = yes
+			}
+		}
+		custom_tooltip = flavor_hes.11.tt
+		add_legitimacy = legitimacy_mild_bonus
+		c:TEU = { add_casus_belli = { target = c:HES type = casus_belli:cb_insulted_us years = 5} }
+		set_variable = hes_resolved_elizabeth
+		historical_option = yes	
+	}
+
+	historical_info = flavor_hes.11.historical_info
+}
+
+# 12 teutonic order dies without resolving the ownership of the cathedral - 100%
+flavor_hes.12 = {
+	type = country_event
+	title = flavor_hes.12.title
+	desc = flavor_hes.12.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1337.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		tag = HES
+		NOT = { country_exists = c:TEU }
+		NOT = { has_variable = hes_resolved_elizabeth }
+	}
+	immediate = {
+		c:TEU = {
+			save_scope_as = target_country
+		}
+	}
+	image = "gfx/interface/illustrations/army/decline_of_empire.dds"
+	option = {
+		name = flavor_hes.12.a
+		custom_tooltip = flavor_hes.12.a.tt
+		location:marburg = {
+			destroy_building = "building(building_type:hes_st_elizabeth|c:TEU)"
+			destroy_building = "building(building_type:hes_st_elizabeth_teutonic|c:TEU)"
+			construct_building = {
+				building_type = building_type:hes_st_elizabeth_nationalized
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_parliament_agenda"
+				instant = yes
+			}
+		}
+		custom_tooltip = flavor_hes.11.tt
+	}
+
+	historical_info = flavor_hes.12.historical_info
+}
+
+
+# random flavour - OFF RAILS -
+
+# 16 hesse land push 1 (age 2) (1370 - 1436 5%)
+flavor_hes.16 = {
+	type = country_event
+	title = flavor_hes.16.title
+	desc = flavor_hes.16.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1370.1.1
+		to = 1436.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		tag = HES
+
+	}
+	image = "gfx/interface/illustrations/army/army_full_flip.dds"
+	option = {
+		name = flavor_hes.16.a
+		change_gold_effect = { scale = -12 }
+		add_country_modifier = { modifier = hes_land_age_2 years = 5 mode = add }
+	}
+
+	option = {
+		name = flavor_hes.16.b
+	}
+
+	historical_info = flavor_hes.16.historical_info
+}
+
+# 17 hesse land push 2 (age 3) (1437 - 1500 5%)
+flavor_hes.17 = {
+	type = country_event
+	title = flavor_hes.17.title
+	desc = flavor_hes.17.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1370.1.1
+		to = 1436.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		tag = HES
+	}
+	image = "gfx/interface/illustrations/army/army_full_flip.dds"
+	option = {
+		name = flavor_hes.17.a
+		add_gold_to_estate = {
+			estate_type = estate_type:burghers_estate
+			value = {
+				value = root.estate_tax_base:burghers_estate
+				multiply = -12
+			}
+		}
+		add_country_modifier = { modifier = hes_land_age_3 years = 5 mode = add }
+	}
+
+	option = {
+		name = flavor_hes.17.b
+	}
+
+	historical_info = flavor_hes.17.historical_info
+}
+
+# 18 cool general spawn 1411 - 1436 - 10%
+flavor_hes.18 = {
+	type = country_event
+	title = flavor_hes.18.title
+	desc = flavor_hes.18.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1411.1.1
+		to = 1436.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		tag = HES
+	}
+		image = "gfx/interface/illustrations/disaster/succession_crisis.dds"
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+        create_character = {
+            first_name = "Reinhard"
+			last_name = "von Dalwigk"
+            nickname = "The Iron Knight"
+            culture = culture:rhine_franconian
+            religion = root.religion
+            gender = male
+			estate = estate_type:nobles_estate
+			birth_location = location:kassel
+            is_historical = yes
+            birth = 1389.1.1 # Estimated
+            adm = 56
+            dip = 78
+            mil = 94
+            add_trait = trait:bold_fighter
+            save_scope_as = reinhard_von_dalwigk
+			script = reinhard_von_dalwigk
+			create_in_limbo = yes
+        }
+		character:reinhard_von_dalwigk = { save_scope_as = reinhard_von_dalwigk }
+	}
+
+	option = {
+		name = flavor_hes.18.a
+
+        scope:reinhard_von_dalwigk = { move_country = root }
+		historical_option = yes	
+	}
+
+	historical_info = flavor_hes.18.historical_info
+}
+
+# 19 random 10% morale event in age 3
+flavor_hes.19 = {
+	type = country_event
+	title = flavor_hes.19.title
+	desc = flavor_hes.19.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1436.1.1
+		to = 1510.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		tag = HES
+	}
+		image = "gfx/interface/illustrations/institutions/pike_and_shot.dds"
+	option = {
+		name = flavor_hes.19.a
+		add_country_modifier = { modifier = hes_morale_age_3 years = 15 mode = add }
+	}
+
+	historical_info = flavor_hes.19.historical_info
+}
+
+# 20 copy the ck2 fake coin event - 3%
+flavor_hes.20 = {
+	type = country_event
+	title = flavor_hes.20.title
+	desc = flavor_hes.20.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1336.1.1
+		to = 1600.1.1
+		monthly_chance = 3
+	}
+	trigger = {
+		tag = HES
+	}
+	image = "gfx/interface/illustrations/institutions/legalism.dds"
+    immediate = {
+		c:HES = {
+			save_scope_as = target_country
+			ruler = {
+				save_scope_as = target_ruler
+			}
+		}
+
+	}
+	option = {
+		name = flavor_hes.20.a
+		location:kassel = {
+			owner = root
+			controller = root
+			market = {
+				add_temporary_demand = {
+					type = demand:hes_print_coins_1
+					months = 120
+				}
+			}
+		}
+
+		change_gold_effect = { scale = 5 }
+		add_prestige = 15
+	}
+	option = {
+		name = flavor_hes.20.b
+
+		location:kassel = {
+			owner = root
+			controller = root
+			market = {
+				add_temporary_demand = {
+					type = demand:hes_print_coins_2
+					months = 120
+				}
+			}
+		}
+
+		custom_tooltip = flavor_hes.20.b.tt
+		change_gold_effect = { scale = 16 }
+		add_prestige = 15
+		root.ruler = {
+			add_trait = trait:greedy
+		}
+		set_variable = { name = hes_debased_currency years = 10 }
+	}
+	option = {
+		name = flavor_hes.20.c
+	}
+}
+
+#21 ck2 conseqeuences of debasing MTT: 100 months (9 yrs)
+flavor_hes.21 = {
+	type = country_event
+	title = flavor_hes.21.title
+	desc = flavor_hes.21.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = HES
+		from = 1336.1.1
+		to = 1700.1.1
+		monthly_chance = 1
+	}
+	trigger = {
+		tag = HES			
+		has_variable = hes_debased_currency
+	}
+		image = "gfx/interface/illustrations/institutions/legalism.dds"
+    immediate = {
+		create_character = {
+			estate = estate_type:burghers_estate
+			save_scope_as = target_character
+			create_in_limbo = yes
+            save_scope_as = annoying_bloke
+			script = annoying_bloke
+		}
+	}
+	option = {
+		name = flavor_hes.21.a
+
+		add_country_modifier = { modifier = hes_erosion_of_trust years = 10 mode = add }
+		add_prestige = -15
+		add_stability = -10
+	}
+
+	historical_info = flavor_hes.21.historical_info
+}
+
+#22 river cost law!
+flavor_hes.22 = {
+	type = country_event
+	title = flavor_hes.22.title
+	desc = flavor_hes.22.desc
+	fire_only_once = yes
+			image = "gfx/interface/illustrations/institutions/feudalism.dds"
+	dynamic_historical_event = {
+		tag = HES
+		from = 1380.1.1
+		to = 1700.1.1
+		monthly_chance = 2
+	}
+	trigger = {
+		tag = HES			
+	}
+	option = {
+		historical_option = yes
+		name = flavor_hes.22.a
+		unlock_law_effect = {
+			type = river_law
+		}
+				change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_left }
+	}
+
+	historical_info = flavor_hes.22.historical_info
+}
+
+# NOT FINISHED 23 pop requirements go up (cultural demands)

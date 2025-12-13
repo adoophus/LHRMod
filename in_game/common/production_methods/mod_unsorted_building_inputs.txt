@@ -1,0 +1,4 @@
+hes_hofkanzlei_maintenance = {
+	paper = 1
+	category = building_maintenance
+}

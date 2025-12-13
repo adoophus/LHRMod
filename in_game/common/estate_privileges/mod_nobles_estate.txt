@@ -1,0 +1,47 @@
+hesse_1 = {
+	estate = nobles_estate
+
+	potential = { tag = HES }
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = 0.05
+		monthly_towards_land = 0.05
+		nobles_estate_allowed_to_build_roads = yes
+		global_nobles_estate_power = 0.5
+	}
+}
+
+hesse_2 = {
+    estate = nobles_estate
+    potential = { tag = HES }
+    
+    can_revoke = {
+		custom_tooltip = {
+			text = "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the nobles' power. This must first be established through a decisive act of state."
+			not = { has_variable = hes_asserting_authority }
+		}
+    }
+    
+    country_modifier = {
+			global_manpower_modifier = 0.1
+
+			global_nobles_estate_power = 0.5
+
+
+
+		monthly_towards_aristocracy = 0.1
+		monthly_towards_quantity = 0.025
+		nobles_estate_max_tax = -0.05
+		scale = {
+			value = 1
+			if = {
+				limit = {
+					has_variable = hes_reform_burgrecht
+				}
+				multiply = 2
+			}
+		}
+
+					nobles_estate_target_satisfaction = 0.025
+    }
+}

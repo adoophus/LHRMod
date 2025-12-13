@@ -1,0 +1,18 @@
+hesse_monarchy_reform = {
+	unique = yes
+	major = yes
+	government = monarchy
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = HES
+		}
+	}
+	country_modifier = {
+		global_monthly_control = 0.002
+		monthly_towards_decentralization = 0.2
+		peasants_estate_max_tax = 0.10
+		government_reform_slots = 1
+	}
+	years = 2
+}

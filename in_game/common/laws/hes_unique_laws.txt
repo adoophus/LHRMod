@@ -1,0 +1,37 @@
+river_law = {
+	law_category = socioeconomic
+
+	hes_fuldastrom_decree_law = {
+		country_modifier = {
+			nobles_estate_target_satisfaction = -0.025
+			land_cost_going_downstream	= -2.5
+			land_cost_going_upstream	= -5
+		}
+		estate_preferences = {
+			crown_estate
+			nobles_estate
+			clergy_estate
+			burghers_estate
+			peasants_estate
+			tribes_estate
+		}
+		years = 1
+	}
+
+	hes_river_toll_ordinance = {
+		country_modifier = {
+
+			land_cost_going_upstream = 5
+			global_crown_estate_power = 0.1
+		}
+		estate_preferences = {
+			crown_estate
+			nobles_estate
+			clergy_estate
+			burghers_estate
+			peasants_estate
+			tribes_estate
+		}
+		years = 1
+	}
+}
