@@ -1,0 +1,26 @@
+foreign_building_ban = {
+	type = defend_capital
+	
+	attacker = {
+        allowed_subjugation = {
+			always = no
+		}
+        conquer_cost = 10
+        subjugate_cost = 10
+        allowed_locations = {
+			casus_belli_forbids_location_conquest = yes
+		}
+	}
+	
+	defender = {
+        allowed_subjugation = {
+			always = no
+		}
+        conquer_cost = 10
+        subjugate_cost = 10
+        allowed_locations = {
+			casus_belli_forbids_location_conquest = yes
+		}
+	}
+	ticking_war_score = 0.5
+}

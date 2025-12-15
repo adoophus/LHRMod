@@ -1,0 +1,34 @@
+﻿foreign_building_gone = {
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = "scope:target.location_peace_cost(scope:loser|scope:winner)"
+			multiply = 0.10
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = location
+		source = recipient
+		target_flag = target
+
+		visible = {
+
+			owner ?= scope:actor
+
+			any_foreign_buildings_in_location = {
+				owner = scope:recipient  
+			}
+		}
+	}
+	allow = {}
+	effect = {
+        scope:target = {
+			every_foreign_buildings_in_location = {
+				location = {
+					destroy_building = prev
+				}
+			}
+    	}
+    }
+}
