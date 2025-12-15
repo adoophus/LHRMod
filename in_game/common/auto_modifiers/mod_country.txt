@@ -1,0 +1,18 @@
+INJECT:country_base_values = {
+	experience_decay = 0.025 ## PREV: 0.05 (doubled, makes drilling more useful)
+	max_diplomats = 5 ## PREV: 1 (doubled, diplomacy used more frequently in mp)
+}
+
+# PSEUDO FL - anti snowball
+# money sink
+#larger_than_expected_army = {
+	#scales_with = {
+	#	value = army_size_percentage
+	#	subtract = 1
+		#power= exponential
+	#}
+	#potential_trigger = { 
+	##	army_size_percentage > 1.0
+	#}
+	#army_maintenance_cost = 1
+#}
