@@ -1,0 +1,20 @@
+NGame = {
+	GAME_SPEED_TICKS = {	# how many seconds should an hour take in every game speed
+		1
+		0.4
+		0.08
+		0.02
+		0.0
+	}
+	GAME_SPEED_SCALES = {	# Factors to scale speed
+		0.75
+		1
+		1.5
+		2.5
+		5.0
+	}
+	PAUSED_SPEED_SCALE = 0.15
+	HOTJOIN_TICK_LIMIT = 6
+	EVENT_MP_TIMEOUT_MONTHS = 4
+	GAME_SPEED_FOR_MULTI_PLAYERS_WARS = 3
+}

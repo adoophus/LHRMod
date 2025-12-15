@@ -1,0 +1,4 @@
+﻿NMapMarker = {
+	CITY_MARKER_WEIGHT_PROVINCE_CAPITAL = 				5		# How much a location being the province capital influences
+	CITY_MARKER_WEIGHT_PROVINCE_CAPITAL_AT_WAR =		15		# How much a location being the province capital influences while at war
+}
