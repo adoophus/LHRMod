@@ -227,9 +227,6 @@ scan_early_dockyard = {
 		always = no
 	}
 	can_close = yes
-	location_potential = {
-		is_port = yes
-	}
 	
 	build_time = medium_port_building_time
 	
