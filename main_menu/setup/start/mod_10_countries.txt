@@ -56,5 +56,164 @@ countries = {
 		}
 		WDE = {}
 		ZIG = {}
+
+		#Principality of Muscovy
+		MOS = {
+			own_control_core = {
+				moscow zvenigorod ruza pushkino vokhna bronnitsy rogozh
+				mozhaysk vetza odintsovo
+				przemysl_moscow mushkov_pogost
+				#Principality of Pereyaslavl-Zalessky
+				pereyaslavl alexandrovskaya_sloboda bogorodskoye_pereyaslavl kirzhach poreevo yanovo
+			}
+
+			own_control_conquered = {
+				#Principality of Kolomna
+				kolomna borovsk khatun koshira maloyaroslavets serpukhov vereya vysokoye
+			}
+
+			starting_technology_level = 3
+			country_rank = rank_kingdom
+
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = mos_ivan_i_danilovich_kalita_rurikovich
+				ruler_term = { character = mos_daniil_aleksandrovich_rurikovich start_date = 1263.11.14 regnal_number = 1 end_date = 1303.5.4 }
+				ruler_term = { character = mos_yury_danilovich_rurikovich start_date = 1303.5.4 regnal_number = 1 end_date = 1325.11.21 }
+				ruler_term = { character = mos_ivan_i_danilovich_kalita_rurikovich start_date = 1325.11.21 regnal_number = 1 }
+				quality_vs_quantity = 15
+			}
+
+			liturgical_language = church_slavonic_language
+
+			capital = moscow
+			include = "russian_principality_no_coast"
+			include = "expl_novgorod"
+		}
+
+		KIE = {	#Kyiv - Vassal of LIT
+			own_control_core = {
+				#Ukraine
+				kyiv dymer fastiv zdvizhen
+				bila_tserkva bohuslav kaharlyk kaniv sherbiv skvyra
+				cherkasy chyhyryn korsun lebedyn rozkishna smila zvenyhorodka
+				chornobyl belaya_soroka brahin khoiniki kholmyech
+				olevsk kopyshche viry yemilchyne
+				ovruch bilokorovychi korosten malyn narodychi stodolichi
+				zhytomyr berdychiv chudniv chortolisy korostyshiv mychesk
+
+				poltava kremenchuk myrhorod velyki_sorochyntsi kotelva
+				lubny pyriatyn horodyshche horoshino zolotonosha
+				pereiaslav desnyanskyi_horodok boryspil oster kozelets
+				#Black Ruthenia
+				mazyr buinovichi kalinkavichy pietrykaw rudobelka
+				#Chernihiv
+				melnya 
+				ichnia pryluky chornukhy
+				lypova_dolyna romen buryn sumy okhtyrka krasnopillia hadiach
+				glushkovo putyvl khotmyzh vilshana
+
+				yaroslavka yahotyn lutava opishnya hovtva kolomak
+			} 
+
+			include = "expl_eastern_europe"
+			include = "lithuanian_monarchy"
+			government = {
+				ruler = kie_teodoras_ivanovich_rurikovich
+
+				ruler_term = { character = kie_igor_rurikovich start_date = 912.1.1 end_date = 945.1.1 regnal_number = 1 }
+				ruler_term = { 
+					character = kie_saint_olga start_date = 945.1.1 end_date = 962.1.1 regnal_number = 1
+					character = kie_sviatoslav_rurikovich start_date = 945.1.1 end_date = 962.1.1 regnal_number = 1 
+				}
+				ruler_term = { character = kie_sviatoslav_rurikovich start_date = 962.1.1 end_date = 972.1.1 regnal_number = 1 }
+				ruler_term = { character = kie_yaropolk_rurikovich start_date = 972.1.1 end_date = 978.6.11 regnal_number = 1 }
+				ruler_term = { character = kie_volodymyr_the_great_rurikovich start_date = 978.6.11 end_date = 1015.7.15 regnal_number = 1 }
+				ruler_term = { character = kie_sviatopolk_rurikovich start_date = 1015.7.15 end_date = 1019.1.1 regnal_number = 1 }
+				ruler_term = { character = kie_yaroslav_the_wise_rurikovich start_date = 1019.1.1 end_date = 1054.2.20 regnal_number = 1 }
+				ruler_term = { character = kie_iziaslav_rurikovich start_date = 1054.2.20 end_date = 1068.9.1 regnal_number = 1	}
+				ruler_term = { character = pok_vseslav_bryachislavich_rurikovich start_date = 1068.9.1 end_date = 1069.4.1 regnal_number = 1 }
+				ruler_term = { character = kie_iziaslav_rurikovich start_date = 1069.4.1 end_date = 1073.3.22 regnal_number = 1 } # Restored
+				ruler_term = { character = kie_sviatoslav_ii_rurikovich start_date = 1073.3.22 end_date = 1076.12.27 regnal_number = 2	}
+				ruler_term = { character = kie_vsevolod_rurikovich start_date = 1076.12.27 end_date = 1077.7.15 regnal_number = 1	}
+				ruler_term = { character = kie_iziaslav_rurikovich start_date = 1077.7.15 end_date = 1078.10.3 regnal_number = 1 }
+				ruler_term = { character = kie_vsevolod_rurikovich start_date = 1078.10.3 end_date = 1093.4.13 regnal_number = 1	}
+				ruler_term = { character = kie_sviatopolk_ii_rurikovich start_date = 1093.4.13 end_date = 1113.4.16 regnal_number = 2 }
+				ruler_term = { character = kie_vladimir_ii_rurikovich start_date = 1113.4.16 end_date = 1125.5.19 regnal_number = 2	}
+				ruler_term = { character = kie_mstislav_rurikovich start_date = 1125.5.19 end_date = 1132.4.14 regnal_number = 1	}
+				ruler_term = { character = kie_yaropolk_ii_rurikovich start_date = 1132.4.14 end_date = 1139.2.18 regnal_number = 2	}
+				ruler_term = { character = kie_viacheslav_rurikovich start_date = 1139.2.18 end_date = 1139.3.1 regnal_number = 1	}
+				ruler_term = { character = kie_vsevolod_ii_rurikovich start_date = 1139.3.1 end_date = 1146.8.1 regnal_number = 2	}
+				ruler_term = { character = kie_igor_ii_rurikovich start_date = 1146.8.1 end_date = 1147.9.19 regnal_number = 2	}
+				ruler_term = { character = kie_iziaslav_ii_rurikovich start_date = 1147.9.19 end_date = 1149.9.1 regnal_number = 2	}
+				ruler_term = { character = kie_yuri_rurikovich start_date = 1149.9.1 end_date = 1151.4.1 regnal_number = 1	}
+				ruler_term = { character = kie_iziaslav_ii_rurikovich start_date = 1151.4.1 end_date = 1154.11.13 regnal_number = 2	}
+				ruler_term = { character = kie_rostislav_rurikovich start_date = 1154.11.13 end_date = 1154.11.20 regnal_number = 1	}
+				ruler_term = { character = kie_iziaslav_iii_rurikovich start_date = 1154.11.20 end_date = 1155.3.1 regnal_number = 3	}
+				ruler_term = { character = kie_yuri_rurikovich start_date = 1155.3.1 end_date = 1157.5.15 regnal_number = 1	}
+				ruler_term = { character = kie_iziaslav_iii_rurikovich start_date = 1157.5.15 end_date = 1158.10.1 regnal_number = 3	}
+				ruler_term = { character = kie_rostislav_rurikovich start_date = 1158.10.1 end_date = 1167.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_mstislav_ii_rurikovich start_date = 1167.5.19 end_date = 1169.3.12 regnal_number = 2	}
+				ruler_term = { character = kie_gleb_rurikovich start_date = 1169.3.12 end_date = 1170.3.1 regnal_number = 1	}
+				ruler_term = { character = kie_mstislav_ii_rurikovich start_date = 1170.3.1 end_date = 1170.4.1 regnal_number = 2	}
+				ruler_term = { character = kie_gleb_rurikovich start_date = 1170.4.1 end_date = 1171.2.5 regnal_number = 1	}
+				ruler_term = { character = kie_vladimir_iii_rurikovich start_date = 1171.2.5 end_date = 1171.5.10 regnal_number = 1	}
+				ruler_term = { character = kie_mikhail_rurikovich start_date = 1171.5.10 end_date = 1171.7.1 regnal_number = 1	}
+				ruler_term = { character = kie_roman_rurikovich start_date = 1171.7.1 end_date = 1173.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_vsevolod_iii_rurikovich start_date = 1173.1.1 end_date = 1173.2.1 regnal_number = 1	}
+				ruler_term = { character = kie_rurik_rostislavich_rurikovich start_date = 1173.2.1 end_date = 1173.12.31 regnal_number = 1	}
+				ruler_term = { character = kie_sviatoslav_iii_rurikovich start_date = 1174.1.1 end_date = 1174.6.1 regnal_number = 3	}
+				ruler_term = { character = kie_yaroslav_ii_rurikovich start_date = 1174.6.1 end_date = 1175.1.1 regnal_number = 2	}
+				ruler_term = { character = kie_roman_rurikovich start_date = 1175.1.1 end_date = 1175.6.1 regnal_number = 1	}
+				ruler_term = { character = kie_sviatoslav_iii_rurikovich start_date = 1175.6.1 end_date = 1177.1.1 regnal_number = 3	}
+				ruler_term = { character = kie_yaroslav_ii_rurikovich start_date = 1177.1.1 end_date = 1180.1.1 regnal_number = 2	}
+				ruler_term = { character = kie_rurik_rostislavich_rurikovich start_date = 1180.1.1 end_date = 1182.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_sviatoslav_iii_rurikovich start_date = 1182.1.1 end_date = 1194.7.27 regnal_number = 3	}
+				ruler_term = { character = kie_rurik_rostislavich_rurikovich start_date = 1194.7.27 end_date = 1202.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_igor_iii_rurikovich start_date = 1202.1.1 end_date = 1202.12.31 regnal_number = 3	}
+				ruler_term = { character = kie_rurik_rostislavich_rurikovich start_date = 1202.12.31 end_date = 1204.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_rostislav_ii_rurikovich start_date = 1204.1.1 end_date = 1206.1.1 regnal_number = 2	}
+				ruler_term = { character = kie_vsevolod_iv_svyatoslavich_rurikovich start_date = 1206.1.1 end_date = 1207.1.1 regnal_number = 4	}
+				ruler_term = { character = kie_rurik_rostislavich_rurikovich start_date = 1207.1.1 end_date = 1210.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_vsevolod_iv_svyatoslavich_rurikovich start_date = 1210.1.1 end_date = 1212.8.1 regnal_number = 4	}
+				ruler_term = { character = kie_igor_iii_rurikovich start_date = 1212.8.1 end_date = 1214.1.1 regnal_number = 3	}
+				ruler_term = { character = kie_mstislav_iii_rurikovich start_date = 1214.1.1 end_date = 1223.1.1 regnal_number = 3	}
+				ruler_term = { character = kie_vladimir_iv_rurikovich start_date = 1223.1.1 end_date = 1235.1.1 regnal_number = 4	}
+				ruler_term = { character = kie_iziaslav_iv_rurikovich start_date = 1235.1.1 end_date = 1236.1.1 regnal_number = 4	}
+				ruler_term = { character = kie_yaroslav_iii_rurikovich start_date = 1236.1.1 end_date = 1238.1.1 regnal_number = 2	}
+				ruler_term = { character = kie_mikhail_ii_vsevolodovich_rurikovich start_date = 1238.1.1 end_date = 1239.1.1 regnal_number = 2	}
+				ruler_term = { character = vol_daniel_rurikovich start_date = 1239.1.1 end_date = 1240.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_mikhail_ii_vsevolodovich_rurikovich start_date = 1241.1.1 end_date = 1243.1.1 regnal_number = 2	}
+				ruler_term = { character = kie_yaroslav_iii_rurikovich start_date = 1243.1.1 end_date = 1246.10.30 regnal_number = 2	}
+				ruler_term = { character = kie_alexander_nevsky_rurikovich start_date = 1246.10.30 end_date = 1263.11.14 regnal_number = 1	}
+				ruler_term = { character = kie_yaroslav_iv_rurikovich start_date = 1263.11.14 end_date = 1271.9.9 regnal_number = 1	}
+				ruler_term = { character = kie_vladimir_ivan_ivanovich_rurikovich start_date = 1271.9.9 end_date = 1301.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_stanislav_ivanovich_rurikovich start_date = 1301.1.1 end_date = 1321.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_mindaugas_holshanski start_date = 1321.1.1 end_date = 1324.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_algimantas start_date = 1324.1.1 end_date = 1331.1.1 regnal_number = 1	}
+				ruler_term = { character = kie_teodoras_ivanovich_rurikovich start_date = 1331.1.1 regnal_number = 1	}
+
+				privilege = {
+					#Clergy
+					clergy_powerful_dioceses
+					#Burghers
+					market_fairs
+					cossack_identity
+				}
+				quality_vs_quantity = 15
+			}
+
+			liturgical_language = church_slavonic_language
+
+			tolerated_cultures = {
+				severian
+				polesian_culture
+			}
+
+			capital = kyiv
+			dynasty = gediminid_dynasty
+			country_rank = rank_duchy
+		}
 	}
 }
