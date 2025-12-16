@@ -31,7 +31,7 @@ countries = {
 				}
 
 				land_vs_naval = -50
-				quality_vs_quantity = 15
+				quality_vs_quantity = -15
 			}
 
 			tolerated_cultures = {
@@ -217,5 +217,158 @@ countries = {
 			dynasty = gediminid_dynasty
 			country_rank = rank_duchy
 		}
+
+		SWE = {
+		own_control_core = {
+
+			stockholm norrtalje nykoping arboga kastelholm
+			enkoping uppsala kolmarden soderkoping norrkoping
+			linkoping alvastra vadstena strangnas tierp
+			heby vasteras oppunda nora sala orebro riseberga
+			goksholm skinskatteberg sodertalje linde grythyttan
+
+			tjust sevede handbord kalmar kinda jonkoping oland
+			vallsjo vetlanda albo konga vaxjo uppvidinge ljungby trollaborg waestbo
+			hjo tiveden vartofta skara lodose utlandet ekholm falkoping allingsas bogesund lidkoping skene
+
+			visby slite hoborg
+			gefle hedesunda hamrange ockelbo
+
+			varnum tingvalla nas nordmark farnebo fryksdal josse gillberg
+			dalaborg amal vedbo
+
+			hudiksvall alfta soderala hogdal selanger havero
+			avesta falun leksand grange malung mora hedemora orsa soderbarke stora_tuna floda
+
+			harnosand solatunum ramsele sjalevad anundsjo grundsunda
+
+			umea lulea
+
+			abo poytis sauvo nystad
+			helsinge ekenas sjundea porvoo kymi_fi
+
+			vyborg villmanstrand veckelax vederlax beryozovskoye
+			ikalis raumo bjorneborg hvittis sastmola birkala sastamala
+			korsholm koppo
+			hollola lohja tavastehus janakkala forssa liljendal jamsa
+
+			valkeasaari kyyrola
+
+			korsholm koppo pedersore storkyro karleby kaustby lappo vora
+		}
+
+		own_control_colony = {
+			asele
+			umea
+			vindeln
+			bygdea
+		}
+
+
+		include = "expl_scandinavia"
+		include = "catholic_monarchy"
+
+		country_rank = rank_kingdom
+
+		starting_technology_level = 3
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = swe_magnus_eriksson
+			consort = swe_blanka
+
+			ruler_term = { character = swe_erik_vii start_date = 970.1.1 end_date = 995.1.1 regnal_number = 7 }
+			ruler_term = { character = swe_olof_i start_date = 995.1.1 end_date = 1022.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_anund_jacob start_date = 1022.1.1 end_date = 1050.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_emund start_date = 1050.1.1 end_date = 1060.1.1 regnal_number = 1 }
+
+			ruler_term = { character = swe_stenkil start_date = 1060.1.1 end_date = 1066.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_halsten start_date = 1066.1.1 end_date = 1068.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_anund_garderike start_date = 1068.1.1 end_date = 1076.1.1 regnal_number = 2 }
+			ruler_term = { character = swe_haakon_the_red start_date = 1076.1.1 end_date = 1078.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_inge_elder start_date = 1079.1.1 end_date = 1083.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_erik_viii start_date = 1083.1.1 end_date = 1084.1.1 regnal_number = 8 }
+			ruler_term = { character = swe_inge_elder start_date = 1084.1.1 end_date = 1110.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_philip start_date = 1110.1.1 end_date = 1118.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_inge_younger start_date = 1118.1.1 end_date = 1125.1.1 regnal_number = 2 }
+			ruler_term = { character = swe_magnus_i start_date = 1125.1.1 end_date = 1130.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_sverker_elder start_date = 1130.1.1 end_date = 1156.12.25 regnal_number = 1 }
+			ruler_term = { character = swe_erik_ix_the_holy start_date = 1157.1.1 end_date = 1160.5.18 regnal_number = 9 }
+			ruler_term = { character = swe_magnus_ii start_date = 1160.5.18 end_date = 1161.1.1 regnal_number = 2 }
+			ruler_term = { character = swe_charles_vii start_date = 1161.1.1 end_date = 1167.4.12 regnal_number = 7 }
+			ruler_term = { character = swe_canute_i start_date = 1167.4.12 end_date = 1196.1.1 regnal_number = 1 }
+			ruler_term = { character = swe_sverker_younger start_date = 1196.1.1 end_date = 1208.1.1 regnal_number = 2 }
+			ruler_term = { character = swe_erik_x start_date = 1208.1.1 end_date = 1216.1.1 regnal_number = 10 }
+			ruler_term = { character = swe_john start_date = 1216.1.1 end_date = 1222.3.10 regnal_number = 1 }
+			ruler_term = { character = swe_erik_xi start_date = 1222.3.10 end_date = 1229.1.1 regnal_number = 11 }
+			ruler_term = { character = swe_canute_ii start_date = 1229.1.1 end_date = 1234.1.1 regnal_number = 2 }
+			ruler_term = { character = swe_erik_xi start_date = 1234.1.1 end_date = 1250.2.2 regnal_number = 11 }
+
+			ruler_term = { character = swe_valdemar_birgersson start_date = 1250.2.2 end_date = 1275.7.22 regnal_number = 3	}
+			ruler_term = { character = swe_magnus_ladulas start_date = 1275.7.22 end_date = 1290.12.18 regnal_number = 3	}
+			ruler_term = { character = swe_birger_magnusson start_date = 1290.12.18 end_date = 1319.1.1 regnal_number = 2	}
+			ruler_term = { character = swe_magnus_eriksson start_date = 1319.7.8 regnal_number = 4	}
+
+			regnal_numbers = {
+				name_john = 2
+				name_birger = 2
+				name_eric = 11
+				name_charles = 7
+			}
+
+			laws = {
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+			}
+
+			reforms = {
+				alsno_stadga
+			}
+
+
+			centralization_vs_decentralization = 25
+			traditionalist_vs_innovative = 30
+			spiritualist_vs_humanist = -50
+			aristocracy_vs_plutocracy = -30
+			serfdom_vs_free_subjects = 50
+			mercantilism_vs_free_trade = -10
+			belligerent_vs_conciliatory = 10
+			quality_vs_quantity = -15
+			offensive_vs_defensive = -20
+			land_vs_naval = -10
+			capital_economy_vs_traditional_economy = 90
+			individualism_vs_communalism = -20
+			outward_vs_inward = -30
+
+			privilege = {
+				#nobles
+				auxilium_et_consilium
+				nobles_land_rights
+				noble_marriage_rights
+				noble_fortification_licenses
+
+				#clergy
+				clergy_literacy_rights
+				clergy_enforced_unity
+
+				#burghers
+				market_fairs
+
+				#peasants
+				peasants_free_peasantry
+				peasants_represented_in_parliament
+				land_owning_farmers
+			}
+
+		}
+
+		capital = stockholm
+		dynasty = bjalbo_atten_dynasty
+		dynasty = aspenas_atten_dynasty
+
+		accepted_cultures = { finnish gutnish }
+		tolerated_cultures = { tavastian karelian kvens }
+	}
 	}
 }
