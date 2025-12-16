@@ -1,0 +1,12 @@
+naval_scandinavian_town = {
+	brewery = 1
+	temple = 1
+	tools_guild = 1
+	tannery = 1
+	naval_supplies_guild = 1
+	weapon_guild = 1
+	marketplace = 2
+	mason = 1
+	pottery_guild = 1
+	scan_early_dockyard = 1
+}
