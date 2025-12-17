@@ -10,3 +10,7 @@ naval_scandinavian_town = {
 	pottery_guild = 1
 	scan_early_dockyard = 1
 }
+
+iranian_gateway = {
+	ira_gateway = 1
+}

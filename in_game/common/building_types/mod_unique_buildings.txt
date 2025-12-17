@@ -250,3 +250,36 @@ scan_early_dockyard = {
 		can_build_ships_in_this_location = yes
 	}
 }
+
+ira_gateway = {
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = infrastructure_category
+	
+	employment_size = 1
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	can_destroy = {
+		always = no
+	}
+	can_close = yes
+	
+	build_time = medium_port_building_time
+	
+	construction_demand = early_soldier_building_construction
+
+	modifier = {
+		local_distance_from_capital_cost_modifier = -0.5
+		local_manpower = 0.005
+	}
+	
+	possible_production_methods =  {
+		early_soldier_building_maintenance
+	}
+}
