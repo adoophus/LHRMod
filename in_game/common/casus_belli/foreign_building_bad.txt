@@ -1,0 +1,19 @@
+cb_foreign_building_bad = {
+    visible = {
+        scope:target = {
+			owns_any_foreign_buildings_in  = root
+		}
+    }
+    allow_creation = {
+        scope:target = {
+			owns_any_foreign_buildings_in  = root
+		}
+    }
+    allow_declaration = {
+       scope:target = {
+			owns_any_foreign_buildings_in  = root
+		}
+    }
+
+    war_goal_type = foreign_building_ban
+}

@@ -1,9 +1,9 @@
 ﻿{
-	"name":	"LHR Mod",
+	"name":	"Salt & Tears",
 	"id":	"LHRM",
 	"version":	"1.0",
-	"supported_game_version":	"1.0.8",
-	"short_description":	"This mod is used for the LHR Multiplayer games.",
+	"supported_game_version":	"1.1.0",
+	"short_description":	"A Vanilla+ multiplayer rebalance mod created for the AU Salt & Tears community.",
 	"tags":	["Multiplayer"],
 	"relationships":	[],
 	"game_custom_data":	{

@@ -1,0 +1,39 @@
+INJECT:country_base_values = {
+	experience_decay = 0.025 ## PREV: 0.05 (doubled, makes drilling more useful)
+	max_diplomats = 5 ## PREV: 1 (used more frequently in mp)
+	monthly_diplomats = 0.2 ## PREV 0.1 (doubled)
+}
+
+# PSEUDO FL - anti snowball
+# money sink
+#larger_than_expected_army = {
+	#scales_with = {
+	#	value = army_size_percentage
+	#	subtract = 1
+		#power= exponential
+	#}
+	#potential_trigger = { 
+	##	army_size_percentage > 1.0
+	#}
+	#army_maintenance_cost = 1
+#}
+
+#country_population = {
+	#scales_with = total_population
+
+	#expected_army_size = 0.0001
+#}
+
+
+#country_control_scaled_population = {
+	#scales_with = total_control_scaled_population
+
+	#great_power_score = 0.05
+#}
+
+
+#country_accepted_culture_population = {
+	#scales_with = total_accepted_culture_population
+
+	#expected_army_size = 0.002
+#}

@@ -1,0 +1,9 @@
+﻿l_english:
+ foreign_building_gone: "Disband Foreign Buildings"
+ foreign_building_gone_desc: "We will demand that the Foreign Buildings are disbanded."
+ foreign_building_gone_entry: "Shutdown the Foreign Building in [target.GetName]"
+ foreign_building_gone_entry_short: "Shutdown the Foreign Building in [target.GetNameWithNoTooltip]"
+ cb_foreign_building_bad: "Disband Foreign Buildings"
+ cb_foreign_building_bad_desc: "Shut down foreign buildings in our nation."
+ war_goal_foreign_building_ban_desc: "Defend our capital."
+ war_goal_foreign_building_ban: "Defend our capital."

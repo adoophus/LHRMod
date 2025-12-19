@@ -4,7 +4,7 @@ hes_marburg_university = {
     age = age_1_traditions
     icon = anatomy_advance
     potential = { has_or_had_tag = HES }
-    research_speed_modifier = 0.15
+    research_speed_modifier = 0.05
 
     requires = chancery_advance
 }
