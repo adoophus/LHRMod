@@ -1,0 +1,47 @@
+﻿l_english:
+
+# age 2
+
+# Infantry
+unlock_men_at_arms_advance: "Professional Infantry"
+unlock_men_at_arms_advance_desc: "The transition toward standardized equipment and specialized training creates a disciplined core of soldiers capable of holding the line in any conflict."
+
+# Cavalry
+unlock_cavalry_advance: "Renaissance Cavalry"
+unlock_cavalry_advance_desc: "Evolving equestrian traditions and improved barding ensure that mounted units remain a decisive force on the changing battlefield."
+
+# Artillery
+unlock_houfnice_advance: "Powder Warfare"
+unlock_houfnice_advance_desc: "Harnessing the power of black powder through mobile carriage-mounted guns allows for a devastating new era of tactical supremacy."
+
+# Logistics
+supply_depot_advance_age_2_renaissance: "Organized Logistics"
+supply_depot_advance_age_2_renaissance_desc: "Formalizing the movement of food and equipment through dedicated channels ensures our forces remain well-provisioned during long-distance campaigns."
+
+# age 3
+
+# Infantry
+unlock_early_arquebusiers_advance: "Combined Arms"
+unlock_early_arquebusiers_advance_desc: "The integration of handheld firearms alongside reach weapons marks the transition toward the combined arms tactics of the modern era."
+
+# Cavalry
+unlock_lancers_advance: "Massed Lance"
+unlock_lancers_advance_desc: "Refining the cavalry charge with specialized lances allows mounted forces to break even the most stubborn infantry formations."
+
+# Logistics
+supply_lines: "Strategic Supply Lines"
+supply_lines_desc: "The establishment of formal maritime and overland conduits allows for the projection of military power far beyond our traditional borders."
+
+# age 4
+
+# Infantry
+unlock_pikemen_advance: "Infantry Regimentalism"
+unlock_pikemen_advance_desc: "The reorganization of foot soldiers into permanent, disciplined regiments allows for the seamless coordination of pikes and firearms on a massive scale."
+
+# Cavalry
+unlock_heavy_lancers_advance: "Caracole Tactics"
+unlock_heavy_lancers_advance_desc: "As armor technology peaks, cavalry forces adapt by combining traditional heavy charges with the disciplined use of pistols and secondary firearms."
+
+# Logistics
+supply_depot_advance_age_4_reformation: "Baggage Trains"
+supply_depot_advance_age_4_reformation_desc: "Standardizing the organization of large-scale baggage trains allows our armies to maintain their offensive momentum deep into enemy territory."

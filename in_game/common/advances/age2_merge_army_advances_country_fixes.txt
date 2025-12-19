@@ -1,14 +1,14 @@
 #Reinassance fixes
 
-genoese_crossbowmen = {
+REPLACE:genoese_crossbowmen = {
 	potential = { has_or_had_tag = GEN }
 	age = age_2_renaissance
 	unlock_unit = a_genoese_crossbowmen
 	army_infantry_power = 0.1
-	requires = unlock_crossbowmen_advance
+	requires = unlock_men_at_arms_advance
 }
 
-wagenburg = {
+REPLACE:wagenburg = {
 	age = age_2_renaissance
 	potential = {
 		has_or_had_tag = BOH
