@@ -1,0 +1,68 @@
+######################
+# Infantry
+######################
+
+# country fixes: done
+# eng
+# hun
+# scotland
+# high alemannic
+# disabled.
+REPLACE:unlock_halberdiers_advance = {}
+
+# country fixes: done
+# none
+# disabled.
+REPLACE:unlock_matchlock_levy = {}
+
+REPLACE:unlock_early_arquebusiers_advance = {
+	age = age_3_discovery
+	unlock_unit = a_early_arquebusiers
+	unlock_unit = a_halberdiers
+	unlock_levy = levy_a_matchlock_levy
+	requires = matchlock_gun
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_early_arquebusiers)"
+	}
+}
+
+######################
+# Cavalry
+######################
+
+REPLACE:unlock_lancers_advance = {
+	age = age_3_discovery
+	unlock_unit = a_lancers
+	unlock_unit = a_light_lancers
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_lancers)"
+	}
+
+	requires = training_fields_advance
+}
+
+#country fixes: done
+# beyliks
+# KRS
+# disabled.
+REPLACE:unlock_light_lancers_advance = {}
+
+
+######################
+# Auxiliary
+######################
+
+REPLACE:supply_lines = {
+	icon = maritime_advance_age_2
+	age = age_3_discovery
+	unlock_unit = a_supply_convoy
+	requires = pike_square
+	army_logistics_distance = 25
+}
+
+# country fixes: done
+# none.
+# disabled.
+REPLACE:unlock_supply_convoy = {}

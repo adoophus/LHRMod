@@ -1,0 +1,59 @@
+######################
+# unlock_arquebusiers_advance
+######################
+
+REPLACE:a_reformation_cawa_advance = {
+	potential = { has_or_had_tag = ETH }
+
+	age = age_4_reformation
+
+	unlock_unit = a_reformation_cawa
+	requires = unlock_pikemen_advance
+}
+
+REPLACE:ira_the_ghilman = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = IRA
+		religion.group = religion_group:muslim
+	}
+	requires = unlock_pikemen_advance
+    unlock_building = ghilman_barracks
+	unlock_unit = a_ghilman
+}
+
+REPLACE:kbo_iron_helmet_musketeers = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = KBO }
+
+	unlock_unit = a_iron_helmet_musketeers
+
+	requires = unlock_pikemen_advance
+}
+
+REPLACE:a_reformation_janissaries_advance = {
+	potential = { has_or_had_tag = TUR }
+
+	age = age_4_reformation
+
+	unlock_unit = a_reformation_janissaries
+	requires = unlock_pikemen_advance
+}
+
+######################
+# unlock_pistoleers_advance
+######################
+
+REPLACE:hun_hungarian_hussars = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = HUN
+	}
+	unlock_unit = a_hungarian_hussars
+
+	requires = unlock_heavy_lancers_advance
+}
+
+######################
+# unlock_pistoleers_advance
+######################

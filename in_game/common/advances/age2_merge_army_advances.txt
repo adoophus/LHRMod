@@ -1,0 +1,95 @@
+######################
+# Infantry
+######################
+
+# country fixes: done
+# genoa
+REPLACE:unlock_men_at_arms_advance = {
+	age = age_2_renaissance
+	unlock_levy = levy_a_men_at_arms
+	unlock_unit = a_men_at_arms
+	unlock_unit = a_crossbowmen
+
+	requires = armory_advance
+	
+	allow = {
+		any_market_present_in_country = { 
+			OR = {
+				is_produced_in_market = goods:tools 
+				is_traded_in_market = goods:tools 
+			} 
+		} 
+	}
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_men_at_arms)"
+	}
+}
+
+# country fixes: done
+# genoa
+# disabled.
+REPLACE:unlock_crossbowmen_advance = {}
+
+# country fixes:
+# none
+# disabled.
+REPLACE:unlock_handgonners_advance = {}
+
+######################
+# Cavalry
+######################
+
+REPLACE:unlock_cavalry_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_cavalrymen
+	unlock_unit = a_heavy_cavalrymen
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_cavalrymen)"
+	}
+
+	requires = correct_box_advance_renaissance
+}
+
+# country fixes: done
+# none
+# disabled.
+REPLACE:unlock_heavy_cavalry_advance = {}
+
+######################
+# Artillery
+######################
+REPLACE:unlock_houfnice_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_houfnice
+	unlock_unit = a_handgonners
+	
+	requires = cannon_maker_advance
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_houfnice)"
+	}
+}
+
+
+######################
+# Auxiliary
+######################
+
+# country fixes: done
+# bohemia
+# disabled.
+REPLACE:unlock_supply_carts = {}
+
+REPLACE:supply_depot_advance_age_2_renaissance = {
+	age = age_2_renaissance
+			
+	supply_depot_capacity = 25
+	unlock_unit = a_supply_carts
+	requires = regiment_reinforcement_speed_renaissance
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_supply_carts)"
+	}
+}

@@ -1,0 +1,67 @@
+######################
+# Infantry
+######################
+
+# country fixes: done
+# tur
+# kbo
+# ira
+# eth
+# disabled.
+REPLACE:unlock_arquebusiers_advance = {}
+
+REPLACE:unlock_pikemen_advance = {
+	age = age_4_reformation
+	unlock_unit = a_pikemen
+	unlock_unit = a_arquebusiers
+	unlock_levy = levy_a_flintlock_levy
+
+	requires = barracks_advance
+
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_pikemen)"
+	}
+}
+
+# country fixes: done
+# none.
+# disabled.
+REPLACE:unlock_flintlock_levy = {}
+
+######################
+# Cavalry
+######################
+
+# country fixes: done
+# hun
+# disabled.
+REPLACE:unlock_pistoleers_advance = {}
+
+REPLACE:unlock_heavy_lancers_advance = {
+	age = age_4_reformation
+	unlock_unit = a_heavy_lancers
+	
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_heavy_lancers)"
+	}
+	unlock_unit = a_pistoleers
+	requires = barracks_advance
+}
+
+######################
+# Auxiliary
+######################
+
+# country fixes: done
+# none
+# disabled.
+REPLACE:unlock_baggage_train = {}
+
+REPLACE:supply_depot_advance_age_4_reformation = {
+	age = age_4_reformation
+	icon = zmw_merchant_taxes
+			
+	supply_depot_capacity = 25
+	unlock_unit = a_baggage_train
+	requires = correct_box_advance_reformation
+}
