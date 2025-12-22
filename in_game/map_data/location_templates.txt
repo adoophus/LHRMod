@@ -76,6 +76,50 @@ steinfeld = { topography = valley vegetation = forest climate = continental reli
 tamsweg = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = tin}
 murau = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = wheat}
 
+# arpitan valleys
+grenoble = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = tin}
+chambery = { topography = valley vegetation = grasslands climate = oceanic religion = catholic culture = arpitan raw_material = wine}
+moutiers = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = salt}
+
+
+## HUNGARY VALLEYS
+## sibiu liptovsky_mikulas rakhiv
+sibiu = { topography = valley vegetation = woods climate = continental religion = orthodox culture = german_transylvanian raw_material = iron}
+liptovsky_mikulas = { topography = valley vegetation = woods climate = continental religion = catholic culture = slovak raw_material = goods_gold}
+rakhiv = { topography = valley vegetation = forest climate = continental religion = orthodox culture = halychian_culture raw_material = amber}
+
+## GEORGIA VALLEYS
+## akhaltsikhe kelkit bayburt ispir parkhali artanuji khupati kagizman tekman karakilise
+akhaltsikhe = { topography = valley vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = wheat}
+kelkit = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
+bayburt = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = clay}
+ispir = { topography = valley vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = iron}
+parkhali = { topography = valley vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = livestock}
+artanuji = { topography = valley vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = stone}
+khupati = { topography = valley vegetation = forest climate = oceanic religion = orthodox culture = laz_culture raw_material = cotton natural_harbor_suitability = 0.00}
+kagizman = { topography = valley vegetation = woods climate = cold_arid religion = miaphysite culture = armenian_culture raw_material = livestock}
+tekman = { topography = valley vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = lumber}
+karakilise = { topography = valley vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
+
+## SERBIA VALLEYS
+## ohrid debar koman
+ohrid = { topography = valley vegetation = forest climate = oceanic religion = orthodox culture = bulgarian raw_material = fish}
+debar = { topography = valley vegetation = woods climate = continental religion = catholic culture = albanian raw_material = wild_game}
+koman = { topography = valley vegetation = woods climate = subtropical religion = orthodox culture = albanian raw_material = lumber}
+
+## PERSIA VALLEYS
+## hashatjin shamiram sirdan rudbar hakkari baskale
+hashatjin = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = legumes}
+shamiram = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
+sirdan = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = livestock}
+rudbar = { topography = valley vegetation = woods climate = mediterranean religion = sunni culture = adhari_culture raw_material = olives}
+baskale = { topography = valley vegetation = forest climate = continental religion = miaphysite culture = kurdish_culture raw_material = stone}
+hakkari = { topography = valley vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = lumber}
+
+## morocco valleys
+## ait_benhaddou
+ait_benhaddou = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = wool}
+
 ## START VANILLA
 ## cant overwrite this file by entry only :(
 ##
@@ -2481,7 +2525,6 @@ nice = { topography = mountains vegetation = grasslands climate = mediterranean 
 grasse = { topography = hills vegetation = grasslands climate = mediterranean religion = catholic culture = provencal raw_material = medicaments natural_harbor_suitability = 0.00}
 puget_theniers = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = provencal raw_material = lumber}
 maritime_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-grenoble = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = tin}
 briancon = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = vivaro_alpine raw_material = coal}
 gap = { topography = hills vegetation = forest climate = oceanic religion = catholic culture = vivaro_alpine raw_material = wool}
 la_mure = { topography = mountains vegetation = forest climate = continental religion = catholic culture = vivaro_alpine raw_material = iron}
@@ -2489,12 +2532,10 @@ pragelato = { topography = mountains vegetation = forest climate = continental r
 cottian_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 dauphine_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 dauphine_alps2 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-chambery = { topography = mountains vegetation = grasslands climate = oceanic religion = catholic culture = arpitan raw_material = wine}
 annecy = { topography = hills vegetation = grasslands climate = continental religion = catholic culture = arpitan raw_material = livestock}
 evian = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = arpitan raw_material = livestock}
 faucigny = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = alum}
 la_roche_sur_foron = { topography = hills vegetation = grasslands climate = continental religion = catholic culture = arpitan raw_material = millet}
-moutiers = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = salt}
 saint_jean_de_maurienne = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = arpitan raw_material = lead}
 sallanches = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = stone}
 graian_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
@@ -3476,7 +3517,6 @@ khust = { topography = hills vegetation = forest climate = continental religion 
 mezhorje = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = halychian_culture raw_material = lumber}
 sighet = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = transylvanian raw_material = salt}
 cuhea = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = transylvanian raw_material = stone}
-rakhiv = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = halychian_culture raw_material = amber}
 eastern_carpathians1 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 eastern_carpathians2 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 nograd = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = hungarian raw_material = fruit}
@@ -3505,7 +3545,6 @@ povazska_bystrica = { topography = hills vegetation = forest climate = continent
 zilina = { topography = hills vegetation = forest climate = continental religion = catholic culture = slovak raw_material = lumber}
 oravsky_podzamok = { topography = mountains vegetation = forest climate = continental religion = catholic culture = slovak raw_material = tin}
 turciansky_svaty_martin = { topography = hills vegetation = forest climate = continental religion = catholic culture = slovak raw_material = iron}
-liptovsky_mikulas = { topography = mountains vegetation = woods climate = continental religion = catholic culture = slovak raw_material = goods_gold}
 western_carpathians1 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 western_carpathians2 = { topography = mountain_wasteland vegetation = forest climate = arctic}
 zemplin = { topography = hills vegetation = woods climate = continental religion = catholic culture = hungarian raw_material = wheat}
@@ -3590,7 +3629,7 @@ felvint = { topography = hills vegetation = forest climate = continental religio
 hateg = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = transylvanian raw_material = lumber}
 hunedoara = { topography = hills vegetation = woods climate = continental religion = orthodox culture = transylvanian raw_material = iron}
 southern_carpathians4 = { topography = mountain_wasteland vegetation = forest climate = arctic}
-sibiu = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = german_transylvanian raw_material = iron}
+
 brasov = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = german_transylvanian raw_material = legumes}
 cincu = { topography = hills vegetation = woods climate = continental religion = orthodox culture = transylvanian raw_material = livestock}
 fagaras = { topography = hills vegetation = forest climate = continental religion = orthodox culture = transylvanian raw_material = lumber}
@@ -4337,8 +4376,7 @@ usvyaty = { topography = wetlands vegetation = woods climate = continental relig
 velizh = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = millet}
 vydreya = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = fiber_crops}
 amadiya = { topography = mountains vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = wool}
-baskale = { topography = mountains vegetation = forest climate = continental religion = miaphysite culture = kurdish_culture raw_material = stone}
-hakkari = { topography = mountains vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = lumber}
+
 semdinli = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = kurdish_culture raw_material = beeswax}
 zakho = { topography = mountains vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = millet}
 east_taurus_4 = { topography = mountain_wasteland vegetation = woods climate = continental}
@@ -4350,10 +4388,9 @@ mus = { topography = plateau vegetation = woods climate = continental religion =
 east_taurus_5 = { topography = mountain_wasteland vegetation = woods climate = continental}
 east_taurus_7 = { topography = mountain_wasteland vegetation = forest climate = continental}
 erzurum = { topography = plateau vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = wool}
-bayburt = { topography = mountains vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = clay}
+
 erzincan = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = livestock}
 ilic = { topography = mountains vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = sand}
-kelkit = { topography = mountains vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
 kemah = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = livestock}
 sebinkarahisar = { topography = plateau vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = alum}
 siran = { topography = plateau vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = clay}
@@ -4375,15 +4412,12 @@ lake_hazar = { topography = lakes climate = continental}
 mercan_mountains_1 = { topography = mountain_wasteland vegetation = woods climate = arctic}
 mercan_mountains_2 = { topography = mountain_wasteland vegetation = woods climate = continental}
 kars = { topography = plateau vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
-kagizman = { topography = mountains vegetation = woods climate = cold_arid religion = miaphysite culture = armenian_culture raw_material = livestock}
 surmali = { topography = plateau vegetation = grasslands climate = cold_arid religion = miaphysite culture = armenian_culture raw_material = saffron}
 kars_mountains_2 = { topography = mountain_wasteland vegetation = woods climate = arctic}
 kars_mountains_3 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 malazgirt = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = wool}
 hinis = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = livestock}
-karakilise = { topography = mountains vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
 hasankale = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = beeswax}
-tekman = { topography = mountains vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = lumber}
 tutak = { topography = plateau vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
 varto = { topography = mountains vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
 aladag_mountains = { topography = mountain_wasteland vegetation = woods climate = arctic}
@@ -4463,12 +4497,9 @@ kvenipnevi = { topography = mountains vegetation = forest climate = continental 
 mtskheta = { topography = hills vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = wild_game}
 tsagvli = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = legumes}
 greater_caucasus_mountains4 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-artanuji = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = stone}
-ispir = { topography = mountains vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = iron}
 khikhani = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = iron}
 oltu = { topography = mountains vegetation = woods climate = cold_arid religion = orthodox culture = georgian_culture raw_material = gems}
 panaskerti = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = lumber}
-parkhali = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = livestock}
 savsat = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = georgian_culture raw_material = fur}
 tortum = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = lumber}
 kars_mountains_1 = { topography = mountain_wasteland vegetation = woods climate = arctic}
@@ -4479,7 +4510,6 @@ batumi = { topography = hills vegetation = forest climate = subtropical religion
 ozurgeti = { topography = hills vegetation = woods climate = subtropical religion = orthodox culture = georgian_culture raw_material = copper natural_harbor_suitability = 0.00}
 poti_caucasus = { topography = wetlands vegetation = forest climate = subtropical religion = orthodox culture = georgian_culture raw_material = fish natural_harbor_suitability = 0.00}
 tsalenjikha = { topography = hills vegetation = woods climate = subtropical religion = orthodox culture = mingrelian_culture raw_material = fruit}
-akhaltsikhe = { topography = mountains vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = wheat}
 akhalkalaki = { topography = plateau vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = livestock}
 ardahan = { topography = hills vegetation = grasslands climate = continental religion = orthodox culture = georgian_culture raw_material = fruit}
 tmogvi = { topography = hills vegetation = grasslands climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
@@ -5906,7 +5936,6 @@ prilep = { topography = plateau vegetation = sparse climate = mediterranean reli
 bitola = { topography = plateau vegetation = sparse climate = mediterranean religion = orthodox culture = bulgarian raw_material = wheat}
 florina = { topography = plateau vegetation = sparse climate = mediterranean religion = orthodox culture = bulgarian raw_material = millet}
 kicevo = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = bulgarian raw_material = wool}
-ohrid = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = bulgarian raw_material = fish}
 tetovo = { topography = plateau vegetation = woods climate = subtropical religion = orthodox culture = bulgarian raw_material = fur}
 lake_ohrid = { topography = lakes climate = oceanic}
 lake_prespa = { topography = lakes climate = oceanic}
@@ -5981,7 +6010,6 @@ tsepina = { topography = mountains vegetation = forest climate = continental rel
 durres = { topography = flatland vegetation = sparse climate = mediterranean religion = catholic culture = albanian raw_material = salt natural_harbor_suitability = 0.75}
 ballsh = { topography = hills vegetation = farmland climate = mediterranean religion = orthodox culture = albanian raw_material = fiber_crops natural_harbor_suitability = 0.00}
 berat = { topography = hills vegetation = sparse climate = mediterranean religion = orthodox culture = albanian raw_material = wool}
-debar = { topography = mountains vegetation = woods climate = continental religion = catholic culture = albanian raw_material = wild_game}
 devol = { topography = plateau vegetation = grasslands climate = oceanic religion = orthodox culture = albanian raw_material = wine}
 elbasan = { topography = mountains vegetation = woods climate = mediterranean religion = catholic culture = albanian raw_material = iron}
 kavaje = { topography = flatland vegetation = grasslands climate = mediterranean religion = catholic culture = albanian raw_material = wheat natural_harbor_suitability = 0.00}
@@ -5990,7 +6018,6 @@ tirana = { topography = mountains vegetation = woods climate = subtropical relig
 shkoder = { topography = flatland vegetation = grasslands climate = subtropical religion = orthodox culture = albanian raw_material = wine natural_harbor_suitability = 0.00}
 dukagjini = { topography = mountains vegetation = woods climate = subtropical religion = catholic culture = albanian raw_material = fiber_crops}
 has = { topography = mountains vegetation = woods climate = subtropical religion = orthodox culture = serbian raw_material = copper}
-koman = { topography = mountains vegetation = woods climate = subtropical religion = orthodox culture = albanian raw_material = lumber}
 lezha = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = albanian raw_material = fur natural_harbor_suitability = 0.00}
 avlonya = { topography = mountains vegetation = grasslands climate = mediterranean religion = orthodox culture = albanian raw_material = fish natural_harbor_suitability = 0.75}
 argyrokastro = { topography = mountains vegetation = grasslands climate = mediterranean religion = orthodox culture = albanian raw_material = olives natural_harbor_suitability = 0.00}
@@ -6937,7 +6964,6 @@ samsun = { topography = hills vegetation = woods climate = oceanic religion = or
 trebizond = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = pontic_greek_culture raw_material = silk natural_harbor_suitability = 0.25}
 gorele = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = pontic_greek_culture raw_material = lumber natural_harbor_suitability = 0.00}
 gumushane = { topography = mountains vegetation = forest climate = continental religion = orthodox culture = laz_culture raw_material = silver}
-khupati = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = laz_culture raw_material = cotton natural_harbor_suitability = 0.00}
 rize = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = pontic_greek_culture raw_material = fiber_crops natural_harbor_suitability = 0.00}
 surmene = { topography = mountains vegetation = forest climate = oceanic religion = orthodox culture = pontic_greek_culture raw_material = iron natural_harbor_suitability = 0.00}
 east_pontus_mountains_1 = { topography = mountain_wasteland vegetation = woods climate = arctic}
@@ -7776,7 +7802,6 @@ nazok_olya = { topography = plateau vegetation = sparse climate = cold_arid reli
 qarahziaoddin = { topography = hills vegetation = sparse climate = cold_arid religion = sunni culture = azeri_culture raw_material = fruit}
 siah_cheshmeh = { topography = mountains vegetation = sparse climate = cold_arid religion = miaphysite culture = armenian_culture raw_material = fruit}
 east_taurus_6 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-hashatjin = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = legumes}
 khalkhal = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = livestock}
 tabriz = { topography = hills vegetation = sparse climate = cold_arid religion = shia culture = adhari_culture raw_material = gems}
 heris = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
@@ -8148,10 +8173,7 @@ qumis = { topography = plateau vegetation = desert climate = cold_arid religion 
 semnan = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = semnani_culture raw_material = livestock}
 elburz_mountains9 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid}
 elburz_mountains10 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid}
-rudbar = { topography = mountains vegetation = woods climate = mediterranean religion = sunni culture = adhari_culture raw_material = olives}
 shahrestan_sofla = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = farsi_culture raw_material = stone}
-shamiram = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
-sirdan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = livestock}
 rasht = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = silk natural_harbor_suitability = 0.00}
 fuman = { topography = wetlands vegetation = woods climate = mediterranean religion = shia culture = gilak_culture raw_material = wheat}
 lahijan = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = rice natural_harbor_suitability = 0.00}
@@ -17919,7 +17941,6 @@ tizounine = { topography = hills vegetation = sparse climate = arid religion = s
 anti_atlas1 = { topography = mountain_wasteland vegetation = grasslands climate = cold_arid}
 ouarzazate = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = fruit}
 agdez = { topography = hills vegetation = sparse climate = arid religion = sunni culture = masmuda raw_material = wool}
-ait_benhaddou = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = wool}
 skoura = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = millet}
 tagmadert = { topography = plateau vegetation = sparse climate = arid religion = sunni culture = masmuda raw_material = millet}
 taznakht = { topography = hills vegetation = desert climate = arid religion = sunni culture = masmuda raw_material = livestock}

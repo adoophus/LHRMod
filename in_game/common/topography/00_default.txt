@@ -44,7 +44,7 @@ mountains = {
 }
 
 valley = {
-	color = hsv360 { 13 88 59 }	
+	color = hsv360 { 15 88 59 }	
 	movement_cost = 1.5
 	defender = 2
 	vegetation_density = 0.2
