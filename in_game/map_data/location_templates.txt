@@ -35,6 +35,46 @@ reyshahr = { topography = flatland vegetation = desert climate = arid religion =
 hormuz = { topography = flatland vegetation = desert climate = arid religion = sunni culture = farsi_culture raw_material = pearls natural_harbor_suitability = 0.65}
 siraf = { topography = mountains vegetation = desert climate = arid religion = sunni culture = farsi_culture raw_material = pearls natural_harbor_suitability = 0.4}
 
+## SWISS REWORK
+## SWISS REWORK
+## SWISS REWORK
+
+# valleys
+## martigny, sion, brig, monthey, interlaken
+## disentis, ilanz, chur, werdenberg
+## zuoz, tresivio, bormio
+## silandro, merano, trento, rovereto,
+## bruneck, steinfeld, tamsweg, murau,
+
+# Arpitan valleys
+martigny = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = lead}
+sion = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = iron}
+monthey = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = lead}
+
+# High Alemannic valleys
+brig = { topography = valley vegetation = forest climate = continental religion = catholic culture = high_alemannic raw_material = millet}
+interlaken = { topography = valley vegetation = forest climate = continental religion = catholic culture = high_alemannic raw_material = iron}
+werdenberg = { topography = valley vegetation = forest climate = continental religion = catholic culture = high_alemannic raw_material = millet}
+
+# Romansh valleys
+disentis = { topography = valley vegetation = forest climate = continental religion = catholic culture = romansh raw_material = lumber}
+ilanz = { topography = valley vegetation = forest climate = continental religion = catholic culture = romansh raw_material = wool}
+chur = { topography = valley vegetation = forest climate = continental religion = catholic culture = romansh raw_material = wool}
+zuoz = { topography = valley vegetation = forest climate = continental religion = catholic culture = romansh raw_material = stone}
+
+# Lombard valleys
+tresivio = { topography = valley vegetation = forest climate = continental religion = catholic culture = lombard raw_material = wheat}
+bormio = { topography = valley vegetation = forest climate = continental religion = catholic culture = lombard raw_material = livestock}
+
+# Bavarian valleys
+silandro = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = fur}
+merano = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = livestock}
+trento = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = marble}
+rovereto = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = lumber}
+bruneck = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = wild_game}
+steinfeld = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = livestock}
+tamsweg = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = tin}
+murau = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = wheat}
 
 ## START VANILLA
 ## cant overwrite this file by entry only :(
@@ -1239,7 +1279,6 @@ saalfelden = { topography = mountains vegetation = forest climate = continental 
 bavarian_alps1 = { topography = mountain_wasteland vegetation = forest climate = continental}
 st_johann = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = stone}
 bischofshofen = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = danube_bavarian raw_material = livestock}
-tamsweg = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = tin}
 bavarian_alps2 = { topography = mountain_wasteland vegetation = forest climate = continental}
 graz = { topography = hills vegetation = farmland climate = continental religion = catholic culture = danube_bavarian raw_material = wool}
 leibnitz = { topography = flatland vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = stone}
@@ -1252,7 +1291,6 @@ slovenj_gradec = { topography = mountains vegetation = forest climate = continen
 judenburg = { topography = hills vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = silver}
 leoben = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = iron}
 liezen = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = salt}
-murau = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wheat}
 rottenmann = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wool}
 schladming = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = danube_bavarian raw_material = iron}
 kapfenberg = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = lumber}
@@ -1271,7 +1309,6 @@ klagenfurt = { topography = plateau vegetation = farmland climate = continental 
 feldkirchen = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = millet}
 villach = { topography = plateau vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = lead}
 hermagor = { topography = plateau vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = lumber}
-steinfeld = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = livestock}
 winklern = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = copper}
 spittal = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = marble}
 lienz = { topography = plateau vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = wheat}
@@ -1279,10 +1316,7 @@ tauern_range1 = { topography = mountain_wasteland vegetation = desert climate = 
 dolomite_alps3 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 bolzano = { topography = plateau vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = iron}
 brixen = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = fur}
-bruneck = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wild_game}
 cavalese = { topography = mountains vegetation = forest climate = continental religion = catholic culture = ladin raw_material = lumber}
-merano = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = livestock}
-silandro = { topography = mountains vegetation = woods climate = continental religion = catholic culture = romansh raw_material = fur}
 sterzing = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = silver}
 villandro = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = stone}
 dolomite_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
@@ -1290,10 +1324,8 @@ dolomite_alps4 = { topography = mountain_wasteland vegetation = sparse climate =
 rhaetian_alps7 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 otztal_alps1 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 venediger_group = { topography = mountain_wasteland vegetation = desert climate = arctic}
-trento = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = marble}
 cles = { topography = mountains vegetation = woods climate = continental religion = catholic culture = ladin raw_material = fur}
 riva = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wool}
-rovereto = { topography = mountains vegetation = woods climate = continental religion = catholic culture = danube_bavarian raw_material = lumber}
 rhaetian_alps8 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 schwaz = { topography = mountains vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = fur}
 innsbruck = { topography = mountains vegetation = farmland climate = continental religion = catholic culture = danube_bavarian raw_material = salt}
@@ -1314,11 +1346,6 @@ burgdorf_emmental = { topography = hills vegetation = grasslands climate = conti
 saanen = { topography = mountains vegetation = woods climate = continental religion = catholic culture = arpitan raw_material = lumber}
 thun = { topography = hills vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = millet}
 frutigen = { topography = mountains vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = wool}
-interlaken = { topography = mountains vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = stone}
-brig = { topography = mountains vegetation = forest climate = continental religion = catholic culture = high_alemannic raw_material = millet}
-sion = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = iron}
-martigny = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = lead}
-monthey = { topography = mountains vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = salt}
 bernese_alps = { topography = mountain_wasteland vegetation = desert climate = arctic}
 stein_glacier = { topography = mountain_wasteland vegetation = desert climate = continental}
 lepontine_alps1 = { topography = mountain_wasteland vegetation = desert climate = arctic}
@@ -1332,11 +1359,10 @@ glarus = { topography = mountains vegetation = woods climate = continental relig
 altdorf = { topography = mountains vegetation = forest climate = continental religion = catholic culture = high_alemannic raw_material = livestock}
 sarnen = { topography = mountains vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = lumber}
 tarasp = { topography = mountains vegetation = grasslands climate = continental religion = catholic culture = romansh raw_material = fish}
-zuoz = { topography = mountains vegetation = woods climate = continental religion = catholic culture = romansh raw_material = stone}
-disentis = { topography = mountains vegetation = forest climate = continental religion = catholic culture = romansh raw_material = lumber}
+
+
 davos = { topography = mountains vegetation = forest climate = continental religion = catholic culture = romansh raw_material = livestock}
-chur = { topography = mountains vegetation = forest climate = continental religion = catholic culture = romansh raw_material = millet}
-ilanz = { topography = mountains vegetation = forest climate = continental religion = catholic culture = romansh raw_material = wool}
+
 mesocco = { topography = mountains vegetation = forest climate = continental religion = catholic culture = lombard raw_material = fur}
 silvretta_alps = { topography = mountain_wasteland vegetation = desert climate = arctic}
 glarner_alps = { topography = mountain_wasteland vegetation = desert climate = arctic}
@@ -1344,7 +1370,7 @@ lepontine_alps2 = { topography = mountain_wasteland vegetation = sparse climate 
 rhaetian_alps1 = { topography = mountain_wasteland vegetation = desert climate = arctic}
 rhaetian_alps4 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 zurich = { topography = plateau vegetation = farmland climate = continental religion = catholic culture = high_alemannic raw_material = wheat}
-werdenberg = { topography = mountains vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = wild_game}
+
 st_gallen = { topography = hills vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = millet}
 frauenfeld = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = high_alemannic raw_material = livestock}
 toggenburg = { topography = hills vegetation = woods climate = continental religion = catholic culture = high_alemannic raw_material = wool}
@@ -3169,8 +3195,6 @@ rhaetian_alps5 = { topography = mountain_wasteland vegetation = sparse climate =
 pavia = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = lombard raw_material = wheat}
 lomello = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = lombard raw_material = rice}
 voghera = { topography = wetlands vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = legumes}
-tresivio = { topography = plateau vegetation = woods climate = continental religion = catholic culture = lombard raw_material = wheat}
-bormio = { topography = mountains vegetation = woods climate = continental religion = catholic culture = lombard raw_material = livestock}
 chiavenna = { topography = mountains vegetation = woods climate = continental religion = catholic culture = lombard raw_material = lumber}
 rhaetian_alps2 = { topography = mountain_wasteland vegetation = sparse climate = oceanic}
 rhaetian_alps3 = { topography = mountain_wasteland vegetation = sparse climate = arctic}

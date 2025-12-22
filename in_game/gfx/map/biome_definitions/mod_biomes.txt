@@ -1,0 +1,374 @@
+##################example################
+#
+#definition_name (can be whatever) = 
+#{
+#climate = climate_key (defined in game/common/climate)
+#vegetation = vegetation_key (defined in game/common/vegetation)
+#topography = topography_key (defined in game/common/topography)
+## (climate vegetation and topography keys are optional and if they dont appear this definition would apply to all location with matching keys. The priority is climate-> vegetation -> topography .) 
+#
+#biome = biome_name (the biome name as specified in game/gfx/terrain2/materials.txt)
+#}
+
+## Climates : arctic - oceanic - continental - arid -cold_arid - tropical - subtropical 
+## Topographies : wetlands - flatland - hills - plateau - valley   IMPASSABLE : wetlands_wasteland - flatland_wasteland - hills_wasteland - plateau_wasteland - mountain_wasteland
+## Vegetation : desert - sparse - grasslands - woods - forest- jungle
+
+
+########################################################################################################### ARCTIC ########################################################################
+
+##Desert
+
+200 = 
+{
+	climate = arctic
+	topography = valley
+	vegetation = desert
+	biome = arctic_flatland_desert_biome
+}
+
+201 = 
+{
+	climate = arctic
+	topography = valley
+	vegetation = sparse
+	biome = arctic_flatland_sparse_biome
+}
+
+202 = 
+{
+	climate = arctic
+	topography = valley
+	vegetation = grasslands
+	vegetation = woods
+	biome = arctic_flatland_grasslands_woods_biome
+}
+
+203 = 
+{
+	climate = arctic
+	topography = valley
+	vegetation = farmland
+	biome = arctic_flatland_farmland_biome
+}
+
+204 = 
+{
+	climate = arctic
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = arctic_flatland_forest_jungle_biome
+}
+
+########################################################################################################### ARID ########################################################################
+
+##Desert
+
+
+205 = 
+{
+	climate = arid
+	topography = valley
+	vegetation = desert
+	biome = arid_flatland_desert_biome
+}
+
+
+##Sparse
+
+
+206 = 
+{
+	climate = arid
+	topography = valley
+	vegetation = sparse
+	biome = arid_flatland_sparse_biome
+}
+
+
+##Grasslands/Woods
+
+
+207 = 
+{
+	climate = arid
+	topography = valley
+	vegetation = grasslands
+	vegetation = woods
+	biome = arid_flatland_grasslands_woods_biome
+}
+
+
+##Farmland
+
+208 = 
+{
+	climate = arid
+	topography = valley
+	vegetation = farmland
+	biome = arid_flatland_farmland_biome
+}
+
+
+##Forest/Jungle
+
+
+209 = 
+{
+	climate = arid
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = arid_flatland_forest_jungle_biome
+}
+
+
+########################################################################################################### COLD_ARID ########################################################################
+
+##Desert
+
+
+210 = 
+{
+	climate = cold_arid
+	topography = valley
+	vegetation = desert
+	biome = cold_arid_flatland_desert_biome
+}
+
+##Sparse
+
+211 = 
+{
+	climate = cold_arid
+	topography = valley
+	vegetation = sparse
+	biome = cold_arid_flatland_sparse_biome
+}
+
+##Grasslands/Woods
+
+212 = 
+{
+	climate = cold_arid
+	topography = valley
+	vegetation = grasslands
+	vegetation = woods
+	biome = cold_arid_flatland_grasslands_woods_biome
+}
+
+##Farmland
+
+213 = 
+{
+	climate = cold_arid
+	topography = valley
+	vegetation = farmland
+	biome = cold_arid_flatland_farmland_biome
+}
+
+##Forest/Jungle
+
+214 = 
+{
+	climate = cold_arid
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = cold_arid_flatland_forest_jungle_biome
+}
+
+
+########################################################################################################### tropical ########################################################################
+
+##Desert
+
+215 = 
+{
+	climate = tropical
+	climate = subtropical
+	topography = valley
+	vegetation = desert
+	biome = tropical_flatland_desert_biome
+}
+
+##Sparse
+
+216 = 
+{
+	climate = tropical
+	climate = subtropical
+	topography = valley
+	vegetation = sparse
+	biome = tropical_flatland_sparse_biome
+}
+
+##Grasslands/Woods
+
+217 = 
+{
+	climate = tropical
+	climate = subtropical
+	topography = valley
+	vegetation = grasslands
+	vegetation = woods
+	biome = tropical_flatland_grasslands_woods_biome
+}
+
+
+##Farmland
+
+218 = 
+{
+	climate = tropical
+	climate = subtropical
+	topography = valley
+	vegetation = farmland
+	biome = tropical_flatland_farmland_biome
+}
+
+##Forest/Jungle
+
+219 = 
+{
+	climate = tropical
+	climate = subtropical
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = tropical_flatland_forest_jungle_biome
+}
+
+
+########################################################################################################### oceanic ########################################################################
+
+##Desert
+
+220 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = desert
+	biome = oceanic_flatland_desert_biome
+}
+
+
+
+##Sparse
+
+221 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = sparse
+	biome = oceanic_flatland_sparse_biome
+}
+
+##Grasslands
+
+222 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = grasslands
+	biome = oceanic_flatland_grasslands_biome
+}
+
+##Woods
+
+223 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = woods
+	biome = oceanic_flatland_woods_biome
+}
+
+##Farmland
+
+
+
+224 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = farmland
+	biome = oceanic_flatland_farmland_biome
+}
+
+##Forest/Jungle
+
+
+225 = 
+{
+	climate = oceanic
+	climate = continental
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = oceanic_flatland_forest_jungle_biome
+}
+
+
+########################################################################################################### mediterranean ########################################################################
+
+##Desert
+
+226 = 
+{
+	climate = mediterranean
+	topography = valley
+	vegetation = desert
+	biome = mediterranean_flatland_desert_biome
+}
+
+
+
+##Sparse
+
+227 = 
+{
+	climate = mediterranean
+	topography = valley
+	vegetation = sparse
+	biome = mediterranean_flatland_sparse_biome
+}
+
+##Grasslands/Woods
+
+228 = 
+{
+	climate = mediterranean
+	topography = valley
+	vegetation = grasslands
+	vegetation = woods
+	biome = mediterranean_flatland_grasslands_woods_biome
+}
+
+
+##Farmland
+
+229 = 
+{
+	climate = mediterranean
+	topography = valley
+	vegetation = farmland
+	biome = mediterranean_flatland_farmland_biome
+}
+
+##Forest/Jungle
+
+230 = 
+{
+	climate = mediterranean
+	topography = valley
+	vegetation = forest
+	vegetation = jungle
+	biome = mediterranean_flatland_forest_jungle_biome
+}

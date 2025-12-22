@@ -1,0 +1,34 @@
+#example
+#
+# generator1 = 
+#{
+#	entity = (the name of the entity the spawn)
+#
+#	topography =  	<optional> (the topography the location must have to spawn in )
+#	vegetation =	<optional> (the vegetation the location must have to spawn in )
+#	climate =  		<optional> (the climate the location must have to spawn in )
+#	raw_material =  <optional> (the raw_material the location must have to spawn in )
+#	avoid_sea = false (if provinces with sea should not be counted for calculations)
+#
+#	generation_mode = Equidistant (tries to place the particles equidistant in each blob of terrain) | VfxLocator (uses the location VfxLocator to place the mapobjects)
+#	separation = <Needed for equidistant>(separation between two different particles)
+# 	margin = 0 <used with separation> (margins of the province to avoid pacing objects to far away)
+#	
+#	clamp_to_water_level = no (if something can go in the surface of the ocean ot bottom)
+#
+#	zoom_max = the level of zoom at witch particles stop spawing
+#}
+
+worlds_clouds_valley =
+{
+	schematic_name =  "clouds_world_schematic"
+	topography = "valley"
+
+	generation_mode = Equidistant
+	
+	separation = 100.0
+	margin = 20.0
+	
+	clamp_to_water_level = yes
+	zoom_max = 7
+}
