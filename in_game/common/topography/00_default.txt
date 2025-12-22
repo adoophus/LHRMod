@@ -45,10 +45,10 @@ mountains = {
 
 valley = {
 	color = hsv360 { 15 88 59 }	
-	movement_cost = 1.5
+	movement_cost = 1.6
 	defender = 2
 	vegetation_density = 0.2
-	blocked_in_winter = yes
+	#blocked_in_winter = yes
 	weather_front_strength_change_percent = 0 #-2
 	weather_cyclone_strength_change_percent = 0
 	weather_tornado_strength_change_percent = 0
