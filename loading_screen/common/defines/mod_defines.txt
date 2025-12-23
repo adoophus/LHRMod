@@ -1,5 +1,105 @@
+NGame = {
+	HOUR_TICK = 24 # 8
+	MORNING_OFFSET = 0 # 2
+	
+	GAME_SPEED_TICKS = {	# how many seconds should an hour take in every game speed
+		1
+		0.4
+		0.1
+		0.02
+		0.0
+	}
+	GAME_SPEED_SCALES = {	# Factors to scale speed
+		0.75
+		1
+		1.25
+		1.5
+		2.0
+	}
+}
+
 NUnit = {
-	EMBARK_DISEMBARK_MULTIPLIER = 0.3 
+	EMBARK_DISEMBARK_MULTIPLIER = 0.3	#to make disembark/embark from coast slower.
+
+	REGIMENT_SIZE = 1000
+	
+	ARMY_MOVEMENT_SPEED = 1.56 # 0.13
+	NAVY_MOVEMENT_SPEED = 6 # 0.5	
+
+	LOCATION_SCALE_ON_MOVEMENT_COST = 3 # 1.33
+}
+
+
+NCombat = {
+	## CONVERSION TO 1 TICK PER DAY
+	# Scale by a factor of 12.
+	# this scales based on the ticks
+	MINIMUM_COMBAT_DURATION = 7 # default: 24 
+	
+	### BOMBARD ###
+	### BOMBARD ###
+	### BOMBARD ###
+	### BOMBARD ###
+	### BOMBARD ###
+
+	## CONVERSION TO 1 TICK PER DAY
+	# We need to compensate bombard
+	# We can't do this perfectly so use probability
+	# Chance of failure = 1 - 0.2 = 80%
+	# Failure vanilla BOMBARDS_HOURS times in a row = 0.8^5 = 0.32768 (32.77%)
+	# Therefore chance of success = 1 - 0.32768 = 0.67232 (67.23%)
+
+	# remove it for now.
+	
+	BOMBARD_BASE_CHANCE = 0.67232  # default: 0.2
+	BOMBARD_HOURS = 1 # default: 5 
+	HOURS_PER_PHASE = 1 # default: 5 
+
+	### COMBAT ###
+	### COMBAT ###
+	### COMBAT ###
+	### COMBAT ###
+	### COMBAT ###
+	
+	## CONVERSION TO 1 TICK PER DAY
+	# Scale by a factor of 12.
+
+	## candidate 1 MEDIUM DAMAGE, STANDARD MORALE
+    #COMBAT_DAMAGE_MULT = 0.04 # 0.12 default: 0.01
+	#COMBAT_HOURLY_MORALE_TICK = 0.12 # default: 0.01
+	
+	## candidate 2 - HIGH DAMAGE, MORE MORALE.
+   # COMBAT_DAMAGE_MULT = 0.06 # 0.12 default: 0.01
+	#COMBAT_HOURLY_MORALE_TICK = 0.08 # default: 0.01
+
+	## candidate 3 - LOW DAMAGE, MORE MORALE
+	# this feels like EU4.
+    COMBAT_DAMAGE_MULT = 0.04 # 0.12 default: 0.01
+	COMBAT_HOURLY_MORALE_TICK = 0.08 # default: 0.01
+
+	## CONVERSION TO 1 TICK PER DAY
+	# Vanilla uses 10% base + 1% per hour. Over 12 hours, the probability 
+	# of a unit NOT engaging is: (0.89 * 0.88 * 0.87 ... * 0.78) = ~11.4%.
+	# Chance of engaging at least once in 12h = 100% - 11.4% = 88.6%.
+	# To match vanilla reinforcement speed, we set base chance to 0.88.
+
+	INITIATIVE_BASE_CHANCE = 0.5	# calculated: 0.88 / base chance each tick 0.1
+	INITIATIVE_CHANCE_EACH = 0.06 # Chance to engage per point of initiative 0.02
+	INITIATIVE_CHANCE_HOURS = 0.01 # Chance to engage per hour passed (adds with INITIATIVE_CHANCE_EACH) 0.01
+
+	## CONVERSION TO 1 TICK PER DAY
+	# Scale by a factor of 12.
+
+	# Affects how fast units can move from a flank to the battlefield.
+	COMBAT_SPEED_SCALE = 0.05 # default: 0.05
+
+	# Base value used in morale damage formula
+	BASE_MORALE_DAMAGE = 1 # default: 1
+
+	ASSAULT_ATTACKER_LOSS = 18 # default: 1.5
+	ASSAULT_ATTACKER_MORALE_LOSS = 4.8 # default: 0.4
+	ASSAULT_DEFENDER_LOSS = 0.6 # default: 0.05
+	ASSAULT_DEFENDER_MORALE_LOSS = 3.0 # default: 0.25
 }
 
 NAI = {
