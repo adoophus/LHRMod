@@ -1,0 +1,261 @@
+## AUSTRIA ##
+## AUSTRIA ##
+## AUSTRIA ##
+## AUSTRIA ##
+
+# moved from age 5 to 3
+military_border = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = HAB
+	}
+	global_migration_speed_modifier = 0.1
+	discipline = 0.03
+
+	requires = correct_box_advance_discovery
+}
+
+# moved from age 5 to 3
+geheimrat = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = HAB
+	}
+	
+	government_size = 1
+	
+	requires = gov_reform_discovery_a
+}
+
+# moved from age 4 to 2
+austrian_court = {
+	age = age_2_reinassance
+	potential = {
+		has_or_had_tag = HAB
+	}
+	diplomatic_capacity = 2
+
+	requires = reinassance_thought
+}
+
+# moved from age 6 to 4
+# nerfed from 3 culture capacity to 2 (note: cost of coming sooner)
+multicultural_empire = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = HAB
+	}
+	cultures_capacity = 2
+
+	requires = imperial_ambitions
+}
+
+
+## HUNGARY ##
+## HUNGARY ##
+## HUNGARY ##
+## HUNGARY ##
+
+# moved to age 3
+hun_bulwark_of_christianity = {
+	potential = { has_or_had_tag = HUN }
+	
+	age = age_3_discovery
+	
+	requires = training_fields_advance
+	global_manpower_modifier = 0.1
+}
+
+# moved from age 5 to 4
+# halved effects to balance
+hun_curtailed_peasantry = {
+	potential = { has_or_had_tag = HUN }
+	
+	age = age_4_reformation
+	peasants_estate_max_tax = 0.05
+	global_max_rgo_size_modifier = 0.1
+	requires = rgo_size_advance_reformation
+}
+
+
+# moved from age 3 to 4
+# this is way too strong early
+# we already get cav power one of the most op modifiers in the game currently, eco cant be insane too.
+hun_reformed_coinage = {
+	potential = { has_or_had_tag = HUN }
+	
+	age = age_4_reformation
+	monthly_inflation = -0.001
+	requires = reduce_inflation_advance
+}
+
+## MILAN ##
+## MILAN ##
+## MILAN ##
+## MILAN ##
+
+## moved from age 4 to 1
+encouragement_of_philosophers = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = MLO
+	}
+	global_max_literacy = 5
+}
+
+## NAPLES ##
+## NAPLES ##
+## NAPLES ##
+## NAPLES ##
+
+# moved from age 4 to 2
+# 15% galley power added
+expanded_arsenale = {
+	age = age_2_reinassance
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+		}
+	}
+	ship_build_speed = 0.1
+	navy_galley_power = 0.15
+	
+	requires = unlock_m_galley_advance
+}
+
+# moved from age 5 to 4
+institutional_reorganization = {
+	age = age_4_reformation
+	icon = consolidate_the_royal_domain
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+			culture = culture:neapolitan
+		}
+	}
+	government_reform_slots = 1
+	
+	requires = imperial_ambitions
+}
+
+# Moved from age 3 to 4
+# buffed to -25%
+crush_the_barons = {
+
+	age = age_4_reformation
+	icon = hsa_exchange_of_ideas
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+			culture = culture:neapolitan
+		}
+	}
+	global_nobles_estate_power = -0.25
+	
+	requires = barracks_advance
+}
+
+## VENICE ##
+## VENICE ##
+## VENICE ##
+## VENICE ##
+
+# moved from age 3 to 1
+ven_magistrato_alla_sanita = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = VEN
+	}
+	global_disease_resistance = 0.1
+}
+
+# moved from age 4 to 3
+ven_naval_conscription = {
+
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = VEN
+	}
+	navy_maintenance_cost = -0.2
+	requires = explorer_commisions_advance
+}
+
+## GENOA ##
+## GENOA ##
+## GENOA ##
+## GENOA ##
+
+# moved from age 3 to 2
+genoese_flexibility = {
+	potential = { has_or_had_tag = GEN }
+
+	age = age_2_reinassance
+	navy_maintenance_cost = -0.05
+	can_convert_galleys_to_light = yes
+}
+
+## DENMARK ##
+## DENMARK ##
+## DENMARK ##
+## DENMARK ##
+
+# moved from age 6 to 2
+dan_admiralty_college = {
+	age = age_2_reinassance
+	potential = {
+		has_or_had_tag = DAN
+	}
+	own_coast_naval_combat_bonus = 0.1
+	navy_maintenance_cost = -0.1
+
+	requires = unlock_m_galley_advance
+}
+
+# moved from age 6 to 3
+dan_trading_economy = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = DAN
+	}
+	global_merchant_capacity_modifier = 0.2
+
+	requires = burghers_rights_laws_advance
+}
+
+## BRANDENBURG ##
+## BRANDENBURG ##
+## BRANDENBURG ##
+## BRANDENBURG ##
+
+# moved from age 5 to 4
+soldier_king = {
+	age = age_4_absolutism
+	
+	government = monarchy
+
+	potential = {
+		has_or_had_tag = PRU
+	}
+	
+	unlock_government_reform = prussian_monarchy
+	
+	requires = power_projection_advance_3
+}
+
+# moved from age 6 to 3
+# todo: redo localisation
+goose_step = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = BRA
+			has_or_had_tag = PRU
+		}
+	}
+	army_infantry_power = 0.2
+	
+	requires = pike_square
+}

@@ -1,0 +1,84 @@
+## PORTUGAL ##
+## PORTUGAL ##
+## PORTUGAL ##
+## PORTUGAL ##
+
+# moved from age 6 to 1
+# nerfed from 33% to 20%
+por_vinho_porto = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = POR 
+			is_portuguese_spain = yes
+		}
+	}
+	global_wine_output_modifier = 0.2
+}
+
+# moved from age 5 to 3
+por_colonial_governors = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = POR 
+			is_portuguese_spain = yes
+		}
+	}
+	subject_loyalty = 5
+	
+	requires = colonial_charters
+}
+
+## CASTILE ##
+## CASTILE ##
+## CASTILE ##
+## CASTILE ##
+
+# moved from age 5 to 4
+cas_real_academia_espanola = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			has_or_had_tag = CAS
+			is_castilian_spain = yes
+		}
+	}
+	global_monthly_literacy = 0.02
+	
+	requires = global_trade_advance
+}
+
+# ENGLAND #
+# ENGLAND #
+# ENGLAND #
+# ENGLAND #
+
+# moved from age 5 to 1
+# todo: change localisation :D
+sailing_and_fighting_instructions = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = ENG
+			has_or_had_tag = GBR
+		}
+	}
+
+	army_disembark_speed = 0.25
+	blockade_efficiency = 0.1
+	navy_initiative = 0.1
+}
+
+# moved from age 6 to 2
+english_ambition = {
+	age = age_2_reinassance
+	potential = {
+		OR = {
+			has_or_had_tag = ENG
+			has_or_had_tag = GBR
+		}
+	}
+	blockade_efficiency = 0.40
+	requires = unlock_early_carrack_advance
+}
