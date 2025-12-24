@@ -72,7 +72,7 @@ NCombat = {
    # COMBAT_DAMAGE_MULT = 0.06 # 0.12 default: 0.01
 	#COMBAT_HOURLY_MORALE_TICK = 0.08 # default: 0.01
 
-	## candidate 3 - LOW DAMAGE, MORE MORALE
+	## candidate 3 - MEDIUM DAMAGE, MORE MORALE
 	# this feels like EU4.
     COMBAT_DAMAGE_MULT = 0.04 # 0.12 default: 0.01
 	COMBAT_HOURLY_MORALE_TICK = 0.08 # default: 0.01
