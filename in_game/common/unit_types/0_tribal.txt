@@ -1,7 +1,7 @@
 ﻿a_moa_hunters = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	construction_demand = a_tribesmen_construction
@@ -32,7 +32,7 @@
 a_tribesmen = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	construction_demand = a_tribesmen_construction
@@ -47,7 +47,7 @@ a_tribesmen = {
 a_warriors = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	
 	construction_demand = a_warriors_construction
 	maintenance_demand =  a_warriors_maintenance
@@ -103,7 +103,7 @@ a_champions = {
 a_chieftains = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	
 	construction_demand = a_chieftains_construction
 	maintenance_demand =  a_chieftains_maintenance

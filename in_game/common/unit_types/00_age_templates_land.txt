@@ -9,6 +9,7 @@
 a_age_1_traditions_infantry = {
     category = army_infantry
     buildable = no
+    frontage = age1_regiment_frontage
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_infantry_power
     maintenance_demand =  early_infantry_maintenance
@@ -19,6 +20,7 @@ a_age_1_traditions_infantry = {
 a_age_1_traditions_cavalry = {
     category = army_cavalry
     buildable = no
+    frontage = age1_regiment_frontage
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_cavalry_power
 
@@ -28,6 +30,7 @@ a_age_1_traditions_cavalry = {
 a_age_1_traditions_heavy_cavalry = {
     category = army_cavalry
     buildable = no
+    frontage = age1_regiment_frontage
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_cavalry_power
 
@@ -39,6 +42,7 @@ a_age_1_traditions_heavy_cavalry = {
 a_age_1_traditions_auxiliary = {
     category = army_auxiliary
     buildable = no
+    frontage = age1_regiment_frontage
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_auxillary_power
 
@@ -48,6 +52,7 @@ a_age_1_traditions_auxiliary = {
 a_age_1_traditions_artillery = {
     category = army_artillery
     buildable = no
+    frontage = age1_regiment_frontage
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_artillery_power
     
@@ -63,6 +68,7 @@ a_age_1_traditions_artillery = {
 a_age_2_renaissance_infantry = {
     category = army_infantry
     buildable = no
+    frontage = age2_regiment_frontage
     max_strength = age2_regiment_strength
     combat_power = age2_regiment_infantry_power
 
@@ -74,6 +80,7 @@ a_age_2_renaissance_infantry = {
 a_age_2_renaissance_cavalry = {
     category = army_cavalry
     buildable = no
+    frontage = age2_regiment_frontage
     max_strength = age2_regiment_strength
     combat_power = age2_regiment_cavalry_power 
 
@@ -83,6 +90,7 @@ a_age_2_renaissance_cavalry = {
 a_age_2_renaissance_heavy_cavalry = {
     category = army_cavalry
     buildable = no
+    frontage = age2_regiment_frontage
     max_strength = age2_regiment_strength
     combat_power = age2_regiment_cavalry_power
 
@@ -94,6 +102,7 @@ a_age_2_renaissance_heavy_cavalry = {
 a_age_2_renaissance_auxiliary = {
     category = army_auxiliary
     buildable = no
+    frontage = age2_regiment_frontage
     max_strength = age2_regiment_strength
     combat_power = age2_regiment_auxillary_power
 
@@ -103,6 +112,7 @@ a_age_2_renaissance_auxiliary = {
 a_age_2_renaissance_artillery = {
     category = army_artillery
     buildable = no
+    frontage = age2_regiment_frontage
     max_strength = age2_regiment_strength
     combat_power = age2_regiment_artillery_power
     bombard_efficiency = 0.125

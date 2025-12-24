@@ -1,6 +1,6 @@
 ﻿a_villagers = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	strength_damage_taken = 0.2
@@ -14,7 +14,7 @@
 
 a_feudal_levy = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	#strength_damage_done = -0.1
@@ -40,7 +40,7 @@ a_crusader_knights_base = {
 a_crusader_knights_levy = {
 	category = army_infantry
 	
-	copy_from = a_crusader_knights_base
+	copy_from = a_crusader_knights_base_levy
 	buildable = no
 	levy = yes
 
@@ -81,7 +81,7 @@ a_crusader_knights = {
 a_caterans = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	buildable = no
@@ -102,7 +102,7 @@ a_caterans = {
 
 a_kerns = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	buildable = no
@@ -123,7 +123,7 @@ a_kerns = {
 
 a_lour_lances = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	default = yes
 	light = yes
 
@@ -153,7 +153,7 @@ a_lour_lances = {
 }
 a_schiltron = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	light = yes
 
 	frontage = -0.25
@@ -206,7 +206,7 @@ a_steppe_horse_archers = {
 
 a_steppe_horde = {
 	category = army_cavalry
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_1_traditions_cavalry_levy
 	light = yes
 
 	movement_speed = 1
@@ -228,7 +228,7 @@ a_steppe_horde = {
 
 a_tribal_cavalry = {
 	category = army_cavalry
-	copy_from = a_age_1_traditions_cavalry
+	copy_from = a_age_1_traditions_cavalry_levy
 	light = yes
 
 	movement_speed = 1.0
@@ -270,7 +270,7 @@ a_a_urughs = {
 
 a_almogavars = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	upgrades_to = a_late_almogavars
 	light = yes
 
@@ -331,7 +331,7 @@ a_catalan_crossbowmen = {
 
 a_early_longbowmen = {
 	category = army_infantry
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	upgrades_to = a_longbowmen
 
 	initiative = 4
@@ -394,7 +394,7 @@ a_hobelars = {
 a_gallowglass = {
 	category = army_infantry
 
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	upgrades_to = a_reformed_gallowglass
 	
 	strength_damage_taken = -0.05
@@ -465,7 +465,7 @@ a_iron_pagoda_cavalry = {
 a_early_paik = {
 	category = army_infantry
 	
-	copy_from = a_age_1_traditions_infantry
+	copy_from = a_age_1_traditions_infantry_levy
 	
 	food_storage_per_strength = 1
 	movement_speed = -0.3

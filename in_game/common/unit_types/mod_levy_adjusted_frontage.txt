@@ -1,0 +1,111 @@
+##################################################
+# AGE 1: TRADITIONS
+##################################################
+
+## MAX STRENGTH IS BASED ON REGIMENT_SIZE
+## loading_screen/common/defines/mod_defines.txt
+## SET TO 250. max_strength = 1 is 250.
+
+a_age_1_traditions_infantry_levy = {
+    category = army_infantry
+    buildable = no
+    max_strength = age1_regiment_strength
+    combat_power = age1_regiment_infantry_power
+    maintenance_demand =  early_infantry_maintenance
+    construction_demand = early_infantry_construction
+    age = "age_1_traditions"
+}
+
+a_age_1_traditions_cavalry_levy = {
+    category = army_cavalry
+    buildable = no
+    max_strength = age1_regiment_strength
+    combat_power = age1_regiment_cavalry_power
+
+    age = "age_1_traditions"
+}
+
+a_age_1_traditions_heavy_cavalry_levy = {
+    category = army_cavalry
+    buildable = no
+    max_strength = age1_regiment_strength
+    combat_power = age1_regiment_cavalry_power
+
+    impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 woods = 0.10 }
+    combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 woods = -0.10 }
+    age = "age_1_traditions"
+}
+
+a_age_1_traditions_auxiliary_levy = {
+    category = army_auxiliary
+    buildable = no
+    max_strength = age1_regiment_strength
+    combat_power = age1_regiment_auxillary_power
+
+    age = "age_1_traditions"
+}
+
+a_age_1_traditions_artillery_levy = {
+    category = army_artillery
+    buildable = no
+    max_strength = age1_regiment_strength
+    combat_power = age1_regiment_artillery_power
+    
+    bombard_efficiency = 0.1
+    artillery_barrage = 10 
+    age = "age_1_traditions"
+}
+
+##################################################
+# AGE 2: RENAISSANCE
+##################################################
+
+a_age_2_renaissance_infantry_levy = {
+    category = army_infantry
+    buildable = no
+    max_strength = age2_regiment_strength
+    combat_power = age2_regiment_infantry_power
+
+    maintenance_demand =  early_infantry_maintenance
+    construction_demand = early_infantry_construction
+    age = "age_2_renaissance"
+}
+
+a_age_2_renaissance_cavalry_levy = {
+    category = army_cavalry
+    buildable = no
+    max_strength = age2_regiment_strength
+    combat_power = age2_regiment_cavalry_power 
+
+    age = "age_2_renaissance"
+}
+
+a_age_2_renaissance_heavy_cavalry_levy = {
+    category = army_cavalry
+    buildable = no
+    max_strength = age2_regiment_strength
+    combat_power = age2_regiment_cavalry_power
+
+    impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
+    combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
+    age = "age_2_renaissance"
+}
+
+a_age_2_renaissance_auxiliary_levy = {
+    category = army_auxiliary
+    buildable = no
+    max_strength = age2_regiment_strength
+    combat_power = age2_regiment_auxillary_power
+
+    age = "age_2_renaissance"
+}
+
+a_age_2_renaissance_artillery_levy = {
+    category = army_artillery
+    buildable = no
+    max_strength = age2_regiment_strength
+    combat_power = age2_regiment_artillery_power
+    bombard_efficiency = 0.125
+    artillery_barrage = 12 
+    age = "age_2_renaissance"
+}

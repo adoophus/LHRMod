@@ -1,6 +1,6 @@
 ﻿a_longbowmen = {
 	category = army_infantry
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_infantry_levy
 	upgrades_to = a_late_longbowmen
 	light = yes
 
@@ -29,7 +29,7 @@
 a_reformed_gallowglass = {
 	category = army_infantry
 
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_infantry_levy
 	upgrades_to = a_late_gallowglass
 	
 	strength_damage_taken = -0.05
@@ -98,7 +98,7 @@ a_genoese_crossbowmen = {
 
 a_florentine_citizen_militia = {
 	category = army_infantry
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_infantry_levy
 	light = yes
 
 	buildable = no
@@ -115,7 +115,7 @@ a_florentine_citizen_militia = {
 
 a_late_almogavars = {
 	category = army_infantry
-	copy_from = a_age_2_renaissance_infantry
+	copy_from = a_age_2_renaissance_infantry_levy
 	light = yes
 
 	build_time_modifier = 0.5
@@ -179,6 +179,7 @@ a_late_crusader_knights_levy = {
 	category = army_infantry
 	
 	copy_from = a_late_crusader_knights_base
+	frontage = 1
 	buildable = no
 	levy = yes
 	gfx_tags = { crusader_tag sword_tag heavy_tag }

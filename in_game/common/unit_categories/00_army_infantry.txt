@@ -23,7 +23,7 @@ army_infantry = {
 	combat_speed = 2
 	
 	flanking_ability = 1.0
-	secure_flanks_defense = 0.5 # vanilla: 0.25
+	secure_flanks_defense = 0.25 # vanilla: 0.25
 
 	maintenance_demand =  infantry_maintenance
 	construction_demand = infantry_construction
