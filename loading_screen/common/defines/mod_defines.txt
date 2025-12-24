@@ -21,7 +21,7 @@ NGame = {
 NUnit = {
 	EMBARK_DISEMBARK_MULTIPLIER = 0.3	#to make disembark/embark from coast slower.
 
-	REGIMENT_SIZE = 1000
+	REGIMENT_SIZE = 250
 	
 	ARMY_MOVEMENT_SPEED = 1.56 # 0.13
 	NAVY_MOVEMENT_SPEED = 6 # 0.5	
