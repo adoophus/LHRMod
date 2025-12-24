@@ -31,7 +31,7 @@ a_age_1_traditions_heavy_cavalry = {
     max_strength = age1_regiment_strength
     combat_power = age1_regiment_cavalry_power
 
-    impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 woods = -0.10 }
+    impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 woods = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 woods = -0.10 }
     age = "age_1_traditions"
 }

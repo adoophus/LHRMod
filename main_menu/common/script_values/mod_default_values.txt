@@ -2,15 +2,15 @@
 # Levy Scales
 ############################
 
-# Scale by 4 because we reduced the levy sizes to 250 from 1000.
+# Scale by 5 because we reduced the levy sizes to 200 from 1000.
 # loading_screen/common/defines/mod_defines.txt
-# NUnit = { REGIMENT_SIZE = 250 } (vanilla: 1000)
+# NUnit = { REGIMENT_SIZE = 200 } (vanilla: 1000)
 # If we didn't scale up, then levy /numbers/ will not be the same as vanilla.
-# Now we run into the issue where we have 4x more units on the field (frontage wise)
+# Now we run into the issue where we have 5x more units on the field (frontage wise)
 # We might have to discuss what the best solution is to this
 
-levy_generic_infantry_size = 0.08 # vanilla: 0.2
-levy_generic_noble_cavalry_size = 0.4 # vanilla: 0.1
+levy_generic_infantry_size = 0.1 # vanilla: 0.02
+levy_generic_noble_cavalry_size = 0.5 # vanilla: 0.1
 
 ############################
 # Regiment modifiers
@@ -23,7 +23,7 @@ levy_generic_noble_cavalry_size = 0.4 # vanilla: 0.1
 
 # No changes from vanilla.
 
-age1_regiment_strength = 1 # 250 men
+age1_regiment_strength = 1 # 200 men
 age1_regiment_infantry_power = 1.0
 age1_regiment_cavalry_power = 2.0
 age1_regiment_artillery_power = 0.2
@@ -34,7 +34,7 @@ age1_regiment_auxillary_power = 0.125
 
 # Infantry closes the gap slightly.
 
-age2_regiment_strength = 2 # 500 men
+age2_regiment_strength = 2 # 400 men
 age2_regiment_infantry_power = 1.2
 age2_regiment_cavalry_power = 2.0
 age2_regiment_artillery_power = 0.75
@@ -45,7 +45,7 @@ age2_regiment_auxillary_power = 0.125
 
 # Infantry further improves, artillery improves.
 
-age3_regiment_strength = 4 # 1000 men
+age3_regiment_strength = 4 # 800 men
 
 age3_regiment_infantry_power = 1.4
 age3_regiment_cavalry_power = 2
@@ -60,7 +60,7 @@ age3_regiment_auxillary_power = 0.125
 # Cavalry can still remain dominant with the right modifiers.
 # Artillery dominant.
 
-age4_regiment_strength = 4 # 1000 men
+age4_regiment_strength = 6 # 1200 men
 
 age4_regiment_infantry_power = 1.5
 age4_regiment_cavalry_power = 1.5
@@ -73,7 +73,7 @@ age4_regiment_auxillary_power = 0.125
 # Cavalry falls off.
 # Artillery even better.
 
-age5_regiment_strength = 8 # 2000 men
+age5_regiment_strength = 8 # 1600 men
 
 age5_regiment_infantry_power = 2.0
 age5_regiment_cavalry_power = 1.5
@@ -85,7 +85,7 @@ age5_regiment_auxillary_power = 0.125
 
 # War becomes way more costly manpower wise.
 
-age6_regiment_strength = 8 # 2000 men
+age6_regiment_strength = 10 # 2000 men
 
 age6_regiment_infantry_power = 2.4
 age6_regiment_cavalry_power = 2.0
