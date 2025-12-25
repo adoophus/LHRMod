@@ -14,14 +14,13 @@ NGame = {
 		0.75 # 1
 		1 # 1.25
 		1.25 # 1.5
-		1.5 # 2.0
+		2.0 # 2.0
 	}
 }
 
 NUnit = {
 	EMBARK_DISEMBARK_MULTIPLIER = 0.3	#to make disembark/embark from coast slower.
 
-	# this value is increasing prices???
 	REGIMENT_SIZE = 800
 	
 	ARMY_MOVEMENT_SPEED = 1.56 # 0.13
@@ -49,8 +48,6 @@ NCombat = {
 	# Chance of failure = 1 - 0.2 = 80%
 	# Failure vanilla BOMBARDS_HOURS times in a row = 0.8^5 = 0.32768 (32.77%)
 	# Therefore chance of success = 1 - 0.32768 = 0.67232 (67.23%)
-
-	# remove it for now.
 	
 	BOMBARD_BASE_CHANCE = 0.67232  # default: 0.2
 	BOMBARD_HOURS = 1 # default: 5 
@@ -70,7 +67,7 @@ NCombat = {
 	#COMBAT_HOURLY_MORALE_TICK = 0.12 # default: 0.01
 	
 	## candidate 2 - HIGH DAMAGE, MORE MORALE.
-   # COMBAT_DAMAGE_MULT = 0.06 # 0.12 default: 0.01
+    # COMBAT_DAMAGE_MULT = 0.06 # 0.12 default: 0.01
 	#COMBAT_HOURLY_MORALE_TICK = 0.08 # default: 0.01
 
 	## candidate 3 - MEDIUM DAMAGE, MORE MORALE
@@ -85,8 +82,8 @@ NCombat = {
 	# To match vanilla reinforcement speed, we set base chance to 0.88.
 
 	INITIATIVE_BASE_CHANCE = 0.5	# calculated: 0.88 / base chance each tick 0.1
-	INITIATIVE_CHANCE_EACH = 0.06 # Chance to engage per point of initiative 0.02
-	INITIATIVE_CHANCE_HOURS = 0.01 # Chance to engage per hour passed (adds with INITIATIVE_CHANCE_EACH) 0.01
+	INITIATIVE_CHANCE_EACH = 0.05 # Chance to engage per point of initiative 0.02, previously 0.06
+	INITIATIVE_CHANCE_HOURS = 0.15 # Chance to engage per hour (tick ??) passed (adds with INITIATIVE_CHANCE_EACH) 0.01
 
 	## CONVERSION TO 1 TICK PER DAY
 	# Scale by a factor of 12.
@@ -105,7 +102,7 @@ NCombat = {
 	LAND_LEVY_COMBAT_IMPACT = 0
 	LAND_LEVY_COMBAT_AGE_MUL = 0
 	DAMAGE_ON_LEVY_FACTOR = 0
-	LEVY_ASSAULT_EFFICIENCY = 1
+	LEVY_ASSAULT_EFFICIENCY = 0.8
 }
 
 NAI = {
