@@ -15,6 +15,7 @@ a_age_1_traditions_infantry = {
     maintenance_demand =  early_infantry_maintenance
     construction_demand = early_infantry_construction
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_cavalry = {
@@ -25,6 +26,7 @@ a_age_1_traditions_cavalry = {
     combat_power = age1_regiment_cavalry_power
 
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_heavy_cavalry = {
@@ -37,6 +39,7 @@ a_age_1_traditions_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 woods = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 woods = -0.10 }
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_auxiliary = {
@@ -47,6 +50,7 @@ a_age_1_traditions_auxiliary = {
     combat_power = age1_regiment_auxillary_power
 
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_artillery = {
@@ -59,6 +63,7 @@ a_age_1_traditions_artillery = {
     bombard_efficiency = 0.1
     artillery_barrage = 10 
     age = "age_1_traditions"
+    template = yes
 }
 
 ##################################################
@@ -75,6 +80,7 @@ a_age_2_renaissance_infantry = {
     maintenance_demand =  early_infantry_maintenance
     construction_demand = early_infantry_construction
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_cavalry = {
@@ -85,6 +91,7 @@ a_age_2_renaissance_cavalry = {
     combat_power = age2_regiment_cavalry_power 
 
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_heavy_cavalry = {
@@ -97,6 +104,7 @@ a_age_2_renaissance_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_auxiliary = {
@@ -107,6 +115,7 @@ a_age_2_renaissance_auxiliary = {
     combat_power = age2_regiment_auxillary_power
 
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_artillery = {
@@ -118,6 +127,7 @@ a_age_2_renaissance_artillery = {
     bombard_efficiency = 0.125
     artillery_barrage = 12 
     age = "age_2_renaissance"
+    template = yes
 }
 
 ##################################################
@@ -131,6 +141,7 @@ a_age_3_discovery_infantry = {
     combat_power = age3_regiment_infantry_power
 
     age = "age_3_discovery"
+    template = yes
 }
 
 a_age_3_discovery_cavalry = {
@@ -140,6 +151,7 @@ a_age_3_discovery_cavalry = {
     combat_power = age3_regiment_cavalry_power
 
     age = "age_3_discovery"
+    template = yes
 }
 
 a_age_3_discovery_heavy_cavalry = {
@@ -151,6 +163,7 @@ a_age_3_discovery_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_3_discovery"
+    template = yes
 }
 
 a_age_3_discovery_auxiliary = {
@@ -160,6 +173,7 @@ a_age_3_discovery_auxiliary = {
     combat_power = age3_regiment_auxillary_power
 
     age = "age_3_discovery"
+    template = yes
 }
 
 a_age_3_discovery_artillery = {
@@ -170,6 +184,7 @@ a_age_3_discovery_artillery = {
     bombard_efficiency = 0.15
     artillery_barrage = 16 
     age = "age_3_discovery"
+    template = yes
 }
 
 ##################################################
@@ -183,6 +198,7 @@ a_age_4_reformation_infantry = {
     combat_power = age4_regiment_infantry_power
 
     age = "age_4_reformation"
+    template = yes
 }
 
 a_age_4_reformation_cavalry = {
@@ -192,6 +208,7 @@ a_age_4_reformation_cavalry = {
     combat_power = age4_regiment_cavalry_power
 
     age = "age_4_reformation"
+    template = yes
 }
 
 a_age_4_reformation_heavy_cavalry = {
@@ -203,6 +220,7 @@ a_age_4_reformation_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_4_reformation"
+    template = yes
 }
 
 a_age_4_reformation_auxiliary = {
@@ -212,6 +230,7 @@ a_age_4_reformation_auxiliary = {
     combat_power = age4_regiment_auxillary_power
 
     age = "age_4_reformation"
+    template = yes
 }
 
 a_age_4_reformation_artillery = {
@@ -222,6 +241,7 @@ a_age_4_reformation_artillery = {
     bombard_efficiency = 0.20
     artillery_barrage = 20 
     age = "age_4_reformation"
+    template = yes
 }
 
 ##################################################
@@ -234,6 +254,7 @@ a_age_5_absolutism_infantry = {
     max_strength = age5_regiment_strength
     combat_power = age5_regiment_infantry_power
     age = "age_5_absolutism"
+    template = yes
 }
 
 a_age_5_absolutism_cavalry = {
@@ -243,6 +264,7 @@ a_age_5_absolutism_cavalry = {
     combat_power = age5_regiment_cavalry_power 
 
     age = "age_5_absolutism"
+    template = yes
 }
 
 a_age_5_absolutism_heavy_cavalry = {
@@ -254,6 +276,7 @@ a_age_5_absolutism_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_5_absolutism"
+    template = yes
 }
 
 a_age_5_absolutism_auxiliary = {
@@ -262,6 +285,7 @@ a_age_5_absolutism_auxiliary = {
     max_strength = age5_regiment_strength
     combat_power = age5_regiment_auxillary_power
     age = "age_5_absolutism"
+    template = yes
 }
 
 a_age_5_absolutism_artillery = {
@@ -272,6 +296,7 @@ a_age_5_absolutism_artillery = {
     bombard_efficiency = 0.25
     artillery_barrage = 24 
     age = "age_5_absolutism"
+    template = yes
 }
 
 ##################################################
@@ -284,6 +309,7 @@ a_age_6_revolutions_infantry = {
     max_strength = age6_regiment_strength
     combat_power = age6_regiment_infantry_power
     age = "age_6_revolutions"
+    template = yes
 }
 
 a_age_6_revolutions_cavalry = {
@@ -293,6 +319,7 @@ a_age_6_revolutions_cavalry = {
     combat_power = age6_regiment_cavalry_power
 
     age = "age_6_revolutions"
+    template = yes
 }
 
 a_age_6_revolutions_heavy_cavalry = {
@@ -304,6 +331,7 @@ a_age_6_revolutions_heavy_cavalry = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_6_revolutions"
+    template = yes
 }
 
 
@@ -313,6 +341,7 @@ a_age_6_revolutions_auxiliary = {
     max_strength = age6_regiment_strength
     combat_power = age6_regiment_auxillary_power
     age = "age_6_revolutions"
+    template = yes
 }
 
 a_age_6_revolutions_artillery = {
@@ -323,4 +352,5 @@ a_age_6_revolutions_artillery = {
     bombard_efficiency = 0.25
     artillery_barrage = 30
     age = "age_6_revolutions"
+    template = yes
 }

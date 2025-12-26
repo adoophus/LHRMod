@@ -32,7 +32,7 @@ global_regiment_size = 800
 
 # No changes from vanilla.
 
-age1_regiment_strength = 0.5 # 200 men
+age1_regiment_strength = 0.25 # 200 men
 age1_regiment_frontage = -0.75 # Compensation 
 age1_regiment_infantry_power = 1.4
 age1_regiment_cavalry_power = 2
@@ -58,7 +58,7 @@ age2_regiment_auxillary_power = 0.125
 # Infantry further improves, artillery improves.
 # Levy and regulars equalise.
 
-age3_regiment_strength = 4 # 800 men
+age3_regiment_strength = 1 # 800 men
 age3_regiment_infantry_power = 1.4
 age3_regiment_cavalry_power = 2
 age3_regiment_artillery_power = 1
@@ -72,7 +72,7 @@ age3_regiment_auxillary_power = 0.125
 # Cavalry can still remain dominant with the right modifiers.
 # Artillery dominant.
 
-age4_regiment_strength = 6 # 1200 men
+age4_regiment_strength = 1.5 # 1200 men
 age4_regiment_infantry_power = 1.5
 age4_regiment_cavalry_power = 1.5
 age4_regiment_artillery_power = 2
@@ -84,7 +84,7 @@ age4_regiment_auxillary_power = 0.125
 # Cavalry falls off.
 # Artillery even better.
 
-age5_regiment_strength = 8 # 1600 men
+age5_regiment_strength = 2 # 1600 men
 age5_regiment_infantry_power = 2
 age5_regiment_cavalry_power = 1.5
 age5_regiment_artillery_power = 2.4
@@ -95,7 +95,7 @@ age5_regiment_auxillary_power = 0.125
 
 # War becomes way more costly manpower wise.
 
-age6_regiment_strength = 10 # 2000 men
+age6_regiment_strength = 2.5 # 2000 men
 age6_regiment_infantry_power = 2.4
 age6_regiment_cavalry_power = 2
 age6_regiment_artillery_power = 3

@@ -14,6 +14,7 @@ a_age_1_traditions_infantry_levy = {
     maintenance_demand =  early_infantry_maintenance
     construction_demand = early_infantry_construction
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_cavalry_levy = {
@@ -23,6 +24,7 @@ a_age_1_traditions_cavalry_levy = {
     combat_power = age1_regiment_cavalry_power
 
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_heavy_cavalry_levy = {
@@ -34,6 +36,7 @@ a_age_1_traditions_heavy_cavalry_levy = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 woods = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 woods = -0.10 }
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_auxiliary_levy = {
@@ -43,6 +46,7 @@ a_age_1_traditions_auxiliary_levy = {
     combat_power = age1_regiment_auxillary_power
 
     age = "age_1_traditions"
+    template = yes
 }
 
 a_age_1_traditions_artillery_levy = {
@@ -54,6 +58,7 @@ a_age_1_traditions_artillery_levy = {
     bombard_efficiency = 0.1
     artillery_barrage = 10 
     age = "age_1_traditions"
+    template = yes
 }
 
 ##################################################
@@ -69,6 +74,7 @@ a_age_2_renaissance_infantry_levy = {
     maintenance_demand =  early_infantry_maintenance
     construction_demand = early_infantry_construction
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_cavalry_levy = {
@@ -78,6 +84,7 @@ a_age_2_renaissance_cavalry_levy = {
     combat_power = age2_regiment_cavalry_power 
 
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_heavy_cavalry_levy = {
@@ -89,6 +96,7 @@ a_age_2_renaissance_heavy_cavalry_levy = {
     impact = { jungle = 0.10 wetlands = 0.10 mountains = 0.10 valley = 0.10 }
     combat = { jungle = -0.10 wetlands = -0.10 mountains = -0.10 valley = -0.10 }
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_auxiliary_levy = {
@@ -98,6 +106,7 @@ a_age_2_renaissance_auxiliary_levy = {
     combat_power = age2_regiment_auxillary_power
 
     age = "age_2_renaissance"
+    template = yes
 }
 
 a_age_2_renaissance_artillery_levy = {
@@ -108,4 +117,5 @@ a_age_2_renaissance_artillery_levy = {
     bombard_efficiency = 0.125
     artillery_barrage = 12 
     age = "age_2_renaissance"
+    template = yes
 }
