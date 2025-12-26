@@ -28,6 +28,8 @@
 # ## -- AGE 1 - TRADITIONS -- ## #
 # VANILLA - Infantry 1.0, Cavalry 2.0, Artillery 0.2, Auxiliary: 0.125
 
+global_regiment_size = 800
+
 # No changes from vanilla.
 
 age1_regiment_strength = 0.5 # 200 men
