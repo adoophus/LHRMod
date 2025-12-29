@@ -34,7 +34,7 @@ global_regiment_size = 800
 
 age1_regiment_strength = 0.25 # 200 men
 age1_regiment_frontage = -0.75 # Compensation 
-age1_regiment_infantry_power = 1.4
+age1_regiment_infantry_power = 1
 age1_regiment_cavalry_power = 2
 age1_regiment_artillery_power = 0.2
 age1_regiment_auxillary_power = 0.125
