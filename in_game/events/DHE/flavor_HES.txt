@@ -137,10 +137,8 @@ flavor_hes.3 = {
 	option = {
 		historical_option = yes
 		name = flavor_hes.3.a
-		location:marburg = {
-			if = {
-				change_location_rank = location_rank:town
-			}
+		location:marburg = {	
+			change_location_rank = location_rank:town
 			change_prosperity = prosperity_very_weak_bonus
 		}
 		add_gold = {
