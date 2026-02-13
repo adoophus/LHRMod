@@ -1,0 +1,24 @@
+war_manager = {
+	truce = { # Lowlands french truce
+		attacker = FLA
+		attacker = HAI
+		attacker = BRB
+		attacker = LIE
+		attacker = HOL
+		attacker = GEL
+		attacker = UTR
+		attacker = LOO
+		attacker = NAM
+
+		defender = FRA
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		end_date = 1347.4.1
+	}
+
+	truce = { # Ottomans mamseluke truce
+		attacker = MAM
+		defender = TUR
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		end_date = 1353.4.1
+	}
+}
