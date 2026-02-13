@@ -1,0 +1,3 @@
+REPLACE:change_main_school = {
+	stability = 25
+}

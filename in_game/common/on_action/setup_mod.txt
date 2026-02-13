@@ -1,0 +1,14 @@
+on_game_start = {
+	on_actions = {
+		lhr_on_game_start
+	}
+}
+
+lhr_on_game_start = {
+	effect = {
+		c:BOH = {
+			cancel_subject = c:MVA
+			create_union = c:MVA
+		}
+	}
+}
