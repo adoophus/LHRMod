@@ -1,0 +1,60 @@
+## MOROCCO ##
+## MOROCCO ##
+## MOROCCO ##
+## MOROCCO ##
+
+# moved from age 6 to 3
+shurfa_status = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = MOR
+		religion.group = religion_group:muslim
+	}
+	
+	requires = printing_press_advance
+
+	monthly_legitimacy = 0.1
+	monthly_prestige = 0.1
+}
+
+# moved from age 6 to 3
+maghrebi_administration = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = MOR
+		religion.group = religion_group:muslim
+	}
+	
+	requires = printing_press_advance
+
+	global_distance_from_capital_cost_modifier = -0.05
+}
+
+## EGYPT ##
+## EGYPT ##
+## EGYPT ##
+## EGYPT ##
+
+# moved from age 6 to 3
+# nerfed to 15%
+secure_mediterranean_ports = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = MAM
+	}
+
+	requires = naval_ambitions
+	global_maritime_presence_modifier = 0.15
+}
+
+# moved from age 5 to 2
+# nerfed to 15%
+port_customs = {
+	age = age_2_reinassance
+	potential = {
+		has_or_had_tag = MAM
+	}
+
+	requires = maritime_advance_age_2
+	global_trade_protection_factor = 0.15
+}

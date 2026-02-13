@@ -1,0 +1,68 @@
+## POLAND ##
+## POLAND ##
+## POLAND ##
+## POLAND ##
+
+# moved from age 5 to 2
+# nerfed to 5% from 10%
+komisja_edukacji_narodowej = {
+	age = age_2_reinassance
+	potential = {
+		OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = PLC 
+		} 
+	}
+	global_max_literacy = 5
+	requires = pop_promote_actions_advance
+}
+
+## LITHUANIA ##
+## LITHUANIA ##
+## LITHUANIA ##
+## LITHUANIA ##
+
+# moved from age 5 to 4
+columns_of_gediminids = {
+	age = age_4_reformation
+
+	potential = {
+		has_or_had_tag = LIT
+	}
+
+	requires = assault_ability_reformation
+
+	land_morale_modifier = 0.15
+}
+
+## MUSCOVY ##
+## MUSCOVY ##
+## MUSCOVY ##
+## MUSCOVY ##
+
+# moved from age 6 to 1
+mos_patrol_the_territories = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = MOS
+	}
+	global_levy_size_modifier = 0.1
+}
+
+## GEORGIA ##
+## GEORGIA ##
+## GEORGIA ##
+## GEORGIA ##
+
+# moved from age 5 to 4
+geo_georgian_principalities = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = GEO
+	}
+
+	requires = power_projection_advance_3
+
+	global_distance_from_capital_cost_modifier = -0.05
+}
+
