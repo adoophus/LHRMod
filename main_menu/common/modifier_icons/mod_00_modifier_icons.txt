@@ -1,7 +1,0 @@
-monthly_towards_unitary= {
-	positive = "gfx/interface/icons/modifier_types/monthly_towards_centralization.dds" 
-}
-
-monthly_towards_federalism= {
-	positive = "gfx/interface/icons/modifier_types/monthly_towards_decentralization.dds" 
-}
