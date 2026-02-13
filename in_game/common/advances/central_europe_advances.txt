@@ -4,7 +4,7 @@
 ## AUSTRIA ##
 
 # moved from age 5 to 3
-military_border = {
+REPLACE:military_border = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = HAB
@@ -16,7 +16,7 @@ military_border = {
 }
 
 # moved from age 5 to 3
-geheimrat = {
+REPLACE:geheimrat = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = HAB
@@ -28,7 +28,7 @@ geheimrat = {
 }
 
 # moved from age 4 to 2
-austrian_court = {
+REPLACE:austrian_court = {
 	age = age_2_reinassance
 	potential = {
 		has_or_had_tag = HAB
@@ -40,7 +40,7 @@ austrian_court = {
 
 # moved from age 6 to 4
 # nerfed from 3 culture capacity to 2 (note: cost of coming sooner)
-multicultural_empire = {
+REPLACE:multicultural_empire = {
 	age = age_4_reformation
 	potential = {
 		has_or_had_tag = HAB
@@ -57,7 +57,7 @@ multicultural_empire = {
 ## HUNGARY ##
 
 # moved to age 3
-hun_bulwark_of_christianity = {
+REPLACE:hun_bulwark_of_christianity = {
 	potential = { has_or_had_tag = HUN }
 	
 	age = age_3_discovery
@@ -68,7 +68,7 @@ hun_bulwark_of_christianity = {
 
 # moved from age 5 to 4
 # halved effects to balance
-hun_curtailed_peasantry = {
+REPLACE:hun_curtailed_peasantry = {
 	potential = { has_or_had_tag = HUN }
 	
 	age = age_4_reformation
@@ -81,7 +81,7 @@ hun_curtailed_peasantry = {
 # moved from age 3 to 4
 # this is way too strong early
 # we already get cav power one of the most op modifiers in the game currently, eco cant be insane too.
-hun_reformed_coinage = {
+REPLACE:hun_reformed_coinage = {
 	potential = { has_or_had_tag = HUN }
 	
 	age = age_4_reformation
@@ -95,7 +95,7 @@ hun_reformed_coinage = {
 ## MILAN ##
 
 ## moved from age 4 to 1
-encouragement_of_philosophers = {
+REPLACE:encouragement_of_philosophers = {
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = MLO
@@ -110,7 +110,7 @@ encouragement_of_philosophers = {
 
 # moved from age 4 to 2
 # 15% galley power added
-expanded_arsenale = {
+REPLACE:expanded_arsenale = {
 	age = age_2_reinassance
 	potential = {
 		OR = {
@@ -125,7 +125,7 @@ expanded_arsenale = {
 }
 
 # moved from age 5 to 4
-institutional_reorganization = {
+REPLACE:institutional_reorganization = {
 	age = age_4_reformation
 	icon = consolidate_the_royal_domain
 	potential = {
@@ -142,7 +142,7 @@ institutional_reorganization = {
 
 # Moved from age 3 to 4
 # buffed to -25%
-crush_the_barons = {
+REPLACE:crush_the_barons = {
 
 	age = age_4_reformation
 	icon = hsa_exchange_of_ideas
@@ -158,13 +158,30 @@ crush_the_barons = {
 	requires = barracks_advance
 }
 
+REPLACE:hab_expert_mountaineers = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = TIR
+			has_or_had_tag = STY
+		}
+	}
+	
+	mountains_proximity_impact = -0.5
+	hills_proximity_impact = -0.5
+	plateau_proximity_impact = -0.5
+	
+	requires = renaissance_urbanisation
+}
+
 ## VENICE ##
 ## VENICE ##
 ## VENICE ##
 ## VENICE ##
 
 # moved from age 3 to 1
-ven_magistrato_alla_sanita = {
+REPLACE:ven_magistrato_alla_sanita = {
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = VEN
@@ -173,7 +190,7 @@ ven_magistrato_alla_sanita = {
 }
 
 # moved from age 4 to 3
-ven_naval_conscription = {
+REPLACE:ven_naval_conscription = {
 
 	age = age_3_discovery
 	potential = {
@@ -189,7 +206,7 @@ ven_naval_conscription = {
 ## GENOA ##
 
 # moved from age 3 to 2
-genoese_flexibility = {
+REPLACE:genoese_flexibility = {
 	potential = { has_or_had_tag = GEN }
 
 	age = age_2_reinassance
@@ -203,7 +220,7 @@ genoese_flexibility = {
 ## DENMARK ##
 
 # moved from age 6 to 2
-dan_admiralty_college = {
+REPLACE:dan_admiralty_college = {
 	age = age_2_reinassance
 	potential = {
 		has_or_had_tag = DAN
@@ -215,7 +232,7 @@ dan_admiralty_college = {
 }
 
 # moved from age 6 to 3
-dan_trading_economy = {
+REPLACE:dan_trading_economy = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = DAN
@@ -231,7 +248,7 @@ dan_trading_economy = {
 ## BRANDENBURG ##
 
 # moved from age 5 to 4
-soldier_king = {
+REPLACE:soldier_king = {
 	age = age_4_absolutism
 	
 	government = monarchy
@@ -247,7 +264,7 @@ soldier_king = {
 
 # moved from age 6 to 3
 # todo: redo localisation
-goose_step = {
+REPLACE:goose_step = {
 	age = age_3_discovery
 	potential = {
 		OR = {

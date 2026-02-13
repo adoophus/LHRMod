@@ -4,7 +4,7 @@
 ## MOROCCO ##
 
 # moved from age 6 to 3
-shurfa_status = {
+REPLACE:shurfa_status = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = MOR
@@ -18,7 +18,7 @@ shurfa_status = {
 }
 
 # moved from age 6 to 3
-maghrebi_administration = {
+REPLACE:maghrebi_administration = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = MOR
@@ -37,7 +37,7 @@ maghrebi_administration = {
 
 # moved from age 6 to 3
 # nerfed to 15%
-secure_mediterranean_ports = {
+REPLACE:secure_mediterranean_ports = {
 	age = age_3_discovery
 	potential = {
 		has_or_had_tag = MAM
@@ -49,7 +49,7 @@ secure_mediterranean_ports = {
 
 # moved from age 5 to 2
 # nerfed to 15%
-port_customs = {
+REPLACE:port_customs = {
 	age = age_2_reinassance
 	potential = {
 		has_or_had_tag = MAM

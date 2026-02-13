@@ -5,7 +5,7 @@
 
 # moved from age 5 to 2
 # nerfed to 5% from 10%
-komisja_edukacji_narodowej = {
+REPLACE:komisja_edukacji_narodowej = {
 	age = age_2_reinassance
 	potential = {
 		OR = {
@@ -23,7 +23,7 @@ komisja_edukacji_narodowej = {
 ## LITHUANIA ##
 
 # moved from age 5 to 4
-columns_of_gediminids = {
+REPLACE:columns_of_gediminids = {
 	age = age_4_reformation
 
 	potential = {
@@ -41,7 +41,7 @@ columns_of_gediminids = {
 ## MUSCOVY ##
 
 # moved from age 6 to 1
-mos_patrol_the_territories = {
+REPLACE:mos_patrol_the_territories = {
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = MOS
@@ -55,7 +55,7 @@ mos_patrol_the_territories = {
 ## GEORGIA ##
 
 # moved from age 5 to 4
-geo_georgian_principalities = {
+REPLACE:geo_georgian_principalities = {
 	age = age_4_reformation
 	potential = {
 		has_or_had_tag = GEO

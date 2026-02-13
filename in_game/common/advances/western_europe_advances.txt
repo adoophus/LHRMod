@@ -5,7 +5,7 @@
 
 # moved from age 6 to 1
 # nerfed from 33% to 20%
-por_vinho_porto = {
+REPLACE:por_vinho_porto = {
 	age = age_1_traditions
 	potential = {
 		OR = {
@@ -17,7 +17,7 @@ por_vinho_porto = {
 }
 
 # moved from age 5 to 3
-por_colonial_governors = {
+REPLACE:por_colonial_governors = {
 	age = age_3_discovery
 	potential = {
 		OR = {
@@ -35,9 +35,9 @@ por_colonial_governors = {
 ## CASTILE ##
 ## CASTILE ##
 
-# moved from age 5 to 4
-cas_real_academia_espanola = {
-	age = age_4_reformation
+# moved from age 5 to 3
+REPLACE:cas_real_academia_espanola = {
+	age = age_3_discovery
 	potential = {
 		OR = {
 			has_or_had_tag = CAS
@@ -56,7 +56,7 @@ cas_real_academia_espanola = {
 
 # moved from age 5 to 1
 # todo: change localisation :D
-sailing_and_fighting_instructions = {
+REPLACE:sailing_and_fighting_instructions = {
 	age = age_1_traditions
 	potential = {
 		OR = {
@@ -71,7 +71,7 @@ sailing_and_fighting_instructions = {
 }
 
 # moved from age 6 to 2
-english_ambition = {
+REPLACE:english_ambition = {
 	age = age_2_reinassance
 	potential = {
 		OR = {
