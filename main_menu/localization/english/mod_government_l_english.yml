@@ -1,14 +1,5 @@
 ﻿l_english:
 
- #
- # Societal Values
- #
- unitary_vs_federalism: "Unitary vs Federalism"
- unitary_vs_federalism_desc: "The unitary system grants full authority to the central government, whereas the federal system shares control across its constituent regions."
- unitary_focus: "Unitary"
- federalism_focus: "Federalism"
-
-
 #
 # HESSE
 #
@@ -84,3 +75,10 @@ hes_persuade_mercenaries_progress: "$hes_persuade_mercenaries_active$"
 hes_persuade_mercenaries_wordier: "$hes_persuade_mercenaries_active$"
 hes_persuade_mercenaries_long_wordier: "The Landgrave's Chancellery is working to secure long-term, cost-effective maintenance agreements with all Hessian mercenary companies."
 hes_persuade_mercenaries_tooltip: "Reduces mercenary maintenance cost and signals reliability."
+
+
+#
+# IRANIAN
+#
+ira_royal_road_surveyors: "Royal Road Surveyors"
+ira_royal_road_surveyors_desc: "The vastness of the Iranian Plateau is defined not by its plains, but by the formidable ridges that guard them. By mastering the art of the 'Chapar Khaneh' and refining the paths first laid by the Kings of Old, our surveyors have turned jagged peaks into thoroughfares.

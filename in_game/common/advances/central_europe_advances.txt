@@ -29,7 +29,7 @@ REPLACE:geheimrat = {
 
 # moved from age 4 to 2
 REPLACE:austrian_court = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		has_or_had_tag = HAB
 	}
@@ -50,6 +50,22 @@ REPLACE:multicultural_empire = {
 	requires = imperial_ambitions
 }
 
+REPLACE:hab_expert_mountaineers = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = TIR
+			has_or_had_tag = STY
+		}
+	}
+	
+	mountains_proximity_impact = -0.5
+	hills_proximity_impact = -0.5
+	plateau_proximity_impact = -0.5
+	
+	requires = renaissance_urbanisation
+}
 
 ## HUNGARY ##
 ## HUNGARY ##
@@ -158,22 +174,6 @@ REPLACE:crush_the_barons = {
 	requires = barracks_advance
 }
 
-REPLACE:hab_expert_mountaineers = {
-	age = age_2_renaissance
-	potential = {
-		OR = {
-			has_or_had_tag = HAB
-			has_or_had_tag = TIR
-			has_or_had_tag = STY
-		}
-	}
-	
-	mountains_proximity_impact = -0.5
-	hills_proximity_impact = -0.5
-	plateau_proximity_impact = -0.5
-	
-	requires = renaissance_urbanisation
-}
 
 ## VENICE ##
 ## VENICE ##

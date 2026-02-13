@@ -63,6 +63,6 @@ REPLACE:geo_georgian_principalities = {
 
 	requires = power_projection_advance_3
 
-	global_distance_from_capital_cost_modifier = -0.05
+	global_distance_from_capital_speed_propagation = 0.1
 }
 
