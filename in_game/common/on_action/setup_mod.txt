@@ -6,10 +6,25 @@ on_game_start = {
 
 lhr_on_game_start = {
 	effect = {
+		
+		## Bohemia nerfs
 		c:BOH = {
 			cancel_subject = c:MVA
+			cancel_subject = c:OPL
+			cancel_subject = c:WRC
+			cancel_subject = c:GLO
+
 			create_union = c:MVA
 		}
+
+		c:NYS = {
+			make_subject_of = {
+				target = c:BOH
+				type = subject_type:vassal
+			}
+		}
+
+		## End bohemia nerfs
 
 		c:FRA = {
 			cancel_subject = c:FLA
@@ -28,6 +43,14 @@ lhr_on_game_start = {
 
 		c:FLA = {
 			cancel_subject = c:NAM
+		}
+
+
+		c:VLR = {
+			make_subject_of = {
+				target = c:MOS
+				type = subject_type:vassal
+			}
 		}
 
 		c:MAM = {
