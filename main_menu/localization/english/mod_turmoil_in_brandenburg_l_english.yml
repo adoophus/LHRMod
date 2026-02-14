@@ -1,0 +1,24 @@
+l_english:
+ turmoil_in_brandenburg.1.a.bt: "In order to resolve this disaster, we must restore internal authority and settle the dynastic crisis."
+ turmoil_in_brandenburg.1.desc: "$turmoil_in_brandenburg.1.desc.start$\n\nThis is the start of the $bra_wittelsbach_hyperlink$ era of [ROOT.GetCountry.GetNameWithNoTooltip]. It is a time of severe dynastic and administrative strain: the [ROOT.GetCountry.GetGovernment.GetRulerTitle] was installed young, local authority fragmented, and broad discontent weakened central rule."
+ turmoil_in_brandenburg.1.desc.fallback: "$turmoil_in_brandenburg.1.desc.start$\n\nThe rule of [GetCharacter('bra_ludwig_v_wittelsbach').GetShortNameWithNoTooltip] was short-lived, and [root_ruler.GetName] has assumed control over [ROOT.GetCountry.GetNameWithNoTooltip]. Even so, institutional weakness and competing dynastic claims continue to challenge the authority of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+
+ turmoil_in_brandenburg.100.title: "The Hohenzollern Restoration of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ turmoil_in_brandenburg.100.desc: "Years of instability and dynastic conflict have exhausted [ROOT.GetCountry.GetName]. To secure order and rebuild the state quickly, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] imposes a dynastic reset and begins a new chapter under Hohenzollern leadership."
+ turmoil_in_brandenburg.100.a: "A new era begins under the Hohenzollern."
+
+ turmoil_in_brandenburg.1000.desc.emperor_supports: "$turmoil_in_brandenburg.1000.desc$\n\nThe court must resolve the pretender crisis through internal action and swift consolidation of authority."
+ turmoil_in_brandenburg.1000.desc.emperor_rejects: "$turmoil_in_brandenburg.1000.desc$\n\nNo outside arbitration will decide this matter. The succession crisis must be handled within [ROOT.GetCountry.GetNameWithNoTooltip]."
+ turmoil_in_brandenburg.1000.a: "Move against the pretender through the court."
+ turmoil_in_brandenburg.1000.a.tt: "We will act directly to break the pretender's support network and resolve the crisis ourselves."
+
+ turmoil_in_brandenburg.1004.title: "Court Sanction Against the Pretender"
+ turmoil_in_brandenburg.1004.desc: "The court has granted us full authority to deal with [target_character.GetName] and end the pretender threat decisively."
+
+ turmoil_in_brandenburg.1100.title: "The Breaking Point in [root_country.GetNameWithNoTooltip]"
+ turmoil_in_brandenburg.1100.desc: "Neglect and disorder have pushed [root_country.GetName] to a crisis point. The current arrangement has failed, and a direct dynastic reset is now required to restore stability."
+ turmoil_in_brandenburg.1100.a: "Appoint a Hohenzollern ruler immediately."
+ turmoil_in_brandenburg.1100.a.tt: "A Hohenzollern candidate will be placed on the throne to end the disaster quickly."
+
+ turmoil_in_brandenburg.1105.title: "A New Ruler for [ROOT.GetCountry.GetNameWithNoTooltip]"
+ turmoil_in_brandenburg.1105.desc: "To end the prolonged crisis, [hohenzollern_character.GetName] is elevated as the new ruler of [ROOT.GetCountry.GetName]. This transition is intended to restore order, rebuild legitimacy, and stabilize governance."
