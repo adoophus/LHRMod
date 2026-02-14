@@ -47,7 +47,7 @@ flavor_hes.4.historical_info: "In the late 14th century, the Hessian nobility qu
 
 # Option A: Historical Compromise/Reform
 flavor_hes.4.a: "Pay the indemnity and reform the Noble's privileges."
-hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] will permanently double (#w +100%#!):\n\ #r -5.00%#! [ShowModifierTypeName('nobles_estate_max_tax')]\n\ #g +10.00%#! [manpower_with_icon|e] \n\ #w +0.10#! monthly trend towards [ShowSocietyDirectionName('aristocracy')] \n\ #w +0.025#! monthly trend towards [ShowSocietyDirectionName('quantity')]"
+hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] will permanently double (#w +100%#!):\n#r -5.00%#! [ShowModifierTypeName('nobles_estate_max_tax')]\n#g +10.00%#! [manpower_with_icon|e]\n#w +0.10#! monthly trend towards [ShowSocietyDirectionName('aristocracy')]\n#w +0.025#! monthly trend towards [ShowSocietyDirectionName('quantity')]"
 
 # Option B: Confrontation/Civil War
 flavor_hes.4.b: "Refuse their demands; we will not yield to treason."

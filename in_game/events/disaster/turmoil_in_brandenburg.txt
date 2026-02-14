@@ -1105,6 +1105,7 @@ turmoil_in_brandenburg.100 = {
 		any_active_disaster = {
 			disaster_type = disaster_type:turmoil_in_brandenburg
 		}
+		has_variable = bra_wittelsbacher_investment_var
 		var:bra_wittelsbacher_investment_var >= 50
 	}
 	immediate = {
@@ -1965,6 +1966,7 @@ turmoil_in_brandenburg.1100 = {
 		any_active_disaster = {
 			disaster_type = disaster_type:turmoil_in_brandenburg
 		}
+		has_variable = bra_wittelsbacher_neglect_var
 		var:bra_wittelsbacher_neglect_var <= -50
 	}
 	immediate = {

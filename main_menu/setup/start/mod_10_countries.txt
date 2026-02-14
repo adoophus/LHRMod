@@ -1197,10 +1197,6 @@ countries = {
 				glogow szprotawa kozuchow wschowa zielona_gora
 			}
 
-			own_control_integrated = {
-				zagan krosno_odrzanskie sulechow zary
-			}
-
 			starting_technology_level = 3
 			include = "catholic_monarchy_no_coast"
 			include = "expl_northern_europe"
@@ -1210,9 +1206,6 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = jaw_henryk_i_javorski
-
-				ruler_term = {	character = glg_mechthild_von_braunschweig_luneburg start_date = 1310.12.11 end_date = 1318.4.26 regnal_number = 1 }
-				ruler_term = {	character = jaw_henryk_i_javorski start_date = 1337.1.1 regnal_number = 1	}
 				
 				regnal_numbers = {
 					name_henry = 1
@@ -1229,12 +1222,10 @@ countries = {
 
 		STZ = {}
 		BYM = {}
-		SIM = {}
 		OSW = {}
 		TES = {}
 		RCB = {}
 		SIZ = {}
-
 		LGC = {}
 		OEL = {}
 		NMS = {}
@@ -1264,7 +1255,6 @@ countries = {
 			capital = prudnik
 			dynasty = piast_dynasty
 		}
-
 
 		ZIE = {	#Ziębice
 			own_control_core = {

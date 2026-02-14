@@ -881,5 +881,3 @@ flavor_hes.22 = {
 
 	historical_info = flavor_hes.22.historical_info
 }
-
-# NOT FINISHED 23 pop requirements go up (cultural demands)
