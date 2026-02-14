@@ -41,7 +41,7 @@ hes_economic_reforms = {
 # AGE 3
 
 hes_modern_hessian_army = {
-    age = age_3_discovery
+    age = age_2_renaissance
     icon = goose_step
     potential = { has_or_had_tag = HES }
     discipline = 0.05

@@ -50,9 +50,6 @@ hesse_1_desc: "The nobles retain the right to construct and maintain the key reg
 hesse_2: "Burgrecht"
 hesse_2_desc: "The ancient customary right of Burgrecht grants the Hessian nobility significant feudal independence, allowing them to maintain localized jurisdiction and command their own military retinues. This dominance grants them profound political power and anchors the Landgraviate's military strength to a traditional, yet massive, pool of feudal manpower. The Landgrave must consistently attend to the noble's satisfaction to prevent internal challenges to his authority."
 
-# Tooltip for Revocation Condition
-hes.asserting.authority.tt: "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the Noble Estate's power. This must first be established through a decisive act of state."
-
 # CLERGY ESTATE
 
 hesse_3: "Kirchenzins"

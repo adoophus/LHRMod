@@ -118,13 +118,11 @@ flavor_hes.3 = {
 		tag = HES
 		owns = location:marburg
 		location:marburg = {
-			limit = { 
-				NOT = { 
-					OR = {
-						location_rank = location_rank:town
-						location_rank = location_rank:city
-					} 
-				}
+			NOT = { 
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				} 
 			}
 		}
 	}
@@ -295,11 +293,8 @@ flavor_hes.6 = {
             nickname = "the Iron"
             culture = culture:rhine_franconian
             religion = root.religion
-            gender = male
 			estate = estate_type:clergy_estate
 			birth_location = location:kassel
-            is_historical = yes
-            birth = 1324.1.1 # Estimated
             adm = 98
             dip = 39
             mil = 25
@@ -488,7 +483,6 @@ flavor_hes.10 = {
 		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
 		character:hun_saint_elisabeth_of_hungary = {
 			save_scope_as = hes_saint_elisabeth_of_hungary
-			script = hes_saint_elisabeth_of_hungary
 		}
 
 	}
@@ -712,11 +706,8 @@ flavor_hes.18 = {
             nickname = "The Iron Knight"
             culture = culture:rhine_franconian
             religion = root.religion
-            gender = male
 			estate = estate_type:nobles_estate
 			birth_location = location:kassel
-            is_historical = yes
-            birth = 1389.1.1 # Estimated
             adm = 56
             dip = 78
             mil = 94
@@ -790,8 +781,6 @@ flavor_hes.20 = {
 	option = {
 		name = flavor_hes.20.a
 		location:kassel = {
-			owner = root
-			controller = root
 			market = {
 				add_temporary_demand = {
 					type = demand:hes_print_coins_1
@@ -807,8 +796,6 @@ flavor_hes.20 = {
 		name = flavor_hes.20.b
 
 		location:kassel = {
-			owner = root
-			controller = root
 			market = {
 				add_temporary_demand = {
 					type = demand:hes_print_coins_2

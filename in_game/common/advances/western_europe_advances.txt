@@ -46,7 +46,7 @@ REPLACE:cas_real_academia_espanola = {
 	}
 	global_monthly_literacy = 0.02
 	
-	requires = global_trade_advance
+	requires = printing_press_advance
 }
 
 # ENGLAND #
