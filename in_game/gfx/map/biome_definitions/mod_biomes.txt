@@ -24,7 +24,7 @@
 	climate = arctic
 	topography = valley
 	vegetation = desert
-	biome = arctic_valley_desert_biome
+	biome = arctic_hills_desert_biome
 }
 
 201 = 
@@ -32,7 +32,7 @@
 	climate = arctic
 	topography = valley
 	vegetation = sparse
-	biome = arctic_valley_sparse_biome
+	biome = arctic_hills_sparse_biome
 }
 
 202 = 
@@ -41,7 +41,7 @@
 	topography = valley
 	vegetation = grasslands
 	vegetation = woods
-	biome = arctic_valley_grasslands_woods_biome
+	biome = arctic_hills_grasslands_woods_biome
 }
 
 203 = 
@@ -49,7 +49,7 @@
 	climate = arctic
 	topography = valley
 	vegetation = farmland
-	biome = arctic_valley_farmland_biome
+	biome = arctic_hills_farmland_woods_biome
 }
 
 204 = 
@@ -58,7 +58,7 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = arctic_valley_forest_jungle_biome
+	biome = arctic_hills_forest_jungle_biome
 }
 
 ########################################################################################################### ARID ########################################################################
@@ -71,7 +71,7 @@
 	climate = arid
 	topography = valley
 	vegetation = desert
-	biome = arid_valley_desert_biome
+	biome = arid_hills_desert_biome
 }
 
 
@@ -83,7 +83,7 @@
 	climate = arid
 	topography = valley
 	vegetation = sparse
-	biome = arid_valley_sparse_biome
+	biome = arid_hills_sparse_biome
 }
 
 
@@ -96,7 +96,7 @@
 	topography = valley
 	vegetation = grasslands
 	vegetation = woods
-	biome = arid_valley_grasslands_woods_biome
+	biome = arid_hills_grasslands_woods_biome
 }
 
 
@@ -107,7 +107,7 @@
 	climate = arid
 	topography = valley
 	vegetation = farmland
-	biome = arid_valley_farmland_biome
+	biome = arid_hills_farmland_woods_biome
 }
 
 
@@ -120,7 +120,7 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = arid_valley_forest_jungle_biome
+	biome = arid_hills_forest_jungle_biome
 }
 
 
@@ -134,7 +134,7 @@
 	climate = cold_arid
 	topography = valley
 	vegetation = desert
-	biome = cold_arid_valley_desert_biome
+	biome = cold_arid_hills_desert_biome
 }
 
 ##Sparse
@@ -144,7 +144,7 @@
 	climate = cold_arid
 	topography = valley
 	vegetation = sparse
-	biome = cold_arid_valley_sparse_biome
+	biome = cold_arid_hills_sparse_biome
 }
 
 ##Grasslands/Woods
@@ -155,7 +155,7 @@
 	topography = valley
 	vegetation = grasslands
 	vegetation = woods
-	biome = cold_arid_valley_grasslands_woods_biome
+	biome = cold_arid_hills_grasslands_woods_biome
 }
 
 ##Farmland
@@ -165,7 +165,7 @@
 	climate = cold_arid
 	topography = valley
 	vegetation = farmland
-	biome = cold_arid_valley_farmland_biome
+	biome = cold_arid_hills_farmland_woods_biome
 }
 
 ##Forest/Jungle
@@ -176,7 +176,7 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = cold_arid_valley_forest_jungle_biome
+	biome = cold_arid_hills_forest_jungle_biome
 }
 
 
@@ -190,7 +190,7 @@
 	climate = subtropical
 	topography = valley
 	vegetation = desert
-	biome = tropical_valley_desert_biome
+	biome = tropical_hills_desert_biome
 }
 
 ##Sparse
@@ -201,7 +201,7 @@
 	climate = subtropical
 	topography = valley
 	vegetation = sparse
-	biome = tropical_valley_sparse_biome
+	biome = tropical_hills_sparse_biome
 }
 
 ##Grasslands/Woods
@@ -213,7 +213,7 @@
 	topography = valley
 	vegetation = grasslands
 	vegetation = woods
-	biome = tropical_valley_grasslands_woods_biome
+	biome = tropical_hills_grasslands_woods_biome
 }
 
 
@@ -225,7 +225,7 @@
 	climate = subtropical
 	topography = valley
 	vegetation = farmland
-	biome = tropical_valley_farmland_biome
+	biome = tropical_hills_farmland_woods_biome
 }
 
 ##Forest/Jungle
@@ -237,7 +237,7 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = tropical_valley_forest_jungle_biome
+	biome = tropical_hills_forest_jungle_biome
 }
 
 
@@ -251,7 +251,7 @@
 	climate = continental
 	topography = valley
 	vegetation = desert
-	biome = oceanic_valley_desert_biome
+	biome = oceanic_hills_desert_biome
 }
 
 
@@ -264,7 +264,7 @@
 	climate = continental
 	topography = valley
 	vegetation = sparse
-	biome = oceanic_valley_sparse_biome
+	biome = oceanic_hills_sparse_biome
 }
 
 ##Grasslands
@@ -275,7 +275,7 @@
 	climate = continental
 	topography = valley
 	vegetation = grasslands
-	biome = oceanic_valley_grasslands_biome
+	biome = oceanic_hills_grasslands_biome
 }
 
 ##Woods
@@ -286,7 +286,7 @@
 	climate = continental
 	topography = valley
 	vegetation = woods
-	biome = oceanic_valley_woods_biome
+	biome = oceanic_hills_woods_biome
 }
 
 ##Farmland
@@ -299,7 +299,7 @@
 	climate = continental
 	topography = valley
 	vegetation = farmland
-	biome = oceanic_valley_farmland_biome
+	biome = oceanic_hills_farmland_woods_biome
 }
 
 ##Forest/Jungle
@@ -312,7 +312,7 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = oceanic_valley_forest_jungle_biome
+	biome = oceanic_hills_forest_jungle_biome
 }
 
 
@@ -325,7 +325,7 @@
 	climate = mediterranean
 	topography = valley
 	vegetation = desert
-	biome = mediterranean_valley_desert_biome
+	biome = mediterranean_hills_desert_biome
 }
 
 
@@ -337,7 +337,7 @@
 	climate = mediterranean
 	topography = valley
 	vegetation = sparse
-	biome = mediterranean_valley_sparse_biome
+	biome = mediterranean_hills_sparse_biome
 }
 
 ##Grasslands/Woods
@@ -348,7 +348,7 @@
 	topography = valley
 	vegetation = grasslands
 	vegetation = woods
-	biome = mediterranean_valley_grasslands_woods_biome
+	biome = mediterranean_hills_grasslands_woods_biome
 }
 
 
@@ -359,7 +359,7 @@
 	climate = mediterranean
 	topography = valley
 	vegetation = farmland
-	biome = mediterranean_valley_farmland_biome
+	biome = mediterranean_hills_farmland_woods_biome
 }
 
 ##Forest/Jungle
@@ -370,5 +370,5 @@
 	topography = valley
 	vegetation = forest
 	vegetation = jungle
-	biome = mediterranean_valley_forest_jungle_biome
+	biome = mediterranean_hills_forest_jungle_biome
 }
