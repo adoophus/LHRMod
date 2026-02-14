@@ -12,6 +12,9 @@ lhr_on_game_start = {
 		}
 
 		c:FRA = {
+			cancel_subject = c:FLA
+			cancel_subject = c:ARS
+
 			add_truce_with = { target = c:FLA mutual = yes months = 180 }
 			add_truce_with = { target = c:HAI mutual = yes months = 180 }
 			add_truce_with = { target = c:BRB mutual = yes months = 180 }
@@ -21,6 +24,10 @@ lhr_on_game_start = {
 			add_truce_with = { target = c:UTR mutual = yes months = 180 }
 			add_truce_with = { target = c:LOO mutual = yes months = 180 }
 			add_truce_with = { target = c:NAM mutual = yes months = 180 }
+		}
+
+		c:FLA = {
+			cancel_subject = c:NAM
 		}
 
 		c:MAM = {
