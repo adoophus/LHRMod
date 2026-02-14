@@ -1,4 +1,4 @@
-﻿locations={
+locations={
 	oslo = { rank = city town_setup = naval_scandinavian_town }
 	stockholm = { rank = city town_setup = naval_scandinavian_town }
 	kobenhavn = { rank = city town_setup = naval_scandinavian_town }

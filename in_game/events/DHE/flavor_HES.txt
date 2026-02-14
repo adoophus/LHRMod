@@ -1,4 +1,4 @@
-﻿namespace = flavor_hes
+namespace = flavor_hes
 
 #rail road shit
 #1 privilege removal 1342 - 100%

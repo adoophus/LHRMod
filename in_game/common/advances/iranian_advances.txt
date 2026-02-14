@@ -1,4 +1,4 @@
-﻿ira_royal_road_surveyors = {
+ira_royal_road_surveyors = {
 	age = age_2_renaissance
 	potential = {
 		OR = {

@@ -1,4 +1,4 @@
-﻿hes_persuade_mercenaries = {
+hes_persuade_mercenaries = {
 	potential = {
 		tag = HES
 	}

@@ -1,4 +1,4 @@
-﻿foreign_building_ban = {
+foreign_building_ban = {
 	type = defend_capital
 	
 	attacker = {

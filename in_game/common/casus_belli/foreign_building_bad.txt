@@ -1,4 +1,4 @@
-﻿cb_foreign_building_bad = {
+cb_foreign_building_bad = {
     visible = {
         scope:target = {
 			owns_any_foreign_buildings_in  = root

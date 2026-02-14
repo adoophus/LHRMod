@@ -1,4 +1,4 @@
-﻿countries = {
+countries = {
 	countries = {
 		HES = {	#Hesse
 			own_control_core = {
