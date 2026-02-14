@@ -1,14 +1,5 @@
 ﻿l_english:
 
- #
- # Societal Values
- #
- unitary_vs_federalism: "Unitary vs Federalism"
- unitary_vs_federalism_desc: "The unitary system grants full authority to the central government, whereas the federal system shares control across its constituent regions."
- unitary_focus: "Unitary"
- federalism_focus: "Federalism"
-
-
 #
 # HESSE
 #
@@ -67,6 +58,8 @@ hes.asserting.authority.tt: "The Landgrave has not yet achieved the necessary po
 hesse_3: "Kirchenzins"
 hesse_3_desc: "The Church in Hesse, often answering to external Archbishoprics like Mainz, retains significant financial autonomy. Local parishes and monasteries collect the Tithe and various rents, which remain outside the state's treasury. This autonomy greatly inflates the political power of the Clergy, hinders the Landgrave's revenue base, and makes any centralizing reforms within the Church structure significantly more costly."
 hesse_3_revoke_condition: "The Landgrave has successfully integrated the Church structure and adopted the Advancements that grant the Crown institutional control over religious affairs."
+clergy_area_conversion_mandate: "Missionary District Mandate"
+clergy_area_conversion_mandate_desc: "The Clergy is granted authority to coordinate broad missionary campaigns across entire areas, increasing conversion momentum while raising their influence in state affairs."
 
 # PEASANTRY ESTATE
 
@@ -84,3 +77,28 @@ hes_persuade_mercenaries_progress: "$hes_persuade_mercenaries_active$"
 hes_persuade_mercenaries_wordier: "$hes_persuade_mercenaries_active$"
 hes_persuade_mercenaries_long_wordier: "The Landgrave's Chancellery is working to secure long-term, cost-effective maintenance agreements with all Hessian mercenary companies."
 hes_persuade_mercenaries_tooltip: "Reduces mercenary maintenance cost and signals reliability."
+
+
+#
+# IRANIAN
+#
+ira_royal_road_surveyors: "Royal Road Surveyors"
+ira_royal_road_surveyors_desc: "The vastness of the Iranian Plateau is defined not by its plains, but by the formidable ridges that guard them. By mastering the art of the 'Chapar Khaneh' and refining the paths first laid by the Kings of Old, our surveyors have turned jagged peaks into thoroughfares."
+
+# NEW CABINET AREA ACTION
+# PROMOTE RELIGION AREA
+#
+
+promote_religion_area: "Convert Area"
+promote_religion_area_desc: "This will increase the amount of [pops|e] that will [convert|e] to the selected [religion|e] each month."
+promote_religion_area_action: "Convert [SCOPE.sArea('target_area').GetNameWithNoTooltip] to [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]"
+promote_religion_area_select_religion: "Select the [religion|e] to [convert|e] [pops|e] in the [area|e] to:"
+promote_religion_area_select_province: "Select the [area|e] to [convert|e] [pops|e] in:"
+promote_religion_area_active: "Converting [SCOPE.sArea('target_area').GetNameWithHighlightOnly]"
+promote_religion_area_action_progress: "[Cabinet.GetActionNumProgress|%]"
+promote_religion_area_action_progress_wordier: "Converting [SCOPE.sArea('target_area').GetNameWithNoTooltip] to [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]: [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]"
+promote_religion_area_action_progress_tooltip: "$promote_religion_area_action$\n[conversion|e] progress: #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!"
+
+# MAMLUK GOVERNMENT REFORM
+mams_nerf: "Bahri Mamluk Sultanate"
+mams_nerf_desc: "In 1337, the Bahri order concentrates power in Cairo around the Sultan, his barracks households, and competing amirs. Military strength comes from purchased and trained mamluk professionals, not deep rural musters, so peasant levy capacity remains limited. At the same time, centralized fiscal rule and urban market society reinforce crown authority and slowly erode rigid bound-labor structures in favor of freer subject relations."

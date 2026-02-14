@@ -45,3 +45,6 @@ unlock_heavy_lancers_advance_desc: "As armor technology peaks, cavalry forces ad
 # Logistics
 supply_depot_advance_age_4_reformation: "Baggage Trains"
 supply_depot_advance_age_4_reformation_desc: "Standardizing the organization of large-scale baggage trains allows our armies to maintain their offensive momentum deep into enemy territory."
+
+area_religious_missions_advance: "Missionary Administration"
+area_religious_missions_advance_desc: "By formalizing regional missionary administration, the state can direct coordinated conversion campaigns across entire areas rather than isolated provinces."

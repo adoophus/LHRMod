@@ -1,0 +1,20 @@
+mams_nerf = {
+	unique = yes
+	major = no
+    age = age_1_traditions
+	potential = {  
+		has_or_had_tag = MAM
+	}
+	locked = {
+		NOT = { 
+			has_embraced_institution = institution:professional_armies
+		}
+	}
+	
+	country_modifier = {
+		peasants_estate_levy_size = -0.33
+		monthly_legitimacy = 0.1
+		monthly_towards_free_subjects = 0.1
+	}
+	years = 2
+}

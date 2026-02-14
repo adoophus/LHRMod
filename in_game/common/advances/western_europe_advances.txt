@@ -72,7 +72,7 @@ REPLACE:sailing_and_fighting_instructions = {
 
 # moved from age 6 to 2
 REPLACE:english_ambition = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		OR = {
 			has_or_had_tag = ENG

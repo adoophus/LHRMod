@@ -304,7 +304,7 @@ flavor_hes.6 = {
             dip = 39
             mil = 25
             add_trait = trait:goal_oriented
-            save_scope_as = gottfried_von_beust
+            save_scope_as = target_character
 			script = gottfried_von_beust
 			create_in_limbo = yes
         }
@@ -314,7 +314,7 @@ flavor_hes.6 = {
         name = flavor_hes.6.a
 		custom_tooltip = flavor_hes.6.a.tt1
         historical_option = yes
-        scope:gottfried_von_beust = { move_country = root }
+        scope:target_character = { move_country = root }
 		change_gold_effect = { scale = -3 }
 	    add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
 	    add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
@@ -323,7 +323,7 @@ flavor_hes.6 = {
         name = flavor_hes.6.b
 
 		change_gold_effect = { scale = 3 }
-		hidden_effect = { kill_character_silently = scope:gottfried_von_beust }
+		hidden_effect = { kill_character_silently = scope:target_character }
     }
 
 	historical_info = flavor_hes.6.historical_info
@@ -343,7 +343,6 @@ flavor_hes.7 = {
     }
     trigger = {
         tag = HES
-		exists = character:gottfried_von_beust
 		character:gottfried_von_beust = { is_alive = yes }
 		is_situation_active = situation:black_death
     }
@@ -355,7 +354,7 @@ flavor_hes.7 = {
 
     immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
-        character:gottfried_von_beust = { save_scope_as = gottfried_von_beust }
+        character:gottfried_von_beust = { save_scope_as = target_character }
     }
 
     option = {
@@ -396,7 +395,6 @@ flavor_hes.8 = {
 	trigger = {
 		tag = HES
 		has_variable = hes_wash_hands
-		exists = character:gottfried_von_beust
 		character:gottfried_von_beust = { is_alive = yes }
 	}
 
@@ -445,7 +443,6 @@ flavor_hes.9 = {
 	image = "gfx/interface/illustrations/situation/black_death.dds"
 	trigger = {
 		tag = HES
-		exists = character:gottfried_von_beust
 		character:gottfried_von_beust = { is_alive = yes }
 	}
 	immediate = {

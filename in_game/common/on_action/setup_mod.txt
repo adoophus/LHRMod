@@ -1,0 +1,52 @@
+on_game_start = {
+	on_actions = {
+		lhr_on_game_start
+	}
+}
+
+lhr_on_game_start = {
+	effect = {
+		c:BOH = {
+			cancel_subject = c:MVA
+			create_union = c:MVA
+		}
+
+		c:FRA = {
+			add_truce_with = { target = c:FLA mutual = yes months = 180 }
+			add_truce_with = { target = c:HAI mutual = yes months = 180 }
+			add_truce_with = { target = c:BRB mutual = yes months = 180 }
+			add_truce_with = { target = c:LIE mutual = yes months = 180 }
+			add_truce_with = { target = c:HOL mutual = yes months = 180 }
+			add_truce_with = { target = c:GEL mutual = yes months = 180 }
+			add_truce_with = { target = c:UTR mutual = yes months = 180 }
+			add_truce_with = { target = c:LOO mutual = yes months = 180 }
+			add_truce_with = { target = c:NAM mutual = yes months = 180 }
+		}
+
+		c:MAM = {
+			cancel_subject = c:FDL
+			cancel_subject = c:AAL
+			cancel_subject = c:DGE
+			cancel_subject = c:DUL
+			cancel_subject = c:KIL
+			cancel_subject = c:MDA
+			cancel_subject = c:MEC
+			add_truce_with = { target = c:TUR mutual = yes months = 120 }
+			add_truce_with = { target = c:CIL mutual = yes months = 120 }
+			add_truce_with = { target = c:ERE mutual = yes months = 120 }
+			add_truce_with = { target = c:KAR mutual = yes months = 120 }
+			add_truce_with = { target = c:DUL mutual = yes months = 60 }
+			add_truce_with = { target = c:KIL mutual = yes months = 60 }
+			add_opinion = { target = c:CIL modifier = lhr_opinion_mams_relations_hit_200 }
+			reverse_add_opinion = { target = c:CIL modifier = lhr_opinion_mams_relations_hit_200 }
+			add_opinion = { target = c:ERE modifier = lhr_opinion_mams_relations_hit_200 }
+			reverse_add_opinion = { target = c:ERE modifier = lhr_opinion_mams_relations_hit_200 }
+			add_opinion = { target = c:KAR modifier = lhr_opinion_mams_relations_hit_200 }
+			reverse_add_opinion = { target = c:KAR modifier = lhr_opinion_mams_relations_hit_200 }
+			add_opinion = { target = c:DUL modifier = lhr_opinion_mams_relations_hit_100 }
+			reverse_add_opinion = { target = c:DUL modifier = lhr_opinion_mams_relations_hit_100 }
+			add_opinion = { target = c:KIL modifier = lhr_opinion_mams_relations_hit_100 }
+			reverse_add_opinion = { target = c:KIL modifier = lhr_opinion_mams_relations_hit_100 }
+		}
+	}
+}
