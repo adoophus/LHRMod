@@ -1,4 +1,4 @@
-mams_nerf = {
+﻿mams_nerf = {
 	unique = yes
 	major = no
     age = age_1_traditions

@@ -1,0 +1,2 @@
+[20:52:36][pdx_persistent_reader.cpp:289]: Error: "Failed to read key reference: reduce_inflation_advance: reduce_inflation_advance, near line: 105" in file: "common/advances/central_europe_advances.txt" near line: 105
+[20:52:36][pdx_persistent_reader.cpp:289]: Error: "Failed to read key reference: age_4_absolutism: age_4_absolutism, near line: 252" in file: "common/advances/central_europe_advances.txt" near line: 252

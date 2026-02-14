@@ -1,4 +1,4 @@
-on_game_start = {
+﻿on_game_start = {
 	on_actions = {
 		lhr_on_game_start
 	}

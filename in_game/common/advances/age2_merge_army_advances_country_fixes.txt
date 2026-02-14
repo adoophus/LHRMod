@@ -1,4 +1,4 @@
-#Reinassance fixes
+﻿#Reinassance fixes
 
 REPLACE:genoese_crossbowmen = {
 	potential = { has_or_had_tag = GEN }

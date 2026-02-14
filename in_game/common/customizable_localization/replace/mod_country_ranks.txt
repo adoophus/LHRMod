@@ -1,4 +1,4 @@
-country_flavor = {
+﻿country_flavor = {
 	type = country
 
 	text = {

@@ -1,4 +1,4 @@
-REPLACE:traditionalist_vs_innovative = {
+﻿REPLACE:traditionalist_vs_innovative = {
 	left_modifier = {
 		global_estate_target_satisfaction = small_permanent_target_satisfaction
 		cultural_tradition_modifier = 1.0

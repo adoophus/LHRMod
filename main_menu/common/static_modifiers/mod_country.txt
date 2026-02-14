@@ -1,4 +1,4 @@
-hes_reduce_inflation = {
+﻿hes_reduce_inflation = {
 	monthly_inflation = -0.0015
 }
 hes_religious_rights_protected = {

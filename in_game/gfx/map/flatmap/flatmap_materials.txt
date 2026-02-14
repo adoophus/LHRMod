@@ -1,4 +1,4 @@
-# Material indices need to fit into a single channel of a compressed texture
+﻿# Material indices need to fit into a single channel of a compressed texture
 # That means a maximum of 32 material-textures are supported. If you have multiple materials in this file that use the same texture they will count as one
 #
 #

@@ -1,4 +1,4 @@
-NUnit = {
+﻿NUnit = {
 	EMBARK_DISEMBARK_MULTIPLIER = 0.3 
 }
 

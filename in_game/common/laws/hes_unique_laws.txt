@@ -1,4 +1,4 @@
-river_law = {
+﻿river_law = {
 	law_category = socioeconomic
 
 	hes_fuldastrom_decree_law = {
