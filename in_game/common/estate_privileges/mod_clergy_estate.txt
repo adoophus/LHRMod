@@ -17,3 +17,25 @@ hesse_3 = {
 		monthly_prestige = -0.05
     }
 }
+
+clergy_area_conversion_mandate = {
+  estate = clergy_estate
+
+  potential = {
+    NOT = { has_advance = area_religious_missions_advance }
+  }
+
+  allow = {
+    religious_unity < 1.0
+    NOT = { has_advance = area_religious_missions_advance }
+  }
+
+  country_modifier = {
+    clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+    global_clergy_estate_power = 1
+    allow_cabinet_promote_religion_area = yes
+    monthly_towards_spiritualist = societal_value_monthly_move
+    		tolerance_heretic = -0.2
+		tolerance_heathen = -0.2
+  }
+}

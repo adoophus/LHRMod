@@ -127,7 +127,7 @@ REPLACE:encouragement_of_philosophers = {
 # moved from age 4 to 2
 # 15% galley power added
 REPLACE:expanded_arsenale = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		OR = {
 			has_or_had_tag = NAP
@@ -209,7 +209,7 @@ REPLACE:ven_naval_conscription = {
 REPLACE:genoese_flexibility = {
 	potential = { has_or_had_tag = GEN }
 
-	age = age_2_reinassance
+	age = age_2_renaissance
 	navy_maintenance_cost = -0.05
 	can_convert_galleys_to_light = yes
 }
@@ -221,7 +221,7 @@ REPLACE:genoese_flexibility = {
 
 # moved from age 6 to 2
 REPLACE:dan_admiralty_college = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		has_or_had_tag = DAN
 	}

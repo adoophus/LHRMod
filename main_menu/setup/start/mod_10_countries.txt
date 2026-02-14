@@ -831,5 +831,109 @@ countries = {
 			country_rank = rank_kingdom
 			capital = paris
 		}
+	
+	#-------------------------- Egypt ----------------------------
+
+		#Mamluk Sultanate - MAM
+		MAM = {
+			own_control_core = {
+				alexandria el_alamein damanhur ramsis kafr_saqr kharibta rashid wadi_el_natrun
+				cairo atfih beni_suef faiyum giza dakahla
+				damietta al_mima el_burullus el_mahalla fuwa menouf samanoud tidah
+				mansoura bilbeis faqus ushmum_tannah qalyub tarrana tinnis
+				suez saint_anthony saint_paul_anchorite
+				el_tor
+				edfu esna qena hiw qus
+				asyut el_balyana el_buwit akhmim manfalut
+				minya ashmunayn el_bahnasa sharuna tahna
+				kharga bahariyya baris el_qasr qasr_farafra siwa
+			}
+
+			own_control_integrated = {
+				el_arish nekhel qatya warrada
+				matruh sallum tobruk
+				el_qoseir ras_gharib safaga
+				el_jundi faran nuweiba saint_katrine
+				ayntab dluk
+				jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
+				beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
+				damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+				umluj al_hawra al_manjur al_maramiyah
+				al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
+				duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
+				tabuk_arabia al_khanbarah al_muazzam al_ukhaydir bajdah bir_ibn_hermas dhat_al_hajj
+				aynuna al_bad al_muwaylih haql makna
+			}
+
+			own_control_conquered = {
+				iskenderun
+			}
+
+			include = "expl_muslim_mediterranean"
+			include = "expl_horn_of_africa"
+			include = "muslim_monarchy"
+			country_rank = rank_kingdom
+			government = {
+				type = monarchy
+				heir_selection = mamluk_succesion
+				ruler_term = { character = mam_an_nasir_bahri start_date = 1293.1.1 end_date = 1294.1.1 regnal_number = 1 }
+				ruler_term = { character = mam_al_adil_kitbugha start_date = 1294.1.1 end_date = 1296.12.7 regnal_number = 1 }
+				ruler_term = { character = mam_lajin_al_mansuri start_date = 1296.12.7 end_date = 1299.1.16 regnal_number = 1 }
+				ruler_term = { character = mam_an_nasir_bahri start_date = 1299.1.16 end_date = 1309.4.1 regnal_number = 1 }
+				ruler_term = { character = mam_baybars_ii start_date = 1309.4.1 end_date = 1310.3.5 regnal_number = 2 }
+				ruler_term = { character = mam_an_nasir_bahri start_date = 1310.3.5 regnal_number = 1 }
+				ruler = mam_an_nasir_bahri
+				regnal_numbers = {
+					lajin = 1
+					name_baybars = 2
+				}
+
+				reforms = {
+					mamluk_government
+					mams_nerf
+				}
+
+				privilege = {
+					#Nobles
+					elaborate_court_ceremonies
+					banal_lordship
+
+					#Ulama
+					waqf_payments
+
+					#Burghers
+					trade_monopolies
+				}
+
+				spiritualist_vs_humanist = -10
+				belligerent_vs_conciliatory = -30
+				quality_vs_quantity = -10
+				land_vs_naval = -40
+				laws = {
+					mamluk_rank_system_laws = mam_rigid_system
+					mamluk_army_law = al_mamalik_al_sultaniyya
+					mamluk_promotion_law = merit_basis
+					sharia_law = shafii_policy
+					administrative_system = local_courts_administration
+					iqta_law = lenient_taxation
+				}
+			}
+			religious_school = shafii_school #While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
+			government = { mysticism_vs_jurisprudence = 20 }
+			
+
+			tolerated_cultures = {
+				upper_egyptian_culture
+				coptic_culture mizrahi #else they be slaves
+				libyan_arabic_culture
+				bedouin_culture
+				eastern_amazigh
+				mizrahi
+			}
+
+			currency_data = { complacency = 15 }
+
+			capital = cairo
+		}
 	}
 }

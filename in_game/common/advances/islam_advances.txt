@@ -50,7 +50,7 @@ REPLACE:secure_mediterranean_ports = {
 # moved from age 5 to 2
 # nerfed to 15%
 REPLACE:port_customs = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		has_or_had_tag = MAM
 	}

@@ -6,7 +6,7 @@
 # moved from age 5 to 2
 # nerfed to 5% from 10%
 REPLACE:komisja_edukacji_narodowej = {
-	age = age_2_reinassance
+	age = age_2_renaissance
 	potential = {
 		OR = {
 			has_or_had_tag = POL

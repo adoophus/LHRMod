@@ -1,0 +1,6 @@
+allow_cabinet_promote_religion_area = {
+	boolean = yes
+	game_data = {
+		category = country
+	}
+}
