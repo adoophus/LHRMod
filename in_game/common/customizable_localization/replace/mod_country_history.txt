@@ -1,5 +1,0 @@
-INJECT:country_history = {
-
-	# Tag specific. Please keep alphabetical order
-	text = { localization_key = country_history_HES trigger = { tag = HES } } # HES
-}
