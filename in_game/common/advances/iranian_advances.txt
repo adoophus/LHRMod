@@ -9,6 +9,6 @@ ira_royal_road_surveyors = {
 	mountains_proximity_impact = -0.5
 	hills_proximity_impact = -0.5
 	plateau_proximity_impact = -0.5
-	
+	valley_proximity_impact = -0.5
 	requires = renaissance_urbanisation
 }

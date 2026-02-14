@@ -4,3 +4,11 @@ allow_cabinet_promote_religion_area = {
 		category = country
 	}
 }
+
+valley_proximity_impact = {
+	percent = yes
+	color = bad
+	game_data = {
+		category = country
+	}
+}
