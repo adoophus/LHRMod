@@ -98,6 +98,7 @@ havelberg = { topography = flatland vegetation = grasslands climate = oceanic re
 herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
 ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = lumber}
 beeskow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fur}
+guben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fur}
 
 ## START VANILLA
 ## cant overwrite this file by entry only :(
@@ -982,7 +983,6 @@ wittenberg = { topography = flatland vegetation = grasslands climate = continent
 belzig = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = sand}
 bitterfeld = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = saxon raw_material = wool}
 cottbus = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = livestock}
-guben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = clay}
 spremberg = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = lumber}
 calau = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = wild_game}
 lubben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = legumes}

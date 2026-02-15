@@ -2377,7 +2377,7 @@ scripted_effect set_robber_baron_troubles = {
 }
 
 #Changed by mod
-# Pushed it back from 1370 to 1390, giving the player more time to prepare for it, and also to make it more likely to happen after the Hohenzollern are on the throne
+# Pushed it forwad to 1350 from 1370.
 # Start of Robber Baron Troubles
 turmoil_in_brandenburg.1300 = {
 	type = country_event
@@ -2389,7 +2389,7 @@ turmoil_in_brandenburg.1300 = {
 	dynamic_historical_event = {
 		tag = BRA
 		tag = PRU
-		from = 1390.1.1
+		from = 1350.1.1
 		to = 1500.1.1
 		monthly_chance = 20
 	}

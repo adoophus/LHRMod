@@ -1307,8 +1307,6 @@ countries = {
 			capital = brzeg
 			dynasty = piast_dynasty
 		}
-
-		ZAG = {}
 	
 	#-------------------------- Egypt ----------------------------
 
