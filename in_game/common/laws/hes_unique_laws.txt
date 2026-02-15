@@ -1,6 +1,12 @@
 river_law = {
 	law_category = socioeconomic
 
+	law_country_group = HES
+
+	potential = {
+		has_or_had_tag = HES
+	}
+	
 	hes_fuldastrom_decree_law = {
 		country_modifier = {
 			nobles_estate_target_satisfaction = -0.025
