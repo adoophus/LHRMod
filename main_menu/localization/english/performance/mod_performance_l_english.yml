@@ -1,0 +1,25 @@
+﻿l_english:
+ # Modifiers:
+ STATIC_MODIFIER_NAME_mod_location_disabled_static_modifier: "Location Disabled by Game Rule"
+
+ ## Performance:
+ rule_mod_sop_rule: "Salt & Tears: Pop-Based Countries"
+ setting_mod_no_cull_sop_countries_setting: "Option 1/2: Keep Pop-Based Countries"
+ setting_mod_no_cull_sop_countries_setting_desc: "No changes will be made to the game's pop-based countries."
+ setting_mod_remove_sop_countries_setting: "Option 2/2: Remove Pop-Based Countries"
+ setting_mod_remove_sop_countries_setting_desc: "Will remove every pop-based country that is not present in an owned location."
+ rule_mod_location_removal_rule: "Salt & Tears: Location Removal"
+ setting_mod_no_removal_setting: "Option 1/2: No Removal"
+ setting_mod_no_removal_setting_desc: "All locations will be present in the game."
+ setting_mod_remove_low_importance_setting: "Option 2/2: Remove Low Impact Locations"
+ setting_mod_remove_low_importance_setting_desc: "Removes locations across the world that have low historical impact."
+ rule_mod_block_recolonization_rule: "Salt & Tears: Block Recolonization"
+ setting_mod_recolonization_blocked_setting: "Option 1/2: Yes"
+ setting_mod_recolonization_blocked_setting_desc: "Will delete the pops in and prevent recolonization of all disabled content."
+ setting_mod_recolonization_allowed_setting: "Option 2/2: No"
+ setting_mod_recolonization_allowed_setting_desc: "You will be able to recolonize all removed content."
+ rule_mod_pop_removal_rule: "Salt & Tears: Unowned Pop Removal"
+ setting_mod_keep_pops_setting: "Option 1/2: Keep All Pops"
+ setting_mod_keep_pops_setting_desc: "No pops will be deleted."
+ setting_mod_remove_unowned_pops_setting: "Option 2/2: Remove Unowned Pops"
+ setting_mod_remove_unowned_pops_setting_desc: "Delete pops from locations without owners (including pop-based countries). Better performance, but will make colonization faster, as there will be no local populations. This stacks with national removal."

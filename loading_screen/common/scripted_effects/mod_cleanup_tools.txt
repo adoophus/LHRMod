@@ -1,0 +1,156 @@
+mod_remove_sub_continent = {
+	every_location_in_sub_continent = {
+		mod_remove_location = yes
+	}
+}
+
+mod_remove_area = {
+	every_location_in_area = {
+		mod_remove_location = yes
+	}
+}
+
+mod_remove_region = {
+	every_location_in_region = {
+		mod_remove_location = yes
+	}
+}
+
+mod_remove_and_disable_sub_continent = {
+	every_location_in_sub_continent = {
+		if = {
+			limit = {
+				mod_can_remove_location = yes
+			}
+			add_location_modifier = {
+				modifier = mod_location_disabled_static_modifier
+				years = -1
+				mode = add
+			}
+			mod_remove_location_and_pops = yes
+		}
+	}
+}
+
+mod_remove_and_disable_area = {
+	every_location_in_area = {
+		if = {
+			limit = {
+				mod_can_remove_location = yes
+			}
+			add_location_modifier = {
+				modifier = mod_location_disabled_static_modifier
+				years = -1
+				mode = add
+			}
+			mod_remove_location_and_pops = yes
+		}
+	}
+}
+
+mod_remove_and_disable_region = {
+	every_location_in_region = {
+		if = {
+			limit = {
+				mod_can_remove_location = yes
+			}
+			add_location_modifier = {
+				modifier = mod_location_disabled_static_modifier
+				years = -1
+				mode = add
+			}
+			mod_remove_location_and_pops = yes
+		}
+	}
+}
+
+mod_remove_location = {
+	if = {
+		limit = {
+			mod_can_remove_location = yes
+		}
+		every_buildings_in_location = {
+			change_building_level = -10
+		}
+		if = {
+			limit = {
+				has_owner = yes
+			}
+			owner = {
+				abandon_location = prev
+			}
+		}
+	}
+}
+
+# Regardless of pop removal settings, disabled regions should have their pops removed.
+mod_remove_location_and_pops = {
+	if = {
+		limit = {
+			mod_can_remove_location = yes
+		}
+		every_buildings_in_location = {
+			change_building_level = -10
+		}
+		if = {
+			limit = {
+				has_owner = yes
+			}
+			owner = {
+				abandon_location = prev
+			}
+			every_pop = {
+				destroy_pop = this
+			}
+		}
+	}
+}
+
+mod_annex_all_direct_vassals = {
+	every_country = {
+		limit = {
+			is_subject_of = root
+			is_subject_type = vassal
+		}
+		every_owned_location = {
+			limit = {
+				is_ownable = yes
+			}
+			change_location_owner = root
+			add_core = root
+		}
+		root = {
+			cancel_subject = prev
+		}
+	}
+}
+
+mod_annex_all_nations_in_area = {
+	save_scope_as = annexer_country
+
+	area:$target_area$ = {
+		every_location_in_area = {
+			limit = {
+				is_ownable = yes
+				NOT = { owner ?= scope:annexer_country }
+			}
+			change_location_owner = scope:annexer_country
+			add_core = scope:annexer_country
+		}
+	}
+
+	every_country = {
+		limit = {
+			is_subject_of = scope:annexer_country
+			is_subject_type = vassal
+			NOT = {
+				any_owned_location = {
+					area = area:$target_area$
+				}
+			}
+		}
+		scope:annexer_country = {
+			cancel_subject = prev
+		}
+	}
+}

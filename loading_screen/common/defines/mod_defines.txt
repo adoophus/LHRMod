@@ -1,8 +1,0 @@
-NUnit = {
-	EMBARK_DISEMBARK_MULTIPLIER = 0.3 
-}
-
-NDiplomacy = {
-	TRUCE_YEARS = 3
-	SCALED_TRUCE_YEARS = 15
-}
