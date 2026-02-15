@@ -26,3 +26,6 @@ STATIC_MODIFIER_DESC_hes_morale_age_3: "Gott mit uns."
 # Static Modifier
 STATIC_MODIFIER_NAME_hes_erosion_of_trust: "Erosion of Trust"
 STATIC_MODIFIER_DESC_hes_erosion_of_trust: "Following the exposure of the currency fraud, the Landgrave's reputation as a reliable financial actor has been severely damaged. Merchants across the Empire now view Hessian coinage with suspicion, and the Crown's credit is significantly diminished."
+
+STATIC_MODIFIER_NAME_giving_market_knowledge_sharing: "Sharing Knowledge"
+STATIC_MODIFIER_NAME_receiving_market_knowledge_sharing: "Receiving Knowledge"

@@ -61,6 +61,8 @@ scripted_trigger bra_hre_emperor_favors_pretender = {
 }
 
 #The Wittelsbacher Situation
+#Changed by mod
+#Reduced control malus, removed legitimacy hit
 turmoil_in_brandenburg.1 = {
 	type = country_event
 	category = disaster_event
@@ -86,12 +88,11 @@ turmoil_in_brandenburg.1 = {
 	option = {
 		name = turmoil_in_brandenburg.1.a
 		historical_option = yes
-		add_legitimacy = -40
 		# add_country_modifier = { modifier = bra_wittelsbacher_neglect years = -1 mode = add_and_extend }
 		custom_tooltip = {
 			text = turmoil_in_brandenburg.1.a.at
 			every_owned_location = {
-				change_control = control_ultimate_penalty
+				change_control = control_mild_penalty
 			}
 		}
 		custom_tooltip = turmoil_in_brandenburg.1.a.bt
@@ -138,6 +139,8 @@ turmoil_in_brandenburg.2 = {
 }
 
 #False Waldemar Revealed!
+#Changed by mod
+#Disabled.
 turmoil_in_brandenburg.3 = {
 	type = country_event
 	category = disaster_event
@@ -150,7 +153,7 @@ turmoil_in_brandenburg.3 = {
 		tag = BRA
 		from = 1300.1.1
 		to = 1360.1.1
-		monthly_chance = 1	#Intentionally very low chance to happen
+		monthly_chance = 0	#Intentionally very low chance to happen
 	}
 	trigger = {
 		character:false_waldemar ?= {
@@ -198,6 +201,8 @@ turmoil_in_brandenburg.3 = {
 }
 
 #Robber Barons issues piling up
+#Changed by mod
+#Made the second option less severe, and increases neglect faster.
 turmoil_in_brandenburg.4 = {
 	type = country_event
 	category = disaster_event
@@ -238,10 +243,10 @@ turmoil_in_brandenburg.4 = {
 	#That is not our issue
 	option = {
 		name = turmoil_in_brandenburg.4.b
-		bra_change_neglect_score = { math = subtract value = 2 }
+		bra_change_neglect_score = { math = subtract value = 5 }
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
-		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
-		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_penalty }
 	}
 }
 
@@ -327,7 +332,8 @@ turmoil_in_brandenburg.5 = {
 	}
 }
 
-#Estates taking control over the location
+#Changed by mod
+# Increased the neglect score increase
 turmoil_in_brandenburg.6 = {
 	type = country_event
 	category = disaster_event
@@ -360,7 +366,7 @@ turmoil_in_brandenburg.6 = {
 	#That is not our issue
 	option = {
 		name = turmoil_in_brandenburg.6.b
-		bra_change_neglect_score = { math = subtract value = 2 }
+		bra_change_neglect_score = { math = subtract value = 5 }
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_bonus }
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_penalty }
@@ -698,7 +704,8 @@ turmoil_in_brandenburg.9 = {	#The Noble League of <province>
 		remove_variable = tib_variable_9_3
 	}
 }
-
+#Changed by mod
+# The second option is a powerful modifier, so the first should give a lot.
 turmoil_in_brandenburg.10 = {	#Nobles Levy Illegal Tolls in <location>
 	type = country_event
 	category = disaster_event
@@ -728,12 +735,12 @@ turmoil_in_brandenburg.10 = {	#Nobles Levy Illegal Tolls in <location>
 
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
-			value = estate_satisfaction_mild_bonus
+			value = estate_satisfaction_severe_bonus
 		}
 
-		bra_change_neglect_score = { math = subtract value = 5 }
+		bra_change_neglect_score = { math = subtract value = 10 }
 
-		scope:target_location = { change_control = control_mild_penalty }
+		scope:target_location = { change_control = control_extreme_penalty }
 	}
 	option = {
 		name = turmoil_in_brandenburg.10.b
@@ -920,7 +927,7 @@ turmoil_in_brandenburg.12 = {	#Investment in <location>
 	option = {	#Delegate its development to the nobles
 		name = turmoil_in_brandenburg.12.b
 
-		bra_change_neglect_score = { math = subtract value = 2 }
+		bra_change_neglect_score = { math = subtract value = 5 }
 
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
@@ -1075,7 +1082,7 @@ turmoil_in_brandenburg.13 = {	#The Growth of <Location>
 	option = {	#We cannot afford this.
 		name = turmoil_in_brandenburg.13.c
 
-		bra_change_neglect_score = { math = subtract value = 2 }
+		bra_change_neglect_score = { math = subtract value = 5 }
 	}
 
 	after = {
@@ -1982,7 +1989,8 @@ turmoil_in_brandenburg.1100 = {
 		trigger_event_silently = { id = turmoil_in_brandenburg.1105 days = 3 }
 	}
 }
-
+#Changed by mod
+# The emperor can only put a Hohenzoller on the throne now
 #The Wittelsbacher fail the Holy Roman Empire  #DEVASTATION
 turmoil_in_brandenburg.1101 = {
 	type = country_event
@@ -2014,43 +2022,6 @@ turmoil_in_brandenburg.1101 = {
 			save_scope_as = cabinet_character
 		}
 	}
-	#Assume control 
-	option = {
-		name = turmoil_in_brandenburg.1101.a
-		trigger = { has_ruler = yes }
-		custom_tooltip = {
-			text = turmoil_in_brandenburg.1101.a.tt
-			scope:root_country = { trigger_event_silently = { id = turmoil_in_brandenburg.1102 days = 5 } }
-		}
-		change_imperial_authority = { value = imperial_authority_very_weak_bonus }
-	}
-	#Place <dynasty member> on their throne
-	option = {
-		name = turmoil_in_brandenburg.1101.b
-		trigger = { exists = scope:dynasty_character }
-		historical_option = yes
-		custom_tooltip = {
-			text = turmoil_in_brandenburg.1101.b.tt
-			scope:root_country = { trigger_event_silently = { id = turmoil_in_brandenburg.1103 days = 5 } }
-		}
-		change_imperial_authority = { value = imperial_authority_weak_bonus }
-	}
-	#Vassalize it
-	option = {
-		name = turmoil_in_brandenburg.1101.c
-		trigger = { exists = scope:cabinet_character }
-		custom_tooltip = {
-			text = turmoil_in_brandenburg.1101.c.tt
-			scope:root_country = { trigger_event_silently = { id = turmoil_in_brandenburg.1104 days = 5 } }
-			international_organization:hre = {
-				every_international_organization_member = {
-					add_antagonism = { target = root modifier = subjugated_elector_antagonism }
-				}
-			}
-		}
-		change_imperial_authority = { value = imperial_authority_weak_penalty }
-	}
-	#Put Hohenzollern on the throne
 	option = {
 		name = turmoil_in_brandenburg.1101.d
 		custom_tooltip = {
@@ -2059,16 +2030,6 @@ turmoil_in_brandenburg.1101 = {
 		}
 		change_imperial_authority = { value = imperial_authority_extreme_bonus }
 		add_prestige = prestige_severe_bonus
-	}
-	#Let the Wittelsbacher keep it
-	option = {
-		name = turmoil_in_brandenburg.1101.e
-		custom_tooltip = {
-			text = turmoil_in_brandenburg.1101.e.tt
-			scope:root_country = { trigger_event_silently = { id = turmoil_in_brandenburg.1106 days = 5 } }
-		}
-		change_imperial_authority = { value = imperial_authority_mild_penalty }
-		add_gold = 800
 	}
 }
 
@@ -2415,6 +2376,8 @@ scripted_effect set_robber_baron_troubles = {
 	custom_tooltip = PRU_use_cabinet_action_to_get_rid_of_barons
 }
 
+#Changed by mod
+# Pushed it forwad to 1350 from 1370.
 # Start of Robber Baron Troubles
 turmoil_in_brandenburg.1300 = {
 	type = country_event
@@ -2426,7 +2389,7 @@ turmoil_in_brandenburg.1300 = {
 	dynamic_historical_event = {
 		tag = BRA
 		tag = PRU
-		from = 1370.1.1
+		from = 1350.1.1
 		to = 1500.1.1
 		monthly_chance = 20
 	}
