@@ -237,35 +237,9 @@ flavor_hes.4 = {
 	historical_info = flavor_hes.4.historical_info
 }
 
-# 5 NOT FINISHED reward for conquest of vogelsberg
-flavor_hes.5 = {
-    type = country_event
-    title = flavor_hes.5.title
-    desc = flavor_hes.5.desc
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = HES
-        from = 1800.1.1
-        to = 1810.1.1 
-        monthly_chance = 0
-    }
-    trigger = {
-        tag = HES
-    }
-
-    option = {
-        name = flavor_hes.5.a
-        historical_option = yes
-    }
-
-    option = {
-        name = flavor_hes.5.b
-    }
-
-    historical_info = flavor_hes.5.historical_info
-}
 
 # 6 Gottfried von Beust spawning 1337 - 25%
+# needs bug fixes
 flavor_hes.6 = {
     type = country_event
     title = flavor_hes.6.title
@@ -295,6 +269,7 @@ flavor_hes.6 = {
             religion = root.religion
 			estate = estate_type:clergy_estate
 			birth_location = location:kassel
+			birth_date = 1320.1.1
             adm = 98
             dip = 39
             mil = 25

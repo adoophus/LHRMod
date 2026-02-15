@@ -69,10 +69,10 @@ flavor_hes.5.b: "Demand the funds be immediately reinvested into the state treas
 
 flavor_hes.6.title: "The Iron Chancellor: Gottfried von Beust"
 flavor_hes.hes_hired_beust: "Chancellor Gottfried von Beust Retained"
-flavor_hes.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] requires absolute loyalty and competence to manage his continuous feuds and massive debts. [gottfried_von_beust.GetName], a stern and unyielding cleric, has served as a pivotal figure in the Hofkanzlei. Known for his austere methods, he is uniquely capable of managing the state's chaotic finances and consolidating records. However, the methods of [gottfried_von_beust.GetShortName] are unpopular, and retaining him means relying heavily on the clerical estate for administration."
+flavor_hes.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] requires absolute loyalty and competence to manage his continuous feuds and massive debts. [target_character.GetName], a stern and unyielding cleric, has served as a pivotal figure in the Hofkanzlei. Known for his austere methods, he is uniquely capable of managing the state's chaotic finances and consolidating records. However, the methods of [target_character.GetShortName] are unpopular, and retaining him means relying heavily on the clerical estate for administration."
 flavor_hes.6.historical_info: "Gottfried von Beust served [ROOT.GetCountry.GetGovernment.GetRuler.GetName] during the turbulent middle of his reign (c. 1340s-1360s). As Chancellor, he was responsible for running the Landgrave's central administration, ensuring the state functioned despite Heinrich's near-constant involvement in costly feuds and military expenditures. The ability of medieval princes to centralize power rested heavily on the competence and loyalty of such chief administrators."
-flavor_hes.6.a: "Make [gottfried_von_beust.GetLastName] one of our chief advisors."
-flavor_hes.6.a.tt1: "[gottfried_von_beust.GetShortName] may #g significantly#! reduce the power of other estates in the future, should he survive the [ShowSituationName('black_death')]. "
+flavor_hes.6.a: "Make [target_character.GetLastName] one of our chief advisors."
+flavor_hes.6.a.tt1: "[target_character.GetShortName] may #g significantly#! reduce the power of other estates in the future, should he survive the [ShowSituationName('black_death')]. "
 flavor_hes.6.b: "The personal coffers of [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] are getting quite light."
 
 
