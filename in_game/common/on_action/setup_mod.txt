@@ -6,12 +6,50 @@ on_game_start = {
 
 lhr_on_game_start = {
 	effect = {
+		
+		## Bohemia nerfs
 		c:BOH = {
 			cancel_subject = c:MVA
+			cancel_subject = c:OPL
+			cancel_subject = c:WRC
+			cancel_subject = c:GLO
+
+			create_relation = {
+				first = c:BOH
+				second = c:WRC
+				type = relation_type:guarantee
+			}
+
+			create_relation = {
+				first = c:BOH
+				second = c:GLO
+				type = relation_type:guarantee
+			}
+			
 			create_union = c:MVA
+			add_truce_with = { target = c:BRA mutual = yes months = 180 }
 		}
 
+		c:NYS = {
+			make_subject_of = {
+				target = c:BOH
+				type = subject_type:vassal
+			}
+		}
+
+		c:ZAG = {
+			make_subject_of = {
+				target = c:GLO
+				type = subject_type:vassal
+			}
+		}
+
+		## End bohemia nerfs
+
 		c:FRA = {
+			cancel_subject = c:FLA
+			cancel_subject = c:ARS
+
 			add_truce_with = { target = c:FLA mutual = yes months = 180 }
 			add_truce_with = { target = c:HAI mutual = yes months = 180 }
 			add_truce_with = { target = c:BRB mutual = yes months = 180 }
@@ -21,6 +59,18 @@ lhr_on_game_start = {
 			add_truce_with = { target = c:UTR mutual = yes months = 180 }
 			add_truce_with = { target = c:LOO mutual = yes months = 180 }
 			add_truce_with = { target = c:NAM mutual = yes months = 180 }
+		}
+
+		c:FLA = {
+			cancel_subject = c:NAM
+		}
+
+
+		c:VLR = {
+			make_subject_of = {
+				target = c:MOS
+				type = subject_type:vassal
+			}
 		}
 
 		c:MAM = {

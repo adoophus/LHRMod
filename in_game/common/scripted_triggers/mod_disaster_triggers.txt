@@ -1,0 +1,14 @@
+﻿turmoil_in_brandenburg_end_trigger = {
+	OR = {
+		var:bra_wittelsbacher_investment_var >= 50
+		var:bra_wittelsbacher_neglect_var <= -50
+		NOT = {
+			has_variable = bra_wittelsbacher_investment_var
+			has_variable = bra_wittelsbacher_neglect_var
+		}
+	}
+	custom_tooltip = {
+		text = robber_barons_resolved_tt
+		has_variable = PRU_robber_barons_not_active
+	}
+}

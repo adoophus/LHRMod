@@ -2,24 +2,6 @@
 # PERSIA REWORK
 # PERSIA REWORK
 
-# muchesh mountains -> plateau
-# sonqor hill -> plateau
-# harunabad hill -> plateau
-# gilan_gharb hill -> plateau
-# nurabad hill -> plateau
-# aghkand hill -> plateau
-# miyaneh hill -> plateau
-# hashtrud hill -> plateau
-# nurabad hill -> plateau
-
-# damavand add cool building here
-# qala safid add cool building here
-# khoy add cool bulding here
-
-# reyshahr increase harbor
-# hormuz increase harbor
-# siraf minor increase harbor
-
 # terrain buffs
 muchesh = { topography = plateau vegetation = grasslands climate = continental religion = sunni culture = kurdish_culture raw_material = wool}
 sonqor = { topography = plateau vegetation = grasslands climate = continental religion = sunni culture = kurdish_culture raw_material = livestock}
@@ -38,13 +20,6 @@ siraf = { topography = mountains vegetation = desert climate = arid religion = s
 ## SWISS REWORK
 ## SWISS REWORK
 ## SWISS REWORK
-
-# valleys
-## martigny, sion, brig, monthey, interlaken
-## disentis, ilanz, chur, werdenberg
-## zuoz, tresivio, bormio
-## silandro, merano, trento, rovereto,
-## bruneck, steinfeld, tamsweg, murau,
 
 # Arpitan valleys
 martigny = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = lead}
@@ -67,29 +42,26 @@ tresivio = { topography = valley vegetation = forest climate = continental relig
 bormio = { topography = valley vegetation = forest climate = continental religion = catholic culture = lombard raw_material = livestock}
 
 # Bavarian valleys
-silandro = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = fur}
-merano = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = livestock}
-trento = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = marble}
-rovereto = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = lumber}
-bruneck = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = wild_game}
-steinfeld = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = livestock}
-tamsweg = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = tin}
-murau = { topography = valley vegetation = forest climate = continental religion = catholic culture = bavarian raw_material = wheat}
+silandro = { topography = valley vegetation = forest climate = continental religion = catholic culture = romansh raw_material = fur}
+merano = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = livestock}
+trento = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = marble}
+rovereto = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = lumber}
+bruneck = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wild_game}
+steinfeld = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = livestock}
+tamsweg = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = tin}
+murau = { topography = valley vegetation = forest climate = continental religion = catholic culture = danube_bavarian raw_material = wheat}
 
 # arpitan valleys
 grenoble = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = tin}
 chambery = { topography = valley vegetation = grasslands climate = oceanic religion = catholic culture = arpitan raw_material = wine}
 moutiers = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = salt}
 
-
 ## HUNGARY VALLEYS
-## sibiu liptovsky_mikulas rakhiv
 sibiu = { topography = valley vegetation = woods climate = continental religion = orthodox culture = german_transylvanian raw_material = iron}
 liptovsky_mikulas = { topography = valley vegetation = woods climate = continental religion = catholic culture = slovak raw_material = goods_gold}
 rakhiv = { topography = valley vegetation = forest climate = continental religion = orthodox culture = halychian_culture raw_material = amber}
 
 ## GEORGIA VALLEYS
-## akhaltsikhe kelkit bayburt ispir parkhali artanuji khupati kagizman tekman karakilise
 akhaltsikhe = { topography = valley vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = wheat}
 kelkit = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
 bayburt = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = clay}
@@ -102,13 +74,11 @@ tekman = { topography = valley vegetation = woods climate = continental religion
 karakilise = { topography = valley vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
 
 ## SERBIA VALLEYS
-## ohrid debar koman
 ohrid = { topography = valley vegetation = forest climate = oceanic religion = orthodox culture = bulgarian raw_material = fish}
 debar = { topography = valley vegetation = woods climate = continental religion = catholic culture = albanian raw_material = wild_game}
 koman = { topography = valley vegetation = woods climate = subtropical religion = orthodox culture = albanian raw_material = lumber}
 
 ## PERSIA VALLEYS
-## hashatjin shamiram sirdan rudbar hakkari baskale
 hashatjin = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = legumes}
 shamiram = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
 sirdan = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = livestock}
@@ -117,8 +87,18 @@ baskale = { topography = valley vegetation = forest climate = continental religi
 hakkari = { topography = valley vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = lumber}
 
 ## morocco valleys
-## ait_benhaddou
 ait_benhaddou = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = wool}
+
+## BRANDENBURG REWORK
+## BRANDENBURG REWORK
+## BRANDENBURG REWORK
+
+pritzwalk = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = lumber}
+havelberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = salt}
+herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
+ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = lumber}
+beeskow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fur}
+guben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fur}
 
 ## START VANILLA
 ## cant overwrite this file by entry only :(
@@ -983,10 +963,7 @@ salzwedel = { topography = flatland vegetation = grasslands climate = oceanic re
 osterburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = wheat}
 haldensleben = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = wool}
 wolmirstedt = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
-havelberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
 wittstock = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = wool}
-ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = medicaments}
-pritzwalk = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = legumes}
 wittenberge = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = markish raw_material = wool}
 prenzlau = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = wool}
 templin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = wild_game}
@@ -994,7 +971,7 @@ angermunde = { topography = flatland vegetation = forest climate = continental r
 berlin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
 teltow = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wool}
 treuenbrietzen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
-herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
+
 freienwalde = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = livestock}
 lebus = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wild_game}
 brandenburg = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = millet}
@@ -1006,12 +983,10 @@ wittenberg = { topography = flatland vegetation = grasslands climate = continent
 belzig = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = sand}
 bitterfeld = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = saxon raw_material = wool}
 cottbus = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = livestock}
-guben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = clay}
 spremberg = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = lumber}
 calau = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = wild_game}
 lubben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = legumes}
 luckau = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = lumber}
-beeskow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fish}
 zossen = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = fur}
 bitburg = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = westphalian raw_material = fur}
 prum = { topography = hills vegetation = woods climate = continental religion = catholic culture = westphalian raw_material = medicaments}
@@ -9764,10 +9739,10 @@ usalgin = { topography = hills vegetation = woods climate = continental religion
 lake_chiya = { topography = lakes climate = continental}
 lake_orel = { topography = lakes climate = continental}
 yam_alin = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-boli = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = millet}
-achan = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = millet}
-nemptu = { topography = wetlands vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = fur}
-simmi = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = millet}
+boli = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = millet}
+achan = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = millet}
+nemptu = { topography = wetlands vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = fur}
+simmi = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = millet}
 uninka = { topography = mountains vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = lumber}
 xungake = { topography = hills vegetation = woods climate = arctic religion = shamanism culture = oroch_culture raw_material = fur}
 lake_bolon = { topography = lakes climate = continental}
@@ -9794,12 +9769,12 @@ koppi = { topography = hills vegetation = forest climate = arctic religion = sha
 samarginka = { topography = mountains vegetation = forest climate = arctic religion = shamanism culture = udege_culture raw_material = fur natural_harbor_suitability = 0.00}
 tumzhdin = { topography = hills vegetation = forest climate = arctic religion = shamanism culture = oroch_culture raw_material = wild_game natural_harbor_suitability = 0.00}
 lake_kizi = { topography = lakes climate = continental}
-urmi = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = wild_game}
-bidzhan = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = fur}
-bira = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = wheat}
-kukan = { topography = hills vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = fur}
-kur = { topography = hills vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = lumber}
-sutara = { topography = hills vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = lumber}
+urmi = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = wild_game}
+bidzhan = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = fur}
+bira = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = wheat}
+kukan = { topography = hills vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = fur}
+kur = { topography = hills vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = lumber}
+sutara = { topography = hills vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = lumber}
 yakesa = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = oroqen_culture raw_material = fish}
 amazar = { topography = hills vegetation = forest climate = continental religion = shamanism culture = evenk_culture raw_material = goods_gold}
 emuer = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = daur_culture raw_material = millet}
@@ -9819,9 +9794,9 @@ pangu = { topography = flatland vegetation = forest climate = continental religi
 sahar = { topography = hills vegetation = forest climate = continental religion = shamanism culture = daur_culture raw_material = lumber}
 tahe = { topography = hills vegetation = forest climate = continental religion = shamanism culture = oroqen_culture raw_material = lumber}
 aigun = { topography = plateau vegetation = woods climate = continental religion = shamanism culture = oroqen_culture raw_material = millet}
-arkhara = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = fur}
+arkhara = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = fur}
 chenqing = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = oroqen_culture raw_material = lumber}
-jiajin = { topography = hills vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = fish}
+jiajin = { topography = hills vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = fish}
 nioman = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = daur_culture raw_material = wild_game}
 xunhe = { topography = plateau vegetation = woods climate = continental religion = shamanism culture = oroqen_culture raw_material = amber}
 zhanhe = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = oroqen_culture raw_material = horses}
@@ -9842,7 +9817,7 @@ upper_nioman = { topography = mountains vegetation = woods climate = continental
 akishma = { topography = hills vegetation = forest climate = continental religion = shamanism culture = evenk_culture raw_material = stone}
 olongki = { topography = hills vegetation = forest climate = continental religion = shamanism culture = evenk_culture raw_material = fur}
 tujun = { topography = hills vegetation = forest climate = continental religion = shamanism culture = evenk_culture raw_material = livestock}
-tyrma = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = lumber}
+tyrma = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = lumber}
 urgal = { topography = flatland vegetation = forest climate = continental religion = shamanism culture = evenk_culture raw_material = wild_game}
 djee = { topography = hills vegetation = woods climate = continental religion = shamanism culture = evenk_culture raw_material = lumber}
 argi = { topography = wetlands vegetation = woods climate = continental religion = shamanism culture = evenk_culture raw_material = wild_game}
@@ -9850,34 +9825,34 @@ dep = { topography = flatland vegetation = woods climate = continental religion 
 kupuri = { topography = hills vegetation = woods climate = continental religion = shamanism culture = evenk_culture raw_material = lumber}
 mulmuga = { topography = plateau vegetation = woods climate = continental religion = shamanism culture = evenk_culture raw_material = lumber}
 tok = { topography = hills vegetation = woods climate = continental religion = shamanism culture = evenk_culture raw_material = fur}
-hulan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = wheat}
-bayan_susu = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = medicaments}
-hailun = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = fur}
-hvlan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = millet}
-ougen = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = millet}
+hulan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = wheat}
+bayan_susu = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = medicaments}
+hailun = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = fur}
+hvlan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = millet}
+ougen = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = millet}
 lake_qingken = { topography = lakes climate = continental}
-shangjing = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = wheat}
-boduna = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = millet}
-hulawen = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = wheat}
+shangjing = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = wheat}
+boduna = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = millet}
+hulawen = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = wheat}
 shulan = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = beeswax}
-yushu = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = fiber_crops}
-zhaozhou_jurchen = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = millet}
+yushu = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = fiber_crops}
+zhaozhou_jurchen = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = millet}
 girin_ula = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = cotton}
 changchun = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = legumes}
 gongjiang_jurchen = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = medicaments}
 itu_jilin = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = wheat}
 nongan = { topography = flatland vegetation = farmland climate = continental religion = shamanism culture = jurchen_culture raw_material = fiber_crops}
-ilan_hala = { topography = hills vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = livestock}
+ilan_hala = { topography = hills vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = livestock}
 hailang = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = wheat}
 malong = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = millet}
 mudan_ula = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = horses}
 ningguta = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = rice}
 odoli = { topography = hills vegetation = forest climate = continental religion = shamanism culture = jurchen_culture raw_material = legumes}
 lake_jingpo = { topography = lakes climate = continental}
-chalin = { topography = hills vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = fish}
-taowen = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = fur}
-wanhufu = { topography = hills vegetation = forest climate = continental religion = shamanism culture = nanai_culture raw_material = lumber}
-wehe = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = legumes}
+chalin = { topography = hills vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = fish}
+taowen = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = fur}
+wanhufu = { topography = hills vegetation = forest climate = continental religion = shamanism culture = hurga_culture raw_material = lumber}
+wehe = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = legumes}
 huifacheng = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = wild_game}
 golmin_salggiyan = { topography = plateau vegetation = forest climate = continental religion = shamanism culture = jurchen_culture raw_material = medicaments}
 hoifa = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = horses}
@@ -9888,12 +9863,12 @@ taizhou_jurchen = { topography = flatland vegetation = grasslands climate = cont
 buteha = { topography = hills vegetation = woods climate = continental religion = shamanism culture = sibe_culture raw_material = wild_game}
 chol = { topography = hills vegetation = woods climate = continental religion = shamanism culture = sibe_culture raw_material = lumber}
 hurle = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = sibe_culture raw_material = fiber_crops}
-talaha = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = sand}
-dalaiketun = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = wheat}
-nemeri = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = solon_culture raw_material = lumber}
-sart = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = millet}
+talaha = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = sand}
+dalaiketun = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = wheat}
+nemeri = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = haixi_culture raw_material = lumber}
+sart = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = millet}
 yilaha = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = daur_culture raw_material = wheat}
-zhalong = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = solon_culture raw_material = medicaments}
+zhalong = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = haixi_culture raw_material = medicaments}
 northern_daqing_lakes = { topography = lakes climate = continental}
 southern_daqing_lakes = { topography = lakes climate = continental}
 qiqihar = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = sibe_culture raw_material = fur}
@@ -9929,20 +9904,20 @@ vaka = { topography = hills vegetation = forest climate = continental religion =
 xunka = { topography = mountains vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = stone}
 juru_hoton = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = jurchen_culture raw_material = fiber_crops}
 dongning = { topography = hills vegetation = forest climate = continental religion = shamanism culture = jurchen_culture raw_material = legumes}
-jixi = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = medicaments}
-mishan = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = clay}
+jixi = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = medicaments}
+mishan = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = clay}
 mulun = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = jurchen_culture raw_material = wild_game}
 anchun = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = udege_culture raw_material = wheat}
-hulin = { topography = wetlands vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = legumes}
+hulin = { topography = wetlands vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = legumes}
 namunka = { topography = hills vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = fur}
 noto_ussuri = { topography = hills vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = lumber}
 yiman = { topography = flatland vegetation = woods climate = continental religion = shamanism culture = udege_culture raw_material = fiber_crops}
 lake_khanka = { topography = lakes climate = continental}
-lahasusu = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = wheat}
-futi = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = wheat}
-nuoluo = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = livestock}
-shuangyashan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = nanai_culture raw_material = legumes}
-tulguur = { topography = wetlands vegetation = woods climate = continental religion = shamanism culture = nanai_culture raw_material = wild_game}
+lahasusu = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = wheat}
+futi = { topography = wetlands vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = wheat}
+nuoluo = { topography = hills vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = livestock}
+shuangyashan = { topography = flatland vegetation = grasslands climate = continental religion = shamanism culture = hurga_culture raw_material = legumes}
+tulguur = { topography = wetlands vegetation = woods climate = continental religion = shamanism culture = hurga_culture raw_material = wild_game}
 kaiyuan_warka = { topography = hills vegetation = forest climate = continental religion = shamanism culture = jurchen_culture raw_material = fur}
 anju_nurgan = { topography = mountains vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = sand natural_harbor_suitability = 0.00}
 nogule = { topography = mountains vegetation = forest climate = continental religion = shamanism culture = udege_culture raw_material = fish natural_harbor_suitability = 0.00}

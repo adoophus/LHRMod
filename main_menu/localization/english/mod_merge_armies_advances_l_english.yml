@@ -48,3 +48,7 @@ supply_depot_advance_age_4_reformation_desc: "Standardizing the organization of 
 
 area_religious_missions_advance: "Missionary Administration"
 area_religious_missions_advance_desc: "By formalizing regional missionary administration, the state can direct coordinated conversion campaigns across entire areas rather than isolated provinces."
+
+# country advances
+bra_early_game_fur_buff: "March Fur Privileges"
+bra_early_game_fur_buff_desc: "The Ascanian and early Wittelsbach margraves expanded toll routes, market rights, and hunting control along the wooded marches east of the Elbe. By tightening authority over forest extraction and game lands, Brandenburg channels more pelts and wild produce into taxable trade."

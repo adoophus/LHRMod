@@ -29,12 +29,40 @@ REPLACE:unlock_men_at_arms_advance = {
 # country fixes: done
 # genoa
 # disabled.
-REPLACE:unlock_crossbowmen_advance = {}
+REPLACE:unlock_crossbowmen_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_crossbowmen
+	
+	requires = armory_advance
+
+	potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	ai_weight = { 
+		add = "ai_unlock_unit_score(a_crossbowmen)"
+	}
+}
 
 # country fixes:
 # none
 # disabled.
-REPLACE:unlock_handgonners_advance = {}
+REPLACE:unlock_handgonners_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_handgonners
+	
+	requires = gun_smith_advance
+	ai_weight = { add = 20 }
+
+	potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+}
 
 ######################
 # Cavalry
@@ -55,7 +83,24 @@ REPLACE:unlock_cavalry_advance = {
 # country fixes: done
 # none
 # disabled.
-REPLACE:unlock_heavy_cavalry_advance = {}
+REPLACE:unlock_heavy_cavalry_advance = {
+	age = age_2_renaissance
+	unlock_unit = a_heavy_cavalrymen
+	
+	ai_weight = {
+		add = "ai_unlock_unit_score(a_heavy_cavalrymen)"
+	}
+
+	requires = unlock_cavalry_advance
+
+	allow = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+}
 
 ######################
 # Artillery
@@ -80,7 +125,24 @@ REPLACE:unlock_houfnice_advance = {
 # country fixes: done
 # bohemia
 # disabled.
-REPLACE:unlock_supply_carts = {}
+REPLACE:unlock_supply_carts = {
+	age = age_2_renaissance
+	unlock_unit = a_supply_carts
+	
+	requires = supply_depot_advance_age_2_renaissance
+
+	ai_weight = {
+		add = "ai_unlock_unit_score(a_supply_carts)"
+	}
+
+	allow = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+}
 
 REPLACE:supply_depot_advance_age_2_renaissance = {
 	age = age_2_renaissance
@@ -92,4 +154,28 @@ REPLACE:supply_depot_advance_age_2_renaissance = {
 	ai_weight = { 
 		add = "ai_unlock_unit_score(a_supply_carts)"
 	}
+}
+
+
+#################### COUNTRY FIXES ####################
+#################### COUNTRY FIXES ####################
+#################### COUNTRY FIXES ####################
+
+REPLACE:genoese_crossbowmen = {
+	potential = { has_or_had_tag = GEN }
+	age = age_2_renaissance
+	unlock_unit = a_genoese_crossbowmen
+	army_infantry_power = 0.1
+	requires = unlock_men_at_arms_advance
+}
+
+REPLACE:wagenburg = {
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = BOH
+	}
+	
+	unlock_unit = a_wagenburg
+
+	requires = supply_depot_advance_age_2_renaissance
 }

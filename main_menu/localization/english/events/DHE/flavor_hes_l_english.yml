@@ -40,8 +40,6 @@ flavor_hes.3.a.tt1: "The estates take on the majority of the cost"
 # Option B: Maintain Status Quo (Mechanically: Do nothing)
 flavor_hes.3.b: "Refuse the petition; the current feudal arrangement must be upheld!"
 
-hesse_uprising: "Star League"
-
 flavor_hes.4.title: "The Sternerbund Demands Concessions"
 flavor_hes.4.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] made attempts to centralize military administration and they have been met with fierce resistance from the most powerful noble families in the Ritterschaft. They have banded together in a dangerous coalition called the Sternerbund, presenting us with an ultimatum. We must either pay an enormous indemnity to secure their loyalty and reform their old feudal privileges, or face an open, coordinated rebellion designed to shatter the Landgraviate's fragile unity and preserve their independence."
 
@@ -49,7 +47,7 @@ flavor_hes.4.historical_info: "In the late 14th century, the Hessian nobility qu
 
 # Option A: Historical Compromise/Reform
 flavor_hes.4.a: "Pay the indemnity and reform the Noble's privileges."
-hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] will permanently double (#w +100%#!):\n\- #r -5.00%#! [ShowModifierTypeName('nobles_estate_max_tax')]\n\- #g +10.00%#! [manpower_with_icon|e] \n\- #w +0.10#! monthly trend towards [ShowSocietyDirectionName('aristocracy')] \n\- #w +0.025#! monthly trend towards [ShowSocietyDirectionName('quantity')]"
+hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] will permanently double (#w +100%#!):\n#r -5.00%#! [ShowModifierTypeName('nobles_estate_max_tax')]\n#g +10.00%#! [manpower_with_icon|e]\n#w +0.10#! monthly trend towards [ShowSocietyDirectionName('aristocracy')]\n#w +0.025#! monthly trend towards [ShowSocietyDirectionName('quantity')]"
 
 # Option B: Confrontation/Civil War
 flavor_hes.4.b: "Refuse their demands; we will not yield to treason."
@@ -71,10 +69,10 @@ flavor_hes.5.b: "Demand the funds be immediately reinvested into the state treas
 
 flavor_hes.6.title: "The Iron Chancellor: Gottfried von Beust"
 flavor_hes.hes_hired_beust: "Chancellor Gottfried von Beust Retained"
-flavor_hes.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] requires absolute loyalty and competence to manage his continuous feuds and massive debts. [gottfried_von_beust.GetName], a stern and unyielding cleric, has served as a pivotal figure in the Hofkanzlei. Known for his austere methods, he is uniquely capable of managing the state's chaotic finances and consolidating records. However, the methods of [gottfried_von_beust.GetShortName] are unpopular, and retaining him means relying heavily on the clerical estate for administration."
+flavor_hes.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] requires absolute loyalty and competence to manage his continuous feuds and massive debts. [target_character.GetName], a stern and unyielding cleric, has served as a pivotal figure in the Hofkanzlei. Known for his austere methods, he is uniquely capable of managing the state's chaotic finances and consolidating records. However, the methods of [target_character.GetShortName] are unpopular, and retaining him means relying heavily on the clerical estate for administration."
 flavor_hes.6.historical_info: "Gottfried von Beust served [ROOT.GetCountry.GetGovernment.GetRuler.GetName] during the turbulent middle of his reign (c. 1340s-1360s). As Chancellor, he was responsible for running the Landgrave's central administration, ensuring the state functioned despite Heinrich's near-constant involvement in costly feuds and military expenditures. The ability of medieval princes to centralize power rested heavily on the competence and loyalty of such chief administrators."
-flavor_hes.6.a: "Make [gottfried_von_beust.GetLastName] one of our chief advisors."
-flavor_hes.6.a.tt1: "[gottfried_von_beust.GetShortName] may #g significantly#! reduce the power of other estates in the future, should he survive the [ShowSituationName('black_death')]. "
+flavor_hes.6.a: "Make [target_character.GetLastName] one of our chief advisors."
+flavor_hes.6.a.tt1: "[target_character.GetShortName] may #g significantly#! reduce the power of other estates in the future, should he survive the [ShowSituationName('black_death')]. "
 flavor_hes.6.b: "The personal coffers of [ROOT.GetCountry.GetGovernment.GetRuler.GetShortName] are getting quite light."
 
 
@@ -85,7 +83,7 @@ flavor_hes.7.desc: "As the terrifying new pestilence sweeps through [GetCountry(
 flavor_hes.7.historical_info: "The mid-14th century [ShowSituationName('black_death')] decimated Europe, but medieval medical understanding failed to grasp the role of hygiene in disease transmission. Ironically, forcing the population to wash their hands, even for purely ritualistic reasons, would have accidentally reduced the spread of bacterial and viral pathogens. This accidental public health benefit, driven by spiritual fear, would have provided a temporary, noticeable benefit to afflicted communities, while simultaneously causing friction with the clerical establishment over control of consecrated materials."
 
 flavor_hes.7.a: "Support the new ritual; the population must be calmed."
-
+flavor_hes.7.a.tt1: "The use of holy water is widespread and popular among the population, providing a temporary boost to public health and stability during the [ShowSituationName('black_death')]."
 flavor_hes.7.b: "The use of holy water must remain sacred."
 
 flavor_hes.8.title: "The Iron Chancellor: Salvation"

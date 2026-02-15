@@ -3,10 +3,10 @@ hesse_3 = {
     potential = { tag = HES }
     
     can_revoke = {
-		custom_tooltip = {
-			text = "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the clergy's power. This must first be established through a decisive act of state."
-			not = { has_variable = hes_asserting_authority }
-		}
+      custom_tooltip = {
+        text = hesse_3_revoke_condition
+        not = { has_variable = hes_asserting_authority }
+      }
     }
     
     country_modifier = {
@@ -21,13 +21,8 @@ hesse_3 = {
 clergy_area_conversion_mandate = {
   estate = clergy_estate
 
-  potential = {
-    NOT = { has_advance = area_religious_missions_advance }
-  }
-
   allow = {
     religious_unity < 1.0
-    NOT = { has_advance = area_religious_missions_advance }
   }
 
   country_modifier = {

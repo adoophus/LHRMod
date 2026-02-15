@@ -2,12 +2,6 @@ hesse_4 = {
     estate = peasants_estate
     potential = { tag = HES }
     
-    can_revoke = {
-        # Revocable when the Crown is strong and has adopted reforms focusing on the central economy.
-        has_government_reform = hesse_monarchy_reform
-        has_advance = mercantile_focus
-    }
-    
     country_modifier = {
         # High starting power for the Peasantry, reflecting their high population and essential role.
 		global_monthly_literacy = 0.01

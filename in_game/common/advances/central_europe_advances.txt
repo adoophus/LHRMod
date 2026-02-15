@@ -35,7 +35,7 @@ REPLACE:austrian_court = {
 	}
 	diplomatic_capacity = 2
 
-	requires = reinassance_thought
+	requires = renaissance_thought
 }
 
 # moved from age 6 to 4
@@ -63,6 +63,7 @@ REPLACE:hab_expert_mountaineers = {
 	mountains_proximity_impact = -0.5
 	hills_proximity_impact = -0.5
 	plateau_proximity_impact = -0.5
+	valley_proximity_impact = -0.5
 	
 	requires = renaissance_urbanisation
 }
@@ -102,7 +103,7 @@ REPLACE:hun_reformed_coinage = {
 	
 	age = age_4_reformation
 	monthly_inflation = -0.001
-	requires = reduce_inflation_advance
+	requires = trade_range_advance_age_3
 }
 
 ## MILAN ##
@@ -249,7 +250,7 @@ REPLACE:dan_trading_economy = {
 
 # moved from age 5 to 4
 REPLACE:soldier_king = {
-	age = age_4_absolutism
+	age = age_4_reformation
 	
 	government = monarchy
 
@@ -259,7 +260,7 @@ REPLACE:soldier_king = {
 	
 	unlock_government_reform = prussian_monarchy
 	
-	requires = power_projection_advance_3
+	requires = assault_ability_reformation
 }
 
 # moved from age 6 to 3
