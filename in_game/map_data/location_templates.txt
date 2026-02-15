@@ -2,24 +2,6 @@
 # PERSIA REWORK
 # PERSIA REWORK
 
-# muchesh mountains -> plateau
-# sonqor hill -> plateau
-# harunabad hill -> plateau
-# gilan_gharb hill -> plateau
-# nurabad hill -> plateau
-# aghkand hill -> plateau
-# miyaneh hill -> plateau
-# hashtrud hill -> plateau
-# nurabad hill -> plateau
-
-# damavand add cool building here
-# qala safid add cool building here
-# khoy add cool bulding here
-
-# reyshahr increase harbor
-# hormuz increase harbor
-# siraf minor increase harbor
-
 # terrain buffs
 muchesh = { topography = plateau vegetation = grasslands climate = continental religion = sunni culture = kurdish_culture raw_material = wool}
 sonqor = { topography = plateau vegetation = grasslands climate = continental religion = sunni culture = kurdish_culture raw_material = livestock}
@@ -38,13 +20,6 @@ siraf = { topography = mountains vegetation = desert climate = arid religion = s
 ## SWISS REWORK
 ## SWISS REWORK
 ## SWISS REWORK
-
-# valleys
-## martigny, sion, brig, monthey, interlaken
-## disentis, ilanz, chur, werdenberg
-## zuoz, tresivio, bormio
-## silandro, merano, trento, rovereto,
-## bruneck, steinfeld, tamsweg, murau,
 
 # Arpitan valleys
 martigny = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = lead}
@@ -81,15 +56,12 @@ grenoble = { topography = valley vegetation = forest climate = continental relig
 chambery = { topography = valley vegetation = grasslands climate = oceanic religion = catholic culture = arpitan raw_material = wine}
 moutiers = { topography = valley vegetation = forest climate = continental religion = catholic culture = arpitan raw_material = salt}
 
-
 ## HUNGARY VALLEYS
-## sibiu liptovsky_mikulas rakhiv
 sibiu = { topography = valley vegetation = woods climate = continental religion = orthodox culture = german_transylvanian raw_material = iron}
 liptovsky_mikulas = { topography = valley vegetation = woods climate = continental religion = catholic culture = slovak raw_material = goods_gold}
 rakhiv = { topography = valley vegetation = forest climate = continental religion = orthodox culture = halychian_culture raw_material = amber}
 
 ## GEORGIA VALLEYS
-## akhaltsikhe kelkit bayburt ispir parkhali artanuji khupati kagizman tekman karakilise
 akhaltsikhe = { topography = valley vegetation = woods climate = continental religion = orthodox culture = georgian_culture raw_material = wheat}
 kelkit = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = stone}
 bayburt = { topography = valley vegetation = sparse climate = continental religion = miaphysite culture = armenian_culture raw_material = clay}
@@ -102,13 +74,11 @@ tekman = { topography = valley vegetation = woods climate = continental religion
 karakilise = { topography = valley vegetation = woods climate = continental religion = miaphysite culture = armenian_culture raw_material = legumes}
 
 ## SERBIA VALLEYS
-## ohrid debar koman
 ohrid = { topography = valley vegetation = forest climate = oceanic religion = orthodox culture = bulgarian raw_material = fish}
 debar = { topography = valley vegetation = woods climate = continental religion = catholic culture = albanian raw_material = wild_game}
 koman = { topography = valley vegetation = woods climate = subtropical religion = orthodox culture = albanian raw_material = lumber}
 
 ## PERSIA VALLEYS
-## hashatjin shamiram sirdan rudbar hakkari baskale
 hashatjin = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = legumes}
 shamiram = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
 sirdan = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = adhari_culture raw_material = livestock}
@@ -117,8 +87,17 @@ baskale = { topography = valley vegetation = forest climate = continental religi
 hakkari = { topography = valley vegetation = woods climate = continental religion = sunni culture = kurdish_culture raw_material = lumber}
 
 ## morocco valleys
-## ait_benhaddou
 ait_benhaddou = { topography = valley vegetation = sparse climate = cold_arid religion = sunni culture = masmuda raw_material = wool}
+
+## BRANDENBURG REWORK
+## BRANDENBURG REWORK
+## BRANDENBURG REWORK
+
+pritzwalk = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = lumber}
+havelberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = salt}
+herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
+ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = lumber}
+beeskow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fur}
 
 ## START VANILLA
 ## cant overwrite this file by entry only :(
@@ -983,10 +962,7 @@ salzwedel = { topography = flatland vegetation = grasslands climate = oceanic re
 osterburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = wheat}
 haldensleben = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = wool}
 wolmirstedt = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
-havelberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
 wittstock = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = wool}
-ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = medicaments}
-pritzwalk = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = legumes}
 wittenberge = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = markish raw_material = wool}
 prenzlau = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = wool}
 templin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = wild_game}
@@ -994,7 +970,7 @@ angermunde = { topography = flatland vegetation = forest climate = continental r
 berlin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
 teltow = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wool}
 treuenbrietzen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
-herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
+
 freienwalde = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = livestock}
 lebus = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wild_game}
 brandenburg = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = millet}
@@ -1011,7 +987,6 @@ spremberg = { topography = flatland vegetation = woods climate = continental rel
 calau = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = wild_game}
 lubben = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = legumes}
 luckau = { topography = flatland vegetation = woods climate = continental religion = catholic culture = sorbian raw_material = lumber}
-beeskow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = sorbian raw_material = fish}
 zossen = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = fur}
 bitburg = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = westphalian raw_material = fur}
 prum = { topography = hills vegetation = woods climate = continental religion = catholic culture = westphalian raw_material = medicaments}
