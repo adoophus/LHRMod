@@ -1,2 +1,0 @@
-﻿l_english:
- EXPENSE_MAINT_TT_TEXT_LONG_ALT: "At [MaintenanceSetting.GetSliderValue|2=%V] investment, the [MaintenanceSetting.GetNameWithNoTooltip|V] of [MaintenanceSetting.GetSettingOwner.GetName] is [MaintenanceSetting.GetExpense|+=2R]@gold!"

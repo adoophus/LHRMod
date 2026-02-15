@@ -8,12 +8,40 @@
 # scotland
 # high alemannic
 # disabled.
-REPLACE:unlock_halberdiers_advance = {}
+REPLACE:unlock_halberdiers_advance = {
+	age = age_3_discovery
+	unlock_unit = a_halberdiers
+	
+	requires = training_fields_advance
+
+	ai_weight = {
+		add = "ai_unlock_unit_score(a_halberdiers)"
+	}
+
+	allow = {
+		always = no
+	}
+	potential = {
+		always = no
+	}	
+}
 
 # country fixes: done
 # none
 # disabled.
-REPLACE:unlock_matchlock_levy = {}
+REPLACE:unlock_matchlock_levy = {
+	age = age_3_discovery
+	unlock_levy = levy_a_matchlock_levy
+	
+	requires = unlock_early_arquebusiers_advance
+
+	allow = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+}
 
 REPLACE:unlock_early_arquebusiers_advance = {
 	age = age_3_discovery
@@ -47,7 +75,23 @@ REPLACE:unlock_lancers_advance = {
 # beyliks
 # KRS
 # disabled.
-REPLACE:unlock_light_lancers_advance = {}
+REPLACE:unlock_light_lancers_advance = {
+	age = age_3_discovery
+	unlock_unit = a_light_lancers
+	
+	ai_weight = {
+		add = "ai_unlock_unit_score(a_light_lancers)"
+	}
+
+	requires = training_fields_advance
+
+	allow = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+}
 
 
 ######################
@@ -65,4 +109,100 @@ REPLACE:supply_lines = {
 # country fixes: done
 # none.
 # disabled.
-REPLACE:unlock_supply_convoy = {}
+REPLACE:unlock_supply_convoy = {
+	age = age_3_discovery
+	unlock_unit = a_supply_convoy
+	
+	ai_weight = {
+		add = "ai_unlock_unit_score(a_supply_convoy)"
+	}
+
+	requires = training_fields_advance
+
+	allow = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+}
+
+#################### COUNTRY FIXES ####################
+#################### COUNTRY FIXES ####################
+#################### COUNTRY FIXES ####################
+
+## HALBERDIERS PRE REQ FIX
+## HALBERDIERS PRE REQ FIX
+## HALBERDIERS PRE REQ FIX
+
+REPLACE:unlock_late_longbowmen_advance = {
+	age = age_3_discovery
+	requires = unlock_early_arquebusiers_advance
+	potential = {
+		OR = {
+			has_or_had_tag = WLS
+			has_or_had_tag = ENG
+			has_or_had_tag = GBR
+			culture = culture:welsh
+			culture = culture:english
+		}
+	}
+	unlock_levy = levy_a_late_longbowmen
+}
+
+REPLACE:hun_found_the_black_army = {
+	potential = { has_or_had_tag = HUN }
+	
+	age = age_3_discovery
+	unlock_unit = a_the_black_army
+	requires = unlock_early_arquebusiers_advance
+}
+
+REPLACE:unlock_late_gallowglass_advance = {
+	age = age_3_discovery
+	icon = expand_varangian_guard_advance
+	unlock_levy = levy_a_late_gallowglass
+	requires = unlock_early_arquebusiers_advance
+	potential = {
+		country_has_gallowglass_trigger = yes
+	}
+}
+
+REPLACE:swiss_reislaufer = {
+	age = age_3_discovery
+	potential = {
+		is_swiss_for_advances = yes
+	}
+	unlock_unit = a_reislaufer
+
+	requires = unlock_early_arquebusiers_advance
+}
+
+## unlock_light_lancers_advance
+## unlock_light_lancers_advance 
+## unlock_light_lancers_advance
+
+REPLACE:akinji_cavalry = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = TUR
+			has_reform = government_reform:anatolian_beylik
+		}
+	}
+	unlock_unit = a_akinji
+	requires = unlock_lancers_advance
+}
+
+REPLACE:krs_kurdish_horses = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = KRS
+	}
+	icon = bah_arabian_horses
+
+	army_cavalry_power = 0.15
+
+
+	requires = unlock_lancers_advance
+}

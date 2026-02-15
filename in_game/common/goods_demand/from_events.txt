@@ -1,6 +1,5 @@
 hes_print_coins_1 = {
 	goods_gold = 0.4
-	
 
 	hidden = no
 	category = special_demands
