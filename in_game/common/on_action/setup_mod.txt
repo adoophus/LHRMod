@@ -1,13 +1,67 @@
 on_game_start = {
 	on_actions = {
-		lhr_on_game_start
+		mod_run_performance_cleanup
+		mod_nerf_bohemia
+		mod_adjust_france
+		mod_nerf_mamluks
 	}
 }
 
-lhr_on_game_start = {
+mod_run_performance_cleanup = {
 	effect = {
-		
-		## Bohemia nerfs
+		every_country = {
+			limit = {
+				country_type = pop
+			}
+			change_country_type = building
+			every_owned_building = {
+				change_building_level = -10
+			}
+		}
+
+		sub_continent:pacific_islands = { mod_remove_and_disable_sub_continent = yes }
+		region:tibet_region = { mod_remove_and_disable_region = yes }
+		region:west_china_region = { mod_remove_and_disable_region = yes }
+		area:guizhou_area = { mod_remove_and_disable_area = yes }
+		area:dali_area = { mod_remove_and_disable_area = yes }
+		area:yunnan_area = { mod_remove_and_disable_area = yes }
+
+		c:JAP = {
+			mod_annex_all_direct_vassals = yes
+		}
+
+		c:CRS = {
+			mod_annex_all_nations_in_area = { target_area = lower_selenga_area }
+			mod_annex_all_nations_in_area = { target_area = upper_selenga_area }
+		}
+
+		c:OTC = {
+			mod_annex_all_nations_in_area = { target_area = songhua_area }
+			mod_annex_all_nations_in_area = { target_area = ussuri_area }
+			mod_annex_all_nations_in_area = { target_area = songnen_area }
+		}
+
+		c:QAS= {
+			mod_annex_all_nations_in_area = { target_area = shilkari_area }
+			mod_annex_all_nations_in_area = { target_area = argun_area }
+			mod_annex_all_nations_in_area = { target_area = middle_amur_area }
+			mod_annex_all_nations_in_area = { target_area = lower_amur_area }
+		}
+
+		c:SYG= {
+			mod_annex_all_nations_in_area = { target_area = yanbei_area }
+			mod_annex_all_nations_in_area = { target_area = liaodong_area }
+		}
+
+		c:CHI = {
+			mod_annex_all_nations_in_area = { target_area = liangjiang_area }
+			mod_annex_all_nations_in_area = { target_area = wuling_area }
+		}
+	}
+}
+
+mod_nerf_bohemia = {
+	effect = {
 		c:BOH = {
 			cancel_subject = c:MVA
 			cancel_subject = c:OPL
@@ -43,9 +97,11 @@ lhr_on_game_start = {
 				type = subject_type:vassal
 			}
 		}
+	}
+}
 
-		## End bohemia nerfs
-
+mod_adjust_france = {
+	effect = {
 		c:FRA = {
 			cancel_subject = c:FLA
 			cancel_subject = c:ARS
@@ -72,7 +128,11 @@ lhr_on_game_start = {
 				type = subject_type:vassal
 			}
 		}
+	}
+}
 
+mod_nerf_mamluks = {
+	effect = {
 		c:MAM = {
 			cancel_subject = c:FDL
 			cancel_subject = c:AAL
