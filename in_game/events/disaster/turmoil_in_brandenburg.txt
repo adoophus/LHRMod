@@ -2395,9 +2395,11 @@ turmoil_in_brandenburg.1300 = {
 	}
 
 	fire_only_once = yes
-
 	trigger = {
-		always = no
+		has_ruler = yes
+		any_active_disaster = {
+			disaster_type = disaster_type:turmoil_in_brandenburg
+		}
 	}
 	immediate = {
 		set_variable = PRU_robber_barons_active
@@ -2433,7 +2435,10 @@ turmoil_in_brandenburg.1301  = {
 	image = "gfx/interface/illustrations/disaster/turmoil_in_brandenburg.dds"
 
 	trigger = {
-		always = no
+		has_variable = PRU_robber_barons_active
+		any_province = {
+			can_have_robber_barons = yes
+		}
 	}
 
 	immediate = {
@@ -2461,13 +2466,17 @@ turmoil_in_brandenburg.1302  = {
 	dynamic_historical_event = {
 		tag = BRA
 		tag = PRU
-		from = 1380.1.1
+		from = 1350.1.1
 		to = 1420.1.1
 		monthly_chance = 20
 	}
 
 	trigger = {
-		always = no
+		has_variable = PRU_robber_barons_active
+		any_province = {
+			count >= 3
+			has_province_modifier = PRU_robber_barons
+		}
 	}
 
 	immediate = {
@@ -2581,14 +2590,27 @@ turmoil_in_brandenburg.1303  = {
 	dynamic_historical_event = {
 		tag = BRA
 		tag = PRU
-		from = 1380.1.1
+		from = 1350.1.1
 		to = 1821.1.1 #Robber baron issue must be able to be resolved
 		monthly_chance = 20
 	}
 
 
 	trigger = {
-		always = no
+		has_variable = PRU_robber_barons_active
+		OR = {
+			any_province = {
+				percent >= 0.75
+				NOT = { has_province_modifier = PRU_robber_barons }
+				has_variable = pru_has_had_robber_barons
+			}
+			AND = {
+				NOT = {
+					has_variable = robber_barons_issues_are_ignored
+					has_variable = robber_barons_issues_are_dealt_with
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -2635,13 +2657,13 @@ turmoil_in_brandenburg.1304  = {
 	dynamic_historical_event = {
 		tag = BRA
 		tag = PRU
-		from = 1410.1.1
+		from = 1380.1.1
 		to = 1821.1.1
 		monthly_chance = 20
 	}
 
 	trigger = {
-		always = no
+		has_variable = robber_barons_aftermath
 	}
 
 	immediate = {

@@ -1,0 +1,7 @@
+RTH = {
+	color = map_RTH
+	color2 = rgb { 255 137 146 }
+
+	culture_definition = german_silesian
+	religion_definition = catholic
+}

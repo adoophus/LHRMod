@@ -236,6 +236,7 @@ colors = {
 	map_BRA = rgb { 123 90 90 } #same as in EU4
 	map_BAV = rgb { 17 116 193 } #same as in EU4
 	map_BOH = rgb { 161 139 40 } #same as in EU4
+	map_RTH = rgb { 255 137 146 }
 	map_SAX = hsv360 { 255 18 71 } #same as in EU4
 	map_MKL = rgb { 55 140 143 } #same as in EU4
 	map_ANH = rgb { 203 93 124 } #same as in EU4
