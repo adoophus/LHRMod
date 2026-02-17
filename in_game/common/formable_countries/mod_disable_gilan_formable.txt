@@ -1,0 +1,27 @@
+KRY_f = {
+	level = 1
+	required_locations_fraction = 1
+	rule = plausible
+	 
+	potential = {
+		always = no
+	}
+
+	allow = {
+	}
+	
+	name = KRY
+	flag = KRY
+	adjective = KRY_ADJ
+	tag = KRY
+	color = map_KRY
+
+	provinces = {
+		gilan_province
+	}
+	locations = {
+		bandar_e_anzali
+	}
+	form_effect = {
+	}
+}
