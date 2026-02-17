@@ -20,7 +20,7 @@ mod_remove_and_disable_sub_continent = {
 	every_location_in_sub_continent = {
 		if = {
 			limit = {
-				mod_can_remove_location = yes
+					is_ownable = yes
 			}
 			add_location_modifier = {
 				modifier = mod_location_disabled_static_modifier
@@ -36,7 +36,7 @@ mod_remove_and_disable_area = {
 	every_location_in_area = {
 		if = {
 			limit = {
-				mod_can_remove_location = yes
+					is_ownable = yes
 			}
 			add_location_modifier = {
 				modifier = mod_location_disabled_static_modifier
@@ -52,7 +52,7 @@ mod_remove_and_disable_region = {
 	every_location_in_region = {
 		if = {
 			limit = {
-				mod_can_remove_location = yes
+					is_ownable = yes
 			}
 			add_location_modifier = {
 				modifier = mod_location_disabled_static_modifier
@@ -67,7 +67,7 @@ mod_remove_and_disable_region = {
 mod_remove_location = {
 	if = {
 		limit = {
-			mod_can_remove_location = yes
+			is_ownable = yes
 		}
 		every_buildings_in_location = {
 			change_building_level = -10
@@ -87,7 +87,7 @@ mod_remove_location = {
 mod_remove_location_and_pops = {
 	if = {
 		limit = {
-			mod_can_remove_location = yes
+			is_ownable = yes
 		}
 		every_buildings_in_location = {
 			change_building_level = -10

@@ -1,37 +1,28 @@
-namespace = flavor_bds
+namespace = flavor_bds_ayyar_bands_disaster
 
 scripted_trigger bds_is_valid_lawlessness_location = {
 	owner ?= root
 	area = area:iraq_ajam_area
 }
 
-scripted_trigger bds_is_southern_ajam_location = {
-	OR = {
-		location = rey
-		location = karaj
-		location = savojbolagh
-		location = qazvin
-		location = takestan
-		location = soltaniyeh
-		location = sirdan
-		location = rudbar
-	}
-}
-
-flavor_bds.1 = {
+flavor_bds_ayyar_bands_disaster.1 = {
 	type = country_event
 	category = disaster_event
 	title = flavor_bds.1.title
 	desc = flavor_bds.1.desc
 	fire_only_once = yes
+	dynamic_historical_event = {
+		from = 1336.1.1
+		to = 1400.1.1
+	}
 	trigger = {
 		tag = BDS
 		any_owned_location = {
-			area = area:iraq_ajam_area
+			bds_is_valid_lawlessness_location = yes
 		}
 	}
 
-	image = "gfx/interface/illustrations/disaster/religious_turmoil.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 
 	immediate = {
 		every_owned_location = {
@@ -63,33 +54,31 @@ flavor_bds.1 = {
 	historical_info = flavor_bds.1.historical_info
 }
 
-flavor_bds.2 = {
+flavor_bds_ayyar_bands_disaster.2 = {
 	type = country_event
 	category = disaster_event
 	title = flavor_bds.2.title
 	desc = flavor_bds.2.desc
+	dynamic_historical_event = {
+		from = 1336.1.1
+		to = 1400.1.1
+	}
 	trigger = {
 		tag = BDS
 		any_active_disaster = {
 			disaster_type = disaster_type:bds_ayyar_bands_disaster
 		}
 		any_owned_location = {
-			area = area:iraq_ajam_area
-			province = {
-				NOT = { has_province_modifier = bds_ayyar_bands }
-			}
+			bds_is_valid_lawlessness_location = yes
 		}
 	}
 
-	image = "gfx/interface/illustrations/disaster/religious_turmoil.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 
 	immediate = {
 		random_owned_location = {
 			limit = {
-				area = area:iraq_ajam_area
-				province = {
-					NOT = { has_province_modifier = bds_ayyar_bands }
-				}
+				bds_is_valid_lawlessness_location = yes
 			}
 			save_scope_as = target_location
 		}
@@ -119,14 +108,18 @@ flavor_bds.2 = {
 	historical_info = flavor_bds.2.historical_info
 }
 
-flavor_bds.3 = {
+flavor_bds_ayyar_bands_disaster.3 = {
 	type = country_event
 	category = disaster_event
 	title = flavor_bds.3.title
 	desc = flavor_bds.3.desc
 	fire_only_once = yes
+	dynamic_historical_event = {
+		from = 1336.1.1
+		to = 1400.1.1
+	}
 
-	image = "gfx/interface/illustrations/disaster/religious_turmoil.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 
 	option = {
 		name = flavor_bds.3.a
@@ -139,32 +132,34 @@ flavor_bds.3 = {
 	historical_info = flavor_bds.3.historical_info
 }
 
-flavor_bds.4 = {
+flavor_bds_ayyar_bands_disaster.4 = {
 	type = country_event
 	category = disaster_event
 	title = flavor_bds.4.title
 	desc = flavor_bds.4.desc
+	dynamic_historical_event = {
+		from = 1336.1.1
+		to = 1400.1.1
+	}
 	trigger = {
 		tag = BDS
 		any_active_disaster = {
 			disaster_type = disaster_type:bds_ayyar_bands_disaster
 		}
 		any_owned_location = {
-			area = area:iraq_ajam_area
-			bds_is_southern_ajam_location = yes
+			bds_is_valid_lawlessness_location = yes
 			any_pop = {
 				NOT = { religion = religion:shia }
 			}
 		}
 	}
 
-	image = "gfx/interface/illustrations/disaster/religious_turmoil.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 
 	immediate = {
 		random_owned_location = {
 			limit = {
-				area = area:iraq_ajam_area
-				bds_is_southern_ajam_location = yes
+				bds_is_valid_lawlessness_location = yes
 				any_pop = {
 					NOT = { religion = religion:shia }
 				}
@@ -200,32 +195,34 @@ flavor_bds.4 = {
 	historical_info = flavor_bds.4.historical_info
 }
 
-flavor_bds.5 = {
+flavor_bds_ayyar_bands_disaster.5 = {
 	type = country_event
 	category = disaster_event
 	title = flavor_bds.5.title
 	desc = flavor_bds.5.desc
+	dynamic_historical_event = {
+		from = 1336.1.1
+		to = 1400.1.1
+	}
 	trigger = {
 		tag = BDS
 		any_active_disaster = {
 			disaster_type = disaster_type:bds_ayyar_bands_disaster
 		}
 		any_owned_location = {
-			area = area:iraq_ajam_area
-			bds_is_southern_ajam_location = yes
+			bds_is_valid_lawlessness_location = yes
 			province = {
 				NOT = { has_province_modifier = bds_ayyar_bands }
 			}
 		}
 	}
 
-	image = "gfx/interface/illustrations/disaster/religious_turmoil.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 
 	immediate = {
 		random_owned_location = {
 			limit = {
-				area = area:iraq_ajam_area
-				bds_is_southern_ajam_location = yes
+				bds_is_valid_lawlessness_location = yes
 				province = {
 					NOT = { has_province_modifier = bds_ayyar_bands }
 				}

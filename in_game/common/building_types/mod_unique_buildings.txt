@@ -268,7 +268,7 @@ ira_gateway = {
 	can_destroy = {
 		always = no
 	}
-	can_close = yes
+	can_close = no
 	
 	build_time = medium_port_building_time
 	

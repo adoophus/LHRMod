@@ -57,7 +57,7 @@ bds_ilkhanate_power_vacuum = {
 	game_data = {
 		category = country
 	}
-	global_monthly_legitimacy = -0.01
+
 	global_monthly_control = -0.001
 	global_nobles_estate_power = 0.1
 }

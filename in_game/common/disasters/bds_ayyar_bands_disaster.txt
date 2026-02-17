@@ -1,7 +1,7 @@
 bds_ayyar_bands_disaster = {
 	fire_only_once = yes
 
-	image = "gfx/interface/illustrations/event/backgrounds/devastation.dds"
+	image = "gfx/interface/illustrations/disaster/bds_ayyar_bands_disaster.dds"
 	
 	monthly_spawn_chance = 1
 
@@ -11,15 +11,6 @@ bds_ayyar_bands_disaster = {
 		has_any_active_disaster = no
 		has_ruler = yes
 		NOT = { has_variable = had_bds_ayyar_bands_disaster }
-		OR = {
-			any_owned_location = {
-				area = area:iraq_ajam_area
-			}
-			any_owned_location = { location = rey }
-			any_owned_location = { location = karaj }
-			any_owned_location = { location = qazvin }
-			any_owned_location = { location = savojbolagh }
-		}
 	}
 
 	can_end = {
@@ -35,27 +26,25 @@ bds_ayyar_bands_disaster = {
 
 	modifier = {
 		monthly_legitimacy = -0.1
-		diplomatic_reputation = -1
-		monthly_towards_decentralization = 0.1
 	}
 
 	on_start = {
 		set_variable = bds_ayyar_bands_active
 		add_country_modifier = { modifier = bds_ilkhanate_power_vacuum years = 15 mode = add }
-		trigger_event_non_silently = flavor_bds.1
+		trigger_event_non_silently = flavor_bds_ayyar_bands_disaster.1
 	}
 
 	on_monthly = {
 		random_list = {
-			70 = { }
-			15 = { trigger_event_silently = flavor_bds.2 }
-			10 = { trigger_event_silently = flavor_bds.4 }
-			5 = { trigger_event_silently = flavor_bds.5 }
+			60 = { }
+			25 = { trigger_event_silently = flavor_bds_ayyar_bands_disaster.2 }
+			10 = { trigger_event_silently = flavor_bds_ayyar_bands_disaster.4 }
+			5 = { trigger_event_silently = flavor_bds_ayyar_bands_disaster.5 }
 		}
 	}
 
 	on_end = {
-		trigger_event_non_silently = flavor_bds.3
+		trigger_event_non_silently = flavor_bds_ayyar_bands_disaster.3
 		remove_country_modifier = bds_ilkhanate_power_vacuum
 		remove_variable = bds_ayyar_bands_active
 		set_variable = had_bds_ayyar_bands_disaster
