@@ -1,4 +1,6 @@
 ﻿l_english:
+ RTH: "Rothenburg"
+ RTH_ADJ: "Rothenburg"
  foreign_building_gone: "Disband Foreign Buildings"
  foreign_building_gone_desc: "We will demand that the Foreign Buildings are disbanded."
  foreign_building_gone_entry: "Shutdown the Foreign Building in [target.GetName]"

@@ -565,10 +565,10 @@ countries = {
 			}
 
 			accepted_cultures = { markish }
-			tolerated_cultures = {
-				polabian
-				eastern_pomeranian
-			}
+			#tolerated_cultures = {
+			#	polabian
+			#	eastern_pomeranian
+			#}
 
 			country_rank = rank_county
 			capital = brandenburg

@@ -2348,9 +2348,8 @@ turmoil_in_brandenburg.1201 = {
 }
 
 #Robber Barons
-
 scripted_trigger can_have_robber_barons = {
-	always = no
+	NOT = { has_variable = pru_has_had_robber_barons }
 }
 scripted_effect select_baron_province = {
 	random_province = {
@@ -2369,12 +2368,13 @@ scripted_effect set_robber_baron_troubles = {
 		mode = add_and_extend
 	}
 
-	every_location_in_province = {
-		change_control = control_severe_penalty
-	}
+	#every_location_in_province = {
+	#	change_control = control_mild_penalty
+	#}
 
 	custom_tooltip = PRU_use_cabinet_action_to_get_rid_of_barons
 }
+
 
 #Changed by mod
 # Pushed it forwad to 1350 from 1370.
