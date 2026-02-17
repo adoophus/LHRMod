@@ -1,0 +1,42 @@
+﻿l_english:
+bds_ayyar_bands_disaster: "Ayyar Turmoil in Iraq-i Ajam"
+bds_ayyar_bands_disaster_desc: "Ilkhanid authority has collapsed, and armed ayyar bands now control roads, market towns, and tax routes across Iraq-i Ajam. We must restore provincial order before local war-captains entrench themselves permanently."
+
+flavor_bds.1.title: "Ayyar Bands in Iraq-i Ajam"
+flavor_bds.1.desc: "With Ilkhanid authority shattered, the chain of command in Iraq-i Ajam has broken apart. Armed #italic ayyar#! bands, ex-soldiers, and local retainers now seize toll roads and market towns. If we fail to restore the Diwan's reach, provincial warlords will replace the law."
+flavor_bds.1.a: "Stability will be restored by steel and silver."
+flavor_bds.1.historical_info: "In the wake of Ilkhanid collapse, successor polities across western Iran faced severe local fragmentation, tax-farm militarization, and road insecurity."
+
+flavor_bds.2.title: "A New Band Declares Itself"
+flavor_bds.2.desc: "Another ayyar host has occupied roads and granaries, claiming to defend the district while taxing it into ruin. The post-Ilkhan breakdown continues to spread across Iraq-i Ajam."
+flavor_bds.2.a: "Send troops and coin to break them."
+flavor_bds.2.b: "Let the local amirs handle their own bandits."
+flavor_bds.2.historical_info: "Power vacuums in fourteenth-century Iran often produced recurring waves of local armed predation and shifting micro-authorities."
+
+flavor_bds.3.title: "Order Restored in Iraq-i Ajam"
+flavor_bds.3.desc: "Our officials and soldiery have broken the ayyar networks and re-opened the roads. Taxes now flow again, and district notables acknowledge the center. The worst phase of post-Ilkhan fragmentation has passed."
+flavor_bds.3.a: "The Diwan governs again."
+flavor_bds.3.historical_info: "Where successor regimes survived the fourteenth-century crisis, recovery often began with restoring caravan security, tax discipline, and provincial obedience."
+
+flavor_bds.4.title: "Shi'i Networks in the Southern Districts"
+flavor_bds.4.desc: "Local sayyids and shrine custodians in the southern districts offer men, scribes, and alms to stabilize roads and towns in our name. If we back them, their preaching and patronage will rapidly bind local communities to Shi'i institutions."
+flavor_bds.4.a: "Fund the network and restore order through the shrines."
+flavor_bds.4.b: "We cannot afford sectarian patronage right now."
+flavor_bds.4.historical_info: "In periods of political fragmentation, local religious networks often became practical organs of order, mediation, and fiscal recovery in western Iran."
+
+flavor_bds.5.title: "Southern Backlash Against Central Edicts"
+flavor_bds.5.desc: "Some district notables accuse our agents of exploiting piety for taxation. In the south, resistance is hardening around market towns and hill roads."
+flavor_bds.5.a: "Pay stipends and quiet the district leaders."
+flavor_bds.5.b: "Break resistance by force and exemplary punishment."
+flavor_bds.5.historical_info: "State-building through religious patronage was effective but could provoke sharp local backlash when elites felt bypassed or overtaxed."
+
+bds_use_cabinet_action_to_restore_order: "Use [ShowCabinetActionName('bds_restore_ajam_order')] to clear ayyar control from affected provinces in Iraq Ajam."
+remove_bds_ayyar_bands_modifier: "[province|e] loses the effect of [GetModifier('bds_ayyar_bands').GetNameWithTooltip]"
+
+bds_restore_ajam_order: "Restore Order in Iraq-i Ajam"
+bds_restore_ajam_order_desc: "In the Ilkhanate's wake, ayyar bands and provincial war-captains have seized roads and revenues. We will restore Diwan authority district by district."
+bds_restore_ajam_order_active: "Restoring Order in Iraq-i Ajam"
+bds_restore_ajam_order_action: "Restore Order in Iraq-i Ajam"
+bds_restore_ajam_order_action_progress: "Restoring Order in Iraq-i Ajam"
+bds_restore_ajam_order_action_progress_wordier: "Restoring Order in Iraq-i Ajam"
+bds_restore_ajam_order_action_progress_tooltip: "Restoring Order in Iraq-i Ajam"

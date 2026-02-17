@@ -257,7 +257,7 @@ ira_gateway = {
 	
 	category = infrastructure_category
 	
-	employment_size = 1
+	employment_size = 0.25
 
 	country_potential = {
 		always = no
@@ -276,7 +276,6 @@ ira_gateway = {
 
 	modifier = {
 		local_distance_from_capital_speed_propagation = 0.75
-		local_manpower = 0.005
 	}
 	
 	possible_production_methods =  {

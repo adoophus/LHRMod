@@ -27,5 +27,11 @@ STATIC_MODIFIER_DESC_hes_morale_age_3: "Gott mit uns."
 STATIC_MODIFIER_NAME_hes_erosion_of_trust: "Erosion of Trust"
 STATIC_MODIFIER_DESC_hes_erosion_of_trust: "Following the exposure of the currency fraud, the Landgrave's reputation as a reliable financial actor has been severely damaged. Merchants across the Empire now view Hessian coinage with suspicion, and the Crown's credit is significantly diminished."
 
+STATIC_MODIFIER_NAME_bds_ayyar_bands: "Ayyar Banditry"
+STATIC_MODIFIER_DESC_bds_ayyar_bands: "In the Ilkhanate's aftermath, armed ayyar bands and local strongmen dominate roads and markets, undermining central authority."
+
+STATIC_MODIFIER_NAME_bds_ilkhanate_power_vacuum: "Ilkhanate Power Vacuum"
+STATIC_MODIFIER_DESC_bds_ilkhanate_power_vacuum: "With Ilkhanid authority shattered, successor states struggle to enforce taxation, law, and loyalty across Iraq-i Ajam."
+
 STATIC_MODIFIER_NAME_giving_market_knowledge_sharing: "Sharing Knowledge"
 STATIC_MODIFIER_NAME_receiving_market_knowledge_sharing: "Receiving Knowledge"

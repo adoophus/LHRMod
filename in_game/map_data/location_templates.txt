@@ -12,11 +12,14 @@ aghkand = { topography = plateau vegetation = sparse climate = cold_arid religio
 miyaneh = { topography = plateau vegetation = grasslands climate = cold_arid religion = sunni culture = adhari_culture raw_material = cotton}
 hashtrud = { topography = plateau vegetation = grasslands climate = cold_arid religion = sunni culture = adhari_culture raw_material = wool}
 
+kojur = { topography = flatland vegetation = forest climate = mediterranean religion = shia culture = mazanderani_culture raw_material = fish natural_harbor_suitability = 0.00}
+
 # harbor capacity buffs
 reyshahr = { topography = flatland vegetation = desert climate = arid religion = sunni culture = farsi_culture raw_material = medicaments natural_harbor_suitability = 0.5}
 hormuz = { topography = flatland vegetation = desert climate = arid religion = sunni culture = farsi_culture raw_material = pearls natural_harbor_suitability = 0.65}
 siraf = { topography = mountains vegetation = desert climate = arid religion = sunni culture = farsi_culture raw_material = pearls natural_harbor_suitability = 0.4}
-
+rasht = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = silk natural_harbor_suitability = 0.7}
+astarabad = { topography = flatland vegetation = forest climate = cold_arid religion = shia culture = mazanderani_culture raw_material = fruit natural_harbor_suitability = 0.75}
 ## SWISS REWORK
 ## SWISS REWORK
 ## SWISS REWORK
@@ -8149,13 +8152,11 @@ semnan = { topography = plateau vegetation = desert climate = cold_arid religion
 elburz_mountains9 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid}
 elburz_mountains10 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid}
 shahrestan_sofla = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = farsi_culture raw_material = stone}
-rasht = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = silk natural_harbor_suitability = 0.00}
 fuman = { topography = wetlands vegetation = woods climate = mediterranean religion = shia culture = gilak_culture raw_material = wheat}
 lahijan = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = rice natural_harbor_suitability = 0.00}
 langarud = { topography = wetlands vegetation = grasslands climate = mediterranean religion = shia culture = gilak_culture raw_material = silk natural_harbor_suitability = 0.00}
 gorgan = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = turkmen_culture raw_material = cotton}
 aliabad_katul = { topography = mountains vegetation = forest climate = cold_arid religion = shia culture = khorasani_culture raw_material = lumber}
-astarabad = { topography = flatland vegetation = forest climate = cold_arid religion = shia culture = mazanderani_culture raw_material = fruit natural_harbor_suitability = 0.00}
 etrek = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock natural_harbor_suitability = 0.00}
 incheh_borun = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = turkmen_culture raw_material = wheat}
 minudasht = { topography = mountains vegetation = forest climate = cold_arid religion = shia culture = khorasani_culture raw_material = lumber}
@@ -8165,7 +8166,6 @@ tammisha = { topography = mountains vegetation = forest climate = cold_arid reli
 amol = { topography = flatland vegetation = forest climate = mediterranean religion = shia culture = mazanderani_culture raw_material = silk natural_harbor_suitability = 0.00}
 al_mamtir = { topography = wetlands vegetation = woods climate = mediterranean religion = shia culture = mazanderani_culture raw_material = fiber_crops natural_harbor_suitability = 0.00}
 chalus = { topography = mountains vegetation = forest climate = mediterranean religion = shia culture = mazanderani_culture raw_material = rice natural_harbor_suitability = 0.00}
-kojur = { topography = mountains vegetation = forest climate = mediterranean religion = shia culture = mazanderani_culture raw_material = fish natural_harbor_suitability = 0.00}
 tonekabon = { topography = flatland vegetation = forest climate = mediterranean religion = shia culture = mazanderani_culture raw_material = sugar natural_harbor_suitability = 0.00}
 elburz_mountains5 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid}
 elburz_mountains6 = { topography = mountain_wasteland vegetation = sparse climate = continental}

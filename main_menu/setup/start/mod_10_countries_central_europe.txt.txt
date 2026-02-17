@@ -1,0 +1,458 @@
+countries = {
+	countries = {
+		HES = {	#Hesse
+			own_control_core = {
+				kassel rotenburg eschwege frankenberg marburg alsfeld
+				giessen melsungen korbach ziegenhain
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			government = {
+
+				ruler = hes_heinrich_ii_hesse
+
+				ruler_term = {	character = hes_otto_i_hesse start_date = 1308.1.1 end_date = 1328.1.17 regnal_number = 1	}
+				ruler_term = {	character = hes_heinrich_ii_hesse start_date = 1328.1.17 regnal_number = 2	}
+
+				regnal_numbers = {
+					name_otto = 1
+					name_henry = 2
+				}
+				reforms = {
+					hesse_monarchy_reform
+				}
+				privilege = {
+					hesse_2
+					hesse_3
+				}
+
+				land_vs_naval = -50
+				quality_vs_quantity = -15
+			}
+
+			country_rank = rank_county
+			capital = kassel
+			dynasty = hessen_dynasty
+
+			variables = {
+				data = {
+					{
+					flag = "hes_asserting_authority"
+					data = {
+						type = boolean
+						identity = 1
+					}
+				}
+			}
+		}
+		}
+		WDE = {}
+		ZIG = {}
+		DMI = {}
+		GRY = {  # Gruyère (South Germany)
+			own_control_core = {
+				saanen
+				gruyere
+				fribourg
+			}
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "expl_northern_europe"
+			include = "swiss_monarchy"
+			government = {
+				ruler = gry_pierre_iii_de_gruyere
+
+				ruler_term = { character = gry_guillaume_ii_de_gruyere start_date = 1136.1.1 end_date = 1145.1.1 regnal_number = 2 }
+				ruler_term = { character = gry_rodolphe_i_de_gruyere start_date = 1145.1.1 end_date = 1196.1.1 regnal_number = 1 }
+				ruler_term = { character = gry_pierre_i_de_gruyere start_date = 1196.1.1 end_date = 1200.1.1 regnal_number = 1 }
+				ruler_term = { character = gry_rodolphe_i_de_gruyere start_date = 1200.1.1 end_date = 1224.1.1 regnal_number = 2 }
+				ruler_term = { character = gry_rodolphe_ii_de_gruyere start_date = 1224.1.1 end_date = 1270.1.1 regnal_number = 3 }
+				ruler_term = { character = gry_pierre_ii_de_gruyere start_date = 1270.1.1 end_date = 1307.1.1 regnal_number = 2 }
+				ruler_term = { character = gry_pierre_iii_de_gruyere start_date = 1307.1.1 regnal_number = 3 }
+
+				regnal_numbers = {
+					name_peter = 3
+					name_rudolf = 2
+					name_william = 2
+				}
+			}
+			country_rank = rank_county
+			capital = gruyere
+		}
+
+		KYB = {
+			own_control_core = {
+				burgdorf_emmental thun kyburg
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			include = "swiss_monarchy"
+			capital = burgdorf_emmental
+			dynasty = neu_kyburg_dynasty
+			government = {
+				ruler = kyb_eberhard_ii_kyburg
+
+				ruler_term = { character = kyb_eberhard_i_kyburg start_date = 1269.1.1 end_date = 1284.1.1 }
+				ruler_term = { character = kyb_hartmann_kyburg start_date = 1284.1.1 end_date = 1301.1.1 }
+				ruler_term = { character = kyb_hartmann_ii_kyburg start_date = 1301.1.1 end_date = 1322.10.31 }
+				ruler_term = { character = kyb_eberhard_ii_kyburg start_date = 1322.10.31 }
+			}
+			country_rank = rank_county
+		}
+
+		SYZ = {	#Schwyz - main swiss tag
+			own_control_core = {
+				schwyz
+				wolhusen
+				glarus
+				altdorf
+				sarnen
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_german_republic_no_coast"
+			include = "expl_northern_europe"
+			include = "swiss_republic"
+			government = {
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = schwyz
+		}
+
+		URI = {}
+		OBW = {}
+
+		LCU = {	#Lucerne
+			own_control_core = {
+				lucerne
+				baden_im_aargau
+				aarau
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_german_republic_no_coast"
+			include = "expl_northern_europe"
+			include = "swiss_republic"
+			government = {
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = lucerne
+		}
+
+		
+		STG = {	#St. Gallen
+			own_control_core = {
+				st_gallen
+				frauenfeld
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_german_republic_no_coast"
+			include = "expl_northern_europe"
+			government = {
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = st_gallen
+		}
+
+
+		HAB = {	#Austria
+				own_control_core = {
+					vienna amstetten austria_baden bruck_leitha ganserndorf hollabrunn horn korneuburg krems lilienfeld scheibbs melk mistelbach pitten tulln waidhofen_an_der_thaya wiener_neustadt zwettl  #Duchy of Lower Austria
+					klagenfurt st_veit steinfeld volkermarkt #Duchy of Carinthia
+					ljubljana kranj novo_mesto postojna #Duchy of Carniola
+					graz feldbach furstenfeld judenburg kapfenberg leoben liezen maribor murau murzzuschlag rottenmann schladming slovenj_gradec voitsberg weiz #Duchy of Styria
+					linz bad_ischl freistadt gmunden kirchdorf perg rohrbach st_georgen steyr wels #Duchy of Upper Austria
+				}
+
+				own_control_integrated = {
+					bonndorf villingen waldshut #Landgraviate of Breisgau
+					krumbach gunzburg wertingen #Margraviate of Burgau
+					ensisheim #Lordship of Upper Alsace
+					waldsee saulgau #Lordship of Waldsee
+				}
+
+				own_control_conquered = {
+					 #Lordship of Thurgau
+					schaffhausen
+				}
+
+				starting_technology_level = 3
+				include = "expl_western_europe"
+				include = "catholic_monarchy_no_coast"
+				include = "german_principality"
+				government = {
+
+					ruler = hab_albrecht_ii_habsburg
+					consort = frt_johanna_pfirt
+
+					ruler_term = { character = hab_rudolf_i_habsburg start_date = 1276.11.1 end_date = 1282.12.1 regnal_number = 1 }
+					ruler_term = {
+						character = hab_albrecht_i_habsburg start_date = 1282.12.1 end_date = 1283.6.1 regnal_number = 1 # As Co-Ruler
+						character = boh_rudolf_ii_habsburg start_date = 1282.12.1 end_date = 1283.6.1 regnal_number = 2 # As Co-Ruler
+					}
+					ruler_term = { character = hab_albrecht_i_habsburg start_date = 1283.6.1 end_date = 1298.11.21 regnal_number = 1 }
+					ruler_term = {
+						character = hab_albrecht_i_habsburg start_date = 1298.11.21 end_date = 1307.7.3 regnal_number = 1
+						character = boh_rudolf_habsburg start_date = 1298.11.21 end_date = 1307.7.3 regnal_number = 3
+					}
+					ruler_term = { character = hab_albrecht_i_habsburg start_date = 1307.7.3 end_date = 1308.5.1 regnal_number = 1 }
+					ruler_term = {
+						character = hab_friedrich_i_habsburg start_date = 1308.5.1 end_date = 1326.2.28 regnal_number = 1 # As Co-Ruler
+						character = hab_leopold_i_habsburg start_date = 1308.5.1 end_date = 1326.2.28 regnal_number = 1 # As Co-Ruler
+					}
+					ruler_term = { character = hab_friedrich_i_habsburg start_date = 1326.2.28 end_date = 1330.1.13 regnal_number = 1 }
+					ruler_term = { character = hab_albrecht_ii_habsburg start_date = 1330.1.13 regnal_number = 2 }
+					#ruler_term = { character = hab_otto_habsburg start_date = 1330.1.13 regnal_number = 1 } # As Co-Ruler
+
+					regnal_numbers = {
+						name_rudolf = 3
+						name_albert = 2
+						name_frederick = 1
+						name_leopold = 1
+						name_otto = 1
+					}
+
+					#societal values
+					serfdom_vs_free_subjects = -60
+					offensive_vs_defensive = -30
+					land_vs_naval = -80
+					belligerent_vs_conciliatory = -40
+					outward_vs_inward = -50
+				}
+
+				country_rank = rank_duchy
+				dynasty = habsburg_dynasty
+				capital = vienna
+			}
+	
+
+	#-------------------------- Silesia Consolidation ----------------------------
+
+		OPL = {	#Opole
+			own_control_core = {
+				opole olesno #Duchy of Opole
+				lubliniec #Duchy of Strzelce
+			}
+
+			own_control_integrated = {
+				strzelce_opolskie
+				bytom kozle toszek
+				oswiecim zywiec
+				tesin bielsko
+				raciborz pszczyna
+				siewierz
+			}
+
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			color = map_OPL
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = opl_boleslaw_ii_piast
+				ruler_term = {	character = opl_boleslaw_i_piast start_date = 1281.5.14 end_date = 1313.5.14 regnal_number = 1	}
+				ruler_term = {	character = opl_boleslaw_ii_piast start_date = 1313.5.14 regnal_number = 2	}
+				regnal_numbers = {
+					Bolko = 2
+				}
+			}
+
+			capital = opole
+			dynasty = piast_dynasty
+		}
+
+		WRC = {	#Wrocław
+			own_control_core = {
+				wroclaw sroda_slaska
+			}
+
+			own_control_integrated = {
+				legnica zlotoryja kluczbork
+				olesnica milicz sycow trzebnica
+				namyslow
+				wolow gora
+			}
+
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			color = map_WRC
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = boh_john_luxembourg
+				ruler_term = {	character = boh_john_luxembourg start_date = 1335.11.24 regnal_number = 1	}
+			}
+
+			capital = wroclaw
+		}
+
+		OPV = {	#Opava
+			own_control_core = {
+				opava hlucin #Duchy of Opava
+				krnov glubczyce #Duchy of Krnov
+			}
+
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler = opv_mikolaj_ii_premyslid
+				ruler_term = {	character = opv_mikolaj_ii_premyslid start_date = 1318.2.22 regnal_number = 2	}
+
+				regnal_numbers = {
+					name_nicholas = 2
+				}
+			}
+
+			capital = raciborz
+			dynasty = premyslid_dynasty
+		}
+
+		GLO = {	#Głogów
+			own_control_core = {
+				glogow szprotawa kozuchow wschowa zielona_gora
+			}
+
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			color = map_GLO
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = jaw_henryk_i_javorski
+				
+				regnal_numbers = {
+					name_henry = 1
+				}
+			}
+
+			capital = glogow
+			dynasty = piast_dynasty
+		}
+
+		STZ = {}
+		BYM = {}
+		OSW = {}
+		TES = {}
+		RCB = {}
+		SIZ = {}
+		LGC = {}
+		OEL = {}
+		NMS = {}
+		SCI = {}
+
+		PDK = {	#Prudnik
+			own_control_core = {
+				prudnik #Duchy of Prudnik
+			}
+
+			own_control_integrated = {
+				nysa grodkow fryvaldov
+			}
+
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = nmd_boleslaw_elder
+				ruler_term = {	character = opv_mikolaj_ii_premyslid start_date = 1318.1.1 end_date = 1337.1.1 regnal_number = 1	}
+				ruler_term = {	character = nmd_boleslaw_elder start_date = 1337.1.1 regnal_number = 1	}
+			}
+
+			capital = prudnik
+			dynasty = piast_dynasty
+		}
+
+		ZIE = {	#Ziębice
+			own_control_core = {
+				ziebice
+			}
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = zie_bolko_ii_ziebice
+				ruler_term = { character = zie_bolko_ii_ziebice start_date = 1324.5.15 regnal_number = 2 }
+				regnal_numbers = {
+					Bolko = 2
+				}
+			}
+
+			capital = ziebice
+			dynasty = piast_dynasty
+		}
+
+		BRZ = {	#Brzeg
+			own_control_core = {
+				brzeg olawa niemcza
+			}
+			starting_technology_level = 3
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = lgc_boleslaw_iii_the_generous_piast
+				ruler_term = {	character = lgc_boleslaw_iii_the_generous_piast start_date = 1296.2.22 regnal_number = 1	}
+				regnal_numbers = {
+					name_boleslav = 1
+				}
+			}
+
+			capital = brzeg
+			dynasty = piast_dynasty
+		}
+
+		RTH = { #Rothenburg
+			own_control_core = {
+				marienstern hoyerswerda bautzen rothenburg_oberlausitz gorlitz
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			capital = rothenburg_oberlausitz
+			dynasty = kittlitz_dynasty
+
+			government = {
+				ruler = random
+			}
+
+			country_rank = rank_county
+		}
+	}
+}

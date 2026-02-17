@@ -1,0 +1,8 @@
+bds_ayyar_bands = {
+	game_data = {
+		category = province
+	}
+	local_max_control = -0.15
+	local_monthly_development = -0.005
+	local_unrest = 0.2
+}

@@ -1,0 +1,275 @@
+countries = {
+	countries = {
+		GRG = { #Gurgan (trimmed to steppe-Turkmen core)
+			type = army
+			own_control_core = {
+				gorgan aliabad_katul etrek incheh_borun minudasht mubarakabad nardin
+				raz
+				konjikala anew dargaz durun
+				faraveh dehistan ganlygala gazanjyk jargalan maraveh sarlawuk
+				orta_kuyu talaikhan_ata uzboy
+			}
+
+			include = "expl_middle_east"
+			include = "expl_mongols"
+			include = "eurasian_horde"
+			starting_technology_level = 3
+			government = {
+				type = steppe_horde
+				heir_selection = tribal_oldest_male
+
+				ruler_term = { character = grg_togha_temur start_date = 1335.12.1 }
+
+				ruler = grg_togha_temur
+
+				reforms = {
+					legacy_of_genghis
+				}
+			}
+
+			religious_school = maturidi_school
+			court_language = turkmen_dialect
+
+			country_rank = rank_duchy
+			capital = gorgan
+		}
+
+		MZN = { #Tabaristan (expanded north Iran)
+			own_control_core = {
+				amol al_mamtir sari ashraf farim_iran lafur
+				firuzkuh
+				damavand eyvanekey khwar rahimabad razeqan varamin
+				damghan bastam lasjerd qumis semnan
+				bojnord samalqan khabushan shirvan_iran
+				astarabad tammisha
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = mzn_hasan
+				ruler_term = { character = mzn_hasan start_date = 1334.1.1 regnal_number = 2 }
+				regnal_numbers = {
+					name_hasan = 2
+				}
+
+				laws = {
+					sharia_law = zaidi_policy
+				}
+			}
+
+			religious_school = zaidi_school
+			country_rank = rank_duchy
+			capital = amol
+		}
+
+		HDN = { #Hamedan (released)
+			own_control_core = {
+				hamadan kurijan qorveh_darjazin karaj_abi_dulaf khondab saruk tafresh
+				delijan khomeyn mahallat nimvar
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = hdn_mahmud_qutlugh
+
+				laws = {
+					sharia_law = shafii_policy
+				}
+			}
+
+			tolerated_cultures = {
+				adhari_culture
+			}
+
+			religious_school = shafii_school
+			government = { mysticism_vs_jurisprudence = 20 }
+			capital = hamadan
+		}
+
+		QOM = { #Qom (released, annexed Kashan)
+			own_control_core = {
+				qom aveh kahak saveh
+				kashan maranjab neyasar
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = qom_tal_al_din_ali
+
+				laws = {
+					sharia_law = shafii_policy
+				}
+			}
+
+			religious_school = shafii_school
+			government = { mysticism_vs_jurisprudence = 20 }
+			capital = qom
+		}
+
+		KHT = { #Kuhestan (released)
+			own_control_core = {
+				birjand deyhuk khusf khvor mazhan nayband qala_zari
+				doroh sarbisheh
+				tabas_al_tamr dastgerdan korit
+				bajestan boshruyeh sarayan tun
+				gonabad
+				qaen abiz shahrakht tabas_al_unnab yazduye zohan
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = kht_abd_allah
+
+				laws = {
+					sharia_law = shafii_policy
+				}
+			}
+
+			religious_school = shafii_school
+			government = { mysticism_vs_jurisprudence = 20 }
+			capital = qaen
+		}
+
+		SBZ = { #Sabzevar (annexed SRB + SFR)
+			own_control_core = {
+				sabzevar farumad
+				agh_qala
+				beyarjomand haresabad kharturan
+				esfarayen azadvar bam_esfarayen jajarm shoqan
+				meyami
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = sbz_ala_ad_din_muhammad
+
+				laws = {
+					sharia_law = shafii_policy
+				}
+			}
+
+			religious_school = shafii_school
+			government = { mysticism_vs_jurisprudence = 20 }
+			capital = sabzevar
+		}
+
+		BDS = { #Baduspanids (annexed Caspian minors + Qazvin/Daylam)
+			own_control_core = {
+				kojur chalus tonekabon
+				rey karaj
+				langarud lahijan rasht fuman bandar_e_anzali
+				qazvin abhar avaj qeydar sagzabad savojbolagh takestan zagros_mountains6
+				rudbar shahrestan_sofla shamiram sirdan soltaniyeh
+			}
+
+			include = "expl_middle_east"
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				ruler_term = { character = bds_taj_al_dawla_ziyar start_date = 1324.1.1 end_date = 1333.1.1 regnal_number = 1 }
+				ruler_term = { character = bds_jalal_al_dawla_iskandar start_date = 1333.1.1 regnal_number = 1 }
+
+				ruler = bds_jalal_al_dawla_iskandar
+
+				laws = {
+					sharia_law = jafari_policy
+				}
+			}
+
+			tolerated_cultures = {
+				adhari_culture
+                mazandarani_culture
+			}
+
+			religious_school = jafari_school
+			country_rank = rank_duchy
+			capital = rasht
+		}
+
+		KSA = { #Annexed to QOM
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = kashan
+		}
+
+		ASR = { #Annexed to MZN
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = astarabad
+		}
+
+		SRB = { #Annexed to SBZ
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = haresabad
+		}
+
+		SFR = { #Annexed to SBZ
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = esfarayen
+		}
+
+		RNK = { #Annexed to BDS
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = langarud
+		}
+
+		LHJ = { #Annexed to BDS
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = lahijan
+		}
+
+		RSH = { #Annexed to BDS
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = rasht
+		}
+
+		FMN = { #Annexed to BDS
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = fuman
+		}
+
+		TLM = { #Annexed to BDS
+			own_control_core = { }
+			include = "expl_middle_east"
+			include = "muslim_monarchy_not_present"
+			capital = bandar_e_anzali
+		}
+	}
+}

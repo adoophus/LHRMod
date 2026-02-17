@@ -4,6 +4,7 @@ on_game_start = {
 		mod_nerf_bohemia
 		mod_adjust_france
 		mod_nerf_mamluks
+		mod_setup_persia
 	}
 }
 
@@ -157,6 +158,38 @@ mod_nerf_mamluks = {
 			reverse_add_opinion = { target = c:DUL modifier = lhr_opinion_mams_relations_hit_100 }
 			add_opinion = { target = c:KIL modifier = lhr_opinion_mams_relations_hit_100 }
 			reverse_add_opinion = { target = c:KIL modifier = lhr_opinion_mams_relations_hit_100 }
+		}
+	}
+}
+
+mod_setup_persia = {
+	effect = {
+		c:GRG = {
+			cancel_subject = c:MZN
+			cancel_subject = c:HDN
+			cancel_subject = c:QOM
+			cancel_subject = c:KHT
+		}
+
+		c:BDS = {
+			make_subject_of = {
+				target = c:GRG
+				type = subject_type:tributary
+			}
+		}
+
+		c:MZN = {
+			make_subject_of = {
+				target = c:GRG
+				type = subject_type:tributary
+			}
+		}
+
+		c:QOM = {
+			make_subject_of = {
+				target = c:GRG
+				type = subject_type:tributary
+			}
 		}
 	}
 }

@@ -1,6 +1,8 @@
 ﻿l_english:
  RTH: "Rothenburg"
  RTH_ADJ: "Rothenburg"
+ BDS: "Daylam"
+ BDS_ADJ: "the Daylamites"
  foreign_building_gone: "Disband Foreign Buildings"
  foreign_building_gone_desc: "We will demand that the Foreign Buildings are disbanded."
  foreign_building_gone_entry: "Shutdown the Foreign Building in [target.GetName]"
@@ -55,3 +57,4 @@
  diplomatic_status_receive_market_knowledge_sharing_tootlip: "#T Knowledge Received#!\nThis country receives institutions from the following [countries|e]."
  giving_market_knowledge_sharing_list_who_tt: "$WHO$ is sharing knowledge with $LIST$"
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
+
