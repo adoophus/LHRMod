@@ -1,0 +1,39 @@
+lhr_player_integration_speed_age1 = {
+	potential_trigger = {
+		is_ai = no
+		current_age = age_1_traditions
+		lhr_total_population_with_subjects < 750
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age2 = {
+	potential_trigger = {
+		is_ai = no
+		current_age = age_2_renaissance
+		lhr_total_population_with_subjects < 1250
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age3 = {
+	potential_trigger = {
+		is_ai = no
+		current_age = age_3_discovery
+		lhr_total_population_with_subjects < 2000
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age4 = {
+	potential_trigger = {
+		is_ai = no
+		current_age_or_later = { age = age_4_reformation }
+		lhr_total_population_with_subjects < 2500
+	}
+
+	global_integration_speed_modifier = 0.33
+}
