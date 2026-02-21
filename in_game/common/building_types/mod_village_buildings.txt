@@ -1,0 +1,23 @@
+INJECT:fishing_village = {
+	modifier = {
+		local_levy_size_modifier = 0.02
+	}
+}
+
+INJECT:farming_village = {
+	modifier = {
+		local_levy_size_modifier = 0.02
+	}
+}
+
+INJECT:forest_village = {
+	modifier = {
+		local_levy_size_modifier = 0.02
+	}
+}
+
+INJECT:market_village = {
+	modifier = {
+		local_levy_size_modifier = 0.02
+	}
+}
