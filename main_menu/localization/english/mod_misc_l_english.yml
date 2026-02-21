@@ -58,18 +58,13 @@
  giving_market_knowledge_sharing_list_who_tt: "$WHO$ is sharing knowledge with $LIST$"
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
 
- AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "#G Integration Surge#! #weak (Age I)#!"
- AUTO_MODIFIER_DESC_lhr_player_integration_speed_age1: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
- lhr_player_integration_speed_age1_req_tt: "Human player, Age I, and total pop (you + subjects) below 750k"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "[integration_surge|e] #weak (Age I)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "[integration_surge|e] #weak (Age II)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age3: "[integration_surge|e] #weak (Age III)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age4: "[integration_surge|e] #weak (Ages IV+)#!"
 
- AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "#G Integration Surge#! #weak (Age II)#!"
- AUTO_MODIFIER_DESC_lhr_player_integration_speed_age2: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
- lhr_player_integration_speed_age2_req_tt: "Human player, Age II, and total pop (you + subjects) below 1.25M"
-
- AUTO_MODIFIER_NAME_lhr_player_integration_speed_age3: "#G Integration Surge#! #weak (Age III)#!"
- AUTO_MODIFIER_DESC_lhr_player_integration_speed_age3: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
- lhr_player_integration_speed_age3_req_tt: "Human player, Age III, and total pop (you + subjects) below 2.0M"
-
- AUTO_MODIFIER_NAME_lhr_player_integration_speed_age4: "#G Integration Surge#! #weak (Ages IV-VI)#!"
- AUTO_MODIFIER_DESC_lhr_player_integration_speed_age4: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
- lhr_player_integration_speed_age4_req_tt: "Human player, Age IV-VI, and total pop (you + subjects) below 2.5M"
+ game_concept_integration_surge: "Integration Surge"
+ game_concept_integration_surge_desc: "Gives a temporary #P +33.0%#! bonus to [integration|e].\n\n$game_concept_integration_surge_list_title$\n$game_concept_integration_surge_list$\n\n$game_concept_integration_surge_lower_desc$"
+ game_concept_integration_surge_list_title: "Required [total_population|e] to become active:"
+ game_concept_integration_surge_list: "$BULLET$#V Age I#!: below #V 750k#!\n$BULLET$#V Age II#!: below #V 1.25M#!\n$BULLET$#V Age III#!: below #V 2.0M#!\n$BULLET$#V Ages IV+#!: below #V 2.5M#!"
+ game_concept_integration_surge_lower_desc: "[total_population|e] includes all your subjects."

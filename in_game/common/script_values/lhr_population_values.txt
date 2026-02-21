@@ -1,6 +1,8 @@
 lhr_total_population_with_subjects = {
 	value = total_population
-	every_subject = {
-		add = total_population
+	add = {
+		every_subject = {
+			add = total_population
+		}
 	}
 }

@@ -13,7 +13,7 @@ REPLACE:traditionalist_vs_innovative = {
 	}
 	right_modifier = {
 		global_max_literacy = 10
-
+		global_monthly_literacy = 0.05
 		stability_cost = 0.20
 		embrace_institution_cost_modifier = -0.5
 

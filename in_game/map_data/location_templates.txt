@@ -1,3 +1,7 @@
+# muscovy
+
+khatun = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = iron}
+
 # PERSIA REWORK
 # PERSIA REWORK
 # PERSIA REWORK
@@ -4905,7 +4909,6 @@ maloyaroslavets = { topography = flatland vegetation = woods climate = continent
 vereya = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = fur}
 vetza = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = wheat}
 kolomna = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = wool}
-khatun = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = stone}
 przemysl_moscow = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = livestock}
 serpukhov = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = lumber}
 koshira = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = wild_game}
