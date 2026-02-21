@@ -58,3 +58,18 @@
  giving_market_knowledge_sharing_list_who_tt: "$WHO$ is sharing knowledge with $LIST$"
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
 
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "#G Integration Surge#! #weak (Age I)#!"
+ AUTO_MODIFIER_DESC_lhr_player_integration_speed_age1: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
+ lhr_player_integration_speed_age1_req_tt: "Human player, Age I, and total pop (you + subjects) below 750k"
+
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "#G Integration Surge#! #weak (Age II)#!"
+ AUTO_MODIFIER_DESC_lhr_player_integration_speed_age2: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
+ lhr_player_integration_speed_age2_req_tt: "Human player, Age II, and total pop (you + subjects) below 1.25M"
+
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age3: "#G Integration Surge#! #weak (Age III)#!"
+ AUTO_MODIFIER_DESC_lhr_player_integration_speed_age3: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
+ lhr_player_integration_speed_age3_req_tt: "Human player, Age III, and total pop (you + subjects) below 2.0M"
+
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age4: "#G Integration Surge#! #weak (Ages IV-VI)#!"
+ AUTO_MODIFIER_DESC_lhr_player_integration_speed_age4: "#P Active Bonus#!\n[GetModifier('global_integration_speed_modifier').GetNameWithTooltip]: #P +33.0%#!\n\nThis appears only while all requirements are met."
+ lhr_player_integration_speed_age4_req_tt: "Human player, Age IV-VI, and total pop (you + subjects) below 2.5M"
