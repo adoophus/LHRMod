@@ -5,7 +5,7 @@ hesse_1 = {
 	
 	country_modifier = {
 		nobles_estate_target_satisfaction = 0.05
-		monthly_towards_land = 0.05
+		monthly_towards_land = 0.1
 		nobles_estate_allowed_to_build_roads = yes
 		global_nobles_estate_power = 0.5
 	}

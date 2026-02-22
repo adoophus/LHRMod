@@ -99,3 +99,6 @@ promote_religion_area_action_progress_tooltip: "$promote_religion_area_action$\n
 # MAMLUK GOVERNMENT REFORM
 mams_nerf: "Bahri Mamluk Sultanate"
 mams_nerf_desc: "In 1337, the Bahri order concentrates power in Cairo around the Sultan, his barracks households, and competing amirs. Military strength comes from purchased and trained mamluk professionals, not deep rural musters, so peasant levy capacity remains limited. At the same time, centralized fiscal rule and urban market society reinforce crown authority and slowly erode rigid bound-labor structures in favor of freer subject relations."
+
+# SOCIETAL VALUE LOCALIZATION OVERRIDES
+traditionalist_vs_innovative_desc: "A traditional country prioritizes stability and continuity of its culture, while an innovation-focused country emphasizes literacy and faster adoption of new [institutions|e]."
