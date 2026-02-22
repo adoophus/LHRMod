@@ -1,0 +1,63 @@
+hesse_subject_resolution = {
+	image = "gfx/interface/illustrations/disaster/hesse_subject_resolution.dds"
+	monthly_spawn_chance = monthly_spawn_chance_unique
+
+	can_start = {
+		tag = HES
+		has_any_active_disaster = no
+		current_date < 1365.1.1
+
+		OR = {
+			c:MLGH = {
+				is_subject_of = root
+				is_subject_type = hesse_protected_vassal
+			}
+			c:GSN = {
+				is_subject_of = root
+				is_subject_type = hesse_protected_vassal
+			}
+			c:HSF = {
+				is_subject_of = root
+				is_subject_type = hesse_protected_vassal
+			}
+		}
+	}
+
+	can_end = {
+		NOT = {
+			any_subject = {
+				is_subject_type = hesse_protected_vassal
+			}
+		}
+	}
+
+	modifier = {
+		diplomatic_reputation = -1
+		monthly_towards_decentralization = 0.1
+	}
+
+	on_start = {
+		set_variable = { name = hesse_compromise_willingness value = 0 }
+		trigger_event_non_silently = flavor_hes.200
+	}
+
+	on_end = {
+		if = {
+			limit = { has_variable = hesse_compromise_willingness }
+			remove_variable = hesse_compromise_willingness
+		}
+		if = {
+			limit = { has_variable = hesse_subject_resolution_diplomatic }
+			remove_variable = hesse_subject_resolution_diplomatic
+		}
+		if = {
+			limit = { has_variable = hesse_subject_resolution_force }
+			remove_variable = hesse_subject_resolution_force
+		}
+		trigger_event_non_silently = flavor_hes.203
+	}
+
+	on_monthly = {
+		change_variable = { name = hesse_compromise_willingness add = 1 }
+	}
+}

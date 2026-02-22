@@ -231,3 +231,33 @@ flavor_hes.22.desc: "Our fragmented river toll system, currently controlled by a
 flavor_hes.22.a: "Establish the Flusszollordnung."
 
 flavor_hes.22.historical_info: "In the late medieval period, territorial princes, including the Landgraves of Hesse, aggressively sought to eliminate local tolls and establish universal customs laws on vital waterways like the Fulda and Weser rivers. This was a core component of state centralization."
+
+flavor_hes.23.title: "The Submission of Mainz"
+flavor_hes.23.desc: "With [ShowLocationName('mainz')] now in our hands, the balance of authority in the central Rhine shifts decisively. The Landgrave can fold this victory into the machinery of state and accelerate the integration of newly subordinated powers."
+flavor_hes.23.a: "Bind Mainz to the Hessian order"
+flavor_hes.23.a.tt: "Gain #P +50#! Integration Status"
+flavor_hes.23.historical_info: "Control over Mainz and its surrounding ecclesiastical jurisdictions carried disproportionate political weight in the Holy Roman Empire. For neighboring territorial princes, success against Mainz could be converted into stronger administrative legitimacy and greater leverage over clerical institutions."
+
+flavor_hes.24.title: "Border Dispute in the Hessian Lands"
+flavor_hes.24.desc: "Our chancery has assembled legal precedents and dynastic memoranda challenging a neighboring ruler's position in the [ShowAreaName('hesse_area')]. If we press the claim now, we can justify open expansion under a formal war claim."
+flavor_hes.24.a: "Press our claim and prepare for war"
+flavor_hes.24.b: "We cannot risk escalation now"
+flavor_hes.24.historical_info: "In the late medieval Empire, territorial expansion was often framed as restoration of old rights rather than naked conquest. Legalist border-pressure was employed as a Hessian strategy, alongside the reliance on charters, dynastic memory, and controlled escalation to legitimize annexation."
+
+flavor_hes.25.title: "Wool for the Looms of [ShowLocationName('marburg')]"
+flavor_hes.25.desc: "The cloth workshops feeding [ShowLocationName('marburg')] have outgrown the old pattern of cultivation. If we reorganize surrounding lands toward sheep pastures and spinner households, the town can anchor a stronger textile chain under Hessian direction."
+flavor_hes.25.a: "Turn [ShowLocationName('marburg')] toward wool production"
+flavor_hes.25.historical_info: "Across the late 14th and 15th centuries, many central German towns expanded textile output by pushing nearby rural zones toward wool production. This shift linked agrarian policy to urban craft growth, supplying cloth workshops with steadier inputs and raising the strategic value of market towns."
+
+flavor_hes.26.title: "Iron Veins in the Hills of [ShowLocationName('fulda')]"
+flavor_hes.26.desc: "Miners and surveyors report workable iron deposits in the uplands around [ShowLocationName('fulda')]. If we support extraction now, this region can shift from common stone output to a metal supply that strengthens both tools and arms production."
+flavor_hes.26.a: "Develop the new iron works"
+flavor_hes.26.historical_info: "By the mid-15th century, improvements in prospecting and furnace organization allowed several inland territories of the Empire to bring new iron sites into regular production. Turning local extraction toward iron often had outsized effects on military provisioning and craft industry development."
+
+STATIC_MODIFIER_NAME_hes_mainz_second_estate_80: "Succession of Mainz"
+STATIC_MODIFIER_DESC_hes_mainz_second_estate_80: "The capture and political subordination of Mainz has been codified into a new estate arrangement that heavily strengthens crown authority while dramatically empowering the clergy within Hessian governance."
+
+STATIC_MODIFIER_NAME_hes_border_claims_fabrication: "Hessian Border Claims"
+STATIC_MODIFIER_DESC_hes_border_claims_fabrication: "The chancery and court advocates are committed to sustained legal and diplomatic pressure in support of Hessian territorial claims."
+
+

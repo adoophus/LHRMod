@@ -1,3 +1,6 @@
 diplomacy_manager = {
 	dependency = { first = BOH second = RTH subject_type = vassal }
+	dependency = { first = HES second = MLGH subject_type = hesse_protected_vassal }
+	dependency = { first = HES second = GSN subject_type = hesse_protected_vassal }
+	dependency = { first = HES second = HSF subject_type = hesse_protected_vassal }
 }

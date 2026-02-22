@@ -1,0 +1,528 @@
+hesse_compromise_with_subject = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			var:hesse_compromise_willingness >= 50
+			any_subject = {
+				is_subject_type = hesse_protected_vassal
+			}
+			NOT = {
+				any_subject = {
+					count >= 3
+					is_subject_type = hesse_baron
+				}
+			}
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	select_trigger = {
+		looking_for_a = country
+		name = "hesse_choose_subject_to_compromise"
+		target_flag = target_country
+		none_available_msg_key = "hesse_no_protected_subject_available"
+		column = {
+			data = name
+		}
+		column = {
+			data = country_rank
+		}
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					limit = {
+						is_subject_type = hesse_protected_vassal
+					}
+					add_to_list = source
+				}
+			}
+		}
+		enabled = {
+			is_subject_of = scope:actor
+			is_subject_type = hesse_protected_vassal
+		}
+	}
+
+	effect = {
+		custom_tooltip = hesse_compromise_select_vassal_effect_tt
+		if = {
+			limit = {
+				exists = scope:target_country
+				scope:actor = {
+					var:hesse_compromise_willingness >= 50
+					NOT = {
+						any_subject = {
+							count >= 3
+							is_subject_type = hesse_baron
+						}
+					}
+				}
+				scope:target_country = {
+					is_subject_of = scope:actor
+					is_subject_type = hesse_protected_vassal
+				}
+			}
+
+			scope:actor = {
+				custom_tooltip = hesse_change_willingness_subtract_50_tt
+				change_variable = { name = hesse_compromise_willingness subtract = 50 }
+				cancel_subject = scope:target_country
+			}
+			scope:target_country = {
+				make_subject_of = {
+					target = scope:actor
+					type = subject_type:hesse_baron
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 0
+		if = {
+			limit = {
+				scope:actor = {
+					var:hesse_compromise_willingness >= 50
+				}
+			}
+			add = 25
+		}
+	}
+}
+
+hesse_disenfranchise_peasantry = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			any_owned_location = {
+				NOT = { has_location_modifier = hes_peasant_disenfranchisement }
+			}
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_disenfranchise_peasantry
+		years = 2
+	}
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = "hesse_select_disenfranchisement_location"
+		none_available_msg_key = "hesse_no_disenfranchisement_location_available"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		interaction_source_list = {
+			scope:actor = {
+				every_owned_location = {
+					limit = {
+						controller ?= scope:actor
+						NOT = { has_location_modifier = hes_peasant_disenfranchisement }
+					}
+					add_to_list = source
+				}
+			}
+		}
+		visible = {
+			has_owner = yes
+			owner ?= scope:actor
+			controller ?= scope:actor
+			NOT = { has_location_modifier = hes_peasant_disenfranchisement }
+		}
+	}
+
+	effect = {
+		custom_tooltip = hesse_disenfranchise_select_location_effect_tt
+		if = {
+			limit = {
+				exists = scope:target_location
+				scope:target_location = {
+					has_owner = yes
+					owner ?= scope:actor
+					controller ?= scope:actor
+					NOT = { has_location_modifier = hes_peasant_disenfranchisement }
+				}
+			}
+
+			scope:target_location = {
+				add_location_modifier = {
+					modifier = hes_peasant_disenfranchisement
+					mode = add
+					years = 10
+				}
+			}
+			scope:actor = {
+				custom_tooltip = hesse_change_willingness_add_15_tt
+				change_variable = { name = hesse_compromise_willingness add = 15 }
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 10
+	}
+}
+
+hesse_summon_landtag = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			government_power >= 30
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_summon_landtag
+		years = 3
+	}
+
+	select_trigger = {
+		looking_for_a = disaster
+		name = "choose_disaster"
+		target_flag = recipient
+		column = {
+			data = name
+		}
+		visible = {
+			disaster_type = disaster_type:hesse_subject_resolution
+			disaster_is_active = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			custom_tooltip = hesse_change_willingness_add_20_tt
+			change_variable = { name = hesse_compromise_willingness add = 20 }
+			add_estate_satisfaction = {
+				type = estate_type:nobles_estate
+				value = -0.1
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 12
+	}
+}
+
+hesse_buy_noble_compliance = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			NOT = { modifier:hes_noble_pension_compacts = yes }
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_buy_noble_compliance
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = disaster
+		name = "choose_disaster"
+		target_flag = recipient
+		column = {
+			data = name
+		}
+		visible = {
+			disaster_type = disaster_type:hesse_subject_resolution
+			disaster_is_active = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			add_country_modifier = {
+				modifier = hes_noble_pension_compacts
+				years = 5
+				mode = add
+			}
+			custom_tooltip = hesse_change_willingness_add_12_tt
+			change_variable = { name = hesse_compromise_willingness add = 12 }
+		}
+	}
+
+	ai_will_do = {
+		add = 8
+	}
+}
+
+hesse_seize_korbach_mining = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			var:hesse_compromise_willingness >= 50
+			owns = location:kassel
+		}
+		location:korbach = {
+			has_owner = yes
+			owner ?= scope:actor
+			controller ?= scope:actor
+			NOT = { has_location_modifier = hes_korbach_peasant_enfranchisement }
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_seize_korbach_mining
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = disaster
+		name = "choose_disaster"
+		target_flag = recipient
+		column = {
+			data = name
+		}
+		visible = {
+			disaster_type = disaster_type:hesse_subject_resolution
+			disaster_is_active = yes
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				scope:actor = {
+					var:hesse_compromise_willingness >= 50
+				}
+				location:korbach = {
+					has_owner = yes
+					owner ?= scope:actor
+					controller ?= scope:actor
+					NOT = { has_location_modifier = hes_korbach_peasant_enfranchisement }
+				}
+			}
+
+			location:korbach = {
+				add_location_modifier = {
+					modifier = hes_korbach_peasant_enfranchisement
+					mode = add
+					years = 10
+				}
+			}
+			scope:actor = {
+				custom_tooltip = hesse_change_willingness_subtract_50_tt
+				change_variable = { name = hesse_compromise_willingness subtract = 50 }
+			}
+		}
+		else = {
+			custom_tooltip = hesse_seize_korbach_mining_fail_tt
+		}
+	}
+
+	ai_will_do = {
+		add = 4
+	}
+}
+
+hesse_bishopric_concordat = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		c:HSF = {
+			is_subject_of = scope:actor
+			is_subject_type = hesse_protected_vassal
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_bishopric_concordat
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = disaster
+		name = "choose_disaster"
+		target_flag = recipient
+		column = {
+			data = name
+		}
+		visible = {
+			disaster_type = disaster_type:hesse_subject_resolution
+			disaster_is_active = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			custom_tooltip = hesse_change_willingness_add_18_tt
+			change_variable = { name = hesse_compromise_willingness add = 18 }
+			add_estate_satisfaction = {
+				type = estate_type:clergy_estate
+				value = 0.1
+			}
+			add_estate_satisfaction = {
+				type = estate_type:nobles_estate
+				value = -0.05
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 10
+	}
+}
+
+hesse_joint_investment_kassel = {
+	type = disaster
+
+	potential = {
+		scope:actor = {
+			tag = HES
+			any_active_disaster = {
+				disaster_type = disaster_type:hesse_subject_resolution
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			owns = location:kassel
+		}
+		location:kassel = {
+			has_owner = yes
+			owner ?= scope:actor
+			controller ?= scope:actor
+			NOT = {
+				OR = {
+					location_rank = location_rank:town
+					location_rank = location_rank:city
+				}
+			}
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = hesse_joint_investment_kassel
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = disaster
+		name = "choose_disaster"
+		target_flag = recipient
+		column = {
+			data = name
+		}
+		visible = {
+			disaster_type = disaster_type:hesse_subject_resolution
+			disaster_is_active = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			custom_tooltip = hesse_change_willingness_subtract_75_tt
+			change_variable = { name = hesse_compromise_willingness subtract = 75 }
+		}
+
+		location:kassel = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							location_rank = location_rank:town
+							location_rank = location_rank:city
+						}
+					}
+				}
+				change_location_rank = location_rank:town
+			}
+			add_location_modifier = {
+				modifier = hes_joint_investment_nobility_kassel
+				mode = add
+				years = 10
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 8
+	}
+}

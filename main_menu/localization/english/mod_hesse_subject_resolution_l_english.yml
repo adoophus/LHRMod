@@ -1,0 +1,71 @@
+﻿l_english:
+ hesse_subject_resolution: "Centralization of Hesse"
+ hesse_subject_resolution_desc: "The realm is split between three protected dependents: two ruled directly by Hessian kin, and one bishopric bound by old guarantees. The court must spend political capital to negotiate each charter into annexable baronial vassalage. Historically, this reflects 14th-century Hessian efforts to replace fragmented, privilege-heavy lordship with a more centralized territorial administration."
+
+ hesse_compromise_willingness: "#Y 'Willingness to Compromise'#!"
+ hesse_compromise_willingness_title: "Willingness to Compromise"
+ hesse_compromise_willingness_tt: "Current Willingness to Compromise held by Hesse ($hesse_willingness_counter$). This shared currency is spent on disaster actions."
+ hesse_willingness_counter: "(currently: #Y [GetCountry('HES').MakeScope.GetVariable('hesse_compromise_willingness').GetValue]#!)"
+ hesse_compromise_willingness_var: "#Y Willingness to Compromise#!"
+ hesse_compromise_monthly_gain_title: "Monthly Gain"
+ hesse_compromise_monthly_gain_value: "+1 / month"
+ hesse_compromise_monthly_gain_tt: "Base monthly Willingness to Compromise gained while this disaster is active ($hesse_willingness_counter$)."
+
+ hesse_compromise_with_subject: "Compromise with a Protected Vassal"
+ hesse_compromise_with_subject_desc: "The chancery seeks a carefully negotiated settlement with one protected dependency, replacing old guarantees with a new feudal compact under Hessian primacy."
+ hesse_compromise_with_subject_fail_tt: "No valid protected vassal could be converted."
+ hesse_compromise_select_vassal_effect_tt: "Select a protected vassal"
+ hesse_choose_subject_to_compromise: "Select a protected vassal"
+ hesse_no_protected_subject_available: "No eligible protected Hessian vassal is available."
+
+ hesse_disenfranchise_peasantry: "Disenfranchise the Peasantry"
+ hesse_disenfranchise_peasantry_desc: "The court backs local lords against village communities, curbing peasant leverage to restore elite authority in a chosen district."
+ hesse_disenfranchise_peasantry_fail_tt: "No valid location was selected for disenfranchisement."
+ hesse_disenfranchise_select_location_effect_tt: "Select an owned location"
+ hesse_select_disenfranchisement_location: "Select a location for disenfranchisement"
+ hesse_no_disenfranchisement_location_available: "No eligible owned location is available."
+
+ hesse_summon_landtag: "Summon the Landtag"
+ hesse_summon_landtag_desc: "The Landgrave convenes the estates to bargain, trading short-term friction at court for renewed momentum in statecraft."
+
+ hesse_buy_noble_compliance: "Buy Noble Compliance"
+ hesse_buy_noble_compliance_desc: "Through pensions, gifts, and private assurances, the crown secures a quieter nobility and steadier cooperation from the great houses."
+
+ hesse_change_willingness_add: "We gain $VALUE|G0$ $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_ad: "We gain $VALUE|G0$ $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_subtract: "We lose $VALUE|R0$ $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_add_12_tt: "We gain #P +12#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_add_15_tt: "We gain #P +15#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_add_18_tt: "We gain #P +18#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_add_20_tt: "We gain #P +20#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_subtract_50_tt: "We lose #R -50#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+ hesse_change_willingness_subtract_75_tt: "We lose #R -75#! $hesse_compromise_willingness_var$ $hesse_willingness_counter$"
+
+ hesse_seize_korbach_mining: "Seize the Korbach Mining Operation"
+ hesse_seize_korbach_mining_desc: "Royal commissioners assume direct supervision of Korbach's mining rights, asserting central oversight over a strategic local economy."
+ hesse_seize_korbach_mining_fail_tt: "Korbach must be owned and controlled by us, and the mining seizure must not already be active."
+
+ hesse_bishopric_concordat: "Negotiate a Bishopric Concordat"
+ hesse_bishopric_concordat_desc: "Envoys strike a confessional and legal understanding with the bishopric, easing tensions through a carefully worded concordat."
+
+ hesse_joint_investment_kassel: "Force Investment"
+ hesse_joint_investment_kassel_desc: "The crown compels Kassel's estates to accept a centrally directed urban program, overriding local resistance in the name of order."
+
+ flavor_hes.200.title: "Fractured Authority"
+ flavor_hes.200.desc: "In [GetCountry('HES').GetName], old protected charters now choke the hand of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. If we are to reverse the effects of our nation's decentralisation, we must either bargain through our estates, or proclaim a harder sovereign will from [ShowLocationName('kassel')]."
+ flavor_hes.200.historical_info: "In the 14th century, the Landgraviate of Hesse was constrained by layered feudal guarantees, ecclesiastical privileges, and semi-autonomous dependent lordships. Central authority advanced not through a single decree, but through repeated charter revisions, negotiated submissions, and selective coercion."
+ flavor_hes.200.a: "Proceed by charter, seal, and compromise"
+ flavor_hes.200.b: "Proclaim decree and demand submission"
+
+ flavor_hes.201.title: "The Chancery at Work"
+ flavor_hes.201.desc: "From [ShowLocationName('kassel')] to [ShowLocationName('marburg')], delegates and scribes recast broad immunities into specific duties to the crown. The labor is slow, but every line struck from old privilege strengthens our power and the authority of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]."
+ flavor_hes.201.a: "Let parchment do what steel cannot"
+
+ flavor_hes.202.title: "The Landgrave's Hand"
+ flavor_hes.202.desc: "Retainers of the crown ride under Hessian banners to enforce new obligations where old guarantees still linger. The message is plain: no charter stands above [GetCountry('HES').GetName]. Order advances, yet resentment grows among the commoners and lesser lords."
+ flavor_hes.202.historical_info: "Territorial princes in the Holy Roman Empire frequently used mounted retainers and sworn noble service to enforce fiscal and judicial reforms against entrenched local privilege."
+ flavor_hes.202.a: "Law first, reconciliation later."
+
+ flavor_hes.203.title: "Hesse United"
+ flavor_hes.203.desc: "The protected framework is broken; what remains is one legal order under the Landgrave. The realm can now move from fragmented guarantee toward coherent rule, and the work of healing the effects of decentralisation can finally begin."
+ flavor_hes.203.a: "One crown, one law, one realm."

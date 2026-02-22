@@ -1,6 +1,10 @@
 ﻿l_english:
  RTH: "Rothenburg"
  RTH_ADJ: "Rothenburg"
+ MLGH: "Melsungen"
+ MLGH_ADJ: "Melsungen"
+ GSN: "Giessen"
+ GSN_ADJ: "Giessen"
  BDS: "Daylam"
  BDS_ADJ: "the Daylamites"
  foreign_building_gone: "Disband Foreign Buildings"

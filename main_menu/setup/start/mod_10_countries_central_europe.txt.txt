@@ -3,7 +3,7 @@ countries = {
 		HES = {	#Hesse
 			own_control_core = {
 				kassel rotenburg eschwege frankenberg marburg alsfeld
-				giessen melsungen korbach ziegenhain
+				korbach ziegenhain
 			}
 
 			starting_technology_level = 3
@@ -49,6 +49,61 @@ countries = {
 				}
 			}
 		}
+		}
+
+		MLGH = { #Melsungen
+			own_control_core = {
+				melsungen
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			government = {
+				ruler = hes_ludwig_hesse
+			}
+
+			country_rank = rank_county
+			capital = melsungen
+			dynasty = hessen_dynasty
+		}
+
+		GSN = { #Giessen
+			own_control_core = {
+				giessen
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			government = {
+				ruler = hes_herman_i_hesse
+			}
+
+			country_rank = rank_county
+			capital = giessen
+			dynasty = hessen_dynasty
+		}
+
+		HSF = {	#Hersfeld
+			own_control_core = {
+				hersfeld
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_german_bishopric_no_coast"
+			include = "expl_northern_europe"
+			government = {
+				ruler = hes_otto_brother_hesse
+			}
+			country_rank = rank_county
+			capital = hersfeld
+			dynasty = hessen_dynasty
 		}
 		WDE = {}
 		ZIG = {}
