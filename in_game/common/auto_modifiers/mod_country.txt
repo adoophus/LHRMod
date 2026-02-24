@@ -4,6 +4,8 @@ INJECT:country_base_values = {
 	monthly_diplomats = 0.2 ## PREV 0.1 (doubled)
 	global_pop_assimilation_speed = 0.0022 # prev 0.002
 	global_pop_conversion_speed = 0.0025 # prev 0.002
+	land_morale_movement_cost = 0 # PREV: 0.001 (remove morale loss while moving)
+	naval_morale_movement_cost = 0 # PREV: 0.0 (explicitly keep no morale loss while moving)
 }
 
 # PSEUDO FL - anti snowball

@@ -1,0 +1,3 @@
+NDiplomacy = {
+	REMOVE_RIVAL_COOLDOWN = 6 # months
+}
