@@ -70,5 +70,5 @@
  game_concept_integration_surge: "Integration Surge"
  game_concept_integration_surge_desc: "Gives a temporary #P +33.0%#! bonus to [integration|e].\n\n$game_concept_integration_surge_list_title$\n$game_concept_integration_surge_list$\n\n$game_concept_integration_surge_lower_desc$"
  game_concept_integration_surge_list_title: "Required [total_population|e] to become active:"
- game_concept_integration_surge_list: "$BULLET$#V Age I#!: below #V 750k#!\n$BULLET$#V Age II#!: below #V 1.25M#!\n$BULLET$#V Age III#!: below #V 2.0M#!\n$BULLET$#V Ages IV+#!: below #V 2.5M#!"
+ game_concept_integration_surge_list: "$BULLET$#V Age I#!: below #V 750k#!\n$BULLET$#V Age II#!: below #V 1.5M#!\n$BULLET$#V Age III#!: below #V 2.5M#!\n$BULLET$#V Ages IV+#!: below #V 4.0M#!"
  game_concept_integration_surge_lower_desc: "[total_population|e] includes all your subjects."
