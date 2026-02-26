@@ -2,6 +2,7 @@ INJECT:country_base_values = {
 	experience_decay = 0.025 ## PREV: 0.05 (doubled, makes drilling more useful)
 	max_diplomats = 5 ## PREV: 1 (used more frequently in mp)
 	monthly_diplomats = 0.2 ## PREV 0.1 (doubled)
+	mercenary_maintenance_cost = 2.5 # +250% maintenance = 3.5x total mercenary maintenance cost
 	global_pop_assimilation_speed = 0.0022 # prev 0.002
 	global_pop_conversion_speed = 0.0025 # prev 0.002
 	land_morale_movement_cost = 0 # PREV: 0.001 (remove morale loss while moving)
