@@ -3,7 +3,7 @@ lhr_player_integration_speed_age1 = {
 		custom_description = {
 			text = lhr_player_integration_speed_age1_req_tt
 			is_ai = no
-			NOT = { tag = TUR } # they get integration buffs already.
+			NOT = { has_or_had_tag  = TUR } # they get integration buffs already.
 			current_age = age_1_traditions
 			lhr_total_population_with_subjects < 750
 		}
@@ -17,7 +17,7 @@ lhr_player_integration_speed_age2 = {
 		custom_description = {
 			text = lhr_player_integration_speed_age2_req_tt
 			is_ai = no
-			NOT = { tag = TUR }
+			NOT = { has_or_had_tag  = TUR } # they get integration buffs already.
 			current_age = age_2_renaissance
 			lhr_total_population_with_subjects < 1500
 		}
@@ -31,7 +31,7 @@ lhr_player_integration_speed_age3 = {
 		custom_description = {
 			text = lhr_player_integration_speed_age3_req_tt
 			is_ai = no
-			NOT = { tag = TUR }
+			NOT = { has_or_had_tag  = TUR }
 			current_age = age_3_discovery
 			lhr_total_population_with_subjects < 2500
 		}
@@ -45,7 +45,7 @@ lhr_player_integration_speed_age4 = {
 		custom_description = {
 			text = lhr_player_integration_speed_age4_req_tt
 			is_ai = no
-			NOT = { tag = TUR }
+			NOT = { has_or_had_tag  = TUR }
 			current_age_or_later = { age = age_4_reformation }
 			lhr_total_population_with_subjects < 4000
 		}
