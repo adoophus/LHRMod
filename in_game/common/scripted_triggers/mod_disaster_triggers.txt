@@ -1,4 +1,4 @@
-﻿turmoil_in_brandenburg_end_trigger = {
+﻿REPLACE:turmoil_in_brandenburg_end_trigger = {
 	OR = {
 		var:bra_wittelsbacher_investment_var >= 50
 		var:bra_wittelsbacher_neglect_var <= -50

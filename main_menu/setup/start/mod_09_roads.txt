@@ -1,0 +1,5 @@
+road_network = {
+	soltaniyeh = shamiram
+	shamiram = rudbar
+	rudbar = rasht
+}

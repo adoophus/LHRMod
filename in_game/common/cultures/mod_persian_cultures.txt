@@ -1,0 +1,29 @@
+gilak_culture = {
+	language = persian_language
+	
+	color = map_gilak
+	
+	tags = { persian_gfx persianate_gfx middle_east_gfx }
+
+	opinions = {
+
+	}	
+	culture_groups = {
+		iranian_group
+	}
+}
+
+mazanderani_culture = {
+	language = persian_language
+	
+	color = map_mazanderani
+	
+	tags = { persian_gfx persianate_gfx middle_east_gfx }
+
+	opinions = {
+
+	}	
+	culture_groups = {
+		iranian_group
+	}
+}

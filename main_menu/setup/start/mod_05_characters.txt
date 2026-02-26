@@ -1,0 +1,35 @@
+REPLACE:hes_ludwig_hesse = {
+	first_name = { name = name_louis }
+	culture = rhine_franconian
+	religion = catholic
+	birth_date = 1305.1.1
+	birth = kassel
+	father = hes_otto_i_hesse
+	mother = hes_adelheid_von_ravensberg
+	dynasty = hessen_dynasty
+	tag = MLGH
+}
+
+REPLACE:hes_herman_i_hesse = {
+	first_name = { name = name_herman }
+	culture = rhine_franconian
+	religion = catholic
+	birth_date = 1307.1.1
+	birth = kassel
+	father = hes_otto_i_hesse
+	mother = hes_adelheid_von_ravensberg
+	dynasty = hessen_dynasty
+	tag = GSN
+}
+
+hes_otto_brother_hesse = {
+	first_name = { name = name_otto }
+	culture = rhine_franconian
+	religion = catholic
+	birth_date = 1310.1.1
+	birth = kassel
+	father = hes_otto_i_hesse
+	mother = hes_adelheid_von_ravensberg
+	dynasty = hessen_dynasty
+	tag = HSF
+}

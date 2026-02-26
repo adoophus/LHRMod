@@ -111,6 +111,12 @@ market_knowledge_sharing = {
 						and = {
 							exists = scope:actor
 							not = { is_embraced_for = scope:actor }
+							scope:actor = {
+								institution_progress = {
+									type = prev
+									value < 1
+								}
+							}
 						}
 					}
 				}

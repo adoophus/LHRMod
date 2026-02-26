@@ -1,0 +1,74 @@
+﻿break_personal_union =  { 
+	type = diplomacy
+	category = CATEGORY_INFLUENCE_ACTIONS
+	
+	ai_tick = never
+	#use_enroute = no
+	block_when_at_war = yes	
+
+	potential = {
+	}
+
+	allow = {
+		scope:actor = {
+            has_ruler = yes
+            union = {
+                country_has_special_status = {
+                    type = special_status:senior_partner
+                    country = scope:actor
+                }
+            }
+		}
+		scope:actor.heir = { is_heir_of = scope:recipient }
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_union_partner = {
+					limit = { in_union_with = scope:actor }
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			exists = union
+			in_union_with = scope:actor
+			# union = {
+				# NOT = {
+					# country_has_special_status = {
+						# type = special_status:senior_partner
+						# country = root
+					# }
+				# }
+			# }
+		}
+        enabled = {			
+		}
+	}
+
+	
+	effect = {
+		scope:actor.ruler.dynasty = {
+			random_character_in_dynasty = {
+				limit = { 
+					is_alive = yes
+					NOT = { is_ruler = yes }
+					NOT = { is_heir = yes }
+					is_adult = yes
+					modifier:blocked_from_character_interactions = no
+				}
+				save_scope_as = bpu_new_ruler
+			}
+		}
+		scope:recipient = {
+			set_as_designated_heir = scope:bpu_new_ruler
+		}
+	}
+}	

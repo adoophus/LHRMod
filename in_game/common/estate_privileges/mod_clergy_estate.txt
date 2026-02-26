@@ -11,7 +11,7 @@ hesse_3 = {
     
     country_modifier = {
         global_clergy_estate_power = 1
-        clergy_estate_target_satisfaction = 0.05
+        clergy_estate_target_satisfaction = -0.05
 		monthly_towards_individualism = 0.2
 		clergy_estate_agenda_impact = 0.1
 		monthly_prestige = -0.05

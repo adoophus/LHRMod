@@ -1,0 +1,55 @@
+lhr_player_integration_speed_age1 = {
+	potential_trigger = {
+		custom_description = {
+			text = lhr_player_integration_speed_age1_req_tt
+			is_ai = no
+			NOT = { has_or_had_tag  = TUR } # they get integration buffs already.
+			current_age = age_1_traditions
+			lhr_total_population_with_subjects < 750
+		}
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age2 = {
+	potential_trigger = {
+		custom_description = {
+			text = lhr_player_integration_speed_age2_req_tt
+			is_ai = no
+			NOT = { has_or_had_tag  = TUR } # they get integration buffs already.
+			current_age = age_2_renaissance
+			lhr_total_population_with_subjects < 1500
+		}
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age3 = {
+	potential_trigger = {
+		custom_description = {
+			text = lhr_player_integration_speed_age3_req_tt
+			is_ai = no
+			NOT = { has_or_had_tag  = TUR }
+			current_age = age_3_discovery
+			lhr_total_population_with_subjects < 2500
+		}
+	}
+
+	global_integration_speed_modifier = 0.33
+}
+
+lhr_player_integration_speed_age4 = {
+	potential_trigger = {
+		custom_description = {
+			text = lhr_player_integration_speed_age4_req_tt
+			is_ai = no
+			NOT = { has_or_had_tag  = TUR }
+			current_age_or_later = { age = age_4_reformation }
+			lhr_total_population_with_subjects < 4000
+		}
+	}
+
+	global_integration_speed_modifier = 0.33
+}

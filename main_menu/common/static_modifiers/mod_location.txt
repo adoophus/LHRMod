@@ -1,0 +1,32 @@
+hes_peasant_disenfranchisement = {
+	game_data = {
+		category = location
+	}
+	local_nobles_estate_power = 0.5
+	local_peasants_estate_power = -0.5
+    local_peasant_enfranchisment = -0.2
+}
+
+hes_korbach_peasant_enfranchisement = {
+	game_data = {
+		category = location
+	}
+    local_peasant_enfranchisment = 0.5
+    local_nobles_estate_power = -1
+	local_peasants_estate_power = 1
+}
+
+hes_joint_investment_nobility_kassel = {
+	game_data = {
+		category = location
+	}
+	local_nobles_estate_power = 0.5
+}
+
+hes_mainz_second_estate_80 = {
+	game_data = {
+		category = location
+	}
+	local_clergy_estate_power = 1.0
+	local_proximity_source = 80
+}

@@ -44,5 +44,31 @@ hes_morale_age_3 = {
 hes_erosion_of_trust = {
 	bank_interest = 0.02
 }
+REPLACE:PRU_end_of_robber_barons = {
+	game_data = {
+		category = country 
+	}
 
+	global_crown_estate_power = 0.4
+	monthly_towards_centralization = 0.3
+}
+
+bds_ilkhanate_power_vacuum = {
+	game_data = {
+		category = country
+	}
+
+	global_monthly_control = -0.001
+	global_nobles_estate_power = 0.1
+}
+
+hes_noble_pension_compacts = {
+	global_nobles_estate_power = 0.1
+	monthly_towards_decentralization = 0.05
+}
+
+hes_border_claims_fabrication = {
+	diplomatic_reputation = 1
+	monthly_towards_belligerence = 0.1
+}
 

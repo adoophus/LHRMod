@@ -1,0 +1,21 @@
+RTH = {
+	color = map_RTH
+	color2 = rgb { 255 137 146 }
+
+	culture_definition = german_silesian
+	religion_definition = catholic
+}
+
+MLGH = {
+	color = rgb { 136 175 214 }
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+GSN = {
+	color = rgb { 180 150 210 }
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}

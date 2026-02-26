@@ -1,0 +1,71 @@
+disaster_panel = {
+	blockoverride "disaster_secondary_tab" {
+		margin_top = 10
+		spacing = 5
+		disaster_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'requirements_toggled' )]"
+			}
+			blockoverride "header_text" {
+				text = "END_REQUIREMENTS"
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/disasters/end_requirements_green.dds"
+			}
+			blockoverride "bottom_content" {
+				TooltipRequirementsList = {
+					textcontext = "[DisasterView.GetDisaster.GetType.GetEndConditions]"
+				}
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'requirements_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'requirements_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'requirements_toggled' ))]"
+			}
+		}
+	}
+
+	blockoverride "main_content" {
+		disaster_side_cards = {
+			blockoverride "left_header_content" {
+				icon = {
+					size = { 30 30 }
+					texture = "gfx/interface/icons/disasters/hesse_subject_resolution.dds"
+					texture_density = 2
+				}
+				text_single = {
+					text = "hesse_compromise_willingness_title"
+					tooltip = "hesse_compromise_willingness_tt"
+				}
+				expand = {}
+			}
+			blockoverride "left_bottom_content" {
+				text_single = {
+					text = "hesse_willingness_counter"
+				}
+			}
+
+			blockoverride "right_header_content" {
+				icon = {
+					size = { 30 30 }
+					texture = "gfx/interface/icons/disasters/hesse_subject_resolution.dds"
+					texture_density = 2
+				}
+				text_single = {
+					text = "hesse_compromise_monthly_gain_title"
+					tooltip = "hesse_compromise_monthly_gain_tt"
+				}
+				expand = {}
+			}
+			blockoverride "right_bottom_content" {
+				text_single = {
+					text = "hesse_compromise_monthly_gain_value"
+				}
+			}
+		}
+	}
+}

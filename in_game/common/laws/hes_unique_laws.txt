@@ -5,6 +5,7 @@ river_law = {
 
 	potential = {
 		has_or_had_tag = HES
+		has_unlocked_law_trigger = { type = river_law }
 	}
 	
 	hes_fuldastrom_decree_law = {

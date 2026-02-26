@@ -1,4 +1,12 @@
 ﻿l_english:
+ RTH: "Rothenburg"
+ RTH_ADJ: "Rothenburg"
+ MLGH: "Melsungen"
+ MLGH_ADJ: "Melsungen"
+ GSN: "Giessen"
+ GSN_ADJ: "Giessen"
+ BDS: "Daylam"
+ BDS_ADJ: "the Daylamites"
  foreign_building_gone: "Disband Foreign Buildings"
  foreign_building_gone_desc: "We will demand that the Foreign Buildings are disbanded."
  foreign_building_gone_entry: "Shutdown the Foreign Building in [target.GetName]"
@@ -53,3 +61,14 @@
  diplomatic_status_receive_market_knowledge_sharing_tootlip: "#T Knowledge Received#!\nThis country receives institutions from the following [countries|e]."
  giving_market_knowledge_sharing_list_who_tt: "$WHO$ is sharing knowledge with $LIST$"
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
+
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "[integration_surge|e] #weak (Age I)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "[integration_surge|e] #weak (Age II)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age3: "[integration_surge|e] #weak (Age III)#!"
+ AUTO_MODIFIER_NAME_lhr_player_integration_speed_age4: "[integration_surge|e] #weak (Ages IV+)#!"
+
+ game_concept_integration_surge: "Integration Surge"
+ game_concept_integration_surge_desc: "Gives a temporary #P +33.0%#! bonus to [integration|e].\n\n$game_concept_integration_surge_list_title$\n$game_concept_integration_surge_list$\n\n$game_concept_integration_surge_lower_desc$"
+ game_concept_integration_surge_list_title: "Required [total_population|e] to become active:"
+ game_concept_integration_surge_list: "$BULLET$#V Age I#!: below #V 750k#!\n$BULLET$#V Age II#!: below #V 1.5M#!\n$BULLET$#V Age III#!: below #V 2.5M#!\n$BULLET$#V Ages IV+#!: below #V 4.0M#!"
+ game_concept_integration_surge_lower_desc: "[total_population|e] includes all your subjects."

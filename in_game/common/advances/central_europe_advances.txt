@@ -57,6 +57,7 @@ REPLACE:hab_expert_mountaineers = {
 			has_or_had_tag = HAB
 			has_or_had_tag = TIR
 			has_or_had_tag = STY
+			culture = { has_culture_group = culture_group:swiss_group }
 		}
 	}
 	

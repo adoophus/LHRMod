@@ -2,7 +2,9 @@ locations={
 	oslo = { rank = city town_setup = naval_scandinavian_town }
 	stockholm = { rank = city town_setup = naval_scandinavian_town }
 	kobenhavn = { rank = city town_setup = naval_scandinavian_town }
+
 	khoy = { rank = rural_settlement town_setup = iranian_gateway}
 	qala_safid = { rank = rural_settlement town_setup = iranian_gateway}
 	damavand = {rank = rural_settlement town_setup = iranian_gateway}
+	chalus = {rank = rural_settlement town_setup = iranian_gateway}
 }

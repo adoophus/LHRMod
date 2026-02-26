@@ -2,6 +2,15 @@ country_flavor = {
 	type = country
 
 	text = {
+		localization_key = hesse_baron_government
+		trigger = {
+			has_government_name = {
+				key = hesse_baron_government
+			}
+		}
+	}
+
+	text = {
 		localization_key = rank_count_landgraviate
 		trigger = {
 			tag = HES
@@ -11,6 +20,13 @@ country_flavor = {
 			}
 
 			government_type = government_type:monarchy
+		}
+	}
+
+	text = {
+		localization_key = rank_count_hessian_barony
+		trigger = {
+			is_subject_type = hesse_baron
 		}
 	}
 }
