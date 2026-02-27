@@ -67,7 +67,7 @@ REPLACE:offensive_vs_defensive = {
 		fort_maintenance_cost = -0.2
 		army_logistics_distance_modifier = -0.1
 		
-		global_defensive = 0.25
+		global_defensive = 0.5
 		defence_importance_modifier = 0.2
 		bias_for_diplomat_policies = 50
 		fort_limit_modifier = 0.5
