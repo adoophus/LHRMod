@@ -8,7 +8,6 @@ INJECT:country_base_values = {
 	land_morale_movement_cost = 0 # PREV: 0.001 (remove morale loss while moving)
 	naval_morale_movement_cost = 0 # PREV: 0.0 (explicitly keep no morale loss while moving)
 	annexation_speed_base = 0.6
-	mercenary_range = 300
 }
 
 # PSEUDO FL - anti snowball
