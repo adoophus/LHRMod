@@ -57,6 +57,7 @@ mod_run_performance_cleanup = {
 		c:CHI = {
 			mod_annex_all_nations_in_area = { target_area = liangjiang_area }
 			mod_annex_all_nations_in_area = { target_area = wuling_area }
+			add_country_modifier = { modifier = lhr_chi_permanent_nerf months = -1 mode = add_and_extend }
 		}
 	}
 }

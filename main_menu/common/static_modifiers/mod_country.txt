@@ -49,8 +49,8 @@ REPLACE:PRU_end_of_robber_barons = {
 		category = country 
 	}
 
-	global_crown_estate_power = 0.4
-	monthly_towards_centralization = 0.3
+	global_crown_estate_power = 0.3
+	monthly_towards_centralization = 0.2
 }
 
 bds_ilkhanate_power_vacuum = {
@@ -70,5 +70,14 @@ hes_noble_pension_compacts = {
 hes_border_claims_fabrication = {
 	diplomatic_reputation = 1
 	monthly_towards_belligerence = 0.1
+}
+
+lhr_chi_permanent_nerf = {
+	game_data = {
+		category = country
+	}
+
+	great_power_score = -1000
+	global_max_control = -0.25
 }
 

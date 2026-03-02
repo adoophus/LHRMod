@@ -43,3 +43,5 @@ STATIC_MODIFIER_NAME_hes_joint_investment_nobility_kassel: "Joint Investment Con
 STATIC_MODIFIER_DESC_hes_joint_investment_nobility_kassel: "Noble financiers receive enhanced local influence in Kassel as part of a major urban investment compact."
 STATIC_MODIFIER_NAME_hes_noble_pension_compacts: "Noble Pension Compacts"
 STATIC_MODIFIER_DESC_hes_noble_pension_compacts: "The Landgrave secures temporary elite cooperation through stipends and guarantees, at the cost of renewed aristocratic influence."
+STATIC_MODIFIER_NAME_lhr_chi_permanent_nerf: "No Father"
+STATIC_MODIFIER_DESC_lhr_chi_permanent_nerf: "No father. No guidance. Only decline."

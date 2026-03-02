@@ -88,7 +88,7 @@ market_knowledge_sharing = {
 	}
 
     wants_to_give_diplo_chance = {
-        base = -20
+        base = -35
         same_international_organization = 5
         trust_in_actor = 1
         negative_opinion = -0.5
