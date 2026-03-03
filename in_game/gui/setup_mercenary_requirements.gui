@@ -248,6 +248,7 @@ types SetupMercenaryTypes
 						}
 					}
 					tooltipwidget = {
+						datacontext = "[Player.GetModifierTooltipContext('mercenary_maintenance_cost')]"
 						ContextualTooltipType = {
 							blockoverride "title_text" {
 								text = "MERCENARY_SIZE_TT_TITLE"
@@ -428,12 +429,16 @@ types SetupMercenaryTypes
 							}
 							
 							blockoverride "tooltip_content" {
-								TooltipTextBlock = {
-									blockoverride "text" {
-										text = "After maintenance modifiers: #N [Multiply_CFixedPoint(PossibleLeaderItem.GetMonthlyCost, Add_CFixedPoint(Player.GetModifierRawValue('mercenary_maintenance_cost'), '(CFixedPoint)1.0'))|2]@expense!#!"
+								TooltipStringPairList = {
+									blockoverride "block_title" {
+										text = "LHR_MERC_MAINTENANCE_COUNTRY_TT_TITLE"
 									}
+									textcontext = "LHR_MERC_MAINTENANCE_ADJUSTED_COST_TT"
 								}
 								TooltipStringPairList = {
+									blockoverride "block_title" {
+										text = "MERCENARY_MONTHLY_FEE_TT_TEXT"
+									}
 									textcontext = "[PossibleLeaderItem.GetMonthlyCostTooltip]"
 								}
 							}

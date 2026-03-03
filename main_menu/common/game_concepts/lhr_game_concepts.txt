@@ -1,3 +1,7 @@
 integration_surge = {
 	texture = "modifier_types/global_integration_speed_modifier"
 }
+
+lhr_mercenary_maintenance_cost = {
+	texture = "modifier_types/mercenary_maintenance_cost"
+}
