@@ -26,6 +26,7 @@
  offer_market_knowledge_sharing_happened_title: "Knowledge Shared!"
  offer_market_knowledge_sharing_happened_desc: "[SCOPE.sCountry('actor').GetName] is now sharing knowledge with [SCOPE.sCountry('recipient').GetName]."
  offer_market_knowledge_sharing_proposal_question: "Propose knowledge sharing with [TARGET_COUNTRY.GetName]?\n$INFO$"
+ lhr_offer_market_knowledge_sharing_institution_check_tt: "[COUNTRY.GetName] must have embraced at least one [institution|e] that [TARGET_COUNTRY.GetName]'s [capital|e] has not yet fully adopted."
  request_market_knowledge_sharing: "Request Knowledge Sharing"
  request_market_knowledge_sharing_cta: "Request Knowledge Sharing from [SCOPE.sCountry('recipient').GetName]"
  request_market_knowledge_sharing_desc: "We will ask them to share institutions with us."
@@ -61,6 +62,8 @@
  diplomatic_status_receive_market_knowledge_sharing_tootlip: "#T Knowledge Received#!\nThis country receives institutions from the following [countries|e]."
  giving_market_knowledge_sharing_list_who_tt: "$WHO$ is sharing knowledge with $LIST$"
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
+ lhr_market_knowledge_sharing_one_target_offer_tt: "[COUNTRY.GetName] must not be sharing knowledge with another [country|e]."
+ lhr_market_knowledge_sharing_one_target_request_tt: "[COUNTRY.GetName] must not be sharing knowledge with another [country|e]."
 
  AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "[integration_surge|e] #weak (Age I)#!"
  AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "[integration_surge|e] #weak (Age II)#!"

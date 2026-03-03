@@ -15,37 +15,95 @@ market_knowledge_sharing = {
 		break = CATEGORY_ECONOMY_ACTIONS
 	}
 
-	visible = {
-		scope:actor = {
-			has_limited_diplomacy = no
-		}
-		scope:recipient = {
-			has_limited_diplomacy = no
-		}
-	}
-
-	offer_visible = {
-		scope:actor = {
-			any_institutions_embraced = {
-				and = {
-					exists = scope:recipient
-					not = { is_embraced_for = scope:recipient }
-				}
-			}
-		}
-	}
 	offer_enabled = {
-		scope:actor = {
-			has_limited_diplomacy = no
-			any_institutions_embraced = {
-				and = {
-					exists = scope:recipient
-					not = { is_embraced_for = scope:recipient }
+		custom_description = {
+			text = lhr_market_knowledge_sharing_one_target_offer_tt
+			subject = scope:actor
+			object = scope:recipient
+			scope:actor = {
+				not = { giving_scripted_relation_of_type = relation_type:market_knowledge_sharing }
+			}
+		}
+		custom_description = {
+			text = lhr_offer_market_knowledge_sharing_institution_check_tt
+			subject = scope:actor
+			object = scope:recipient
+			OR = {
+				AND = {
+					scope:actor = { has_embraced_institution = institution:feudalism }
+					scope:recipient = { capital = { institution_progress:feudalism < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:legalism }
+					scope:recipient = { capital = { institution_progress:legalism < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:meritocracy }
+					scope:recipient = { capital = { institution_progress:meritocracy < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:renaissance }
+					scope:recipient = { capital = { institution_progress:renaissance < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:banking }
+					scope:recipient = { capital = { institution_progress:banking < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:professional_armies }
+					scope:recipient = { capital = { institution_progress:professional_armies < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:new_world }
+					scope:recipient = { capital = { institution_progress:new_world < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:printing_press }
+					scope:recipient = { capital = { institution_progress:printing_press < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:pike_and_shot }
+					scope:recipient = { capital = { institution_progress:pike_and_shot < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:confessionalism }
+					scope:recipient = { capital = { institution_progress:confessionalism < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:global_trade }
+					scope:recipient = { capital = { institution_progress:global_trade < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:artillery_institution }
+					scope:recipient = { capital = { institution_progress:artillery_institution < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:manufactories }
+					scope:recipient = { capital = { institution_progress:manufactories < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:scientific_revolution }
+					scope:recipient = { capital = { institution_progress:scientific_revolution < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:military_revolution }
+					scope:recipient = { capital = { institution_progress:military_revolution < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:enlightenment }
+					scope:recipient = { capital = { institution_progress:enlightenment < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:industrialization }
+					scope:recipient = { capital = { institution_progress:industrialization < 100 } }
+				}
+				AND = {
+					scope:actor = { has_embraced_institution = institution:levee_en_masse }
+					scope:recipient = { capital = { institution_progress:levee_en_masse < 100 } }
 				}
 			}
 		}
 		scope:recipient = {
-			has_limited_diplomacy = no
 			within_diplomatic_range = scope:actor
 			capital = {
 				market = {
@@ -55,23 +113,15 @@ market_knowledge_sharing = {
 		}
 	}
 
-	request_visible = {
-		scope:recipient = {
-			any_institutions_embraced = {
-				and = {
-					exists = scope:actor
-					not = { is_embraced_for = scope:actor }
-				}
-			}
-		}
-	}
-
 	request_enabled = {
-		scope:actor = {
-			has_limited_diplomacy = no
-		}
+		scope:actor = {}
 		scope:recipient = {
-			has_limited_diplomacy = no
+			custom_description = {
+				text = lhr_market_knowledge_sharing_one_target_request_tt
+				subject = scope:recipient
+				object = scope:actor
+				not = { giving_scripted_relation_of_type = relation_type:market_knowledge_sharing }
+			}
 			within_diplomatic_range = scope:actor
 			capital = {
 				market = {
@@ -88,17 +138,27 @@ market_knowledge_sharing = {
 	}
 
     wants_to_give_diplo_chance = {
-        base = -35
+        base = -30
         same_international_organization = 5
         trust_in_actor = 1
         negative_opinion = -0.5
         positive_opinion = 0.2
     }
 
+	wants_to_receive_diplo_chance = {
+		base = -20
+		same_international_organization = 5
+		trust_in_actor = 1
+		negative_opinion = -0.5
+		positive_opinion = 0.2
+	}
+
 	will_expire_trigger = {
 		OR = {
 			scope:recipient = {
 				not = { within_diplomatic_range = scope:actor }
+			}
+			scope:recipient = {
 				not = {
 					capital = {
 						market = {
@@ -106,18 +166,80 @@ market_knowledge_sharing = {
 						}
 					}
 				}
-				not = {
-					any_institutions_embraced = {
-						and = {
-							exists = scope:actor
-							not = { is_embraced_for = scope:actor }
-							scope:actor = {
-								institution_progress = {
-									type = prev
-									value < 1
-								}
-							}
-						}
+			}
+			not = {
+				OR = {
+					AND = {
+						scope:actor = { has_embraced_institution = institution:feudalism }
+						scope:recipient = { capital = { institution_progress:feudalism < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:legalism }
+						scope:recipient = { capital = { institution_progress:legalism < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:meritocracy }
+						scope:recipient = { capital = { institution_progress:meritocracy < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:renaissance }
+						scope:recipient = { capital = { institution_progress:renaissance < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:banking }
+						scope:recipient = { capital = { institution_progress:banking < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:professional_armies }
+						scope:recipient = { capital = { institution_progress:professional_armies < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:new_world }
+						scope:recipient = { capital = { institution_progress:new_world < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:printing_press }
+						scope:recipient = { capital = { institution_progress:printing_press < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:pike_and_shot }
+						scope:recipient = { capital = { institution_progress:pike_and_shot < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:confessionalism }
+						scope:recipient = { capital = { institution_progress:confessionalism < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:global_trade }
+						scope:recipient = { capital = { institution_progress:global_trade < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:artillery_institution }
+						scope:recipient = { capital = { institution_progress:artillery_institution < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:manufactories }
+						scope:recipient = { capital = { institution_progress:manufactories < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:scientific_revolution }
+						scope:recipient = { capital = { institution_progress:scientific_revolution < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:military_revolution }
+						scope:recipient = { capital = { institution_progress:military_revolution < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:enlightenment }
+						scope:recipient = { capital = { institution_progress:enlightenment < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:industrialization }
+						scope:recipient = { capital = { institution_progress:industrialization < 100 } }
+					}
+					AND = {
+						scope:actor = { has_embraced_institution = institution:levee_en_masse }
+						scope:recipient = { capital = { institution_progress:levee_en_masse < 100 } }
 					}
 				}
 			}
