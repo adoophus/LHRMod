@@ -64,6 +64,8 @@
  receiving_market_knowledge_sharing_list_who_tt: "$WHO$ receives knowledge from $LIST$"
  lhr_market_knowledge_sharing_one_target_offer_tt: "[COUNTRY.GetName] must not be sharing knowledge with another [country|e]."
  lhr_market_knowledge_sharing_one_target_request_tt: "[COUNTRY.GetName] must not be sharing knowledge with another [country|e]."
+ lhr_market_knowledge_sharing_not_already_receiving_offer_tt: "[COUNTRY.GetName] is not already receiving shared knowledge."
+ lhr_market_knowledge_sharing_not_already_receiving_request_tt: "[COUNTRY.GetName] is not already receiving shared knowledge."
 
  AUTO_MODIFIER_NAME_lhr_player_integration_speed_age1: "[integration_surge|e] #weak (Age I)#!"
  AUTO_MODIFIER_NAME_lhr_player_integration_speed_age2: "[integration_surge|e] #weak (Age II)#!"

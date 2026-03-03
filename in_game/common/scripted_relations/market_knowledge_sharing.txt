@@ -17,6 +17,14 @@ market_knowledge_sharing = {
 
 	offer_enabled = {
 		custom_description = {
+			text = lhr_market_knowledge_sharing_not_already_receiving_offer_tt
+			subject = scope:recipient
+			object = scope:actor
+			scope:recipient = {
+				not = { receiving_scripted_relation_of_type = relation_type:market_knowledge_sharing }
+			}
+		}
+		custom_description = {
 			text = lhr_market_knowledge_sharing_one_target_offer_tt
 			subject = scope:actor
 			object = scope:recipient
@@ -115,6 +123,14 @@ market_knowledge_sharing = {
 
 	request_enabled = {
 		scope:actor = {}
+		custom_description = {
+			text = lhr_market_knowledge_sharing_not_already_receiving_request_tt
+			subject = scope:actor
+			object = scope:recipient
+			scope:actor = {
+				not = { receiving_scripted_relation_of_type = relation_type:market_knowledge_sharing }
+			}
+		}
 		scope:recipient = {
 			custom_description = {
 				text = lhr_market_knowledge_sharing_one_target_request_tt
