@@ -78,6 +78,14 @@ lhr_chi_permanent_nerf = {
 	}
 
 	great_power_score = -1000
-	global_max_control = -0.25
+	#global_max_control = -0.25
+}
+
+lhr_natural_selection = {
+	game_data = {
+		category = country
+	}
+
+	global_population_growth = -0.01
 }
 

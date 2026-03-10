@@ -1,6 +1,6 @@
 ﻿break_personal_union =  { 
 	type = diplomacy
-	category = CATEGORY_INFLUENCE_ACTIONS
+	category = CATEGORY_UNION_ACTIONS
 	
 	ai_tick = never
 	block_when_at_war = yes	
