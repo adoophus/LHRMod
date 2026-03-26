@@ -10,6 +10,12 @@ on_game_start = {
 	}
 }
 
+
+monthly_country_pulse = {
+	on_actions = {
+	}
+}
+
 yearly_country_pulse = {
 	on_actions = {
 		#mod_apply_no_father_on_yearly_pulse
@@ -284,3 +290,4 @@ mod_setup_persia = {
 		}
 	}
 }
+

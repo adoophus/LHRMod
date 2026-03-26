@@ -1,0 +1,45 @@
+########################################
+# LHR Military Capacity Buildings
+########################################
+
+# Grand Military College - capital building that increases the nation's military capacity
+lhr_grand_military_college = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = manpower_employment
+
+	town = yes
+	city = yes
+
+	expensive = yes
+	build_time = large_capital_build_time
+
+	location_potential = {
+		is_capital = yes
+	}
+
+	remove_if = {
+		is_no_longer_capital = yes
+	}
+
+	# Applies country-wide: +1000 to military capacity cap
+	capital_country_modifier = {
+		lhr_military_capacity = 1000
+	}
+
+	unique_production_methods = {
+		lhr_grand_military_college_maintenance = {
+			firearms = 0.5
+			leather = 0.5
+			tools = 0.25
+			paper = 0.25
+
+			category = building_maintenance
+		}
+	}
+}

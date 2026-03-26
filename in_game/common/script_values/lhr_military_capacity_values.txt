@@ -1,0 +1,60 @@
+lhr_military_capacity_max = {
+	# Flat capacity from all lhr_military_capacity modifiers (base comes from auto_modifier)
+	value = modifier:lhr_military_capacity
+	# Then apply percentage bonus from lhr_military_capacity_modifier
+	add = {
+		value = modifier:lhr_military_capacity
+		multiply = modifier:lhr_military_capacity_modifier
+	}
+}
+
+# Bonus capacity above the base 6000 (from buildings, laws, modifiers, etc.)
+lhr_military_capacity_bonus = {
+	value = modifier:lhr_military_capacity
+	subtract = lhr_military_capacity_max
+}
+
+# Scales regular_army_size from internal thousands units to actual troop count
+# so it maps correctly 
+lhr_regular_army_size_display = {
+	value = regular_army_size
+	multiply = 1000
+}
+
+# Ratio of current army to military capacity (1.0 = at cap, 1.5 = 50% over, etc.)
+lhr_military_overcap_ratio = {
+	value = lhr_regular_army_size_display
+	divide = lhr_military_capacity_max
+}
+
+# we need to start the penalties from capacity (1.0) 
+# rather than from 0, so subtract 1 to shift the curve and then we want
+# less harsher penalties, so divide by 0.5
+lhr_military_overcap_ratio_penalty = {
+	value = lhr_regular_army_size_display
+	divide = lhr_military_capacity_max
+	subtract = 1
+	multiply = 0.5
+}
+
+lhr_military_overcap_ratio_penalty_display = {
+	value = lhr_military_overcap_ratio_penalty
+	multiply = 100
+}
+
+# Remaining capacity (cap minus current army size). Negative when over cap.
+lhr_military_capacity_remaining = {
+	value = lhr_military_capacity_max
+	subtract = lhr_regular_army_size_display
+}
+
+# Returns 1 if over military capacity, 0 if at or under
+lhr_is_over_military_capacity = {
+	if = {
+		limit = { lhr_military_overcap_ratio > 1 }
+		value = 1
+	}
+	else = {
+		value = 0
+	}
+}

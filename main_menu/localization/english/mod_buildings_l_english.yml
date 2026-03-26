@@ -5,3 +5,7 @@
   scan_early_dockyard_desc: "A local shipyard focused on sturdy, clinker-built vessels, carrying forward the long-established Nordic tradition of sea-faring."
   ira_gateway: "Persian Gateway"
   ira_gateway_desc: "These imperial gatehouses are anchored into the bedrock of vital mountain passes. By controlling these strategic arteries, the state secures regional logistics, taxes, high-altitude trade, projecting central authority into the most rugged reaches of Persia."
+
+  lhr_grand_military_college: "Grand Military College"
+  lhr_grand_military_college_desc: "A prestigious institution dedicated to the art and science of warfare. The Grand Military College trains officers, develops military doctrine, and organizes state-wide conscription, significantly expanding the nation's military capacity."
+  lhr_grand_military_college_maintenance: "Military Operations"

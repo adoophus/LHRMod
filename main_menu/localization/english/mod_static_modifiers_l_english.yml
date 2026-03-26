@@ -47,3 +47,25 @@ STATIC_MODIFIER_NAME_lhr_chi_permanent_nerf: "No Father"
 STATIC_MODIFIER_DESC_lhr_chi_permanent_nerf: "No father. No guidance. Only decline."
 STATIC_MODIFIER_NAME_lhr_natural_selection: "Not Enough Rice"
 STATIC_MODIFIER_DESC_lhr_natural_selection: "Too many blokes to feed and i want my tick speed back so fk off"
+
+game_concept_lhr_military_capacity: "Military Capacity"
+game_concept_lhr_military_capacity_desc: "This can be increased through buildings, government reforms, laws, and other modifiers that provide the [lhr_military_capacity|e] modifier.\n\n#bold #w Overcap Penalty#! #!\nIf your army exceeds your Military Capacity, [army_maintenance|e] costs begin to increase. The further over the limit your army is, the steeper the penalty becomes."
+
+game_concept_lhr_army_size: "Army Size"
+game_concept_lhr_army_size_desc: "Army Size represents the current number of troops your nation has deployed. It is influenced by recruitment, attrition, and other factors.\n\nWhen your army exceeds your Military Capacity, [army_maintenance|e] costs increase proportionally to how far over the limit you are — the further over the cap, the steeper the penalty."
+
+LHR_MILITARY_CAPACITY_TOOLTIP: "[lhr_military_capacity|e] represents the maximum number of troops your nation can field. Exceeding this limit imposes penalties on [army_maintenance|e]."
+LHR_MILITARY_CAPACITY_TT_TITLE: "Military Capacity"
+LHR_MILITARY_CAPACITY_TT_CURRENT: "[lhr_army_size|e]: [Country.GetTotalStrength|Y]\n[lhr_military_capacity|e]: [FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_capacity_max'))|0|Y]"
+LHR_MILITARY_CAPACITY_TT_UNDERCAP_INFO: "#g You have #bold [FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_capacity_remaining'))|0] #!troops of capacity remaining. #!"
+LHR_MILITARY_CAPACITY_TT_OVERCAP_WARNING: "#r #bold Exceeding Military Capacity! #! #!\n\n[army_maintenance|e] costs are increased by #bold #r +[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_overcap_ratio_penalty'))|%-1]#! #!of their base value. #!"
+LHR_MILITARY_CAPACITY_TT_BREAKDOWN_TITLE: "Breakdown"
+LHR_MILITARY_CAPACITY_TT_BASE: "Base Capacity"
+LHR_MILITARY_CAPACITY_TT_BUILDINGS: "From Buildings & Modifiers"
+LHR_MILITARY_CAPACITY_TT_TOTAL: "Total Capacity"
+
+STATIC_MODIFIER_NAME_lhr_over_military_capacity: "Over Military Capacity"
+STATIC_MODIFIER_DESC_lhr_over_military_capacity: "This nation's army exceeds its Military Capacity. Army maintenance costs are increased proportionally to how far over the limit the army is."
+
+AUTO_MODIFIER_NAME_lhr_over_military_capacity: "Over Military Capacity"
+AUTO_MODIFIER_DESC_lhr_over_military_capacity: "This nation's army exceeds its [lhr_military_capacity|e]. [army_maintenance|e] costs are increased proportionally to how far over the limit the army is."

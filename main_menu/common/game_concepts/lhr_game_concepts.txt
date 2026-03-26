@@ -5,3 +5,11 @@ integration_surge = {
 lhr_mercenary_maintenance_cost = {
 	texture = "modifier_types/mercenary_maintenance_cost"
 }
+
+lhr_military_capacity = {
+	texture = "unit_category/army_size"
+}
+
+lhr_army_size = {
+	texture = "unit_category/army_size"
+}

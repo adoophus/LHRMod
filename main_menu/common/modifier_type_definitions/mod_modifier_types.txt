@@ -12,3 +12,18 @@ valley_proximity_impact = {
 		category = country
 	}
 }
+
+lhr_military_capacity = {
+	good = yes
+	game_data = {
+		category = country
+	}
+}
+
+lhr_military_capacity_modifier = {
+	good = yes
+	percent = yes
+	game_data = {
+		category = country
+	}
+}

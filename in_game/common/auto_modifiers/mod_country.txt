@@ -12,6 +12,19 @@ INJECT:country_base_values = {
 	army_cavalry_build_cost_modifier = -0.1
 	army_artillery_build_cost_modifier = -0.1
 	army_auxiliary_build_cost_modifier = -0.33
+	lhr_military_capacity = 10000 # Base military capacity for all nations
+}
+
+lhr_over_military_capacity = {
+	potential_trigger = {
+		lhr_is_over_military_capacity = 1
+	}
+
+	scales_with = {
+		value = lhr_military_overcap_ratio_penalty
+	}
+
+	army_maintenance_cost = 1
 }
 
 # PSEUDO FL - anti snowball

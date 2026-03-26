@@ -1,6 +1,10 @@
 ﻿l_english:
  MODIFIER_TYPE_NAME_allow_cabinet_promote_religion_area: "@cabinet_action! Unlocks Convert Area Cabinet Action"
  MODIFIER_TYPE_DESC_allow_cabinet_promote_religion_area: "Allows use of the Convert Area cabinet action."
+ MODIFIER_TYPE_NAME_lhr_military_capacity: "Military Capacity"
+ MODIFIER_TYPE_DESC_lhr_military_capacity: "Increases the maximum number of troops your nation can maintain."
+ MODIFIER_TYPE_NAME_lhr_military_capacity_modifier: "Military Capacity"
+ MODIFIER_TYPE_DESC_lhr_military_capacity_modifier: "Increases your Military Capacity as a percentage of its current total."
  MODIFIER_TYPE_NAME_valley_proximity_impact: "Valley Proximity Impact"
  MODIFIER_TYPE_DESC_valley_proximity_impact: "This impacts the [proximity|e] cost when going through [ShowTopographyName('valley')]."
 
