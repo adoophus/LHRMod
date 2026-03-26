@@ -12,55 +12,6 @@
 # 	using = color_dark_blue_texture
 # }
 
-template LHRMilitaryCapacityTooltip {
-	ContextualTooltipType = {
-		blockoverride "title_text" {
-			text = "LHR_MILITARY_CAPACITY_TT_TITLE"
-		}
-
-		blockoverride "title_icon" {
-			icon = {
-				using = tooltip_title_icon_size
-				texture = "gfx/interface/icons/unit_category/army_size.dds"
-			}
-		}
-
-		blockoverride "tooltip_content" {
-				TooltipTextBlock = {
-					blockoverride "text" {
-						text = "LHR_MILITARY_CAPACITY_TOOLTIP"
-					}
-				}
-
-				TooltipTextBlock = {
-					visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
-					blockoverride "text" {
-						text = "LHR_MILITARY_CAPACITY_TT_OVERCAP_WARNING"
-					}
-				}
-
-				TooltipTextBlock = {
-					visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0'))]"
-					blockoverride "text" {
-						text = "LHR_MILITARY_CAPACITY_TT_UNDERCAP_INFO"
-					}
-				}
-				TooltipTextBlock = {
-					blockoverride "text" {
-						raw_text = "LHR_MILITARY_CAPACITY_TT_CURRENT"
-					}
-				}
-
-				TooltipStringPairList = {
-					blockoverride "block_title" {
-						text = "LHR_MILITARY_CAPACITY_TT_BREAKDOWN_TITLE"
-					}
-					textcontext = "[Country.GetDescriptionFor('lhr_military_capacity')]"
-				}
-			}
-	}
-}
-
 template pausebutton_texture_overlay
 {
 	modify_texture = {

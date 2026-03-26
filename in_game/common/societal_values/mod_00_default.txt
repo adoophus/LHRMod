@@ -73,3 +73,19 @@ REPLACE:offensive_vs_defensive = {
 		fort_limit_modifier = 0.5
 	}
 }
+
+REPLACE:quality_vs_quantity = {
+	left_modifier = {
+		discipline = 0.05
+		army_maintenance_cost = 0.1
+		bias_for_militarist_policies = 50
+	}
+	right_modifier = {
+		food_consumption_modifier = -0.1
+		lhr_military_capacity_modifier = 0.33
+		army_maintenance_cost = -0.1
+		bias_for_militarist_policies = 50
+	}
+
+	opinion_importance_multiplier = 0.5
+}

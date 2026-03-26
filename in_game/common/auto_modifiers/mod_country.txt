@@ -12,7 +12,11 @@ INJECT:country_base_values = {
 	army_cavalry_build_cost_modifier = -0.1
 	army_artillery_build_cost_modifier = -0.1
 	army_auxiliary_build_cost_modifier = -0.33
-	lhr_military_capacity = 10000 # Base military capacity for all nations
+}
+
+# Named auto_modifier for base capacity so it shows in GetDescriptionFor breakdown
+lhr_military_capacity_base = {
+	lhr_military_capacity = 10000
 }
 
 lhr_over_military_capacity = {

@@ -1,0 +1,97 @@
+template LHRMilitaryCapacityTooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "LHR_MILITARY_CAPACITY_TT_TITLE"
+		}
+
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_category/army_size.dds"
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = "[lhr_military_capacity|e]"
+		}
+
+		blockoverride "tooltip_content" {
+            TooltipTextBlock = {
+				blockoverride "text" {
+					text = "LHR_MILITARY_CAPACITY_TOOLTIP"
+				}
+			}
+
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "LHR_MILITARY_CAPACITY_TT_BREAKDOWN_TITLE"
+				}
+				textcontext = "[Country.GetDescriptionFor('lhr_military_capacity')]"
+			}
+
+			TooltipStringPairList = {
+				visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_has_military_capacity_modifier'), '(CFixedPoint)0')]"
+				blockoverride "block_title" {
+					text = "LHR_MILITARY_CAPACITY_TT_MODIFIER_TITLE"
+				}
+				textcontext = "[Country.GetDescriptionFor('lhr_military_capacity_modifier')]"
+			}
+
+            TooltipStringPairList = {
+                visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
+
+				textcontext = "LHR_MILITARY_CAPACITY_TT_TOTAL_TEXT"
+				tooltipwidget = {
+					using = MilCapacity_tooltip
+				}
+			}
+
+            TooltipStringPairList = {
+				visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0'))]"
+				textcontext = "LHR_MILITARY_CAPACITY_TT_TOTAL_TEXT_BAD"
+				tooltipwidget = {
+					using = MilCapacity_tooltip
+				}
+			}
+
+            TooltipFlavorTextBlock = {
+				visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
+				textcontext = "LHR_MILITARY_CAPACITY_TT_OVERCAP_WARNING"              
+			}
+
+			TooltipFlavorTextBlock = {
+				visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0'))]"
+
+                textcontext = "LHR_MILITARY_CAPACITY_TT_UNDERCAP_INFO"
+			}
+		}
+	}
+}
+
+template MilCapacity_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "[GetConceptTexture('military_capacity')]"
+				using = tooltip_title_icon_size
+
+			}
+		}
+
+		blockoverride "title_text" {
+			text = "MILITARY_CAPACITY_HEADER"
+		}
+		blockoverride "concept_link" {
+			text = [military_capacity|E]
+		}
+		
+		blockoverride "tooltip_content" {
+			tooltipmeta = {
+				title = "MILITARY_CAPACITY_BREAKDOWN"
+				texture = "[GetConceptTexture('military_capacity')]"
+				game_concept = "[military_capacity|e]"
+			}
+			
+		}
+	}
+}

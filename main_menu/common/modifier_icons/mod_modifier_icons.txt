@@ -7,5 +7,5 @@ lhr_military_capacity = {
 }
 
 lhr_military_capacity_modifier = {
-	positive = "gfx/interface/icons/modifier_types/expected_army_size.dds"
+	positive = "gfx/interface/icons/unit_category/army_size.dds"
 }

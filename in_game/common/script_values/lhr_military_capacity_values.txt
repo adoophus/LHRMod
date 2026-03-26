@@ -48,6 +48,23 @@ lhr_military_capacity_remaining = {
 	subtract = lhr_regular_army_size_display
 }
 
+# The troop bonus granted solely by the percentage modifier
+lhr_military_capacity_modifier_bonus = {
+	value = modifier:lhr_military_capacity
+	multiply = modifier:lhr_military_capacity_modifier
+}
+
+# Returns 1 if any lhr_military_capacity_modifier sources exist, 0 otherwise
+lhr_has_military_capacity_modifier = {
+	if = {
+		limit = { lhr_military_capacity_modifier_bonus > 0 }
+		value = 1
+	}
+	else = {
+		value = 0
+	}
+}
+
 # Returns 1 if over military capacity, 0 if at or under
 lhr_is_over_military_capacity = {
 	if = {
