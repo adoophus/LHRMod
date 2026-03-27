@@ -1,0 +1,36 @@
+########################################
+# LHR Building Cap Script Values
+########################################
+
+lhr_muster_office_max_level = {
+	add = {
+		desc = "BUILDING_LEVEL_BASE"
+		value = 1
+	}
+	add = {
+		desc = "BUILDING_LEVEL_POPULATION"
+		value = population
+		multiply = 0.05
+	}
+}
+
+lhr_muster_hall_max_level = {
+	add = {
+		desc = "BUILDING_LEVEL_BASE"
+		value = 1
+	}
+	add = {
+		desc = "BUILDING_LEVEL_POPULATION"
+		value = population
+		multiply = 0.05
+	}
+	#if = {
+	#	limit = {
+	#		location_rank = location_rank:city
+	#	}
+	#	add = {
+	#		desc = "BUILDING_LEVEL_IS_CITY"
+	#		value = 5
+	#	}
+	#}
+}

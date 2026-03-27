@@ -1,9 +1,16 @@
+lhr_military_capacity_from_buildings = {
+	value = var:lhr_building_capacity_var
+}
+
 lhr_military_capacity_max = {
 	# Flat capacity from all lhr_military_capacity modifiers (base comes from auto_modifier)
 	value = modifier:lhr_military_capacity
+	# Add building contributions aggregated monthly from all owned locations
+	add = lhr_military_capacity_from_buildings
 	# Then apply percentage bonus from lhr_military_capacity_modifier
 	add = {
 		value = modifier:lhr_military_capacity
+		add = lhr_military_capacity_from_buildings
 		multiply = modifier:lhr_military_capacity_modifier
 	}
 }

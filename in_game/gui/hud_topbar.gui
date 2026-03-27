@@ -1512,6 +1512,15 @@ Types HUD_TopbarTypes
 														}
 
 														blockoverride "stat_button" {
+
+															action_tooltip = {
+																click_type = left
+																click_mode = single
+																title = "SHOW_MILITARY_CAPACITY_BUILDINGS"
+																on_action = "[OpenLateralViewWithFilter('production', 'military_capacity')]"
+																on_action = "[OpenLateralViewWithParams('production', 'display = lists')]"
+															}
+
 															tooltipwidget = {
 																using = LHRMilitaryCapacityTooltip
 															}
@@ -1541,7 +1550,6 @@ Types HUD_TopbarTypes
 
                                                                         hbox = {
                                                                                 using = layoutpolicy_expanding
-                                                                                spacing = 2
 
 
                                                                                 text_single = {
@@ -1569,7 +1577,7 @@ Types HUD_TopbarTypes
 
 																			blockoverride "visible_negative" {
 																				visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
-																				raw_text = "#r +[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_overcap_ratio_penalty_display'))] %#!"
+																				raw_text = "#r +[Country.MakeScope.ScriptValue('lhr_military_overcap_ratio_penalty_display')|1] %#!"
 																			}
 
 																			expand = {}

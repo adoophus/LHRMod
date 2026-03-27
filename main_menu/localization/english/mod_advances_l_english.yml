@@ -1,0 +1,27 @@
+﻿l_english:
+ lhr_muster_office_advance: "Regional Muster System"
+ lhr_muster_office_advance_desc: "Establishing a formal system of Muster Offices in towns across the realm brings the army under centralised administrative control. By recording military obligations and managing recruitment locally, the state can sustain a substantially larger military establishment."
+
+ lhr_muster_hall_advance: "Muster Halls"
+ lhr_muster_hall_advance_desc: "Constructing dedicated Muster Halls in cities formalises the review and registration of military obligations at the heart of the realm's urban centres. This administrative investment in the army substantially expands the nation's military capacity."
+
+ tur_kapikulu_corps: "Kapikulu Corps"
+ tur_kapikulu_corps_desc: "The kapikulu — 'slaves of the Porte' — are the sultan's permanent household army, staffed through the devşirme levy that conscripts promising youth from the Christian provinces of the Balkans. Trained exclusively for war and paid directly from the imperial treasury, the janissaries and their accompanying cavalry regiments form a standing force of a size and professionalism that no rival can match. Expanding this system gives the empire a military capacity far beyond what feudal levy alone could sustain."
+
+ chi_weisuo_system: "Wei-Suo Garrison System"
+ chi_weisuo_system_desc: "The wei-suo (衛所) system organises Chinese society into hereditary military households. Each garrison unit (衛, wèi) of approximately five thousand men is assigned agricultural land to sustain itself, requiring no drain on the treasury in peacetime. At full strength, nearly five hundred such guard units are enrolled across the empire — a standing military establishment of extraordinary scale that no other power on earth can rival."
+
+ fra_compagnies_ordonnance: "Compagnies d'Ordonnance"
+ fra_compagnies_ordonnance_desc: "The Grandes Ordonnances of 1445 by Charles VII establish permanent royal cavalry companies, paid directly by the crown and subject to strict royal discipline — the first standing cavalry force in French history rather than a feudal muster. Three years later, the francs-archers levy follows: the first national infantry obligation, mustering one bowman for every fifty hearths. Together these reforms transform France from a kingdom dependent on noble contingents into one with a true national army capable of fielding and sustaining a force of far greater size."
+
+ hab_militargrenze: "Militärgrenze"
+ hab_militargrenze_desc: "Along the Croatian and Slavonian border with the Ottoman Empire, Ferdinand I formalises the Militärgrenze — the Military Frontier. Thousands of Grenzer soldier-settlers hold their lands in exchange for permanent frontier service, defending their homesteads without treasury pay. Generation after generation raised in arms and drilled for the Ottoman threat, the Grenzer represent a self-sustaining military caste that substantially expands the Monarchy's total military establishment at negligible cost to the crown."
+
+ mos_dvoryanstvo_service: "Dvoryanstvo Service Levy"
+ mos_dvoryanstvo_service_desc: "Ivan III and his successors systematise the pomest'e conditional land grant, binding the entire serving nobility — the dvoryanstvo — to compulsory mounted service in return for their estates. Any noble who fails to appear with his obligated lance risks confiscation of his lands. This universal obligation, enforced by the state, theoretically places tens of thousands of mounted gentry at the tsar's disposal in time of war, creating by far the largest cavalry reserve in Europe."
+
+ mam_mamluk_procurement: "Mamluk Procurement Network"
+ mam_mamluk_procurement_desc: "The Mamluk Sultanate sustains its military supremacy through a sophisticated state enterprise for purchasing, transporting, and training slave soldiers from the Pontic steppe and Central Asia. State purchasing agents travel to the Qipchaq steppe and the Caucasus; training in the sultan's barracks at the Cairo Citadel forges raw recruits into loyal, skilled fighting men. This procurement pipeline gives the sultanate a steady supply of trained soldiers entering the sultan's household regiments, providing a military depth unmatched anywhere in the Islamic world."
+
+ mug_mansabdari_system: "Mansabdari System"
+ mug_mansabdari_system_desc: "Akbar the Great assigns every imperial officer a numerical rank — a mansab — which defines both their administrative standing and their precise military obligation. Each mansabdar must maintain a corresponding number of war-horses and cavalrymen at personal expense, presenting them for annual muster and branding inspection. By binding the empire's nobility to military obligation through rank and salary rather than feudal custom, Akbar commands access to an enormous cavalry force — potentially hundreds of thousands of horsemen — without placing their upkeep on the imperial treasury."

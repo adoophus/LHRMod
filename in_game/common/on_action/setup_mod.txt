@@ -13,6 +13,22 @@ on_game_start = {
 
 monthly_country_pulse = {
 	on_actions = {
+		lhr_aggregate_building_military_capacity
+	}
+}
+
+lhr_aggregate_building_military_capacity = {
+	effect = {
+		set_variable = { name = lhr_building_capacity_var value = 0 }
+		every_owned_location = {
+			save_scope_as = lhr_aggregate_loc
+			root = {
+				change_variable = {
+					name = lhr_building_capacity_var
+					add = scope:lhr_aggregate_loc.modifier:lhr_local_military_capacity
+				}
+			}
+		}
 	}
 }
 

@@ -1,0 +1,167 @@
+######################
+# LHR National Military Capacity Advances
+# Nations with strong historical claims to expanded military capacity.
+######################
+
+############################
+# OTTOMAN EMPIRE (TUR) — Age 2
+# The kapikulu (slaves of the Porte) were the Ottoman standing army, expanded
+# through the devshirme levy. This standing household force dwarfed any European
+# equivalent and gave the Ottomans a permanent military capacity far beyond peers.
+############################
+tur_kapikulu_corps = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = TUR
+	}
+
+	requires = azeb_irregulars
+
+	lhr_military_capacity = 1500
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MING CHINA (CHI) — Age 2
+# The wei-suo (衛所) system organised society into hereditary military households.
+# Nearly 500 guard units each of ~5,600 men in theory gave China over a million
+# hereditary soldiers — the largest military establishment in the world.
+############################
+chi_weisuo_system = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = CHI
+	}
+
+	requires = confucian_influences
+
+	lhr_military_capacity = 2000
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# FRANCE (FRA) — Age 3
+# The Grandes Ordonnances of 1445 under Charles VII created the first permanent
+# royal cavalry companies, with the francs-archers infantry levy following in 1448.
+# These reforms gave France a national standing army of unprecedented size.
+############################
+fra_compagnies_ordonnance = {
+	age = age_3_discovery
+
+	potential = {
+		has_or_had_tag = FRA
+	}
+
+	requires = elan
+
+	lhr_military_capacity = 1000
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# HABSBURGS (HAB) — Age 3
+# Ferdinand I formalised the Militärgrenze along the Croatian-Slavonian border,
+# settling soldier-farmers (Grenzer) who held land in exchange for permanent
+# frontier defence. Self-sustaining and unpaid, this military caste substantially
+# expanded total military capacity at low cost to the treasury.
+############################
+hab_militargrenze = {
+	age = age_3_discovery
+
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = STY
+		}
+	}
+
+	requires = austrian_military_flexibility
+
+	lhr_military_capacity = 1000
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MUSCOVY / RUSSIA (MOS) — Age 3
+# Ivan III and successors systematised the pomest'e conditional land grants,
+# obliging the dvoryanstvo (service nobility) to appear mounted and armed or
+# forfeit their estates. This created an enormous gentry cavalry reserve.
+############################
+mos_dvoryanstvo_service = {
+	age = age_3_discovery
+
+	potential = {
+		OR = {
+			has_or_had_tag = MOS
+			has_or_had_tag = RUS
+		}
+	}
+
+	requires = pomestnoe_voisko
+
+	lhr_military_capacity = 1000
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MAMLUKS (MAM) — Age 2
+# The Mamluk Sultanate maintained a state enterprise for purchasing, transporting,
+# and training slave soldiers from the Pontic steppe and Central Asia. This
+# sophisticated procurement network gave the sultanate a military pipeline
+# unmatched anywhere in the Islamic world.
+############################
+mam_mamluk_procurement = {
+	age = age_2_renaissance
+
+	potential = {
+		has_or_had_tag = MAM
+	}
+
+	requires = reform_the_mamluk_corps
+
+	lhr_military_capacity = 1000
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MUGHALS (MUG) — Age 4
+# Akbar the Great assigned each noble (mansabdar) a numerical rank entailing
+# the personal obligation to maintain a precise number of cavalry. This bound
+# enormous private cavalry forces to the imperial war machine without burdening
+# the state treasury with their upkeep.
+############################
+mug_mansabdari_system = {
+	age = age_4_reformation
+
+	potential = {
+		has_or_had_tag = MUG
+	}
+
+	requires = mug_zamindar_system
+
+	lhr_military_capacity = 1500
+
+	ai_weight = {
+		add = 25
+	}
+}

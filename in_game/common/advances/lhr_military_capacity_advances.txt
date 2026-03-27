@@ -1,0 +1,27 @@
+######################
+# LHR Military Capacity Advances
+######################
+
+lhr_muster_office_advance = {
+	age = age_3_discovery
+
+	requires = linked_armies_advance
+
+	unlock_building = lhr_muster_office
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+lhr_muster_hall_advance = {
+	age = age_2_renaissance
+
+	requires = recruitment_improvements_renaissance
+
+	unlock_building = lhr_muster_hall
+
+	ai_weight = {
+		add = 25
+	}
+}

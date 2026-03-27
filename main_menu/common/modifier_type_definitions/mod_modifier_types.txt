@@ -13,6 +13,13 @@ valley_proximity_impact = {
 	}
 }
 
+lhr_local_military_capacity = {
+	good = yes
+	game_data = {
+		category = location
+	}
+}
+
 lhr_military_capacity = {
 	good = yes
 	game_data = {

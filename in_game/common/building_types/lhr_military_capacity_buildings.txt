@@ -2,42 +2,73 @@
 # LHR Military Capacity Buildings
 ########################################
 
-# Grand Military College - capital building that increases the nation's military capacity
-lhr_grand_military_college = {
+# Muster Office - town building representing local military administration
+lhr_muster_office = {
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = lhr_muster_office_max_level
 
 	category = military_category
 	forbidden_for_estates = yes
 
-	employment_size = manpower_employment
+	employment_size = 0.1
 
 	town = yes
-	city = yes
+	city = no
 
-	expensive = yes
-	build_time = large_capital_build_time
+	build_time = soldier_building
 
-	location_potential = {
-		is_capital = yes
+	allow = {
+		owner = {
+			has_advance = lhr_muster_office_advance
+		}
 	}
 
-	remove_if = {
-		is_no_longer_capital = yes
-	}
-
-	# Applies country-wide: +1000 to military capacity cap
-	capital_country_modifier = {
-		lhr_military_capacity = 1000
+	# Applies country-wide: +200 to military capacity cap per level
+	modifier = {
+		lhr_local_military_capacity = 200
 	}
 
 	unique_production_methods = {
-		lhr_grand_military_college_maintenance = {
-			firearms = 0.5
-			leather = 0.5
+		lhr_muster_office_maintenance = {
+			grain = 0.5
+			leather = 0.25
+
+			category = building_maintenance
+		}
+	}
+}
+
+# Muster Hall - city building representing military administrative capacity
+lhr_muster_hall = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = lhr_muster_hall_max_level
+
+	category = military_category
+	forbidden_for_estates = yes
+
+	employment_size = 0.1
+
+	city = yes
+
+	build_time = soldier_building
+
+	allow = {
+		owner = {
+			has_advance = lhr_muster_hall_advance
+		}
+	}
+
+	modifier = {
+		lhr_local_military_capacity = 200
+	}
+
+	unique_production_methods = {
+		lhr_muster_hall_maintenance = {
+			grain = 0.5
+			leather = 0.25
 			tools = 0.25
-			paper = 0.25
 
 			category = building_maintenance
 		}
