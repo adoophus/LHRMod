@@ -13,3 +13,7 @@ lhr_military_capacity = {
 lhr_army_size = {
 	texture = "unit_category/army_size"
 }
+
+lhr_military_focus = {
+	texture = "flat_icons/army_tradition"
+}

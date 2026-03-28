@@ -1,0 +1,42 @@
+REPLACE:army_doctrine_law = {
+	law_category = military
+	potential = {
+		OR = {
+			has_unlocked_law_trigger = { type = army_doctrine_law }
+			has_reform = government_reform:lhr_military_training_reform
+		}
+	}
+	superior_firepower_policy = {
+		country_modifier = {
+			army_artillery_power = 0.1		
+            monthly_towards_offensive = societal_value_monthly_move
+
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	sustained_discipline_policy = {
+		country_modifier = {
+			army_infantry_power = 0.1
+			monthly_towards_quality = societal_value_monthly_move
+
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	cavalry_warfare_policy = {
+		country_modifier = {
+			army_cavalry_power = 0.1
+			monthly_towards_quality = societal_value_monthly_move
+			
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}

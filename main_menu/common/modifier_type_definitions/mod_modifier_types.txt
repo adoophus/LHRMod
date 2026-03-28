@@ -5,6 +5,13 @@ allow_cabinet_promote_religion_area = {
 	}
 }
 
+lhr_unlocks_army_doctrine_law = {
+	boolean = yes
+	game_data = {
+		category = country
+	}
+}
+
 valley_proximity_impact = {
 	percent = yes
 	color = bad

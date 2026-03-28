@@ -1,0 +1,28 @@
+############################
+# LHR Military Training Doctrine — auto_modifiers
+# Deprecated: replaced by vanilla army_doctrine_law through lhr_military_training_reform.
+############################
+
+lhr_military_training_infantry = {
+	potential_trigger = {
+		always = no
+	}
+
+	army_infantry_power = 0.10
+}
+
+lhr_military_training_cavalry = {
+	potential_trigger = {
+		always = no
+	}
+
+	army_cavalry_power = 0.10
+}
+
+lhr_military_training_artillery = {
+	potential_trigger = {
+		always = no
+	}
+
+	army_artillery_power = 0.10
+}

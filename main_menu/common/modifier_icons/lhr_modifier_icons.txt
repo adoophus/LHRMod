@@ -1,0 +1,3 @@
+lhr_unlocks_army_doctrine_law = {
+	positive = "gfx/interface/icons/flat_icons/doctrine_law.dds"
+}

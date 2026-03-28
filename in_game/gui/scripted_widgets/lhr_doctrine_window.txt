@@ -1,0 +1,1 @@
+gui/lhr_doctrine_selection_window.gui = lhr_doctrine_selection_window

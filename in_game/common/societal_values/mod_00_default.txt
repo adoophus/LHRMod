@@ -79,12 +79,14 @@ REPLACE:quality_vs_quantity = {
 		discipline = 0.05
 		army_maintenance_cost = 0.1
 		bias_for_militarist_policies = 50
+		monthly_experience_gain = 0.15
 	}
 	right_modifier = {
 		food_consumption_modifier = -0.1
 		lhr_military_capacity_modifier = 0.33
 		army_maintenance_cost = -0.1
 		bias_for_militarist_policies = 50
+				monthly_experience_gain = -0.15
 	}
 
 	opinion_importance_multiplier = 0.5

@@ -1,0 +1,19 @@
+lhr_military_training_reform = {
+	potential = {
+		NOT = { government_type = government_type:steppe_horde }
+		NOT = { government_type = government_type:tribe }
+	}
+
+	societal_values = {
+		quality_focus
+	}
+
+	country_modifier = {
+		monthly_experience_gain = 0.15
+		experience_decay = -0.001
+		lhr_unlocks_army_doctrine_law = yes
+        #monthly_towards_quality = 0.1
+	}
+
+	years = 2
+}

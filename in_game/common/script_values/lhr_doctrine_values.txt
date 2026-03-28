@@ -1,0 +1,38 @@
+############################
+# LHR Military Training Doctrine script values
+# Used by GUI bindings in unit_type_lateralview.gui to show/hide
+# the doctrine selector button and highlight the active choice.
+############################
+
+lhr_has_military_training_privilege = {
+	value = 0
+	if = {
+		limit = { has_estate_privilege = estate_privilege:lhr_military_training_privilege }
+		add = 1
+	}
+}
+
+lhr_doctrine_infantry_active = {
+	value = var:lhr_training_choice_infantry
+}
+
+lhr_doctrine_cavalry_active = {
+	value = var:lhr_training_choice_cavalry
+}
+
+lhr_doctrine_artillery_active = {
+	value = var:lhr_training_choice_artillery
+}
+
+lhr_no_doctrine_selected = {
+	value = 0
+	if = {
+		limit = {
+			has_estate_privilege = estate_privilege:lhr_military_training_privilege
+			NOT = { has_variable = lhr_training_choice_infantry }
+			NOT = { has_variable = lhr_training_choice_cavalry }
+			NOT = { has_variable = lhr_training_choice_artillery }
+		}
+		add = 1
+	}
+}
