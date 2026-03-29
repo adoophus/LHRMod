@@ -1,0 +1,15 @@
+REPLACE:levee_en_masse_policy = {
+	allow = {
+		current_age = age_6_revolutions
+	}
+	country_modifier = {
+		monthly_towards_quantity = societal_value_monthly_move
+		global_manpower_modifier = 0.05
+		lhr_military_capacity_modifier = 0.15
+	}
+	estate_preferences = {
+		crown_estate
+		peasants_estate
+	}
+	years = 2
+}

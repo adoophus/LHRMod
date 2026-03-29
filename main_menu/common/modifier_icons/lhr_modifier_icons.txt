@@ -1,3 +1,7 @@
 lhr_unlocks_army_doctrine_law = {
 	positive = "gfx/interface/icons/flat_icons/doctrine_law.dds"
 }
+
+lhr_frontier_fort_limit = {
+	positive = "gfx/interface/icons/modifier_types/frontier_fort_limit.dds"
+}

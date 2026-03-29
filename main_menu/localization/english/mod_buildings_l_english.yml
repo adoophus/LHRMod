@@ -14,6 +14,16 @@
   lhr_muster_hall_desc: "A dedicated hall where city authorities formally register military obligations, conduct reviews of eligible men, and coordinate with state officials on recruitment. The Muster Hall brings order and administrative rigour to the city's military obligations, meaningfully expanding national military capacity."
   lhr_muster_hall_maintenance: "Muster Administration"
 
+  lhr_frontier_fort: "Frontier Fort"
+  lhr_frontier_fort_desc: "A purpose-built border fortress positioned to anchor Hungary's defensive marches. Smaller and cheaper than the greatest royal castles, these strongpoints are still substantial enough to command roads, shelter garrisons, and serve as local depots for troops and supplies."
+  lhr_frontier_fort_maintenance: "Frontier Garrison"
+  lhr_frontier_fort_tt: "There is less than [SCOPE.sCountry('actor').GetModifierValue('lhr_frontier_fort_limit')] [ShowBuildingTypeName('lhr_frontier_fort')] in [SCOPE.sCountry('actor').GetName] (Currently [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lhr_frontier_fort')|V])."
+
+  lhr_swedish_allotment: "Swedish Allotment"
+  lhr_swedish_allotment_desc: "A regional node of the indelningsverket system, where rural communities are bound to support soldiers, horses, and their local administration. Rather than serving as a single fortress or barracks, the allotment system anchors a broader military framework across the countryside, allowing the crown to maintain more men under arms with limited direct fiscal strain."
+  lhr_swedish_allotment_maintenance: "Allotment Administration"
+  lhr_swedish_allotment_region_tt: "There is no [ShowBuildingTypeName('lhr_swedish_allotment')] elsewhere in this [region|e]."
+
   lhr_grand_military_college: "Grand Military College"
   lhr_grand_military_college_desc: "A prestigious institution dedicated to the art and science of warfare. The Grand Military College trains officers, develops military doctrine, and organizes state-wide recruitment, significantly expanding the nation's military capacity."
   lhr_grand_military_college_maintenance: "Military Operations"

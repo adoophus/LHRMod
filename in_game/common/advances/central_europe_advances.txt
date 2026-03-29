@@ -9,8 +9,7 @@ REPLACE:military_border = {
 	potential = {
 		has_or_had_tag = HAB
 	}
-	global_migration_speed_modifier = 0.1
-	discipline = 0.03
+	global_migration_speed_modifier = 0.2
 
 	requires = correct_box_advance_discovery
 }
@@ -73,16 +72,6 @@ REPLACE:hab_expert_mountaineers = {
 ## HUNGARY ##
 ## HUNGARY ##
 ## HUNGARY ##
-
-# moved to age 3
-REPLACE:hun_bulwark_of_christianity = {
-	potential = { has_or_had_tag = HUN }
-	
-	age = age_3_discovery
-	
-	requires = training_fields_advance
-	global_manpower_modifier = 0.1
-}
 
 # moved from age 5 to 4
 # halved effects to balance
@@ -158,11 +147,10 @@ REPLACE:institutional_reorganization = {
 	requires = imperial_ambitions
 }
 
-# Moved from age 3 to 4
 # buffed to -25%
 REPLACE:crush_the_barons = {
 
-	age = age_4_reformation
+	age = age_3_discovery
 	icon = hsa_exchange_of_ideas
 	potential = {
 		OR = {
@@ -173,7 +161,7 @@ REPLACE:crush_the_barons = {
 	}
 	global_nobles_estate_power = -0.25
 	
-	requires = barracks_advance
+	requires = linked_armies_advance
 }
 
 

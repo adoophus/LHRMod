@@ -150,14 +150,6 @@ REPLACE:unlock_late_longbowmen_advance = {
 	unlock_levy = levy_a_late_longbowmen
 }
 
-REPLACE:hun_found_the_black_army = {
-	potential = { has_or_had_tag = HUN }
-	
-	age = age_3_discovery
-	unlock_unit = a_the_black_army
-	requires = unlock_early_arquebusiers_advance
-}
-
 REPLACE:unlock_late_gallowglass_advance = {
 	age = age_3_discovery
 	icon = expand_varangian_guard_advance

@@ -9,6 +9,8 @@
  MODIFIER_TYPE_DESC_lhr_military_capacity: "Increases the maximum number of troops your nation can maintain."
  MODIFIER_TYPE_NAME_lhr_military_capacity_modifier: "Military Capacity"
  MODIFIER_TYPE_DESC_lhr_military_capacity_modifier: "Increases your Military Capacity as a percentage of its current total."
+ MODIFIER_TYPE_NAME_lhr_frontier_fort_limit: "Frontier Fort Limit"
+ MODIFIER_TYPE_DESC_lhr_frontier_fort_limit: "Each point allows us to support an additional [ShowBuildingTypeName('lhr_frontier_fort')] in the country."
  MODIFIER_TYPE_NAME_valley_proximity_impact: "Valley Proximity Impact"
  MODIFIER_TYPE_DESC_valley_proximity_impact: "This impacts the [proximity|e] cost when going through [ShowTopographyName('valley')]."
 

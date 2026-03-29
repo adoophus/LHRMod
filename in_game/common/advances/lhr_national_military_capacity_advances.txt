@@ -4,44 +4,22 @@
 ######################
 
 ############################
-# OTTOMAN EMPIRE (TUR) — Age 2
+# OTTOMAN EMPIRE (TUR) — Age 3
 # The kapikulu (slaves of the Porte) were the Ottoman standing army, expanded
 # through the devshirme levy. This standing household force dwarfed any European
 # equivalent and gave the Ottomans a permanent military capacity far beyond peers.
 ############################
 tur_kapikulu_corps = {
-	age = age_2_renaissance
+	age = age_3_discovery
 
 	potential = {
 		has_or_had_tag = TUR
 	}
 
-	requires = azeb_irregulars
+	requires = training_fields_advance
 
-	lhr_military_capacity = 1500
-
-	ai_weight = {
-		add = 25
-	}
-}
-
-############################
-# MING CHINA (CHI) — Age 2
-# The wei-suo (衛所) system organised society into hereditary military households.
-# Nearly 500 guard units each of ~5,600 men in theory gave China over a million
-# hereditary soldiers — the largest military establishment in the world.
-############################
-chi_weisuo_system = {
-	age = age_2_renaissance
-
-	potential = {
-		has_or_had_tag = CHI
-	}
-
-	requires = confucian_influences
-
-	lhr_military_capacity = 2000
-
+	lhr_military_capacity_modifier = 0.10
+	army_infantry_maintenance_cost_modifier = -0.025
 	ai_weight = {
 		add = 25
 	}
@@ -60,9 +38,9 @@ fra_compagnies_ordonnance = {
 		has_or_had_tag = FRA
 	}
 
-	requires = elan
-
-	lhr_military_capacity = 1000
+	requires = training_fields_advance
+army_cavalry_build_cost_modifier = -0.05
+	lhr_military_capacity_modifier = 0.1
 
 	ai_weight = {
 		add = 25
@@ -88,8 +66,8 @@ hab_militargrenze = {
 
 	requires = austrian_military_flexibility
 
-	lhr_military_capacity = 1000
-
+	lhr_military_capacity_modifier = 0.15
+	discipline = 0.025
 	ai_weight = {
 		add = 25
 	}
@@ -102,7 +80,7 @@ hab_militargrenze = {
 # forfeit their estates. This created an enormous gentry cavalry reserve.
 ############################
 mos_dvoryanstvo_service = {
-	age = age_3_discovery
+	age = age_2_renaissance
 
 	potential = {
 		OR = {
@@ -111,32 +89,11 @@ mos_dvoryanstvo_service = {
 		}
 	}
 
-	requires = pomestnoe_voisko
+	requires = lhr_muster_hall_advance
 
-	lhr_military_capacity = 1000
 
-	ai_weight = {
-		add = 25
-	}
-}
-
-############################
-# MAMLUKS (MAM) — Age 2
-# The Mamluk Sultanate maintained a state enterprise for purchasing, transporting,
-# and training slave soldiers from the Pontic steppe and Central Asia. This
-# sophisticated procurement network gave the sultanate a military pipeline
-# unmatched anywhere in the Islamic world.
-############################
-mam_mamluk_procurement = {
-	age = age_2_renaissance
-
-	potential = {
-		has_or_had_tag = MAM
-	}
-
-	requires = reform_the_mamluk_corps
-
-	lhr_military_capacity = 1000
+	global_nobles_estate_power = -0.1
+	lhr_military_capacity_modifier = 0.2
 
 	ai_weight = {
 		add = 25
@@ -144,24 +101,158 @@ mam_mamluk_procurement = {
 }
 
 ############################
-# MUGHALS (MUG) — Age 4
-# Akbar the Great assigned each noble (mansabdar) a numerical rank entailing
-# the personal obligation to maintain a precise number of cavalry. This bound
-# enormous private cavalry forces to the imperial war machine without burdening
-# the state treasury with their upkeep.
+# IBERIA (CAS / SPA / POR / ARA) - Age 4
+# The tercio created permanent infantry cadres of pikemen and arquebusiers,
+# maintained across the Habsburg monarchy and reinforced around veteran cores.
+# This system let Spain field large, durable expeditionary armies repeatedly.
 ############################
-mug_mansabdari_system = {
+
+INJECT:tercio = {
+	lhr_military_capacity_modifier = 0.15
+}
+
+
+############################
+# SWEDEN (SWE) - Age 4
+# The indelningsverket tied rural communities to the upkeep of soldiers and
+# horses through allotments, creating a durable military framework that both
+# deepened Sweden's manpower base and expanded the number of troops the crown
+# could keep in service.
+############################
+REPLACE:indelningsverket = {
+	potential = { has_or_had_tag = SWE }
+
 	age = age_4_reformation
 
-	potential = {
-		has_or_had_tag = MUG
-	}
-
-	requires = mug_zamindar_system
-
-	lhr_military_capacity = 1500
+	requires = barracks_advance
+	global_manpower_modifier = 0.15
+	unlock_building = lhr_swedish_allotment
+	lhr_military_capacity_modifier = 0.05
 
 	ai_weight = {
 		add = 25
 	}
+}
+
+############################
+# MILAN (MLO) - Age 3
+# Milan's state was built around condottieri contracts, military financing, and
+# a dense network of officers and retainers. By systematizing those structures,
+# the duchy could mobilize and maintain a larger professional force than its size suggests.
+############################
+INJECT:age_of_condottieri = {
+	lhr_military_capacity_modifier = 0.1
+}
+
+############################
+# NAPLES (NAP) - Age 3
+# The Neapolitan crown could expand its military establishment by curbing baronial
+# independence and bringing more armed men under direct royal administration.
+############################
+nap_royal_army_reorganization = {
+	age = age_3_discovery
+
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+		}
+	}
+
+	requires = crush_the_barons
+
+	lhr_military_capacity_modifier = 0.05
+		nobles_estate_max_tax = 0.025
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# DELHI (DLH) - Age 1
+# The Delhi Sultanate rested on Turkic, Afghan, and Indo-Muslim military elites
+# tied to the court by service, patronage, and iqta-style revenue assignments.
+############################
+dlh_service_nobility_host = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = DLH
+	}
+
+	requires = dlh_turkic_conqueror_roots
+
+	lhr_military_capacity_modifier = 0.15
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MALI (MAL) - Age 1
+# Mali's military depth came from layered levies, sofa garrisons, and elite
+# mounted retainers under provincial commanders, allowing a wide mobilization base.
+############################
+mal_manden_military_obligations = {
+	age = age_1_traditions
+
+	potential = {
+		has_or_had_tag = MAL
+	}
+
+	requires = sofa_levies_advance
+
+	lhr_military_capacity_modifier = 0.2
+
+	ai_weight = {
+		add = 25
+	}
+}
+
+############################
+# MOROCCO (MOR) - Age 2
+# Morocco combined tribal musters with slave-soldier institutions and frontier
+# garrisons, giving the sultan access to a larger pool of fighting men than the crown alone could fund.
+############################
+INJECT:slave_soldiers = {
+	lhr_military_capacity_modifier = 0.05
+}
+
+############################
+# ETHIOPIA (ETH) - Age 1
+# Ethiopia's emperors maintained a substantial armed following through royal
+# household troops and the Cawa military tradition, giving the crown a durable core army.
+############################
+INJECT:cawa_advance = {
+	lhr_military_capacity_modifier = 0.05
+}
+
+############################
+# VIJAYANAGAR (VIJ) - Age 2
+# The nayankara system delegated revenue and military responsibility to regional
+# commanders who were expected to maintain troops for imperial service.
+############################
+INJECT:vij_an_army_for_city_of_victory = {
+	lhr_military_capacity_modifier = 0.05
+}
+
+
+############################
+# IRANIAN CULTURES — Age 1
+# Across the Iranian world, dehqans, tribal retainers, and mounted local elites
+# provided rulers with a broad military class that could be mobilized quickly in war.
+############################
+INJECT:ira_sasanian_heritage = {
+	lhr_military_capacity_modifier = 0.1
+}
+
+############################
+# POLAND-LITHUANIA (POL / PLC) - Age 4
+# The wojsko komputowe placed a regular troop establishment on an annual budget
+# voted by the Sejm. By turning wartime mobilization into a permanent fiscal
+# commitment, the Commonwealth could sustain a larger standing army.
+############################
+INJECT:winged_hussars_advance = {
+	lhr_military_capacity_modifier = 0.05
 }

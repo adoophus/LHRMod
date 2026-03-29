@@ -1,0 +1,11 @@
+REPLACE:local_army_organization = {
+	age = age_2_renaissance
+	country_modifier = {
+		peasants_estate_levy_size = 0.20
+		global_peasants_estate_power = 0.25
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		monthly_towards_quantity = 0.10
+	}
+
+	years = 2
+}

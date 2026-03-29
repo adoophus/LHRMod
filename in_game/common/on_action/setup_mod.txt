@@ -14,6 +14,7 @@ on_game_start = {
 monthly_country_pulse = {
 	on_actions = {
 		lhr_aggregate_building_military_capacity
+		lhr_update_mercenary_army_size
 	}
 }
 
@@ -26,6 +27,32 @@ lhr_aggregate_building_military_capacity = {
 				change_variable = {
 					name = lhr_building_capacity_var
 					add = scope:lhr_aggregate_loc.modifier:lhr_local_military_capacity
+				}
+			}
+		}
+	}
+}
+
+lhr_update_mercenary_army_size = {
+	effect = {
+		set_variable = { name = mercenary_army_size value = 0 }
+		every_unit = {
+			limit = {
+				is_army = yes
+				any_sub_unit = {
+					is_mercenary = yes
+				}
+			}
+			every_sub_unit = {
+				limit = {
+					is_mercenary = yes
+				}
+				save_scope_as = lhr_mercenary_sub_unit
+				root = {
+					change_variable = {
+						name = mercenary_army_size
+						add = scope:lhr_mercenary_sub_unit.subunit_strength
+					}
 				}
 			}
 		}

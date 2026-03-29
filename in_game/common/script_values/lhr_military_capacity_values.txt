@@ -2,6 +2,11 @@ lhr_military_capacity_from_buildings = {
 	value = var:lhr_building_capacity_var
 }
 
+mercenary_army_size = {
+	value = var:mercenary_army_size
+	multiply = 1000
+}
+
 lhr_military_capacity_max = {
 	# Flat capacity from all lhr_military_capacity modifiers (base comes from auto_modifier)
 	value = modifier:lhr_military_capacity
@@ -28,20 +33,29 @@ lhr_regular_army_size_display = {
 	multiply = 1000
 }
 
+# Total troops counting both regulars and hired mercenaries.
+lhr_total_army_size_for_capacity = {
+	value = lhr_regular_army_size_display
+	add = mercenary_army_size
+}
+
 # Ratio of current army to military capacity (1.0 = at cap, 1.5 = 50% over, etc.)
 lhr_military_overcap_ratio = {
-	value = lhr_regular_army_size_display
+	value = lhr_total_army_size_for_capacity
 	divide = lhr_military_capacity_max
 }
 
-# we need to start the penalties from capacity (1.0) 
-# rather than from 0, so subtract 1 to shift the curve and then we want
-# less harsher penalties, so divide by 0.5
+# Start penalties only once we exceed capacity, then square the excess ratio
+# so small overruns stay mild while large overruns ramp up much faster.
 lhr_military_overcap_ratio_penalty = {
-	value = lhr_regular_army_size_display
+	value = lhr_total_army_size_for_capacity
 	divide = lhr_military_capacity_max
 	subtract = 1
-	multiply = 0.5
+	multiply = {
+		value = lhr_total_army_size_for_capacity
+		divide = lhr_military_capacity_max
+		subtract = 1
+	}
 }
 
 lhr_military_overcap_ratio_penalty_display = {
@@ -52,7 +66,7 @@ lhr_military_overcap_ratio_penalty_display = {
 # Remaining capacity (cap minus current army size). Negative when over cap.
 lhr_military_capacity_remaining = {
 	value = lhr_military_capacity_max
-	subtract = lhr_regular_army_size_display
+	subtract = lhr_total_army_size_for_capacity
 }
 
 # The troop bonus granted solely by the percentage modifier

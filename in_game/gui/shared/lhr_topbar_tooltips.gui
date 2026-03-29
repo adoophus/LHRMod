@@ -115,19 +115,20 @@ template LHRMilitaryCapacityTooltip {
 
 template MilCapacity_tooltip {
 	ContextualTooltipType = {
-		blockoverride "title_icon" {
-			icon = {
-				texture = "[GetConceptTexture('military_capacity')]"
-				using = tooltip_title_icon_size
 
-			}
-		}
 
 		blockoverride "title_text" {
 			text = "MILITARY_CAPACITY_HEADER"
 		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_category/army_size.dds"
+			}
+		}
+
 		blockoverride "concept_link" {
-			text = [military_capacity|E]
+			text = "[lhr_military_capacity|e]"
 		}
 		
 		blockoverride "tooltip_content" {
@@ -136,7 +137,23 @@ template MilCapacity_tooltip {
 				texture = "[GetConceptTexture('military_capacity')]"
 				game_concept = "[military_capacity|e]"
 			}
-			
+
+			TooltipStringPairList = {
+				textcontext = "LHR_MILITARY_CAPACITY_SOURCE_TEXT"
+			}
+
+			TooltipFlavorTextBlock = {
+				visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
+				textcontext = "LHR_MILITARY_CAPACITY_TT_OVERCAP_WARNING"              
+			}
+
+			TooltipFlavorTextBlock = {
+				visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0'))]"
+
+                textcontext = "LHR_MILITARY_CAPACITY_TT_UNDERCAP_INFO"
+			}
 		}
+
+		
 	}
 }

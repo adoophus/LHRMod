@@ -1,0 +1,43 @@
+######################
+# LHR Hungary Military Capacity Advances
+######################
+
+REPLACE:hun_castle_warriors = {
+	potential = { has_or_had_tag = HUN }
+
+	age = age_1_traditions
+
+	requires = hun_composite_light_cavalry
+	levy_recovery_modifier = 0.1
+	global_levy_recruitment_speed_modifier = 0.33
+	unlock_building = lhr_frontier_fort
+    lhr_frontier_fort_limit = 3
+}
+
+# moved to age 3
+REPLACE:hun_bulwark_of_christianity = {
+	potential = { has_or_had_tag = HUN }
+	
+	age = age_2_renaissance
+	
+	requires = lhr_muster_halls_advance
+	global_manpower_modifier = 0.1
+
+    lhr_frontier_fort_limit = 1
+}
+
+############################
+# HUNGARY (HUN) — Age 3
+# Matthias Corvinus' Black Army was one of the first permanent, centrally paid
+# field armies in Latin Christendom. Its professional infantry and cavalry gave
+# Hungary a standing war machine far larger than a feudal host alone could sustain.
+############################
+REPLACE:hun_found_the_black_army = {
+	potential = { has_or_had_tag = HUN }
+
+	age = age_3_discovery
+	unlock_unit = a_the_black_army
+	requires = unlock_halberdiers_advance
+    lhr_frontier_fort_limit = 1
+	lhr_military_capacity_modifier = 0.1
+}

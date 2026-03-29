@@ -8,7 +8,8 @@ REPLACE:army_doctrine_law = {
 	}
 	superior_firepower_policy = {
 		country_modifier = {
-			army_artillery_power = 0.1		
+			army_artillery_power = 0.1	
+			siege_ability = 0.05	
             monthly_towards_offensive = societal_value_monthly_move
 
 		}
@@ -31,6 +32,7 @@ REPLACE:army_doctrine_law = {
 	cavalry_warfare_policy = {
 		country_modifier = {
 			army_cavalry_power = 0.1
+			army_cavalry_maintenance_cost_modifier = 0.05
 			monthly_towards_quality = societal_value_monthly_move
 			
 		}

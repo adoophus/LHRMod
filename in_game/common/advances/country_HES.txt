@@ -26,6 +26,7 @@ hes_pre_modern_hessian_army = {
     icon = army_country_diplo_range_advance
     potential = { has_or_had_tag = HES }
     hire_mercenary_premium_cost_modifier = -0.15
+    lhr_military_capacity_modifier = 0.05
     requires = recruitment_law_advance
 }
 

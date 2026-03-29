@@ -34,3 +34,7 @@ lhr_muster_hall_max_level = {
 	#	}
 	#}
 }
+
+lhr_frontier_fort_max_level = {
+	value = owner.modifier:lhr_frontier_fort_limit
+}

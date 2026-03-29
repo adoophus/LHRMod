@@ -3,9 +3,9 @@
 ######################
 
 lhr_muster_office_advance = {
-	age = age_3_discovery
+	age = age_2_renaissance
 
-	requires = linked_armies_advance
+	requires = recruitment_improvements_renaissance
 
 	unlock_building = lhr_muster_office
 
@@ -15,9 +15,9 @@ lhr_muster_office_advance = {
 }
 
 lhr_muster_hall_advance = {
-	age = age_2_renaissance
+	age = age_3_discovery
 
-	requires = recruitment_improvements_renaissance
+	requires = linked_armies_advance
 
 	unlock_building = lhr_muster_hall
 

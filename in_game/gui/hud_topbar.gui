@@ -1528,7 +1528,7 @@ Types HUD_TopbarTypes
 
                                                         vbox = {
                                                                 using = layoutpolicy_expanding
-                                                                margin = { 4 0 }
+                                                                margin = { 6 0 }
                                                                 margin_bottom = 2
                                                                 spacing = -2
 
@@ -1557,7 +1557,7 @@ Types HUD_TopbarTypes
                                                                                         autoresize = yes
                                                                                         align = left|nobaseline
                                                                                         using = Font_Size_Small
-																						raw_text = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_regular_army_size_display'))]"
+																					raw_text = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_total_army_size_for_capacity'))|0]"
 																						#raw_text = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_regular_army_size_display'))] / [FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_capacity_max'))]"
                                                                                 }
 
@@ -1567,7 +1567,7 @@ Types HUD_TopbarTypes
 																		hbox = {
 																			using = layoutpolicy_expanding
 																			using = text_single_positive_zero_negative
-
+																			margin = { -4 0 }
 																			blockoverride "text_setup" {
 																				maximumsize = { -1 18 }
 																				autoresize = yes
@@ -1577,7 +1577,7 @@ Types HUD_TopbarTypes
 
 																			blockoverride "visible_negative" {
 																				visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_is_over_military_capacity'), '(CFixedPoint)0')]"
-																				raw_text = "#r +[Country.MakeScope.ScriptValue('lhr_military_overcap_ratio_penalty_display')|1] %#!"
+																				raw_text = "#r +[Country.MakeScope.ScriptValue('lhr_military_overcap_ratio_penalty_display')|1]%#!"
 																			}
 
 																			expand = {}
@@ -1586,25 +1586,25 @@ Types HUD_TopbarTypes
 
                                                                 hbox = {
                                                                         layoutpolicy_horizontal = expanding
-                                                                        margin = { 2 0 }
+                                                                        margin = {2 0 }
 
                                                                         widget = {
                                                                                 layoutpolicy_horizontal = expanding
                                                                                 size = { -1 4 }
 
                                                                                 progressbar = {
-																					visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_regular_army_size_display'), Country.MakeScope.ScriptValue('lhr_military_capacity_max')))]"
+																					visible = "[Not(GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_total_army_size_for_capacity'), Country.MakeScope.ScriptValue('lhr_military_capacity_max')))]"
 																					using = progress_bar_green_alt
 																					noprogresstexture = "gfx/interface/progressbars/progress_gray_bg.dds"
 																					size = { 100% 100% }
 																					min = 0
 																					max = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_military_capacity_max'))]"
-																					value = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_regular_army_size_display'))]"
+																					value = "[FixedPointToFloat(Country.MakeScope.ScriptValue('lhr_total_army_size_for_capacity'))]"
 																					direction = horizontal
                                                                                 }
 
                                                                                 progressbar = {
-																					visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_regular_army_size_display'), Country.MakeScope.ScriptValue('lhr_military_capacity_max'))]"
+																					visible = "[GreaterThan_CFixedPoint(Country.MakeScope.ScriptValue('lhr_total_army_size_for_capacity'), Country.MakeScope.ScriptValue('lhr_military_capacity_max'))]"
 																					using = progress_bar_red_alt
 																					noprogresstexture = "gfx/interface/progressbars/progress_gray_bg.dds"
 																					size = { 100% 100% }
