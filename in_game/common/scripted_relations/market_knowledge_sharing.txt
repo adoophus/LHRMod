@@ -171,18 +171,6 @@ market_knowledge_sharing = {
 
 	will_expire_trigger = {
 		OR = {
-			scope:recipient = {
-				not = { within_diplomatic_range = scope:actor }
-			}
-			scope:recipient = {
-				not = {
-					capital = {
-						market = {
-							in_trade_range_of = scope:actor
-						}
-					}
-				}
-			}
 			not = {
 				OR = {
 					AND = {
