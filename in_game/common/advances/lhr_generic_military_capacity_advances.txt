@@ -25,3 +25,14 @@ lhr_muster_hall_advance = {
 		add = 25
 	}
 }
+
+REPLACE:army_doctrine_law_advance = {
+	age = age_5_absolutism
+	requires = military_revolution_advance
+	allow = {
+		always = no
+	}
+	potential = {
+		always = no
+	}
+}

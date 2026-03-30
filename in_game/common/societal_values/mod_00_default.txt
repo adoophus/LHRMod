@@ -39,7 +39,7 @@ REPLACE:serfdom_vs_free_subjects = {
 	}
 	right_modifier = {
 		global_pop_promotion_speed_modifier = 1.0
-		global_monthly_prosperity = 0.0025
+		global_monthly_prosperity = 0.002
 
 		nobles_estate_target_satisfaction = large_permanent_target_satisfaction_penalty
 
@@ -79,15 +79,38 @@ REPLACE:quality_vs_quantity = {
 		discipline = 0.05
 		army_maintenance_cost = 0.1
 		bias_for_militarist_policies = 50
-		monthly_experience_gain = 0.15
+		monthly_experience_gain = 1
+		food_consumption_modifier = 0.1
 	}
 	right_modifier = {
 		food_consumption_modifier = -0.1
 		global_manpower_modifier = 0.20
 		army_maintenance_cost = -0.1
 		bias_for_militarist_policies = 50
-		monthly_experience_gain = -0.15
+		monthly_experience_gain = -1
 	}
 
 	opinion_importance_multiplier = 0.5
+}
+
+REPLACE:aristocracy_vs_plutocracy = { #
+
+	left_modifier = {
+		global_nobles_estate_power = 0.50
+		global_nobles_city_desired_pop_scaled = 0.01
+		levy_combat_efficiency_modifier = 0.20
+		court_spending_cost  = 0.02
+		court_language_is_market_language_importance_modifier = -0.5
+		bias_for_patron_of_arts_policies = 50
+		bias_for_militarist_policies = 25
+	}
+	right_modifier = {
+		trade_income = 0.05
+		global_burghers_estate_power = 0.50
+		global_burghers_city_desired_pop_scaled = 0.05
+		court_spending_cost  = -0.02
+		court_language_is_market_language_importance_modifier = 0.5
+		bias_for_patron_of_arts_policies = 50
+		bias_for_capitalist_policies = 25
+	}
 }

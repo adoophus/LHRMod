@@ -9,7 +9,6 @@ lhr_military_training_reform = {
 	}
 
 	country_modifier = {
-		monthly_experience_gain = 0.15
 		experience_decay = -0.01
 		lhr_unlocks_army_doctrine_law = yes
         monthly_towards_quality = 0.1

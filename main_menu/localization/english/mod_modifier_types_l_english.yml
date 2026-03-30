@@ -2,7 +2,7 @@
  MODIFIER_TYPE_NAME_allow_cabinet_promote_religion_area: "@cabinet_action! Unlocks Convert Area Cabinet Action"
  MODIFIER_TYPE_DESC_allow_cabinet_promote_religion_area: "Allows use of the Convert Area cabinet action."
  MODIFIER_TYPE_NAME_lhr_unlocks_army_doctrine_law: "Unlocks Army Doctrine Law"
- MODIFIER_TYPE_DESC_lhr_unlocks_army_doctrine_law: "Enables the usage of the [ShowLawName('army_doctrine_law')] [law|e]."
+ MODIFIER_TYPE_DESC_lhr_unlocks_army_doctrine_law: "Enables the usage of the [ShowLawName('lhr_army_doctrine_law')] [law|e]."
  MODIFIER_TYPE_NAME_lhr_local_military_capacity: "Local Military Capacity"
  MODIFIER_TYPE_DESC_lhr_local_military_capacity: "This location contributes to the nation's [lhr_military_capacity|e], expanding the administrative infrastructure needed to sustain larger armies."
  MODIFIER_TYPE_NAME_lhr_military_capacity: "Military Capacity"

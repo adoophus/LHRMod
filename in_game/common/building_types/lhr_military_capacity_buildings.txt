@@ -10,8 +10,10 @@ lhr_muster_office = {
 
 	category = military_category
 	forbidden_for_estates = yes
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes
 
-	employment_size = 0.1
+	employment_size = 0.25
 
 	city = yes
 	town = no
@@ -23,9 +25,9 @@ lhr_muster_office = {
 		}
 	}
 
-	# Applies country-wide: +250 to military capacity cap per level
 	modifier = {
-		lhr_local_military_capacity = 250
+		lhr_local_military_capacity = 750
+		local_manpower = 0.01
 	}
 
 	unique_production_methods = {
@@ -46,6 +48,8 @@ lhr_muster_hall = {
 
 	category = military_category
 	forbidden_for_estates = yes
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes
 
 	employment_size = 0.1
 
@@ -62,6 +66,7 @@ lhr_muster_hall = {
 
 	modifier = {
 		lhr_local_military_capacity = 200
+		local_manpower = 0.005
 	}
 
 	unique_production_methods = {
@@ -83,6 +88,7 @@ lhr_frontier_fort = {
 
 	category = defense_category
 	forbidden_for_estates = yes
+	important_for_AI = yes
 
 	employment_size = castle_employment
 
@@ -117,10 +123,6 @@ lhr_frontier_fort = {
 		owner = scope:actor
 	}
 
-	remove_if = {
-		location = { has_road_to_capital = no }
-	}
-
 	unique_production_methods = {
 		lhr_frontier_fort_maintenance = {
 			stone = 0.12
@@ -137,6 +139,7 @@ lhr_frontier_fort = {
 		local_garrison_size = 0.7
 		local_unrest = -0.05
 		lhr_local_military_capacity = 500
+		local_manpower = 0.01
 	}
 
 	raw_modifier = {
@@ -156,7 +159,8 @@ lhr_swedish_allotment = {
 	forbidden_for_estates = yes
 
 	employment_size = 0.1
-
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes	
 	rural_settlement = yes
 	town = yes
 	city = no
@@ -197,6 +201,7 @@ lhr_swedish_allotment = {
 
 	modifier = {
 		lhr_local_military_capacity = 250
+		local_manpower = 0.005
 	}
 
 	unique_production_methods = {

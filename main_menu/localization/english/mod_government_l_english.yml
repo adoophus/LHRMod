@@ -59,6 +59,9 @@ hesse_monarchy_reform_desc: "The Landgravial court, established in 1324, finds i
 lhr_military_training_reform: "State Army Reforms"
 lhr_military_training_reform_desc: "The state formalizes an intensive military training program for its standing forces. Drill routines are standardized, officers are expected to maintain a professional training cadence, and the army is authorized to adopt formal military doctrine.
 
+lhr_army_doctrine_law: "Army Doctrine"
+lhr_army_doctrine_law_desc: "Army doctrines represent skillsets in which our [army|e] can specialize. The longer we work under these doctrines, the more entrenched they become in our military culture, and the more skilled we become at them. Over time, this can lead to powerful benefits for our glorious forces."
+ 
 
 ## HESSE PRIVILEGES
 
