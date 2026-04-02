@@ -1,9 +1,13 @@
+
 alliance_can_exist = {
 	scope:actor = {
 		OR = {
-			is_ai = no
-			scope:recipient = { is_ai = no }
 			opinion = { target = scope:recipient value >= 0 }
+			AND = {
+				is_ai = no
+				scope:recipient = { is_ai = no }
+				opinion = { target = scope:recipient value >= -200 }
+			}
 		}
 		not = { has_blocked_treaties = scope:recipient }
 		not = { is_subject_of = scope:recipient }
@@ -22,9 +26,16 @@ alliance_can_exist = {
 	}
 	scope:recipient = {
 		OR = {
-			is_ai = no
-			scope:actor = { is_ai = no }
-			opinion = { target = scope:actor value >= 0 }
+			opinion = {
+				target = scope:actor value >= 0
+			}
+			AND = {
+				is_ai = no
+				scope:actor = { is_ai = no }
+				opinion = {
+					target = scope:actor value >= -200
+				}
+			}
 		}
 		not = { has_blocked_treaties = scope:actor }
 		not = { is_subject_of = scope:actor }
@@ -43,7 +54,7 @@ alliance_can_exist = {
 		recipient = scope:recipient
 	}
 	NOT = {
-			 AND = {
+		 AND = {
 			scope:actor = {
 				is_hegemon = yes
 			}
