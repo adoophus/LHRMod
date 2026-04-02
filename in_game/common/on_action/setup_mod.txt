@@ -27,10 +27,10 @@ mod_apply_no_father_on_yearly_pulse = {
 					capital = { region = region:north_china_region }
 				}
 			}
-			add_country_modifier = { modifier = no_father months = -1 mode = add }
+			add_country_modifier = { modifier = lhr_chi_permanent_nerf months = -1 mode = add }
 		}
 		else = {
-			remove_country_modifier = no_father
+			remove_country_modifier = lhr_chi_permanent_nerf
 		}
 	}
 }
