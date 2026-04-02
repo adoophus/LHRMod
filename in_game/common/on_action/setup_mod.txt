@@ -5,55 +5,13 @@ on_game_start = {
 		mod_adjust_france
 		mod_nerf_mamluks
 		mod_setup_persia
-		#mod_apply_no_father_on_game_load
-		#mod_apply_natural_selection_on_game_load
+		mod_adjust_muscovy
 	}
 }
 
 yearly_country_pulse = {
 	on_actions = {
-		#mod_apply_no_father_on_yearly_pulse
-		#mod_apply_natural_selection_on_yearly_pulse
-	}
-}
-
-mod_apply_no_father_on_game_load = {
-	effect = {
-		every_country = {
-			limit = {
-				exists = capital
-				NOT = { has_country_modifier = no_father }
-				OR = {
-					capital = { region = region:south_china_region }
-					capital = { region = region:east_china_region }
-					capital = { region = region:north_china_region }
-				}
-			}
-			add_country_modifier = { modifier = no_father months = -1 mode = add_and_extend }
-		}
-	}
-}
-
-mod_apply_natural_selection_on_game_load = {
-	effect = {
-		every_country = {
-			if = {
-				limit = {
-					exists = capital
-					NOT = { has_country_modifier = lhr_natural_selection }
-					total_population > 5000
-					OR = {
-						capital = { region = region:south_china_region }
-						capital = { region = region:east_china_region }
-						capital = { region = region:north_china_region }
-					}
-				}
-				add_country_modifier = { modifier = lhr_natural_selection months = -1 mode = add_and_extend }
-			}
-			else = {
-				remove_country_modifier = lhr_natural_selection
-			}
-		}
+		mod_apply_no_father_on_yearly_pulse
 	}
 }
 
@@ -69,31 +27,10 @@ mod_apply_no_father_on_yearly_pulse = {
 					capital = { region = region:north_china_region }
 				}
 			}
-			add_country_modifier = { modifier = lhr_chi_permanent_nerf months = -1 mode = add }
+			add_country_modifier = { modifier = no_father months = -1 mode = add }
 		}
 		else = {
-			remove_country_modifier = lhr_chi_permanent_nerf
-		}
-	}
-}
-
-mod_apply_natural_selection_on_yearly_pulse = {
-	effect = {
-		if = {
-			limit = {
-				exists = capital
-				NOT = { has_country_modifier = lhr_natural_selection }
-				total_population > 5000
-				OR = {
-					capital = { region = region:south_china_region }
-					capital = { region = region:east_china_region }
-					capital = { region = region:north_china_region }
-				}
-			}
-			add_country_modifier = { modifier = lhr_natural_selection months = -1 mode = add }
-		}
-		else = {
-			remove_country_modifier = lhr_natural_selection
+			remove_country_modifier = no_father
 		}
 	}
 }
@@ -212,8 +149,11 @@ mod_adjust_france = {
 		c:FLA = {
 			cancel_subject = c:NAM
 		}
+	}
+}
 
-
+mod_adjust_muscovy = {
+	effect = {
 		c:VLR = {
 			make_subject_of = {
 				target = c:MOS
@@ -233,12 +173,17 @@ mod_nerf_mamluks = {
 			cancel_subject = c:KIL
 			cancel_subject = c:MDA
 			cancel_subject = c:MEC
+
+			# anti crib kill
+			# mams truces with anatolia
 			add_truce_with = { target = c:TUR mutual = yes months = 120 }
 			add_truce_with = { target = c:CIL mutual = yes months = 120 }
 			add_truce_with = { target = c:ERE mutual = yes months = 120 }
 			add_truce_with = { target = c:KAR mutual = yes months = 120 }
 			add_truce_with = { target = c:DUL mutual = yes months = 60 }
 			add_truce_with = { target = c:KIL mutual = yes months = 60 }
+
+			# opinion hit to prevent mil access early
 			add_opinion = { target = c:CIL modifier = lhr_opinion_mams_relations_hit_200 }
 			reverse_add_opinion = { target = c:CIL modifier = lhr_opinion_mams_relations_hit_200 }
 			add_opinion = { target = c:ERE modifier = lhr_opinion_mams_relations_hit_200 }
