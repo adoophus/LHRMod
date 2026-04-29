@@ -1,0 +1,16 @@
+REPLACE:plc_cossack_treaty_of_hadiach = {
+	estate = cossacks_estate
+
+	potential = {
+        always = no
+	}
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		global_cossacks_estate_power = 0.1
+		cossacks_estate_allowed_in_cabinet = yes
+		cossacks_estate_allowed_leading_military = yes
+		cossacks_estate_blocked_from_leading_military = no
+		army_cavalry_power = 0.1
+		amount_looted_modifier = 0.5
+	}
+}

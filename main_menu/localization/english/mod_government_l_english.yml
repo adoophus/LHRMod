@@ -101,6 +101,10 @@ ira_royal_road_surveyors_desc: "The vastness of the Iranian Plateau is defined n
 # PROMOTE RELIGION AREA
 #
 
+# POLAND ADVANCES
+polish_hussar_legacy: "Hussar Legacy"
+polish_hussar_legacy_desc: "Before the famed winged formations of later centuries, the Polish Crown cultivated a strong mounted tradition among the szlachta. Investment in horse breeding, riding discipline, and battlefield maneuver doctrine strengthened the striking power of Polish cavalry."
+
 promote_religion_area: "Convert Area"
 promote_religion_area_desc: "This will increase the amount of [pops|e] that will [convert|e] to the selected [religion|e] each month."
 promote_religion_area_action: "Convert [SCOPE.sArea('target_area').GetNameWithNoTooltip] to [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]"
