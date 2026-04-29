@@ -1,9 +1,8 @@
 ﻿break_personal_union =  { 
 	type = diplomacy
-	category = CATEGORY_INFLUENCE_ACTIONS
+	category = CATEGORY_UNION_ACTIONS
 	
 	ai_tick = never
-	#use_enroute = no
 	block_when_at_war = yes	
 
 	potential = {
@@ -19,7 +18,7 @@
                 }
             }
 		}
-		scope:actor.heir = { is_heir_of = scope:recipient }
+		#scope:actor.heir = { is_heir_of = scope:recipient }
 	}
 
 	select_trigger = {

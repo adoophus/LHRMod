@@ -1,0 +1,3758 @@
+﻿
+
+REPLACE:WLS = { # Wales
+	flag_definition = {
+		coa = WLS
+		subject_canton = WLS_cross
+		priority = 1
+	}
+	flag_definition = {
+		coa = WLS_lions_rampant
+		subject_canton = WLS_cross
+		priority = 10
+		trigger = {
+			is_subject = yes
+			coa_def_celtic_group_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_glyndwr
+		subject_canton = WLS_cross
+		priority = 20
+		trigger = {
+			is_subject = no
+			coa_def_celtic_group_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_cross
+		subject_canton = WLS_cross
+		priority = 50
+		trigger = {
+			coa_def_date_after_1600 = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_plantagenet
+		subject_canton = WLS_cross
+		priority = 80
+		trigger = {
+			coa_def_ENG_ensign_trigger = yes
+			coa_def_appanage_trigger = yes
+			coa_def_plantagenet_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_black_prince
+		subject_canton = WLS_cross
+		priority = 81
+		trigger = {
+			coa_def_ENG_ensign_trigger = yes
+			#coa_def_appanage_trigger = yes
+			# TODO : and ENG quartering france
+			#coa_def_plantagenet_trigger = yes
+			#coa_def_discovery_age_3_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = WLS_dragon
+		subject_canton = WLS_cross
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WLS_cross_neith
+		subject_canton = WLS_cross
+		priority = 150
+		trigger = {
+			coa_def_theocracy_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = WLS_tricolor
+		subject_canton = WLS_tricolor
+		priority = 200
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}
+}
+REPLACE:SWE = { # Sweden
+	flag_definition = {
+		coa = SWE
+		priority = 1
+	}
+	flag_definition = {
+		coa = SWE_quarterly
+		subject_canton = SWE
+		priority = 10
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SWE_quarterly_late
+		subject_canton = SWE
+		priority = 11
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = no
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SWE_quarterly_mecklenburg
+		subject_canton = SWE
+		priority = 12
+		trigger = {
+			coa_def_mecklenburg_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = SWE_cross
+		priority = 50
+		trigger = {
+			OR = {
+				coa_def_reformation_age_4_trigger = yes
+				coa_def_republic_trigger = yes
+			}
+			coa_def_absolute_monarchy_trigger = no # keeping quarterly designs for absolute
+		}
+	}
+		flag_definition = {
+		coa = SWE_bjalbo
+		subject_canton = SWE
+		priority = 10
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = yes
+		}
+	}
+		flag_definition = {
+		coa = SWE_crowns
+		subject_canton = SWE
+		priority = 10
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SWE_NOR_absolute
+		priority = 51
+		trigger = {
+			coa_def_absolute_monarchy_trigger = yes
+            coa_def_norway_ownership_trigger = yes
+		}
+	}
+}
+REPLACE:NOR = { # Norway
+	flag_definition = {
+		coa = NOR
+		subject_canton = NOR
+		priority = 1
+	}
+	flag_definition = {
+		coa = NOR_late
+		subject_canton = NOR_late
+		priority = 2
+		trigger = {
+			coa_def_discovery_age_3_trigger = yes
+		}		
+	}	
+		flag_definition = {
+		coa = NOR_bjalbo_early
+		subject_canton = NOR
+		priority = 8
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_bjalbo
+		subject_canton = NOR
+		priority = 10
+		trigger = {
+			coa_def_bjalbo_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_DAN
+		priority = 10
+		trigger = {
+			coa_def_DAN_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_cross_lion
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NOR_cross
+		allow_overlord_canton = yes
+		priority = 110
+		trigger = {
+			coa_def_monarchy_trigger = no
+			coa_def_christian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}	
+}
+
+REPLACE:ENG = { # England
+	# NB: all subject cantons need to be defined for this tag
+	flag_definition = {
+		coa = ENG
+		subject_canton = ENG
+		coa_with_overlord_canton = ENG_subject
+		allow_overlord_canton = yes
+		priority = 15
+		trigger = {
+			OR = {
+			    coa_def_date_after_1600 = yes
+				coa_def_republic_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = ENG_quarterly_france
+		subject_canton = ENG
+		allow_overlord_canton = yes
+		priority = 11
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			coa_def_discovery_age_3_trigger = yes			
+			NOT = { has_variable = has_had_war_of_the_roses_disaster }
+			NOT = { coa_def_capetian_trigger = yes }
+		}
+	}
+		flag_definition = {
+		coa = ENG_monarchy
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 12
+		trigger = {
+         is_subject = yes
+			coa_def_monarchy_trigger = yes
+			NOT = { has_variable = has_had_war_of_the_roses_disaster }
+		}
+	}
+	flag_definition = {
+		coa = ENG_quarterly_france_ancient
+		subject_canton = ENG
+		allow_overlord_canton = yes
+		priority = 5
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			NOT = { has_variable = has_had_war_of_the_roses_disaster }
+			NOT = { coa_def_capetian_trigger = yes }
+		}
+	}
+	flag_definition = {
+		coa = ENG_capetian
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 16
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			coa_def_capetian_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ENG_tudor
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 13
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			exists = dynasty:tudor_dynasty
+			OR = {
+				AND = {
+					has_ruler = yes
+					ruler.dynasty ?= dynasty:tudor_dynasty
+				}
+				AND = {
+					has_ruler = no
+					has_heir = yes
+					heir.dynasty ?= dynasty:tudor_dynasty
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = ENG_yorkist
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 13
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			exists = dynasty:york_dynasty
+			OR = {
+				AND = {
+					has_ruler = yes
+					ruler.dynasty ?= dynasty:york_dynasty
+				}
+				AND = {
+					has_ruler = no
+					has_heir = yes
+					heir.dynasty ?= dynasty:york_dynasty
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = ENG_lancastrian
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 13
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			exists = dynasty:lancaster_dynasty
+			OR = {
+				AND = {
+					has_ruler = yes
+					ruler.dynasty ?= dynasty:lancaster_dynasty
+				}
+				AND = {
+					has_ruler = no
+					has_heir = yes
+					heir.dynasty ?= dynasty:lancaster_dynasty
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = ENG_revolutionary_republic
+		subject_canton = ENG
+		priority = 200
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ENG_commonwealth
+		subject_canton = ENG
+		allow_overlord_canton = no
+		priority = 20
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_own_ireland = yes
+		}
+	}
+}
+
+REPLACE:DAN = { # Denmark
+	flag_definition = {
+		coa = DAN
+		priority = 10
+		trigger = {
+			OR = {
+				coa_def_reformation_age_4_trigger = yes
+				coa_def_republic_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = DAN_lions
+		priority = 1
+		trigger = {
+			coa_def_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = DAN_arms
+		priority = 40
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = DAN_absolute
+		priority = 50
+		trigger = {
+			coa_def_absolute_monarchy_trigger = yes
+            coa_def_norway_ownership_trigger = yes
+		}
+	}
+	# TODO
+}
+REPLACE:NAV = { # Navarre          
+	# NAV - Navarre
+	# NAV_capetian - Per pale France & Navarre
+	# NAV_aragon - Per saltire Aragon & Navarre
+
+	flag_definition = {
+		coa = NAV
+		priority = 1
+	}
+	flag_definition = {
+		coa = NAV_capetian
+		priority = 20
+		trigger = {
+			coa_def_capetian_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NAV_aragon
+		priority = 21
+		trigger = {
+			coa_def_aragon_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NAV_republic
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NAV_evreux
+		priority = 21
+		trigger = {
+			coa_def_evreux_trigger = yes
+		}
+	}
+}
+SCA = { 
+	flag_definition = {
+		coa = SCA
+		priority = 21
+		trigger = {
+			OR = {
+				coa_def_reformation_age_4_trigger = yes
+				coa_def_republic_trigger = yes
+			}
+		coa_def_absolute_monarchy_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SCA_denmark
+		priority = 17
+		trigger = {
+			coa_def_danish_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCA_sweden
+		priority = 17
+		trigger = {
+			coa_def_swedish_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCA_skane
+		priority = 18
+		trigger = {
+			coa_def_SKE_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCA_norway
+		priority = 17
+		trigger = {
+			coa_def_norwegian_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SCA_erik
+		priority = 18
+		trigger = {
+			OR = {
+				coa_def_pomeranian_ruler_trigger = yes
+				coa_def_pomeranian_trigger = yes
+				coa_def_gryf_trigger = yes
+			}
+		}
+	}
+}
+REPLACE:WAL = { # Wallachia
+	flag_definition = {
+		coa = WAL
+		priority = 1
+	}
+	flag_definition = {
+		coa = WAL_mid
+		priority = 10
+		trigger = {
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WAL_late
+		priority = 20
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WAL_BYZ
+		priority = 30
+		trigger = {
+			coa_def_BYZ_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = WAL_greek
+		priority = 30
+		trigger = {
+			OR = {
+				coa_def_BYZ_ensign_trigger = yes
+				coa_def_greek_ruler_trigger = yes
+			}
+		}
+	}
+}
+MOL = { 
+	flag_definition = {
+		coa = MOL
+		priority = 1
+	}
+	flag_definition = {
+		coa = MOL_late
+		priority = 10
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = MOL_greek
+		priority = 30
+		trigger = {
+			OR = {
+				coa_def_BYZ_ensign_trigger = yes
+				coa_def_greek_ruler_trigger = yes
+			}
+		}
+	}
+}
+RMN = { 
+	flag_definition = {
+		coa = RMN
+		priority = 50
+		trigger = {
+			coa_def_revolutions_age_6_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_absolutist
+		priority = 60
+		trigger = {
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_rev
+		priority = 70
+		trigger = {
+			coa_revolutionary_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_rev_empire
+		priority = 80
+		trigger = {
+			coa_revolutionary_empire_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_early_tra
+		priority = 15
+		trigger = {
+			coa_def_transylvania_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_mid_tra
+		priority = 20
+		trigger = {
+			coa_def_transylvania_ownership_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_late_tra
+		priority = 35
+		trigger = {
+			coa_def_transylvania_ownership_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_early
+		priority = 1
+	}
+	flag_definition = {
+		coa = RMN_mid
+		priority = 10
+		trigger = {
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_late
+		priority = 30
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RMN_imperial
+		priority = 65
+		trigger = {
+			coa_def_constantinople_ownership_trigger = yes
+		}
+	}
+}
+REPLACE:RUS = { # Russia
+	# RUS - Tsar flag 18th c. : eagle OS
+	# RUS_tricolor - 18th c. tricolor ABG
+	# RUS_tsar - 18th c. Saltire Tsar flag w cross : cross GA & saltire overall B
+	# RUS_saltire - Naval flag : Saltire AB
+	flag_definition = {
+		coa = RUS_christ
+		priority = 10
+		trigger = {
+			OR = {
+			coa_def_date_after_1460 = no
+			coa_def_theocracy_trigger = yes
+		    }
+		}
+	}
+	flag_definition = {
+		coa = RUS
+		priority = 9
+		trigger = {
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_beloozero
+		priority = 10
+		trigger = {
+			coa_def_RUS_beloozero_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_bryansk
+		priority = 10
+		trigger = {
+			coa_def_RUS_bryansk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_chernihiv
+		priority = 10
+		trigger = {
+			coa_def_RUS_chernihiv_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_dmitrov
+		priority = 10
+		trigger = {
+			coa_def_RUS_dmitrov_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_fomin
+		priority = 10
+		trigger = {
+			coa_def_RUS_fomin_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_galich_mersky
+		priority = 10
+		trigger = {
+			coa_def_RUS_galich_mersky_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_gorodets
+		priority = 10
+		trigger = {
+			coa_def_RUS_gorodets_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_karachev
+		priority = 10
+		trigger = {
+			coa_def_RUS_karachev_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_kashin
+		priority = 10
+		trigger = {
+			coa_def_RUS_kashin_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_klin
+		priority = 10
+		trigger = {
+			coa_def_RUS_klin_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_kostroma
+		priority = 10
+		trigger = {
+			coa_def_RUS_kostroma_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_kozelsk
+		priority = 10
+		trigger = {
+			coa_def_RUS_kozelsk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_mologa
+		priority = 10
+		trigger = {
+			coa_def_RUS_mologa_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_mstislavl
+		priority = 10
+		trigger = {
+			coa_def_RUS_mstislavl_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_murom
+		priority = 10
+		trigger = {
+			coa_def_RUS_murom_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_nizhny
+		priority = 10
+		trigger = {
+			coa_def_RUS_nizhny_novgorod_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_novgorod
+		priority = 10
+		trigger = {
+			coa_def_RUS_novgorod_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_novgorod_seversk
+		priority = 10
+		trigger = {
+			coa_def_RUS_novgorod_seversk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_novosil
+		priority = 10
+		trigger = {
+			coa_def_RUS_novosil_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_oreshek
+		priority = 10
+		trigger = {
+			coa_def_RUS_oreshek_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_perm
+		priority = 10
+		trigger = {
+			coa_def_RUS_perm_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_pronsk
+		priority = 10
+		trigger = {
+			coa_def_RUS_pronsk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_pskov
+		priority = 10
+		trigger = {
+			coa_def_RUS_pskov_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_rostov
+		priority = 10
+		trigger = {
+			coa_def_RUS_rostov_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_ryazan
+		priority = 10
+		trigger = {
+			coa_def_RUS_ryazan_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_rylsk
+		priority = 10
+		trigger = {
+			coa_def_RUS_rylsk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_rzhev
+		priority = 10
+		trigger = {
+			coa_def_RUS_rzhev_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_smolensk
+		priority = 10
+		trigger = {
+			coa_def_RUS_smolensk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_starodub_klyazma
+		priority = 10
+		trigger = {
+			coa_def_RUS_starodub_klyazma_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_starodub_siverskyi
+		priority = 10
+		trigger = {
+			coa_def_RUS_starodub_siverskyi_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_suzdal
+		priority = 10
+		trigger = {
+			coa_def_RUS_suzdal_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_tarusa
+		priority = 10
+		trigger = {
+			coa_def_RUS_tarusa_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_toropets
+		priority = 10
+		trigger = {
+			coa_def_RUS_toropets_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_trubchevsk
+		priority = 10
+		trigger = {
+			coa_def_RUS_trubchevsk_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_tver
+		priority = 10
+		trigger = {
+			coa_def_RUS_tver_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_uglich
+		priority = 10
+		trigger = {
+			coa_def_RUS_uglich_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_vladimir
+		priority = 10
+		trigger = {
+			coa_def_RUS_vladimir_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_vyatka
+		priority = 10
+		trigger = {
+			coa_def_RUS_vyatka_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_vyazma
+		priority = 10
+		trigger = {
+			coa_def_RUS_vyazma_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_yaroslavl
+		priority = 10
+		trigger = {
+			coa_def_RUS_yaroslavl_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_yuryev_polsky
+		priority = 10
+		trigger = {
+			coa_def_RUS_yuryev_polsky_trigger = yes
+			coa_def_date_after_1460 = yes
+			
+		}
+	}
+	flag_definition = {
+		coa = RUS_zubtsov
+		priority = 10
+		trigger = {
+			coa_def_RUS_zubtsov_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_tricolor
+		priority = 20
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_tricolor_imp
+		priority = 25
+		trigger = {
+			coa_revolutionary_empire_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_publica
+		priority = 11
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_publica_novgorod
+		priority = 12
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_RUS_novgorod_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+	flag_definition = {
+		coa = RUS_publica_pskov
+		priority = 12
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_RUS_pskov_trigger = yes
+			coa_def_date_after_1460 = yes
+		}
+	}
+}
+REPLACE:ACH = { # Achaea
+	flag_definition = {
+		coa = ACH
+		priority = 1
+	}
+	flag_definition = {
+		coa = ACH_savoy
+		priority = 10
+		trigger = {
+			coa_def_savoy_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ACH_burgundy
+		priority = 10
+		trigger = {
+	         OR = {
+			coa_def_burgundy_dynasty_trigger = yes
+			coa_def_BUR_ensign_trigger = yes
+		    }
+		}
+	}
+	flag_definition = {
+		coa = ACH_capetian
+		priority = 9
+		trigger = {
+			coa_def_capetian_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ACH_taranto
+		priority = 10
+		trigger = {
+			coa_def_angevine_trigger = yes
+		}
+	}
+}
+ATH = { # athens
+	flag_definition = {
+		coa = ATH
+		priority = 1
+	}
+	flag_definition = {
+		coa = ATH_aragon
+		priority = 10
+		trigger = {
+			OR = {
+				coa_def_aragon_dynasty_trigger = yes
+				coa_def_ARA_ensign_trigger = yes
+			}
+		}
+	}
+}
+REPLACE:NEV = { # Nevers
+	flag_definition = {
+		coa = NEV
+		priority = 1
+	}
+	flag_definition = {
+		coa = NEV_flanders
+		priority = 10
+		trigger = {
+			coa_def_dampierre_flanders_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = NEV_burgundy
+		priority = 10
+		trigger = {
+		OR = {
+			coa_def_burgundy_dynasty_trigger = yes
+			coa_def_BUR_ensign_trigger = yes
+		    }
+		}
+	}
+	flag_definition = {
+		coa = NEV_Valois
+		priority = 11
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_BUR_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FCB_emperor
+		priority = 0 # Commented out for now (update to DH if restored)
+		trigger = {
+			coa_def_hre_emperor_trigger = yes
+		}
+	}	
+}
+REPLACE:BRI = { # Brittany
+	flag_definition = {
+		coa = BRI
+		priority = 1
+	}
+	flag_definition = {
+		coa = BRI_border_england
+		priority = 10
+		trigger = {
+			OR = {
+				coa_def_GBR_ensign_trigger = yes
+				coa_def_ENG_ensign_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = BRI_montfort
+		priority = 9
+		trigger = {
+			OR = {
+				coa_def_montfort_trigger = yes
+				coa_def_MON_ensign_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = BRI_border_castles
+		priority = 11
+		trigger = {
+			OR = {
+				coa_def_CAS_ensign_trigger = yes
+				coa_def_SPA_ensign_trigger = yes
+				coa_def_POR_ensign_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = BRI_cross
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+}
+REPLACE:AQN = { # Aquitaine
+	# AQN - GO lion passant guardant
+	# AQN_capetian - Qtly w/ france modern (same principle as Berry-Aquitaine)
+	# AQN_valois - 15th c. Qtly w/ Berry modern (as designed for Charles de Valois, duke of Berry & Aquitaine)
+
+	flag_definition = {
+		coa = AQN
+		priority = 1
+	}
+	flag_definition = {
+		coa = AQN_capetian
+		priority = 3
+		trigger = {
+			coa_def_capetian_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AQN_valois
+		priority = 4
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AQN_free
+		priority = 2
+		trigger = {
+         is_subject = no
+			coa_def_plantagenet_trigger = no
+		}
+	}
+}
+REPLACE:GBR = { # Great Britain
+	# NB: all subject cantons need to be defined for this tag
+	flag_definition = {
+		coa = GBR_1603
+		subject_canton = sub_GBR_union_jack_1606
+		priority = 1
+	}
+	flag_definition = {
+		coa = GBR_1603_SCO
+		subject_canton = GBR_scottish
+		priority = 2
+		trigger = {
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_1603_no_ireland
+		subject_canton = GBR_scottish
+		priority = 3
+		trigger = {
+			coa_def_GBR_ireland_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = GBR_1603_SCO_no_ireland
+		subject_canton = GBR_scottish
+		priority = 4
+		trigger = {
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_GBR_ireland_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = GBR_fleurs_scotland_no_ireland
+		subject_canton = sub_GBR_union_jack_1606
+		priority = 7
+		trigger = {
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_paris_ownership_trigger = yes
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_fleurs_scotland
+		subject_canton = sub_GBR_union_jack_1606
+		priority = 8
+		trigger = {
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_paris_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_fleurs_no_ireland
+		subject_canton = sub_GBR_union_jack_1606
+		priority = 9
+		trigger = {
+			coa_def_paris_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_no_fleurs_scottish
+		subject_canton = GBR_scottish
+		priority = 13
+		trigger = {
+			coa_def_lost_french_possessions_trigger = yes
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_no_fleurs_scottish_ireland
+		subject_canton = GBR_scottish
+		priority = 14
+		trigger = {
+			coa_def_lost_french_possessions_trigger = yes
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_welsh
+		subject_canton = GBR_black
+		priority = 30
+		trigger = {
+			OR = {
+				coa_def_welsh_trigger = yes
+				coa_def_GBR_WLS_trigger = yes
+			}
+			coa_def_lost_french_possessions_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = GBR_welsh_no_fleurs 
+		subject_canton = GBR_black
+		priority = 31
+		trigger = {
+			OR = {
+				coa_def_welsh_trigger = yes
+				coa_def_GBR_WLS_trigger = yes
+			}
+			coa_def_lost_french_possessions_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GBR_welsh_ireland
+		subject_canton = GBR_black
+		priority = 32
+		trigger = {
+			OR = {
+				coa_def_welsh_trigger = yes
+				coa_def_GBR_WLS_trigger = yes	
+			}
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GBR_irish
+		subject_canton = GBR_irish_union
+		priority = 40
+		trigger = {
+			OR = {
+				coa_def_irish_trigger = yes
+				coa_def_GBR_IRE_trigger = yes
+			}
+			coa_def_lost_french_possessions_trigger = no
+		}
+	}		
+	flag_definition = {
+		coa = GBR_irish_no_fleurs
+		subject_canton = GBR_irish_union
+		priority = 41
+		trigger = {
+			OR = {
+				coa_def_irish_trigger = yes
+				coa_def_GBR_IRE_trigger = yes
+			}
+			coa_def_lost_french_possessions_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = GBR_cornish
+		subject_canton = GBR_black
+		priority = 42
+		trigger = {
+			OR = {
+				coa_def_cornish_trigger = yes
+				coa_def_GBR_CRN_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_cornish_ireland
+		subject_canton = GBR_black
+		priority = 43
+		trigger = {
+			OR = {
+				coa_def_cornish_trigger = yes
+				coa_def_GBR_CRN_trigger = yes
+			}
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}	
+	
+	# Union Jack (from age 5)
+	flag_definition = {
+		coa = GBR
+		subject_canton = sub_GBR_union_jack_1606
+		priority = 50
+		trigger = {
+			coa_def_date_after_1600 = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk
+		subject_canton = GBR_uk
+		priority = 51
+		trigger = {
+			coa_def_GBR_uk_trigger = yes
+			coa_def_date_after_1600 = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_black
+		subject_canton = GBR_black
+		priority = 52
+		trigger = {
+			coa_def_celtic_group_trigger = yes # Welsh or Cornish
+			coa_def_date_after_1600 = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_uk_black
+		subject_canton = GBR_uk_black
+		priority = 53
+		trigger = {
+			coa_def_celtic_group_trigger = yes # Welsh or Cornish
+			coa_def_date_after_1600 = yes
+			coa_def_GBR_uk_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_scottish
+		subject_canton = GBR_scottish
+		priority = 54
+		trigger = {
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_date_after_1600 = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_irish_union
+		subject_canton = GBR_irish_union
+		priority = 55
+		trigger = {			
+			OR = {
+				coa_def_irish_trigger = yes
+				coa_def_GBR_IRE_trigger = yes
+			}
+			coa_def_date_after_1600 = yes
+		}
+	}
+	# France added to union
+	flag_definition = {
+		coa = GBR_union_jack_fleurs
+		subject_canton = GBR_union_jack_fleurs
+		priority = 60
+		trigger = {
+			coa_def_paris_ownership_trigger = yes
+			coa_def_date_after_1600 = yes
+		}
+	}	
+	flag_definition = {
+		coa = GBR_union_jack_fleurs_uk
+		subject_canton = GBR_union_jack_fleurs_uk
+		priority = 61
+		trigger = {
+			coa_def_paris_ownership_trigger = yes
+			coa_def_date_after_1600 = yes
+			coa_def_GBR_uk_trigger = yes
+		}
+	}		
+	
+	# Republics
+	
+	flag_definition = {
+		coa = GBR_republic
+		subject_canton = ENG # Simple cantons
+		priority = 200
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_ireland
+		subject_canton = ENG
+		priority = 201
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_scottish
+		subject_canton = SCO_saltire
+		priority = 202
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_scottish_ireland
+		subject_canton = SCO_saltire
+		priority = 203
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_scottish_trigger = yes
+				coa_def_GBR_SCO_trigger = yes
+			}
+			coa_def_GBR_ireland_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_welsh
+		subject_canton = sub_WLS_cross
+		priority = 204
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_welsh_trigger = yes
+				coa_def_GBR_WLS_trigger = yes
+			}
+		}
+	}	
+	flag_definition = {
+		coa = GBR_republic_welsh_ireland
+		subject_canton = sub_WLS_cross
+		priority = 205
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_welsh_trigger = yes
+				coa_def_GBR_WLS_trigger = yes
+				coa_def_GBR_ireland_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_irish
+		subject_canton = sub_IRE_saltire
+		priority = 206
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_irish_trigger = yes
+				coa_def_GBR_IRE_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = GBR_republic_cornish
+		subject_canton = sub_CRN_cross
+		priority = 207
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_cornish_trigger = yes
+				coa_def_GBR_CRN_trigger = yes
+			}
+		}
+	}	
+	flag_definition = {
+		coa = GBR_republic_cornish_ireland
+		subject_canton = sub_CRN_cross
+		priority = 208
+		trigger = {
+			coa_def_republic_trigger = yes
+			OR = {
+				coa_def_cornish_trigger = yes
+				coa_def_GBR_CRN_trigger = yes
+				coa_def_GBR_ireland_trigger = yes
+			}
+		}
+	}		
+	
+	# Revolutionary
+	flag_definition = {
+		coa = GBR_revolutionary_republic
+		subject_canton = GBR_revolutionary_republic
+		priority = 300
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}
+}
+REPLACE:NSE = { # North Sea Empire
+	flag_definition = {
+		coa = NSE_cross
+		subject_canton = NSE
+		priority = 11
+				trigger = {
+			coa_def_absolute_monarchy_trigger = no
+			OR = {
+			    coa_def_date_after_1600 = yes
+				coa_def_republic_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = NSE_ENG
+		subject_canton = NSE_cross
+		priority = 10
+		trigger = {
+			coa_def_english_trigger = yes
+		}		
+	}
+		flag_definition = {
+		coa = NSE_ENG
+		subject_canton = NSE_cross
+		priority = 10
+		trigger = {
+			coa_def_norwegian_trigger = yes
+		}		
+	}
+		flag_definition = {
+		coa = NSE_DAN
+		subject_canton = NSE_cross
+		priority = 10
+		trigger = {
+			coa_def_MNN_trigger = yes
+		}		
+	}
+		flag_definition = {
+		coa = NSE_MAN
+		subject_canton = NSE_cross
+		priority = 10
+		trigger = {
+			coa_def_MNN_trigger = yes
+		}		
+	}
+		flag_definition = {
+		coa = NSE
+		subject_canton = NSE_cross
+		priority = 5		
+	}
+	flag_definition = {
+		coa = NORSE
+		subject_canton = NORSE
+		priority = 200
+		trigger = {
+			coa_def_norse_trigger = yes
+		}		
+	}	
+	# TODO republic & variants
+}
+REPLACE:SPA = { # Spain
+	# SPA - Cross of Burgundy, stylized form : saltire embattled & counter embattled AG
+	# SPA_republic - Naval ensign 18th c./1st rep. : tricolor GAG & coa (round shield per pale of Castile & León, crowned)
+	# SPA_white - 17th/18th c. white coa flag : lesser arms (without Bourbon escutcheon) w collar & crown
+	# SPA_greater - 17th/18th c. white coa flag : greater arms w collar, crown & ribbons
+	# SPA_merchant - 18th c. Merchant flag : O 2 horizontal stripes G
+
+	flag_definition = {
+		coa = SPA_base	# default version (Q1 Aragon, Q2 Castile, Q3 Leon, Q4 Portugal)
+		priority = 1
+	}
+
+	### Castile ###
+	
+	# TODO better default for Castile
+
+	# With just Navarre    
+
+	flag_definition = {
+		coa = SPA_castile_navarre # Castile Q1-Q4, Navarre Q2-Q3
+		priority = 5
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_navarre_ownership_trigger   = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_navarre_granada # Castile Q1-Q4, Navarre Q2-Q3, Granada Q5
+		priority = 6
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_navarre_ownership_trigger   = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# With Aragon, no Portugal
+
+	flag_definition = {
+		coa = SPA_castile # Castile Q1-Q4, Aragon Q2-Q3
+		priority = 10
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_granada # Castile Q1-Q4, Aragon Q2-Q3, Granada Q5
+		priority = 11
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_sicily # Castile Q1-Q4, Aragon-Sicily Q2-Q3
+		priority = 12
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_granada_sicily # Castile Q1-Q4, Aragon-Sicily Q2-Q3, Granada Q5
+		priority = 13
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_navarre # Castile Q1-Q4, Aragon Q2, Navarre Q3
+		priority = 14
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_navarre_granada # Castile Q1-Q4, Aragon Q2, Navarre Q3, Granada Q5
+		priority = 15
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_sicily_navarre # Castile Q1-Q4, Aragon-Sicily Q2, Navarre Q3
+		priority = 16
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_sicily_navarre_granada # Castile Q1-Q4, Aragon-Sicily Q2, Navarre Q3, Granada Q5
+		priority = 17
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# With Portugal, no Aragon
+
+	flag_definition = {
+		coa = SPA_castile_portugal_no_aragon # Castile Q1-Q4, Portugal Q2-Q3
+		priority = 20
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_portugal_granada_no_aragon # Castile Q1-Q4, Portugal Q2-Q3, Granada Q5
+		priority = 21
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_portugal_navarre_no_aragon # Castile Q1-Q4, Portugal Q2, Navarre Q3
+		priority = 22
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_portugal_navarre_granada_no_aragon # Castile Q1-Q4, Portugal Q2, Navarre Q3, Granada Q5
+		priority = 23
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_portugal_granada_navarre # Castile Q1-Q4, Navarre Q2, Portugal Q3, Granada Q5
+		priority = 24
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+
+	# With Portugal & Aragon
+
+	flag_definition = {
+		coa = SPA_castile_aragon_portugal # Castile Q1-Q4, Aragon Q2, Portugal Q3
+		priority = 30
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_portugal_granada # Castile Q1-Q4, Aragon Q2, Portugal Q3, Granada Q5
+		priority = 31
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_portugal_sicily # Castile Q1-Q4, Aragon-Sicily Q2, Portugal Q3
+		priority = 32
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_portugal_granada_sicily # Castile Q1-Q4, Aragon-Sicily Q2, Portugal Q3, Granada Q5
+		priority = 33
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_iberia # Castile Q1, Aragon Q2, Portugal Q3, Navarre Q4, Granada Q5
+		priority = 35
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_iberia_sicily # Castile Q1, Aragon-Sicily Q2, Portugal Q3, Navarre Q4, Granada Q5
+		priority = 36
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+		}
+	}
+
+	### Aragon ###
+
+	flag_definition = { # Base designs for Aragon
+		coa = SPA_aragon_simple # Aragon Q1-Q4, Castile Q2, Leon Q3
+		priority = 10
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon # Aragon Q1-Q4, Castile Leon Q2-Q3
+		priority = 11
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	flag_definition = { # Design at game start
+		coa = SPA_aragon_sicily # Aragon-Sicily Q1-Q4, Castile Leon Q2-Q3
+		priority = 15
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+		}
+	}
+
+	# No Sicily (including dynasty not being on throne anymore)
+
+	flag_definition = {
+		coa = SPA_aragon_navarre # Aragon Q1-Q4, Castile Leon Q2, Navarre Q3
+		priority = 20
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_portugal # Aragon Q1-Q4, Castile Leon Q2, Portugal Q3
+		priority = 21
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_granada # Aragon Q1-Q4, Castile Leon Q2, Granada Q3
+		priority = 22
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_navarre_portugal # Aragon Q1, Castile Leon Q2, Portugal Q3; Navarre Q4
+		priority = 23
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_navarre_portugal_granada # Aragon Q1, Castile Leon Q2, Portugal Q3; Navarre Q4, Granada Q5
+		priority = 24
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Aragon-Sicily
+
+	flag_definition = {
+		coa = SPA_aragon_navarre_sicily # Aragon-Sicily Q1-Q4, Castile-Leon Q2, Navarre Q3
+		priority = 30
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+						coa_def_navarre_ownership_full_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_portugal_sicily # Aragon-Sicily Q1-Q4, Castile-Leon Q2, Portugal Q3
+		priority = 31
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_granada_sicily # Aragon-Sicily Q1-Q4, Castile-Leon Q2-Q3, Granada Q5
+		priority = 32
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_navarre_granada_sicily # Aragon-Sicily Q1-Q4, Castile-Leon Q2, Navarre Q3, Granada Q5
+		priority = 33
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_portugal_granada_sicily # Aragon-Sicily Q1-Q4, Castile-Leon Q2, Portugal Q3, Granada Q5
+		priority = 34
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_navarre_portugal_sicily # Aragon-Sicily Q1, Castile-Leon Q2, Portugal Q3, Navarre Q4
+		priority = 35
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_navarre_portugal_granada_sicily # Aragon-Sicily Q1, Castile-Leon Q2, Portugal Q3, Navarre Q4, Granada Q5
+		priority = 36
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			OR = {
+				coa_def_sicily_ownership_trigger = yes
+				coa_def_aragonese_sicily_trigger = yes
+			}
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	### Navarre ###
+
+	flag_definition = {
+		coa = SPA_navarre # Navarre Q1-Q4, Castile Q2, Leon Q3
+		priority = 10
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+		}
+	}
+	flag_definition = { # Evreux-Navarre variant
+		coa = SPA_navarre_capetian # Navarre-France Q1-Q4, Castile-Leon Q2-Q3
+		priority = 11
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+
+	# With Aragon
+
+	flag_definition = {
+		coa = SPA_navarre_aragon # Navarre Q1-Q4, Castile-Leon Q2, Aragon Q3
+		priority = 12
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_capetian # Navarre-France Q1-Q4, Castile-Leon Q2, Aragon Q3
+		priority = 13
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily # Navarre Q1-Q4, Castile-Leon Q2, Aragon-Sicily Q3
+		priority = 14
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_capetian # Navarre-France Q1-Q4, Castile-Leon Q2, Aragon-Sicily Q3
+		priority = 15
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+
+	# With Portugal
+
+	flag_definition = {
+		coa = SPA_navarre_portugal # Navarre Q1, Castile-Leon Q2-Q3, Portugal Q4
+		priority = 20
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_portugal_capetian # Navarre Q1, Castile-Leon Q2-Q3, Portugal Q4
+		priority = 21
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+
+	# With Aragon & Portugal
+
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal # Navarre Q1, Castile-Leon Q2, Aragon Q3, Portugal Q4
+		priority = 25
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal_capetian # Navarre-France Q1, Castile-Leon Q2, Aragon Q3, Portugal Q4
+		priority = 26
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal # Navarre Q1, Castile-Leon Q2, Aragon-Sicily Q3, Portugal Q4
+		priority = 27
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal_capetian # Navarre-France Q1, Castile-Leon Q2, Aragon-Sicily Q3, Portugal Q4
+		priority = 28
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+
+	# With Granada
+
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal_granada
+		priority = 30
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal_granada
+		priority = 31
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal_granada_capetian
+		priority = 32
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal_granada_capetian
+		priority = 33
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = { # Evreux-Navarre variant
+		coa = SPA_navarre_evreux # Navarre-France Q1-Q4, Castile-Leon Q2-Q3
+		priority = 11
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_evreux # Navarre-France Q1-Q4, Castile-Leon Q2, Aragon Q3
+		priority = 13
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_evreux # Navarre-France Q1-Q4, Castile-Leon Q2, Aragon-Sicily Q3
+		priority = 15
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_evreux_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = SPA_navarre_portugal_evreux # Navarre Q1, Castile-Leon Q2-Q3, Portugal Q4
+		priority = 21
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_evreux_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal_evreux # Navarre-France Q1, Castile-Leon Q2, Aragon Q3, Portugal Q4
+		priority = 26
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal_evreux # Navarre-France Q1, Castile-Leon Q2, Aragon-Sicily Q3, Portugal Q4
+		priority = 28
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_portugal_granada_evreux
+		priority = 32
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_portugal_granada_evreux
+		priority = 33
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_evreux_trigger = yes
+		}
+	}
+
+	### Portugal ###
+
+	flag_definition = { # Default for Portugal (Early)
+		coa = SPA_portugal # Q1-Q4 Portugal, Q2-Q3 Castile-Leon
+		priority = 10
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_late # Q1-Q4 Portugal (Late), Q2-Q3 Castile-Leon
+		priority = 11
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	
+
+	# With Aragon
+
+	flag_definition = {
+		coa = SPA_portugal_aragon # Q1-Q4 Portugal,  Q2 Castile-Leon, Q3 Aragon
+		priority = 20
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_aragon_sicily # Q1-Q4 Portugal,  Q2 Castile-Leon, Q3 Aragon-Sicily
+		priority = 21
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_aragon_granada # Q1-Q4 Portugal,  Q2 Castile-Leon, Q3 Aragon, Q5 Granada
+		priority = 24
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_aragon_granada_sicily # Q1-Q4 Portugal,  Q2 Castile-Leon, Q3 Aragon-Sicily, Q5 Granada
+		priority = 25
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# With Navarre
+
+	flag_definition = {
+		coa = SPA_portugal_navarre # Q1 Portugal, Q2-Q3 Castile-Leon, Q4 Navarre
+		priority = 30
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_navarre_granada # Q1 Portugal, Q2-Q3 Castile-Leon, Q4 Navarre, Q5 Granada
+		priority = 32
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# With Navarre & Aragon
+
+	flag_definition = {
+		coa = SPA_portugal_navarre_aragon # Q1 Portugal, Q2 Castile-Leon, Q3 Aragon, Q4 Navarre
+		priority = 34
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_navarre_aragon_sicily # Q1 Portugal, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Navarre
+		priority = 35
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_navarre_aragon_granada # Q1 Portugal, Q2 Castile-Leon, Q3 Aragon, Q4 Navarre, Q5 Granada
+		priority = 36
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_navarre_aragon_sicily_granada # Q1 Portugal, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Navarre, Q5 Granada
+		priority = 37
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_navarre_ownership_full_trigger  = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	### Minors ###
+
+	# Leon
+	flag_definition = { # Default (Aragon)
+		coa = SPA_leon_simple_aragon # Q1-Q4 Leon-Castile, Q2-Q3 Aragon
+		priority = 50
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_simple_portugal # Q1-Q4 Leon-Castile, Q2-Q3 Portugal
+		priority = 51
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_portugal # Q1-Q4 Leon-Castile, Q2 Aragon, Q3 Portugal
+		priority = 52
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = { # Complete with Granada
+		coa = SPA_leon # Q1-Q4 Leon-Castile, Q2 Aragon-Sicily, Q3 Portugal, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Andorra
+	flag_definition = { # Default (Aragon)
+		coa = SPA_andorra_simple_aragon # Q1 Andorra, Q2-Q3 Aragon, Q4 Castile
+		priority = 50
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_navarre # Q1 Andorra, Q2 Castile, Q3 Aragon, Q4 Navarre
+		priority = 51
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = { # Complete with Granada
+		coa = SPA_andorra # Q1 Andorra, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Mallorca
+	flag_definition = { # Default (Aragon)
+		coa = SPA_mallorca_simple_aragon # Q1 Mallorca, Q2 & Q3 Aragon, Q4 Castile
+		priority = 50
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_navarre # Q1 Mallorca-Aragon, Q2 & Q3 Castile, Q4 Navarre
+		priority = 51
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_navarre # Q1 Mallorca, Q2 Aragon-Sicily, Q3 Castile, Q4 Navarre
+		priority = 52
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = { # Complete with Granada
+		coa = SPA_mallorca # Q1 Mallorca, Q2 Aragon-Sicily, Q3 Castile, Q4 Navarre, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Valencia
+	flag_definition = { # Default (Aragon)
+		coa = SPA_valencia_simple_aragon # Q1 Valencia, Q2-Q3 Castile, Q4 Aragon
+		priority = 50
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily # Q1 Valencia, Q2-Q3 Castile, Q4 Aragon-Sicily
+		priority = 51
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_navarre # Q1 Valencia, Q2 Castile, Q3 Aragon, Q4 Navarre
+		priority = 52
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_navarre # Q1 Valencia, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre
+		priority = 53
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = { # Complete with Granada
+		coa = SPA_valencia # Q1 Valencia, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Catalonia
+	flag_definition = { # Default (Aragon)
+		coa = SPA_catalonia_simple_aragon # Q1 Catalonia, Q2-Q3 Castile, Q4 Aragon
+		priority = 50
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily # Q1 Catalonia, Q2-Q3 Castile, Q4 Aragon-Sicily
+		priority = 51
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_navarre # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon
+		priority = 52
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_navarre # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon-Sicily
+		priority = 53
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon-Sicily, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_full_trigger   = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	# Galicia
+	flag_definition = { # Default
+		coa = SPA_galicia_simple # Q1-Q4 Galicia, Q2-Q3 Castile-Leon
+		priority = 50
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal # Q1 Galicia, Q2-Q3 Castile-Leon, Q4 Portugal
+		priority = 51
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal_aragon # Q1 Galicia, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Portugal
+		priority = 52
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia # Q1 Galicia, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Portugal, Q5 Granada
+		priority = 55
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	### Government/Rank ###
+
+	flag_definition = {
+		coa = SPA_republic
+		priority = 80
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_republic_POR
+		priority = 81
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_SPA_portugal_trigger = yes
+		}
+	}
+		flag_definition = {
+		coa = SPA_republic_ARA
+		priority = 81
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_SPA_aragon_trigger = yes
+		}
+	}
+		flag_definition = {
+		coa = SPA_republic_NAV
+		priority = 81
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_SPA_navarre_trigger = yes
+		}
+	}
+	# Colonial empire (Cross of Burgundy)
+	flag_definition = {
+		coa = SPA
+		priority = 100
+		trigger = {
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_cross
+		priority = 101
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_cross
+		priority = 102
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_cross
+		priority = 103
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_cross
+		priority = 104
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+
+	# Absolute monarchy (Origin tag or ruling dynasty)
+	flag_definition = {
+		coa = SPA_white
+		priority = 110
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_white_portugal
+		priority = 111
+		trigger = {
+			OR = {
+				coa_def_SPA_portugal_trigger = yes
+				coa_def_burgundy_portugal_trigger = yes
+			}
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_white_aragon
+		priority = 112
+		trigger = {
+			OR = {
+				coa_def_SPA_aragon_trigger = yes
+				coa_def_aragon_dynasty_trigger = yes
+			}
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_white_navarre
+		priority = 113
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+
+	# Revolutionary
+	flag_definition = {
+		coa = SPA_tricolor
+		priority = 200
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_tricolor_POR
+		priority = 201
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+            coa_def_SPA_portugal_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_tricolor_purple
+		priority = 201
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+			OR = {
+				coa_def_castilian_trigger = yes
+				coa_def_leonese_primary_trigger = yes
+			}
+		}
+	}
+}
+UKR = { # Ruthenia
+	flag_definition = {
+		coa = UKR
+		priority = 5
+		trigger = {
+			coa_def_rurikovich_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = no
+		}
+	}	
+	flag_definition = {
+		coa = UKR_lion
+		priority = 3
+		trigger = {
+			coa_def_ukraine_culture_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = UKR_gediminas
+		priority = 5
+		trigger = {
+			coa_def_gediminid_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = no 
+		}
+	}	
+	flag_definition = {
+		coa = UKR_belarus_gediminas
+		priority = 10
+		trigger = {
+			coa_def_gediminid_dynasty_trigger = yes
+            coa_def_discovery_age_3_trigger = yes
+			coa_def_belarus_culture_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = UKR_belarus_rurik
+		priority = 10
+		trigger = {
+			coa_def_rurikovich_dynasty_trigger = yes
+			coa_def_discovery_age_3_trigger = yes
+			coa_def_belarus_culture_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = UKR_belarus
+		priority = 3
+		trigger = {
+			coa_def_belarus_culture_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = UKR_republic
+		priority = 20
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = UKR_republic_bel
+		priority = 20
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_belarus_culture_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = UKR_theo
+		priority = 20
+		trigger = {
+			coa_def_theocracy_trigger = yes
+		}
+	}
+}
+REPLACE:KIE = { # Kiev
+	flag_definition = {
+		coa = KIE
+		priority = 1
+	}
+	flag_definition = {
+		coa = KIE_late
+		priority = 3
+		trigger = { 
+		coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = KIE_PLC
+		priority = 5
+		trigger = {
+			OR = {
+				coa_def_LIT_ensign_trigger = yes
+				coa_def_POL_ensign_trigger = yes
+				coa_def_PLC_ensign_trigger = yes
+			}
+		}
+	}		
+}
+REPLACE:ARA = { # Aragon
+	flag_definition = {
+		coa = ARA
+		priority = 1
+	}
+	flag_definition = {
+		coa = ARA_white
+		priority = 8
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			OR = {
+				coa_def_american_colonies_trigger = yes # TODO Check NEW
+				coa_def_african_colonies_trigger = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = ARA_white_greater
+		priority = 10
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ARA_NAV
+		priority = 11
+		trigger = {
+			coa_def_NAV_ensign_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ARA_republic
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = ARA_revolutionary
+		priority = 200
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}	
+}
+
+REPLACE:FRA = { # France
+	flag_definition = {
+		coa = FRA
+		subject_canton = FRA
+		priority = 1
+	}
+	flag_definition = {
+		coa = FRA_renaissance
+		subject_canton = FRA_renaissance
+		priority = 2
+		trigger = {
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_white
+		subject_canton = FRA_white
+		priority = 3
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_absolute_monarchy
+		subject_canton = FRA_white
+		priority = 10
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_merchant
+		subject_canton = FRA_republic
+		priority = 99
+		trigger = {
+			coa_def_republic_trigger = yes
+			# TODO
+		}
+	}	
+	flag_definition = {
+		coa = FRA_republic
+		subject_canton = FRA_republic
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_revolutionary_republic
+		subject_canton = FRA_revolutionary_republic
+		priority = 200
+		trigger = {
+			coa_def_revolutionary_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = FRA_rev_empire
+		subject_canton = FRA_revolutionary_republic
+		priority = 201
+		trigger = {
+			coa_def_revolutionary_empire_trigger = yes
+		}
+	}
+}
+REPLACE:PLC = { # Polish-Lithuanian Commonwealth   
+	flag_definition = {
+		coa = PLC
+		subject_canton = PLC
+		priority = 1
+	}
+	flag_definition = {
+		coa = PLC_lithuania
+		subject_canton = PLC_lithuania
+		priority = 2
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+		}
+	}
+	# Hadiach Union embowed
+	flag_definition = {
+		coa = PLC_ruthenia
+		priority = 10
+		trigger = {
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}
+	}
+	flag_definition = {
+		coa = PLC_lithuania_ruthenia
+		priority = 11
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}
+	}
+	
+	# Additional quartered designs - Polish
+	flag_definition = {
+		coa = PLC_pomerania
+		priority = 20
+		trigger = {
+			coa_def_pomerania_ownership_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = PLC_bohemia
+		priority = 21
+		trigger = {
+			coa_def_bohemia_ownership_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = PLC_ruthenia_pomerania
+		priority = 23
+		trigger = {
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = PLC_ruthenia_bohemia
+		priority = 24            
+		trigger = {  
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+		}
+	}         
+	flag_definition = {
+		coa = PLC_bohemia_pomerania
+		priority = 25
+		trigger = {
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+		}
+	}
+	
+	# Lithuanian
+	flag_definition = {
+		coa = PLC_lithuania_novgorod
+		priority = 30
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+		}
+	}
+	flag_definition = { 
+		coa = PLC_lithuania_ruthenia_novgorod
+		priority = 31
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+		}
+	}
+		flag_definition = { 
+		coa = PLC_lithuania_bohemia_novgorod
+		priority = 32
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+		}
+	}
+		flag_definition = { 
+		coa = PLC_lithuania_bohemia_ruthenia
+		priority = 33
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+		}
+	}
+	
+	# late
+	flag_definition = {
+		coa = PLC_coa
+		subject_canton = PLC
+		priority = 50
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_lithuania_coa
+		subject_canton = PLC_lithuania
+		priority = 51
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+		}		
+	}
+	flag_definition = {
+		coa = PLC_ruthenia_coa
+		subject_canton = PLC_ruthenia
+		priority = 55
+		trigger = {
+			
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+			coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_lithuania_ruthenia_coa
+		subject_canton = PLC_lithuania_ruthenia
+		priority = 54
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+			coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_ruthenia_coa_early
+		subject_canton = PLC_ruthenia
+		priority = 52
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_lithuania_ruthenia_coa_early
+		subject_canton = PLC_lithuania_ruthenia
+		priority = 53
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+# With Bohemia
+	flag_definition = {
+		coa = PLC_bohemia_coa
+		subject_canton = PLC
+		priority = 70
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_lithuania_bohemia_coa
+		subject_canton = PLC_lithuania
+		priority = 71
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_bohemia_novgorod_coa
+		subject_canton = PLC
+		priority = 72
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_bohemia_novgorod_coa_late
+		subject_canton = PLC_lithuania
+		priority = 73
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}
+	flag_definition = {
+		coa = PLC_bohemia_pomerania_coa
+		subject_canton = PLC
+		priority = 71
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_bohemia_ruthenia_coa
+		subject_canton = PLC
+		priority = 75
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_bohemia_ruthenia_coa_late
+		subject_canton = PLC_lithuania
+		priority = 76
+		trigger = {
+			
+			coa_def_bohemia_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes				
+		}		
+	}
+	flag_definition = {
+		coa = PLC_bohemia_ruthenia_coa_LIT
+		subject_canton = PLC
+		priority = 77
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_bohemia_ruthenia_coa_late_LIT
+		subject_canton = PLC_lithuania
+		priority = 78
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes				
+		}		
+	}
+	#pomerania
+	flag_definition = {
+		coa = PLC_pomerania_coa
+		subject_canton = PLC
+		priority = 60
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_pomerania_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_pomerania_ruthenia_coa
+		subject_canton = PLC
+		priority = 62
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_pomerania_ownership_trigger = yes	
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_pomerania_ruthenia_coa
+		subject_canton = PLC
+		priority = 63
+		trigger = {
+			
+			coa_def_pomerania_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_ruthenia_novgorod_coa_late
+		subject_canton = PLC
+		priority = 66
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_ruthenia_novgorod_coa_late
+		subject_canton = PLC_lithuania
+		priority = 67
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			
+			coa_def_bohemia_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes				
+		}		
+	}
+#republic
+flag_definition = {
+		coa = PLC_coa
+		subject_canton = PLC
+		priority = 150
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_lithuania_coa
+		subject_canton = PLC_lithuania
+		priority = 151
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_ruthenia_coa
+		subject_canton = PLC_ruthenia
+		priority = 155
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+			coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_lithuania_ruthenia_coa
+		subject_canton = PLC_lithuania_ruthenia
+		priority = 154
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+			coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_ruthenia_coa_early
+		subject_canton = PLC_ruthenia
+		priority = 152
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_lithuania_ruthenia_coa_early
+		subject_canton = PLC_lithuania_ruthenia
+		priority = 153
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+# With Bohemia
+	flag_definition = {
+		coa = PLC_R_bohemia_coa
+		subject_canton = PLC
+		priority = 170
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_lithuania_bohemia_coa
+		subject_canton = PLC_lithuania
+		priority = 171
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_bohemia_novgorod_coa
+		subject_canton = PLC
+		priority = 172
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_bohemia_novgorod_coa_late
+		subject_canton = PLC_lithuania
+		priority = 173
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_bohemia_pomerania_coa
+		subject_canton = PLC
+		priority = 171
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_bohemia_ruthenia_coa
+		subject_canton = PLC
+		priority = 175
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_bohemia_ruthenia_coa_late
+		subject_canton = PLC_lithuania
+		priority = 176
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes				
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_bohemia_ruthenia_coa_LIT
+		subject_canton = PLC
+		priority = 177
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+	flag_definition = {
+		coa = PLC_R_bohemia_ruthenia_coa_late_LIT
+		subject_canton = PLC_lithuania
+		priority = 178
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_bohemia_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes				
+		}		
+	}
+	#pomerania
+	flag_definition = {
+		coa = PLC_R_pomerania_coa
+		subject_canton = PLC
+		priority = 160
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_pomerania_ruthenia_coa
+		subject_canton = PLC
+		priority = 162
+		trigger = {
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes	
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_pomerania_ruthenia_coa
+		subject_canton = PLC
+		priority = 163
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_pomerania_ownership_trigger = yes
+            coa_def_revolutions_age_6_trigger = yes		
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = PLC_R_ruthenia_novgorod_coa_late
+		subject_canton = PLC
+		priority = 166
+		trigger = {
+			coa_def_lithuanian_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_novgorod_ownership_trigger = yes
+			coa_def_kiev_ownership_trigger = yes
+			coa_def_volhynia_ownership_trigger = yes
+			coa_def_halych_ownership_trigger = yes	
+		}		
+	}	
+}
+REPLACE:BUR = { # Burgundy
+	# BUR - Ancient : Barry OB & border G
+	# BUR_Valois - Younger (15th c.) Qtly Bourgogne & Touraine
+
+	flag_definition = {
+		coa = BUR
+		priority = 1
+	}
+	flag_definition = {
+		coa = BUR_FLA
+		priority = 11
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_BRB_LIM
+		priority = 12
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+			coa_def_limburg_ownership_trigger = yes
+			coa_def_BRB_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_habsburg
+		priority = 13
+		trigger = {
+			coa_def_habsburg_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_FLA_Hab
+		priority = 14
+		trigger = {
+			coa_def_habsburg_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+		}
+	}
+		flag_definition = {
+		coa = BUR_BRB_LIM_hab
+		priority = 15
+		trigger = {
+			coa_def_habsburg_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+			coa_def_limburg_ownership_trigger = yes
+			coa_def_BRB_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_Valois
+		priority = 20
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_valois_flander
+		priority = 21
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_valois_BRB_LIM
+		priority = 22
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_flanders_ownership_trigger = yes
+			coa_def_limburg_ownership_trigger = yes
+			coa_def_BRB_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_cross
+		priority = 30
+		trigger = {
+			coa_def_discovery_age_3_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_cross_split
+		priority = 35
+		trigger = {
+			coa_def_discovery_age_3_trigger = yes
+            coa_def_spanish_cross_trigger = yes
+			coa_def_SPA_is_monarchy_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_cross_absolute
+		priority = 40
+		trigger = {
+			coa_def_absolute_monarchy_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_cross_absolute_habs
+		priority = 41
+		trigger = {
+			coa_def_habsburg_dynasty_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_cross_absolute_valois
+		priority = 42
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+			coa_def_absolute_monarchy_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_merchant
+		priority = 50
+		trigger = {
+			coa_def_republic_trigger = yes
+			is_subject = no
+		}
+	}
+	flag_definition = {
+		coa = BUR_republic_late
+		priority = 70
+		trigger = {
+			coa_def_republic_trigger = yes
+			coa_def_revolutions_age_6_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BUR_rev
+		priority = 75
+		trigger = {
+			coa_revolutionary_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_rev_empire
+		priority = 80
+		trigger = {
+			coa_revolutionary_empire_trigger = yes
+		}
+	}
+}

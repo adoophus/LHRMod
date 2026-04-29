@@ -1,0 +1,206 @@
+﻿
+
+coa_def_own_ireland = {
+	scope:actor ?= {
+		OR = {
+			any_owned_location = { region = region:ireland_region }
+			any_subject_or_below = {
+				any_owned_location = { region = region:ireland_region }
+			}
+		}
+	}
+}
+coa_def_evreux_trigger = {
+	scope:actor.ruler.dynasty ?= { dynasty:de_evreux_dynasty ?= this }
+}
+coa_def_denmark_ownership_trigger = {
+	scope:actor ?= {
+		OR = {	
+			owns = location:kobenhaven
+			any_subject_or_below = { owns = location:kobenhaven }
+			any_union_partner = { owns = location:kobenhaven }			
+		}
+		OR = {
+			NOT = { country_exists = c:DAN }
+			any_subject_or_below = { this = c:DAN }
+			any_union_partner = { this = c:DAN }
+		}
+	}
+}
+coa_def_DAN_ensign_trigger = { # Aragon
+	country_exists = c:DAN
+	c:DAN ?= { save_temporary_scope_as = custom_overlord }
+	coa_def_ensign_trigger = yes
+}
+coa_def_norway_ownership_trigger = {
+	scope:actor ?= {
+		OR = {	
+			owns = location:oslo
+			any_subject_or_below = { owns = location:oslo }
+			any_union_partner = { owns = location:oslo }			
+		}
+		OR = {
+			NOT = { country_exists = c:NOR }
+			any_subject_or_below = { this = c:NOR }
+			any_union_partner = { this = c:NOR }
+		}
+	}
+}
+coa_def_danish_trigger = { 
+	scope:actor ?= {
+		exists = culture
+		culture = culture:danish
+	}
+}
+coa_def_swedish_trigger = { 
+	scope:actor ?= {
+		exists = culture
+		culture = culture:swedish
+	}
+}
+coa_def_norwegian_trigger = { 
+	scope:actor ?= {
+		exists = culture
+		culture = culture:norwegian
+	}
+}
+coa_def_norwegian_trigger = { 
+	scope:actor ?= {
+		exists = culture
+		culture = culture:norwegian
+	}
+}
+coa_def_norwegian_trigger = { 
+	scope:actor ?= {
+		exists = culture
+		culture = culture:norwegian
+	}
+}
+coa_def_pomeranian_trigger = { # Breton
+	scope:actor ?= {
+		exists = culture
+		OR = {
+			culture = culture:eastern_pomeranian
+			culture = culture:western_pomeranian
+		}
+	}
+}
+
+coa_def_pomeranian_ruler_trigger = { # Breton
+	scope:actor ?= {
+		OR = {
+          scope:actor.ruler.culture ?= culture:eastern_pomeranian
+          scope:actor.ruler.culture ?= culture:western_pomeranian
+		}
+	}
+}
+coa_def_transylvania_ownership_trigger = {
+	scope:actor ?= {
+		OR = {	
+			owns = location:cluj
+			any_subject_or_below = { owns = location:cluj }
+			any_union_partner = { owns = location:cluj }			
+		}
+		OR = {
+			NOT = { country_exists = c:TRA }
+			any_subject_or_below = { this = c:TRA }
+			any_union_partner = { this = c:TRA }
+		}
+	}
+}
+coa_def_date_after_1460 = {
+	current_date > 1460.1.1
+}
+coa_def_MON_ensign_trigger = { # Aragon
+	country_exists = c:MON
+	c:MON ?= { save_temporary_scope_as = custom_overlord }
+	coa_def_ensign_trigger = yes
+}
+coa_def_montfort_trigger = {
+	scope:actor.ruler.dynasty ?= { dynasty:montfort_dynasty ?= this }
+}
+coa_def_gryf_trigger = {
+	scope:actor.ruler.dynasty ?= { dynasty:gryf_dynasty ?= this }
+}
+coa_def_MNN_trigger = {
+	scope:actor ?= { has_or_had_tag = MNN }
+}
+coa_def_SKE_trigger = {
+	scope:actor ?= { has_or_had_tag = SKE }
+}
+
+coa_def_rurikovich_dynasty_trigger = {
+	scope:actor.ruler.dynasty ?= { dynasty:rurikovich_dynasty ?= this }
+}
+coa_def_NAV_ensign_trigger = { # Aragon
+	country_exists = c:NAV
+	c:NAV ?= { save_temporary_scope_as = custom_overlord }
+	coa_def_ensign_trigger = yes
+}
+coa_def_ukraine_culture_trigger = {
+	scope:actor ?= {
+		exists = culture
+		OR = {
+			culture = culture:ruthenian_culture
+			culture = culture:volhynian_culture
+			culture = culture:severian_culture
+			culture = culture:halychian_culture			
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+}
+coa_def_belarus_culture_trigger = {
+	scope:actor ?= {
+		exists = culture
+		OR = {
+			culture = culture:polesian_culture
+			culture = culture:polatskian_culture
+			culture = culture:smolenskian_culture	
+			culture.dialect = dialect:belarusian_dialect
+		}
+	}
+}
+coa_revolutionary_empire_trigger = {
+	scope:actor ?= {
+		has_reform = government_reform:revolutionary_empire
+	}
+}
+coa_def_revolutionary_empire_trigger = {
+	scope:actor ?= { coa_revolutionary_empire_trigger = yes }
+}
+coa_def_greek_ruler_trigger = {
+	scope:actor ?= {
+		ruler ?= {
+			culture ?= {		
+				has_culture_group = culture_group:hellenic_group
+			}
+		}
+	}
+}
+coa_def_spanish_cross_trigger = {
+	c:SPA ?= {
+		OR = {
+			country_rank = country_rank:rank_kingdom
+			country_rank = country_rank:rank_empire
+		}
+		any_subject_or_below = {
+			is_subject_type = colonial_nation
+			capital ?= { continent = continent:america }	
+		}	
+	}
+}
+coa_def_SPA_is_monarchy_trigger = {
+	scope:c:SPA ?= { coa_monarchy_trigger = yes }
+}
+coa_def_BRB_ownership_trigger = {
+	c:SPA ?= {
+		OR = {
+			owns = location:brussels
+			any_subject = { owns = location:brussels }
+		}	
+		OR = {
+			NOT = { country_exists = c:BRB }
+			any_subject_or_below = { this = c:BRB }
+		}
+	}
+}

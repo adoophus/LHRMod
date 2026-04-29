@@ -205,6 +205,48 @@ hes_st_elizabeth_nationalized = {
 	construction_demand = cathedral_construction 
 }
 
+REPLACE:polders = {
+	is_special = yes
+	is_foreign = no
+	pop_type = laborers
+	max_levels = polders_max_level
+
+	employment_size = 0.1
+
+	build_time = infrastructure_build_time
+
+	category = infrastructure_category
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+
+	location_potential = {
+		OR = {
+			is_coastal = yes
+			is_adjacent_to_lake = yes
+		}
+		topography = wetlands
+	}
+
+	modifier = {
+		local_population_capacity_modifier = 0.05
+		local_distance_from_capital_speed_propagation= 0.05
+		local_monthly_development_modifier = 0.025
+		local_monthly_food_modifier = 0.05
+	}
+
+	unique_production_methods = {
+		polders_maintenance = {
+			clay = 0.5
+			tools = 0.05
+
+			category = building_maintenance
+		}
+	}
+	construction_demand = polders_construction
+}
+
 scan_early_dockyard = {
 	is_foreign = no
 	max_levels = 1
