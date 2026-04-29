@@ -16,6 +16,10 @@ INJECT:country_base_values = {
 	army_auxiliary_build_cost_modifier = -0.33
 }
 
+INJECT:capital_occupied = {
+	global_defensive = -0.25
+}
+
 # PSEUDO FL - anti snowball
 # money sink
 #larger_than_expected_army = {
