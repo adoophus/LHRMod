@@ -1,0 +1,8 @@
+REPLACE:hun_composite_light_cavalry = {
+	potential = { has_or_had_tag = HUN }
+
+	age = age_1_traditions
+	army_cavalry_power = 0.15
+
+	requires = feudalism_advance
+}
