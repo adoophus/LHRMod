@@ -1,0 +1,32 @@
+INJECT:stockade = {
+	modifier = {
+        local_monthly_food_modifier = -0.1
+	}
+}
+
+INJECT:castle = {
+	modifier = {
+        local_monthly_food_modifier = -0.2
+	}
+}
+
+INJECT:bastion = {
+	modifier = {
+        local_monthly_food_modifier = -0.2
+	}
+
+}
+
+INJECT:star_fort = {
+	modifier = {
+        local_monthly_food_modifier = -0.2
+	}
+}
+
+INJECT:fortress = {
+	modifier = {
+        local_monthly_food_modifier = -0.2
+	}
+}
+
+
