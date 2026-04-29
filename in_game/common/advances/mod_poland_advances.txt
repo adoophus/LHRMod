@@ -1,4 +1,4 @@
-polish_hussar_legacy = {
+pol_hussar_legacy = {
 	age = age_2_renaissance
 	potential = { has_or_had_tag = POL }
 

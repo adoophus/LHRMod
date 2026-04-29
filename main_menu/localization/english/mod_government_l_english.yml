@@ -102,8 +102,9 @@ ira_royal_road_surveyors_desc: "The vastness of the Iranian Plateau is defined n
 #
 
 # POLAND ADVANCES
-polish_hussar_legacy: "Hussar Legacy"
-polish_hussar_legacy_desc: "Before the famed winged formations of later centuries, the Polish Crown cultivated a strong mounted tradition among the szlachta. Investment in horse breeding, riding discipline, and battlefield maneuver doctrine strengthened the striking power of Polish cavalry."
+pol_hussar_legacy: "Polska Kopia"
+pol_hussar_legacy_desc: "Through the bold reforms of [GetCharacter('pol_casimir_iii_piast').GetShortName], the Polish Crown initiated the beginnings of a long-lasting mounted tradition with the Szlachta. Codifying their service through investment in heavy destriers and lance discipline, these hussars would eventually become the most feared cavalry in Europe."
+
 
 promote_religion_area: "Convert Area"
 promote_religion_area_desc: "This will increase the amount of [pops|e] that will [convert|e] to the selected [religion|e] each month."
