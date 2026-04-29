@@ -1,0 +1,31 @@
+INJECT:capital = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 100
+	local_max_control = 0.20
+	local_population_capacity_modifier = 0.10
+	local_migration_attraction = 0.025
+	
+	local_nobles_desired_pop = 0.02
+	local_clergy_desired_pop = 0.02
+	local_fort_maintenance_cost = -0.50
+    local_monthly_food_modifier = 0.2
+	
+	free_building_levels = 5
+}
+
+INJECT:is_occupied = {
+	game_data = {
+		category = location
+	}
+	local_monthly_prosperity = -0.025
+	local_monthly_control = -0.015
+	
+	hostile_food_multiplier = -0.5
+	
+	local_garrison_growth = -1.0
+	
+	local_construction_speed = -0.25
+
+}
