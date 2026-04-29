@@ -3,6 +3,7 @@ on_game_start = {
 		mod_run_performance_cleanup
 		mod_nerf_bohemia
 		mod_adjust_france
+		mod_adjust_england
 		mod_nerf_mamluks
 		mod_setup_persia
 		mod_adjust_muscovy
@@ -134,7 +135,9 @@ mod_adjust_france = {
 		c:FRA = {
 			cancel_subject = c:FLA
 			cancel_subject = c:ARS
+			cancel_subject = c:BRI
 
+			add_truce_with = { target = c:BRI mutual = yes months = 180 }
 			add_truce_with = { target = c:FLA mutual = yes months = 180 }
 			add_truce_with = { target = c:HAI mutual = yes months = 180 }
 			add_truce_with = { target = c:BRB mutual = yes months = 180 }
@@ -148,6 +151,17 @@ mod_adjust_france = {
 
 		c:FLA = {
 			cancel_subject = c:NAM
+		}
+	}
+}
+
+mod_adjust_england = {
+	effect = {
+		c:NRM = {
+			make_subject_of = {
+				target = c:ENG
+				type = subject_type:vassal
+			}
 		}
 	}
 }
