@@ -74,7 +74,7 @@ hes_st_elizabeth = {
 		local_cultural_tradition = 0.25
 		local_cultural_influence = 0.25
 		local_max_literacy = 5
-		local_monthly_development = 0.005
+		local_monthly_development = 0.0005
 	}
 	on_built = {
 		change_building_owner = c:TEU
@@ -129,7 +129,7 @@ hes_st_elizabeth_teutonic = {
 	modifier = {
 		gold_to_building_owner = 0.4
 		manpower_to_building_owner = 0.015
-		local_monthly_development = -0.005
+		local_monthly_development = -0.0005
 		local_levy_size_modifier = 0.33
 	}
 	on_built = {
@@ -184,7 +184,7 @@ hes_st_elizabeth_nationalized = {
 		always = no
 	}
 	modifier = {
-		local_monthly_development = 0.01
+		local_monthly_development = 0.001
 		local_cultural_tradition = 1
 		local_cultural_influence = 1
 		local_max_literacy = 30
