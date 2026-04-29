@@ -1,0 +1,7 @@
+REPLACE:oak_forests_for_ships = {
+	age = age_3_discovery
+	icon = rudimentary_coastal_ship_repair
+	for = mil
+	
+	navy_heavy_ship_power = 0.1
+}
