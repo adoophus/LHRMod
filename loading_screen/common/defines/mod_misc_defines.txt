@@ -1,5 +1,9 @@
 NDiplomacy = {
 	REMOVE_RIVAL_COOLDOWN = 6 # months
+
+	DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 1		# def 1 # Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
+	WARGOAL_MAX_TICKING_WAR_SCORE = 50
+
 	TRUCE_YEARS = 5
-	# SCALED_TRUCE_YEARS = 15 #renable on new game
+	SCALED_TRUCE_YEARS = 7
 }
