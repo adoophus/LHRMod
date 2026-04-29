@@ -49,44 +49,9 @@ mod_run_performance_cleanup = {
 		}
 
 		sub_continent:pacific_islands = { mod_remove_and_disable_sub_continent = yes }
-		region:tibet_region = { mod_remove_and_disable_region = yes }
-		region:west_china_region = { mod_remove_and_disable_region = yes }
-		area:guizhou_area = { mod_remove_and_disable_area = yes }
-		area:dali_area = { mod_remove_and_disable_area = yes }
-		area:yunnan_area = { mod_remove_and_disable_area = yes }
-
-		c:JAP = {
-			mod_annex_all_direct_vassals = yes
-		}
-
-		c:CRS = {
-			mod_annex_all_nations_in_area = { target_area = lower_selenga_area }
-			mod_annex_all_nations_in_area = { target_area = upper_selenga_area }
-		}
-
-		c:OTC = {
-			mod_annex_all_nations_in_area = { target_area = songhua_area }
-			mod_annex_all_nations_in_area = { target_area = ussuri_area }
-			mod_annex_all_nations_in_area = { target_area = songnen_area }
-		}
-
-		c:QAS= {
-			mod_annex_all_nations_in_area = { target_area = shilkari_area }
-			mod_annex_all_nations_in_area = { target_area = argun_area }
-			mod_annex_all_nations_in_area = { target_area = middle_amur_area }
-			mod_annex_all_nations_in_area = { target_area = lower_amur_area }
-		}
-
-		c:SYG= {
-			mod_annex_all_nations_in_area = { target_area = yanbei_area }
-			mod_annex_all_nations_in_area = { target_area = liaodong_area }
-		}
-
-		c:CHI = {
-			mod_annex_all_nations_in_area = { target_area = liangjiang_area }
-			mod_annex_all_nations_in_area = { target_area = wuling_area }
-			add_country_modifier = { modifier = lhr_chi_permanent_nerf months = -1 mode = add_and_extend }
-		}
+		sub_continent:east_asia = { mod_remove_and_disable_sub_continent = yes }
+		sub_continent:south_east_asia = { mod_remove_and_disable_sub_continent = yes }
+		
 	}
 }
 
