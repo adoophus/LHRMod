@@ -41,3 +41,84 @@ coastal_fort = {
 		local_maritime_presence = 0.2
 	}
 }
+
+order_commandery = {
+	is_special = yes
+	is_foreign = yes
+	stronger_power_projection = no
+	need_good_relation = yes
+	pop_type = clergy
+	
+	category = religious_category
+	
+	max_levels = 1
+	employment_size = order_religious_building_employment
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	
+	allow_wrong_startup = yes
+	
+	
+	location_potential = {
+		custom_tooltip = {
+			text = order_commandery_tt
+			owner = {
+				giving_scripted_relation = {
+					type = relation_type:military_sponsorship
+					target = scope:actor
+				}
+			}
+		}
+	}
+	
+	
+	country_potential = {
+		modifier:target_of_military_sponsorships = yes
+		religion = religion:catholic
+	}
+	
+	build_time = soldier_building
+	
+	allow = {
+		owner = { within_diplomatic_range = scope:actor }
+		dominant_religion = religion:catholic
+	}
+
+	remove_if = {
+		OR = {
+			location = {
+				dominant_religion != religion:catholic
+			}
+			owner = {
+				OR = {
+					modifier:target_of_military_sponsorships = no
+					religion != religion:catholic
+				}
+			}	
+		}
+	}
+
+
+	on_built = {
+		if = {
+			limit = {
+				location.owner != root.owner 
+			}
+			location.owner = {
+				add_opinion = { target = root.owner modifier = opinion_reformation_diplomacy } 
+			}
+		}
+	}
+
+	modifier = {
+		gold_to_building_owner = 0.1
+		manpower_to_building_owner = 0.005
+	}
+	construction_demand = order_commandery_construction
+	possible_production_methods = {
+		order_commandery_maintenance
+	}
+	graphical_tags = { small_military }
+}
