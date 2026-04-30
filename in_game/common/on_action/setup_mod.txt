@@ -117,6 +117,12 @@ mod_adjust_france = {
 		c:FLA = {
 			cancel_subject = c:NAM
 		}
+
+		c:FRA = {
+			hidden_effect = {
+				set_prestige = 5
+			}
+		}
 	}
 }
 
