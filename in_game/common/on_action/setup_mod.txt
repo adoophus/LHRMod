@@ -134,6 +134,19 @@ mod_adjust_england = {
 				type = subject_type:vassal
 			}
 		}
+
+		hidden_effect = {
+			location:cherbourg = {
+				change_location_owner = c:ENG
+				destroy_building = "building(building_type:castle|owner)"
+			}
+			location:st_sauveur = {
+				change_location_owner = c:ENG
+				change_building_level_in_location = { building = building_type:stockade value = 1 }
+			}
+			location:bayeux = { change_location_owner = c:ENG }
+			location:caen = { change_location_owner = c:ENG }
+		}
 	}
 }
 
