@@ -122,3 +122,11 @@ order_commandery = {
 	}
 	graphical_tags = { small_military }
 }
+
+
+INJECT:cinque_port = {
+	modifier = {
+		max_ships_built_at_same_time = 1
+		can_build_ships_in_this_location = yes
+	}
+}
