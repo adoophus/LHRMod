@@ -127,4 +127,5 @@ REPLACE:eng_hyw_invasion_preparation = {
 	}
 	ship_build_speed = 0.66
 	army_movement_speed = 0.10
+	navy_transport_build_cost_modifier = -0.33
 }
