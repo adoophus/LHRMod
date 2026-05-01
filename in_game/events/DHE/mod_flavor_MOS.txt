@@ -1,0 +1,70 @@
+# Prikazi
+REPLACE:flavor_mos.21 = {
+	hide_portraits = yes
+	type = country_event
+	fire_only_once = yes
+	title = flavor_mos.21.title
+	desc = flavor_mos.21.desc
+
+	dynamic_historical_event = {
+		tag = MOS
+		tag = RUS
+		from = 1345.1.1 # Bring 15 years earlier (was 1360)
+		to = 1400.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+
+		at_war = no
+
+		government_type = government_type:monarchy
+
+	}
+
+	immediate = {
+
+		capital = {
+			save_scope_as = target_location
+		}
+
+		ruler = {
+			save_scope_as = target_character
+		}
+
+	}
+
+	option = {
+		name = flavor_mos.21.a
+		historical_option = yes
+
+		custom_tooltip = {
+			text = enable_prikazi_reform
+			set_variable = { name = prikazi value = 1 }
+		}
+
+		custom_tooltip = flavor_mos.21.tt1
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = flavor_mos.21.b
+
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_move_to_right
+		}
+
+		add_prestige = prestige_mild_bonus
+
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+
+	historical_info = flavor_mos.21.historical_info
+
+}
