@@ -1,0 +1,40 @@
+REPLACE:flavor_swe.38 = {
+	type = country_event
+	title = flavor_swe.38.title
+	desc = flavor_swe.38.desc
+	historical_info = flavor_swe.38.historical_info
+
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_silver.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = SWE
+		tag = SCA
+		from = 1400.1.1
+		to = 1430.1.1
+		monthly_chance = 4
+	}
+
+	trigger = {
+		has_or_had_tag = SWE
+		owns = location:sala
+	}
+
+	immediate = {
+		location:sala = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_swe.38.a
+		historical_option = yes
+		location:sala = {
+			change_raw_material = goods:silver
+		}
+	}
+	option = {
+		name = flavor_swe.38.b
+		add_stability = stability_mild_bonus
+	}
+}
