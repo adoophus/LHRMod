@@ -1,5 +1,3 @@
-
-
 REPLACE:levy_a_early_longbowmen = {
 	size = levy_generic_infantry_size
 	
