@@ -1,10 +1,10 @@
 REPLACE:offensive_vs_defensive = {
 	left_modifier = {
 		siege_ability = 0.1
-		assault_ability = 0.5
+		assault_ability = 0.33
 		
 		army_movement_speed = 0.1
-		army_logistics_distance_modifier = 0.1
+		army_logistics_distance_modifier = 0.33
 		defence_importance_modifier = -0.2
 		bias_for_militarist_policies = 50
 		fort_maintenance_cost = 0.2
