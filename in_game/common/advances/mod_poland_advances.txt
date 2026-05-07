@@ -1,8 +1,10 @@
 pol_hussar_legacy = {
 	age = age_2_renaissance
 	potential = {
-		has_or_had_tag = POL
-		has_or_had_tag = PLC 
+		OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = PLC 
+		} 
 	}
 
 	army_heavy_cavalry_power = 0.1
