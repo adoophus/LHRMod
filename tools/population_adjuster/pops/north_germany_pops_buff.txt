@@ -10,3 +10,13 @@ brandenburg_area_buff = {
     areas = { brandenburg_area mecklenburg_area pomerania_area }
     multiply = 1.25
 }
+
+low_countries_buff = {
+    areas = { holland_area friesland_area brabant_area }
+    multiply = 1.3
+}
+
+hesse_buff = {
+    areas = { hesse_area }
+    multiply = 1.5
+}
