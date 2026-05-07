@@ -17,7 +17,7 @@ hes_hofkanzlei = {
 	build_time = cultural_building_time
 	
 	capital_country_modifier = {
-		army_infantry_power = 0.1
+		army_heavy_infantry_power = 0.1
 	}
 
 	modifier = {
