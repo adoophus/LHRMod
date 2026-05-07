@@ -1,0 +1,6 @@
+# Scandinavia population buffs
+
+scandinavian_region_buff = {
+    regions = { scandinavian_region }
+    multiply = 1.25
+}
