@@ -1,0 +1,8 @@
+## moved from age 4 to 1
+REPLACE:encouragement_of_philosophers = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = MLO
+	}
+	global_max_literacy = 5
+}

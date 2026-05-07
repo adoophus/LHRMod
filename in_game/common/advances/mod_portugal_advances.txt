@@ -1,0 +1,25 @@
+# moved from age 6 to 1
+REPLACE:por_vinho_porto = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = POR 
+			is_portuguese_spain = yes
+		}
+	}
+	global_wine_output_modifier = 0.33
+}
+
+# moved from age 5 to 3
+REPLACE:por_colonial_governors = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = POR 
+			is_portuguese_spain = yes
+		}
+	}
+	subject_loyalty = 5
+	
+	requires = colonial_charters
+}

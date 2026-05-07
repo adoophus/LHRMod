@@ -1,0 +1,45 @@
+REPLACE:expanded_arsenale = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+		}
+	}
+	ship_build_speed = 0.1
+	navy_galley_power = 0.15
+	
+	requires = unlock_m_galley_advance
+}
+
+# moved from age 5 to 4
+REPLACE:institutional_reorganization = {
+	age = age_4_reformation
+	icon = consolidate_the_royal_domain
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+			culture = culture:neapolitan
+		}
+	}
+	government_reform_slots = 1
+	
+	requires = imperial_ambitions
+}
+
+# buffed to -25%
+REPLACE:crush_the_barons = {
+	age = age_3_discovery
+	icon = hsa_exchange_of_ideas
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = TWS
+			culture = culture:neapolitan
+		}
+	}
+	global_nobles_estate_power = -0.25
+	
+	requires = linked_armies_advance
+}

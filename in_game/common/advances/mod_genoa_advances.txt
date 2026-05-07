@@ -1,0 +1,8 @@
+# moved from age 3 to 2
+REPLACE:genoese_flexibility = {
+	potential = { has_or_had_tag = GEN }
+
+	age = age_2_renaissance
+	navy_maintenance_efficiency = 0.1
+	can_convert_galleys_to_light = yes
+}

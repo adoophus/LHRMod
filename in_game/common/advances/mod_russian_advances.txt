@@ -6,3 +6,12 @@ REPLACE:russian_integration = {
 	global_integration_speed_modifier = 0.25
 	requires = library_advance
 }
+
+# moved from age 6 to 1
+REPLACE:mos_patrol_the_territories = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = MOS
+	}
+	global_levy_size_modifier = 0.1
+}
