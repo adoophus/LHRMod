@@ -48,3 +48,28 @@ REPLACE:aristocracy_vs_plutocracy = { #
 		bias_for_capitalist_policies = 25
 	}
 }
+
+##############################################
+REPLACE:mysticism_vs_jurisprudence = {
+	
+	allow = {
+		modifier:allow_mysticism_vs_jurisprudence = yes
+	}
+	
+	left_modifier = { #Mysticism
+	
+		land_morale_modifier = 0.10
+		global_pop_conversion_speed_modifier = 0.2
+	
+		clergy_estate_target_satisfaction = large_permanent_target_satisfaction
+	}
+	
+	right_modifier = { #Jurisprudence
+	
+		research_speed_modifier = 0.05
+		country_cabinet_efficiency = 0.1
+	
+		clergy_estate_target_satisfaction = large_permanent_target_satisfaction
+	}
+	
+}
