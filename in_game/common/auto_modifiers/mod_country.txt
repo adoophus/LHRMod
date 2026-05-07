@@ -30,6 +30,18 @@ INJECT:capital_occupied = {
 	global_defensive = -0.25
 }
 
+REPLACE:complacency_impact = {
+	potential_trigger = {
+		modifier:has_complacency_effects = yes
+	}
+
+	scales_with = {
+		value = complacency
+		multiply = 0
+	}
+	
+}
+
 # PSEUDO FL - anti snowball
 # money sink
 #larger_than_expected_army = {
