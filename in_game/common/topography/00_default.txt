@@ -37,7 +37,7 @@ mountains = {
 		blocks_vision_from_land = yes
 		blocks_vision_from_sea = yes
 	}
-
+	
 	colonial_migration_size_modifier = -0.2
 	
 	audio_tags = {
@@ -45,35 +45,6 @@ mountains = {
 	}
 	debug_color = rgb { 105 24 4 } # for topology_screenshot mapmode
 }
-
-valley = {
-	color = hsv360 { 15 88 59 }	
-	movement_cost = 1.75
-	proximity = -0.35
-	defender = 1
-	vegetation_density = 0.5
-	weather_front_strength_change_percent = 0 #-0.5
-	weather_cyclone_strength_change_percent = 0
-	weather_tornado_strength_change_percent = 0
-
-	location_modifier = { 
-		local_frontage_allowed = -4
-		local_rgo_build_time = 0.35 
-		local_road_building_time = 1.25
-		local_monthly_development_modifier = -0.30
-		local_monthly_food_modifier = -0.15
-		blocks_vision_from_land = yes
-		blocks_vision_from_sea = yes
-	}
-
-	colonial_migration_size_modifier = -0.15
-	
-	audio_tags = {
-		masDataTopologyElevation = 0.4
-	}
-	debug_color = rgb { 113 176 151 } # for topology_screenshot mapmode
-}
-
 
 hills = {
 	color = terrain_hills
@@ -94,7 +65,7 @@ hills = {
 		blocks_vision_from_land = yes
 		blocks_vision_from_sea = yes
 	}
-
+	
 	colonial_migration_size_modifier = -0.1
 	
 	audio_tags = {
@@ -144,10 +115,9 @@ wetlands = {
 		local_monthly_development_modifier = -0.30
 		local_monthly_food_modifier = -0.1
 	}
-
+	
 	
 	colonial_migration_size_modifier = -0.1
-	
 	audio_tags = {
 		masDataTopologyElevation = 0.1
 
@@ -489,4 +459,36 @@ ocean_wasteland = {
 
 	}
 	debug_color = rgb { 0 11 131} # for topology_screenshot mapmode
+}
+
+
+# MODDED ONES
+# VALLEY
+
+valley = {
+	color = hsv360 { 15 88 59 }	
+	movement_cost = 1.75
+	proximity = -0.35
+	defender = 1
+	vegetation_density = 0.5
+	weather_front_strength_change_percent = 0 #-0.5
+	weather_cyclone_strength_change_percent = 0
+	weather_tornado_strength_change_percent = 0
+
+	location_modifier = { 
+		local_frontage_allowed = -4
+		local_rgo_build_time = 0.35 
+		local_road_building_time = 1.25
+		local_monthly_development_modifier = -0.30
+		local_monthly_food_modifier = -0.15
+		blocks_vision_from_land = yes
+		blocks_vision_from_sea = yes
+	}
+
+	colonial_migration_size_modifier = -0.15
+	
+	audio_tags = {
+		masDataTopologyElevation = 0.4
+	}
+	debug_color = rgb { 113 176 151 } # for topology_screenshot mapmode
 }
