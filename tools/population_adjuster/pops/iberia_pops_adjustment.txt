@@ -1,0 +1,16 @@
+# Iberia population adjustments
+
+castile_pop_nerf = {
+    tags = { CAS }
+    multiply = 0.9
+}
+
+aragon_pop_buff = {
+    tags = { ARA }
+    multiply = 1.1
+}
+
+portugal_pop_buff = {
+    tags = { POR }
+    multiply = 1.1
+}
