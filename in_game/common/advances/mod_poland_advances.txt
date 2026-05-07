@@ -2,7 +2,8 @@ pol_hussar_legacy = {
 	age = age_2_renaissance
 	potential = { has_or_had_tag = POL }
 
-	army_cavalry_power = 0.1
-
+	army_heavy_cavalry_power = 0.1
+	army_light_cavalry_power = 0.1
+	
 	requires = corona_regni_poloniae
 }

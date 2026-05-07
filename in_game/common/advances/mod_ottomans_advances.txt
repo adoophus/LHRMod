@@ -6,6 +6,6 @@ REPLACE:seljuk_roots = {
 			has_reform = government_reform:anatolian_beylik
 		}
 	}
-	army_maintenance_cost = -0.05
+	army_maintenance_efficiency = 0.1
 	requires = regiment_reinforcement_speed_renaissance
 }
