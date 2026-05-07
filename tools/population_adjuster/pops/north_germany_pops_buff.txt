@@ -1,0 +1,12 @@
+# North Germany population buffs
+
+north_german_region_buff = {
+    regions = { north_german_region }
+    exclude_provinces = { east_luxembourg_province west_luxembourg_province }
+    multiply = 1.25
+}
+
+brandenburg_area_buff = {
+    areas = { brandenburg_area mecklenburg_area pomerania_area }
+    multiply = 1.25
+}
