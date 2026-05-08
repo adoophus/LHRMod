@@ -6,3 +6,10 @@ REPLACE:total_blockaded = {
     monthly_legitimacy = -0.2
 	global_merchant_power = -0.5
 }
+
+REPLACE:liturgical_language_power = {
+	game_data = {
+		category = country
+	}
+	research_speed_modifier = 0.2
+}

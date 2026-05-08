@@ -42,6 +42,37 @@ REPLACE:complacency_impact = {
 	
 }
 
+REPLACE:location_tt_name = {
+	potential_trigger = {
+		country_type = location
+	}
+	research_speed = 1.1
+	cultural_tradition = 0.25
+	cultural_influence = 0.25
+
+}
+
+REPLACE:building_tt_name = {
+	potential_trigger = {
+		country_type = building
+	}
+	research_speed = 1.1
+}
+
+REPLACE:army_tt_name = {
+	potential_trigger = {
+		country_type = army
+	}
+	research_speed = 1.1
+}
+
+REPLACE:navy_tt_name = {
+	potential_trigger = {
+		country_type = navy
+	}
+	research_speed = 1.1
+}
+
 # PSEUDO FL - anti snowball
 # money sink
 #larger_than_expected_army = {
