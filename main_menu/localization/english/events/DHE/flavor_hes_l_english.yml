@@ -258,6 +258,12 @@ STATIC_MODIFIER_NAME_hes_mainz_second_estate_80: "Succession of Mainz"
 STATIC_MODIFIER_DESC_hes_mainz_second_estate_80: "The capture and political subordination of Mainz has been codified into a new estate arrangement that heavily strengthens crown authority while dramatically empowering the clergy within Hessian governance."
 
 STATIC_MODIFIER_NAME_hes_border_claims_fabrication: "Hessian Border Claims"
+
+flavor_byz_ven.9.title: "A Genoese Offer"
+flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$"
+flavor_byz_ven.9.desc: "Word of [GetCountry('VEN').GetNameWithNoTooltip]'s refusal has spread quickly across the [ShowAreaName('adriatic_sea_area')]. [ROOT.GetCountry.GetLongName] now offers immediate aid in the name of Christendom: half the sum Venice would have given, with no collateral demanded. In return, they seek a binding alliance with [origin_country.GetNameWithNoTooltip]."
+flavor_byz_ven.9.a: "Send the funds, and bind our states together."
+flavor_byz_ven.9.a.tt: "[origin_country.GetNameWithFlag] gains [SCOPE.GetLocalVariable('loan_size').GetValue|+=] [gold_i|e], and [ROOT.GetCountry.GetNameWithFlag] forms an [alliance|e] with [origin_country.GetNameWithFlag] if one does not already exist."
 STATIC_MODIFIER_DESC_hes_border_claims_fabrication: "The chancery and court advocates are committed to sustained legal and diplomatic pressure in support of Hessian territorial claims."
 
 
