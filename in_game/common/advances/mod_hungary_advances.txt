@@ -8,15 +8,3 @@ REPLACE:hun_curtailed_peasantry = {
 	global_max_rgo_size_modifier = 0.1
 	requires = rgo_size_advance_reformation
 }
-
-
-# moved from age 3 to 4
-# this is way too strong early
-# we already get cav power one of the most op modifiers in the game currently, eco cant be insane too.
-REPLACE:hun_reformed_coinage = {
-	potential = { has_or_had_tag = HUN }
-	
-	age = age_4_reformation
-	monthly_inflation = -0.001
-	requires = trade_range_advance_age_3
-}
