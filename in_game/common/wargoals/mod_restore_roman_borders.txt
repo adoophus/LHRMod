@@ -1,0 +1,21 @@
+REPLACE:superiority_restore_roman_borders = {
+	type = take_country
+	attacker = { conquer_cost = 0.8 subjugate_cost = 0.8 antagonism = 0.8 }
+	defender = { conquer_cost = 0.8 antagonism = 0.8 }
+	allowed_locations = {
+		scope:location = {
+			OR = {
+				region = region:anatolia_region
+				region = region:italy_region
+				region = region:iberia_region
+				region = region:france_region
+				region = region:balkan_region
+				region = region:great_britain_region
+				region = region:egypt_region
+				region = region:maghreb_region
+				region = region:crescent_region
+			}
+		}
+	}
+	ticking_war_score = 0.5
+}
