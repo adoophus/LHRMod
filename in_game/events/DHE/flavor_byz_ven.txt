@@ -362,4 +362,8 @@ flavor_byz_ven.9 = {
 			}
 		}
 	}
+
+	option = {
+		name = flavor_byz_ven.9.b
+	}
 }

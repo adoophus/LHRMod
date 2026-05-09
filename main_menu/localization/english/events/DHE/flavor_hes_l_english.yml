@@ -264,6 +264,7 @@ flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$"
 flavor_byz_ven.9.desc: "News of [GetCountry('VEN').GetName]'s shameful refusal has reached [loaning_country.GetName], where merchants and lords alike see opportunity in charity. They offer substantial aid in the name of Christendom, half what Venice demanded yet without the humiliating collateral. \n\nIn exchange, they seek a binding alliance with our great nation, securing their dominion in the [ShowAreaName('aegean_sea_area')]."
 flavor_byz_ven.9.a: "Send the funds, and bind our states together."
 flavor_byz_ven.9.a.tt: "[origin_country.GetNameWithFlag] gains [SCOPE.GetLocalVariable('loan_size').GetValue|+=] [gold_i|e], and [ROOT.GetCountry.GetNameWithFlag] forms an [alliance|e] with [loaning_country.GetNameWithFlag] if one does not already exist."
+flavor_byz_ven.9.b: "We will not be entangled in their petty squabbles."
 STATIC_MODIFIER_DESC_hes_border_claims_fabrication: "The chancery and court advocates are committed to sustained legal and diplomatic pressure in support of Hessian territorial claims."
 
 
