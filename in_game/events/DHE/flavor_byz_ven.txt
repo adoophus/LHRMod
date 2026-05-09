@@ -112,7 +112,7 @@ flavor_byz_ven.2 = {
 
 		if = {
 			limit = { country_exists = c:GEN }
-			c:GEN = {
+			c:BYZ = {
 				trigger_event_non_silently = {
 					id = flavor_byz_ven.9
 				}
@@ -316,9 +316,17 @@ flavor_byz_ven.9 = {
 
 	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
 
+	trigger = {
+		NOT = { c:GEN = { is_human = yes } }
+	}
+
 	immediate = {
 		c:BYZ = {
 			save_scope_as = origin_country
+		}
+
+        c:GEN = {
+			save_scope_as = loaning_country
 		}
 
 		set_local_variable = {
@@ -334,12 +342,13 @@ flavor_byz_ven.9 = {
 		name = flavor_byz_ven.9.a
 		custom_tooltip = flavor_byz_ven.9.a.tt
 
-		add_gold = {
-			value = local_var:loan_size
-			multiply = -1
-		}
-		scope:origin_country = {
-			add_gold = local_var:loan_size
+        add_gold = local_var:loan_size
+
+		scope:loaning_country = {
+			add_gold = {
+                value = local_var:loan_size
+                multiply = -1
+		    }
 		}
 
 		if = {
@@ -348,7 +357,7 @@ flavor_byz_ven.9 = {
 			}
 			create_relation = {
 				first = ROOT
-				second = scope:origin_country
+				second = scope:loaning_country
 				type = relation_type:alliance
 			}
 		}
