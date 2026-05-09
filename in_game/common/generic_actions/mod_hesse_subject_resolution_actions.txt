@@ -262,7 +262,7 @@ hesse_buy_noble_compliance = {
 
 	allow = {
 		scope:actor = {
-			NOT = { modifier:hes_noble_pension_compacts = yes }
+			NOT = { has_country_modifier = hes_noble_pension_compacts }
 		}
 	}
 
