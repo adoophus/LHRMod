@@ -958,7 +958,7 @@ flavor_hes.24 = {
 		add_country_modifier = {
 			modifier = hes_border_claims_fabrication
 			years = 25
-			mode = extend
+			mode = add_and_extend
 		}
 	}
 

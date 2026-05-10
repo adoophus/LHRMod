@@ -17,7 +17,7 @@ hesse_2 = {
     
     can_revoke = {
 		custom_tooltip = {
-			text = "The Landgrave has not yet achieved the necessary political capital to challenge the foundations of the nobles' power."
+			text = hesse_2_can_revoke_req_tt
 			not = { has_variable = hes_asserting_authority }
 		}
     }

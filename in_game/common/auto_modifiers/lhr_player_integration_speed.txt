@@ -57,7 +57,7 @@ lhr_player_integration_speed_age4 = {
 lhr_player_integration_speed_age5 = {
 	potential_trigger = {
 		custom_description = {
-			text = lhr_player_integration_speed_age4_req_tt
+			text = lhr_player_integration_speed_age5_req_tt
 			is_ai = no
 			NOT = { has_or_had_tag  = TUR }
 			current_age_or_later = { age = age_5_absolutism }

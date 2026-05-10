@@ -51,7 +51,16 @@ hes_upgrade_privilege.a: "[modifiers|e] of [ShowEstatePrivilegeName('hesse_2')] 
 
 # Option B: Confrontation/Civil War
 flavor_hes.4.b: "Refuse their demands; we will not yield to treason."
-hes_refused_noble_concessions: "Refused Noble Concessions"
+STATIC_MODIFIER_NAME_hes_refused_noble_concessions: "Refused Noble Concessions"
+STATIC_MODIFIER_DESC_hes_refused_noble_concessions: "The Landgrave refused noble demands for compensation and legal guarantees, consolidating crown prerogatives at the cost of long-term aristocratic resentment."
+STATIC_MODIFIER_NAME_hes_reduce_inflation: "Korbach Currency Stabilization"
+STATIC_MODIFIER_DESC_hes_reduce_inflation: "A harsh anti-inflation policy has slowed monetary expansion and restored confidence in Hessian coinage."
+STATIC_MODIFIER_NAME_hes_religious_rights_protected: "Religious Rights Protected"
+STATIC_MODIFIER_DESC_hes_religious_rights_protected: "The Landgrave guaranteed established ecclesiastical privileges, increasing clerical cooperation with the state."
+STATIC_MODIFIER_NAME_hes_accepted_noble_concessions: "Accepted Noble Concessions"
+STATIC_MODIFIER_DESC_hes_accepted_noble_concessions: "The Crown granted broad concessions to the nobility, easing tensions but strengthening decentralizing forces."
+STATIC_MODIFIER_NAME_hes_holy_water_supported: "Ritual Handwashing Campaign"
+STATIC_MODIFIER_DESC_hes_holy_water_supported: "A broad ritual cleansing campaign has improved local disease resilience during crisis conditions."
 hesse_uprising: "Sternerbund Rebellion"
 
 flavor_hes.5.title: "Establishment of the Hofkanzlei"
@@ -205,6 +214,13 @@ flavor_hes.19.a: "We are the greatest!"
 
 flavor_hes.19.historical_info: "[GetCountry('HES').GetName] troops earned significant prestige through a series of victories in the 15th century, most notably during the final phases of the devastating Mainz Diocesan Feud. This established the Hessian military as one of the most reliable fighting forces in the region, a reputation that boosted recruitment and morale."
 
+STATIC_MODIFIER_NAME_hes_land_age_2: "Expansion of the Landgraben"
+STATIC_MODIFIER_DESC_hes_land_age_2: "State-backed fortification lines and border works are being expanded to strengthen territorial cohesion."
+STATIC_MODIFIER_NAME_hes_land_age_3: "Ransom of the Knighthood"
+STATIC_MODIFIER_DESC_hes_land_age_3: "Urban wealth is being redirected into territorial consolidation, weakening traditional knightly autonomy."
+STATIC_MODIFIER_NAME_hes_morale_age_3: "Reputation of the Iron Banner"
+STATIC_MODIFIER_DESC_hes_morale_age_3: "Repeated battlefield success has forged strong institutional confidence across Hessian forces."
+
 flavor_hes.20.title: "Landgrave's Gambit"
 
 flavor_hes.20.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been presented with an opportunity to let everyone be reminded of their rulership. If there is a wish for new coins to be minted for the realm, there is a master of the craft that can be hired. Not only will the mintage be exquisite, it will be adorned with a glorious portrait of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
@@ -223,6 +239,9 @@ flavor_hes.21.desc: "A prominent merchant in [ShowLocationName('kassel')], [anno
 flavor_hes.21.a: "Pay the political price for our short-sightedness."
 
 flavor_hes.21.historical_info: "Currency fraud by rulers was a serious violation of medieval and early modern law, often leading to revolts and diplomatic crises. When exposed, the immediate result was a severe erosion of the Crown's credit and financial reputation, requiring massive concessions to merchants to restore stability."
+
+STATIC_MODIFIER_NAME_hes_erosion_of_trust: "Erosion of Trust"
+STATIC_MODIFIER_DESC_hes_erosion_of_trust: "Public confidence in official coinage and fiscal management has been damaged by monetary malpractice."
 
 flavor_hes.22.title: "The River Authority"
 
@@ -258,6 +277,14 @@ STATIC_MODIFIER_NAME_hes_mainz_second_estate_80: "Succession of Mainz"
 STATIC_MODIFIER_DESC_hes_mainz_second_estate_80: "The capture and political subordination of Mainz has been codified into a new estate arrangement that heavily strengthens crown authority while dramatically empowering the clergy within Hessian governance."
 
 STATIC_MODIFIER_NAME_hes_border_claims_fabrication: "Hessian Border Claims"
+STATIC_MODIFIER_NAME_hes_noble_pension_compacts: "Noble Pension Compacts"
+STATIC_MODIFIER_DESC_hes_noble_pension_compacts: "Targeted pension agreements have secured short-term elite compliance while increasing structural decentralization pressure."
+STATIC_MODIFIER_NAME_hes_peasant_disenfranchisement: "Peasant Disenfranchisement"
+STATIC_MODIFIER_DESC_hes_peasant_disenfranchisement: "Legal and fiscal reforms in this location have shifted local political influence away from peasant communities."
+STATIC_MODIFIER_NAME_hes_korbach_peasant_enfranchisement: "Korbach Peasant Enfranchisement"
+STATIC_MODIFIER_DESC_hes_korbach_peasant_enfranchisement: "Concessions in Korbach have significantly increased local peasant influence at the expense of noble control."
+STATIC_MODIFIER_NAME_hes_joint_investment_nobility_kassel: "Joint Investment in Kassel"
+STATIC_MODIFIER_DESC_hes_joint_investment_nobility_kassel: "Noble interests have deepened their local stake in Kassel through coordinated investment."
 
 flavor_byz_ven.9.title: "A Genoese Offer"
 flavor_byz_ven.9.entry: "$flavor_byz_ven.9.title$"

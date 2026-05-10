@@ -30,52 +30,6 @@ REPLACE:is_bankrupt = {
 	monthly_towards_traditional_economy = societal_value_huge_monthly_move
 }
 
-hes_reduce_inflation = {
-	monthly_inflation = -0.0015
-}
-hes_religious_rights_protected = {
-	monthly_religious_influence = 0.1
-}
-hes_refused_noble_concessions = {
-	global_crown_estate_power = 0.25
-	monthly_prestige = 0.1
-}
-hes_accepted_noble_concessions = {
-	global_nobles_estate_power = 0.25
-	monthly_towards_decentralization = 0.2
-}
-hes_holy_water_supported = {
-	game_data = {
-		category = location
-	}
-	local_disease_resistance = 0.15
-}
-hes_post_plague_centralization = {
-	global_estate_max_tax = 0.1
-	global_peasants_estate_power = 1
-	global_crown_estate_power = 0.25
-	monthly_towards_centralization = 0.1
-}
-hes_missed_centralization = {
-	global_estate_target_satisfaction = 0.05
-	global_monthly_prosperity = 0.002
-	monthly_towards_decentralization = 0.2
-}
-hes_land_age_2 = {
-	nobles_estate_target_satisfaction = -0.05
-	monthly_towards_land = 0.3
-}
-hes_land_age_3 = {
-	burghers_estate_target_satisfaction = -0.05
-	nobles_estate_target_satisfaction = -0.1
-	monthly_towards_land = 0.4
-}
-hes_morale_age_3 = {
-	land_morale_modifier = 0.10
-}
-hes_erosion_of_trust = {
-	bank_interest = 0.02
-}
 REPLACE:PRU_end_of_robber_barons = {
 	game_data = {
 		category = country 
@@ -92,25 +46,6 @@ bds_ilkhanate_power_vacuum = {
 
 	global_monthly_control = -0.001
 	global_nobles_estate_power = 0.1
-}
-
-hes_noble_pension_compacts = {
-	global_nobles_estate_power = 0.1
-	monthly_towards_decentralization = 0.05
-}
-
-hes_border_claims_fabrication = {
-	diplomatic_reputation = 1
-	monthly_towards_belligerence = 0.1
-}
-
-lhr_chi_permanent_nerf = {
-	game_data = {
-		category = country
-	}
-
-	great_power_score = -1000
-	#global_max_control = -0.25
 }
 
 lhr_natural_selection = {

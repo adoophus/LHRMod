@@ -1,36 +1,36 @@
 REPLACE:alliance_can_exist = {
-	scope:actor = {
-		not = { has_blocked_treaties = scope:recipient }
-		not = { is_subject_of = scope:recipient }
-		not = { is_rival_of = scope:recipient }
+	$first$ = {
+		not = { has_blocked_treaties = $second$ }
+		not = { is_subject_of = $second$ }
+		not = { is_rival_of = $second$ }
 		modifier:allowed_alliance = yes
 		NOT = {
 			is_member_of_international_organization_of_type = {
 				type = coalition
-				target = scope:recipient
+				target = $second$
 			}
 		}
 		NOT = {
-			in_union_with = scope:recipient
+			in_union_with = $second$
 		}
 		is_rebel_country = no
 	}
-	scope:recipient = {
+	$second$ = {
 
-		not = { has_blocked_treaties = scope:actor }
-		not = { is_subject_of = scope:actor }
-		not = { is_rival_of = scope:actor }
+		not = { has_blocked_treaties = $first$ }
+		not = { is_subject_of = $first$ }
+		not = { is_rival_of = $first$ }
 		modifier:allowed_alliance = yes
 		NOT = {
 			is_member_of_international_organization_of_type = {
 				type = coalition
-				target = scope:actor
+				target = $first$
 			}
 		}
 		is_rebel_country = no
 	}
 	can_create_subject_alliance = {
-		actor = scope:actor
-		recipient = scope:recipient
+		actor = $first$
+		recipient = $second$
 	}
 }
