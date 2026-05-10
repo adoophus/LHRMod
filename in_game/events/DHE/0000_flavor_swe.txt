@@ -1,6 +1,6 @@
 ﻿namespace = flavor_swe
 
-REPLACE:flavor_swe.38 = {
+flavor_swe.38 = {
 	type = country_event
 	title = flavor_swe.38.title
 	desc = flavor_swe.38.desc
