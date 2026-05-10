@@ -165,7 +165,7 @@ REPLACE:genoese_crossbowmen = {
 	potential = { has_or_had_tag = GEN }
 	age = age_2_renaissance
 	unlock_unit = a_genoese_crossbowmen
-	army_infantry_power = 0.1
+	army_light_infantry_power = 0.1
 	requires = unlock_men_at_arms_advance
 }
 
