@@ -76,20 +76,11 @@ hes_st_elizabeth = {
 	on_built = {
 		change_building_owner = c:TEU
 	}
-	unique_production_methods = {
-		cathedral_maintenance = {
-			glass = 0.05
-			cloth = 0.05
-			gold = 0.025
-			paper = 0.1
-			copper = 0.05
-			tools = 0.05
-			category = building_maintenance
-		}
+	possible_production_methods = {
+		estate_building_input
 	}
 
-
-	construction_demand = cathedral_construction 
+	construction_demand = estate_construct_building
 }
 
 hes_st_elizabeth_teutonic = {
@@ -130,21 +121,11 @@ hes_st_elizabeth_teutonic = {
 	on_built = {
 		change_building_owner = c:TEU
 	}
-	unique_production_methods = {
-		cathedral_maintenance = {
-			glass = 0.05
-			cloth = 0.1
-			gold = 0.025
-			paper = 0.1
-			copper = 0.05
-			tools = 0.05
-			weaponry = 0.1
-			category = building_maintenance
-		}
+	possible_production_methods = {
+		estate_building_input
 	}
 
-
-	construction_demand = cathedral_construction 
+	construction_demand = estate_construct_building
 }
 
 hes_st_elizabeth_nationalized = {
@@ -181,20 +162,11 @@ hes_st_elizabeth_nationalized = {
 		local_cultural_influence = 1
 		local_max_literacy = 30
 	}
-	unique_production_methods = {
-		cathedral_maintenance = {
-			glass = 0.05
-			cloth = 0.1
-			gold = 0.025
-			paper = 0.1
-			copper = 0.05
-			tools = 0.05
-			category = building_maintenance
-		}
+	possible_production_methods = {
+		estate_building_input
 	}
 
-
-	construction_demand = cathedral_construction 
+	construction_demand = estate_construct_building
 }
 
 REPLACE:polders = {
