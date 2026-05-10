@@ -415,7 +415,7 @@ types SetupMercenaryTypes
 					tooltipwidget = {
 						ContextualTooltipType = {
 							blockoverride "title_text" {
-								text = "MODIFIER_TYPE_NAME_mercenary_maintenance_cost"
+								text = "MODIFIER_TYPE_NAME_mercenary_maintenance_efficiency"
 							}
 							blockoverride "concept_link" {
 								text = [mercenary|E]
