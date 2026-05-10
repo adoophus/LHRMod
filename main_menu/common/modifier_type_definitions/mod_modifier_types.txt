@@ -12,3 +12,10 @@ valley_proximity_impact = {
 		category = country
 	}
 }
+
+max_city_walls = {
+	decimals = 0
+	game_data = {
+		category = country
+	}
+}

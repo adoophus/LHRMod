@@ -1,3 +1,7 @@
 valley_proximity_impact = {
 	positive = "gfx/interface/icons/modifier_types/valley_proximity_impact.dds"
 }
+
+max_city_walls = {
+	positive = "gfx/interface/icons/modifier_types/max_city_walls.dds"
+}

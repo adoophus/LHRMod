@@ -3,4 +3,6 @@
  MODIFIER_TYPE_DESC_allow_cabinet_promote_religion_area: "Allows use of the Convert Area cabinet action."
  MODIFIER_TYPE_NAME_valley_proximity_impact: "Valley Proximity Impact"
  MODIFIER_TYPE_DESC_valley_proximity_impact: "This impacts the [proximity|e] cost when going through [ShowTopographyName('valley')]."
+ MODIFIER_TYPE_NAME_max_city_walls: "City Wall Limit"
+ MODIFIER_TYPE_DESC_max_city_walls: "A hard limit on the number of [ShowBuildingTypeName('city_walls')] a [country|e] can maintain."
 

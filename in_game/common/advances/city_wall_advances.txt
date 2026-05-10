@@ -1,0 +1,11 @@
+INJECT:fort_limit_2_advance = {
+	max_city_walls = 1
+}
+
+INJECT:fort_limit_3_advance = {
+	max_city_walls = 1
+}
+
+INJECT:fort_limit_4_advance = {
+	max_city_walls = 1
+}
