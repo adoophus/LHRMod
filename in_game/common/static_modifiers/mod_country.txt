@@ -126,7 +126,7 @@ REPLACE:bra_waldemar_rallies_nobility = {
 	nobles_estate_target_satisfaction = large_permanent_target_satisfaction_penalty
 }
 
-REPLACE:bra_wittelsbacher_neglect = {
+bra_wittelsbacher_neglect = {
 	game_data = {
 		category = country
 	}
