@@ -6,6 +6,6 @@ hes_persuade_mercenaries = {
 	allow_multiple = no
 	country_modifier = {
 		diplomatic_reputation = 2
-		mercenary_maintenance_cost = -0.1
+		mercenary_maintenance_efficiency = 0.1
 	}
 }

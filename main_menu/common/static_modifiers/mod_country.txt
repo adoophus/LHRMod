@@ -21,7 +21,7 @@ REPLACE:is_bankrupt = {
 	research_speed_modifier = -0.9
 	global_construction_speed = -0.9
 
-	mercenary_maintenance_cost = 2.5
+	mercenary_maintenance_efficiency = -2.5
 	hire_mercenary_premium_cost_modifier = 2.5
 	hire_mercenary_leader_cost_modifier = 2.5
 
