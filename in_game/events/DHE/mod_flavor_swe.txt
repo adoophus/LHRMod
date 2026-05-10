@@ -1,3 +1,5 @@
+namespace = flavor_swe
+
 REPLACE:flavor_swe.38 = {
 	type = country_event
 	title = flavor_swe.38.title

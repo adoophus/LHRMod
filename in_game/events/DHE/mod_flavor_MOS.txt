@@ -1,3 +1,5 @@
+namespace = flavor_mos
+
 # Prikazi
 REPLACE:flavor_mos.21 = {
 	hide_portraits = yes
