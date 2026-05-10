@@ -1,4 +1,4 @@
-﻿REPLACE:expanded_arsenale = {
+REPLACE:expanded_arsenale = {
 	age = age_2_renaissance
 	potential = {
 		OR = {

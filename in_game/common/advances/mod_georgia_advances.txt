@@ -1,4 +1,4 @@
-﻿# moved from age 5 to 4
+# moved from age 5 to 4
 REPLACE:geo_georgian_principalities = {
 	age = age_4_reformation
 	potential = {

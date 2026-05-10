@@ -1,4 +1,4 @@
-﻿hesse_subject_resolution = {
+hesse_subject_resolution = {
 	image = "gfx/interface/illustrations/disaster/hesse_subject_resolution.dds"
 	monthly_spawn_chance = monthly_spawn_chance_unique
 

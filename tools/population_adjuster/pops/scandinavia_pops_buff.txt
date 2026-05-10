@@ -1,4 +1,4 @@
-﻿# Scandinavia population buffs
+# Scandinavia population buffs
 
 scandinavian_region_buff = {
     regions = { scandinavian_region }

@@ -1,4 +1,4 @@
-﻿REPLACE:oak_forests_for_ships = {
+REPLACE:oak_forests_for_ships = {
 	age = age_3_discovery
 	icon = rudimentary_coastal_ship_repair
 	for = mil

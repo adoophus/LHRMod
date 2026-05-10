@@ -1,4 +1,4 @@
-﻿countries = {
+countries = {
 	countries = {
 		GRG = { #Gurgan (trimmed to steppe-Turkmen core)
 			type = army

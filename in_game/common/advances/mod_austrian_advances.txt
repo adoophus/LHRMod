@@ -1,4 +1,4 @@
-﻿# moved from age 5 to 3
+# moved from age 5 to 3
 REPLACE:military_border = {
 	age = age_3_discovery
 	potential = {

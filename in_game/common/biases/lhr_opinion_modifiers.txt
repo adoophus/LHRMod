@@ -1,4 +1,4 @@
-﻿lhr_opinion_mams_relations_hit_200 = {
+lhr_opinion_mams_relations_hit_200 = {
 	value = -200
 	yearly_decay = 0
 }

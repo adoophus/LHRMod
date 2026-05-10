@@ -1,4 +1,4 @@
-﻿# France population nerfs
+# France population nerfs
 
 france_region_nerf = {
     regions = { france_region }

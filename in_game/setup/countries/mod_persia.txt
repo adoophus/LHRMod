@@ -1,4 +1,4 @@
-﻿BDS = { #Baduspanids
+BDS = { #Baduspanids
 	color = map_BDS
 	color2 = rgb { 16 41 202 }
 

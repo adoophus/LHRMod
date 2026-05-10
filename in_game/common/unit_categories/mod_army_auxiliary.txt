@@ -1,4 +1,4 @@
-﻿REPLACE:army_auxiliary = {
+REPLACE:army_auxiliary = {
 	is_army = yes
 	
 	auxiliary = yes

@@ -1,4 +1,4 @@
-﻿# moved from age 5 to 4
+# moved from age 5 to 4
 # halved effects to balance
 REPLACE:hun_curtailed_peasantry = {
 	potential = { has_or_had_tag = HUN }

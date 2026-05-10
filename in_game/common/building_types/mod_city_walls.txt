@@ -1,4 +1,4 @@
-﻿REPLACE:city_walls = {
+REPLACE:city_walls = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = soldiers

@@ -1,4 +1,4 @@
-﻿REPLACE:hes_ludwig_hesse = {
+REPLACE:hes_ludwig_hesse = {
 	first_name = { name = name_louis }
 	culture = rhine_franconian
 	religion = catholic

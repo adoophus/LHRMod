@@ -1,4 +1,4 @@
-﻿NGame = {
+NGame = {
 	HOUR_TICK = 24 # 2 # In vanilla, there is 2-hour ticks, and 12-ticks a day.
 	MORNING_OFFSET = 0 # 8 # This is only a visual offset change, does not change the number of ticks.
 	GAME_SPEED_FOR_MULTI_PLAYERS_WARS = 3 # 3 # Vanilla speed 3 equivalent in mod range 

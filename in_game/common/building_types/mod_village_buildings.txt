@@ -1,4 +1,4 @@
-﻿INJECT:fishing_village = {
+INJECT:fishing_village = {
 	modifier = {
 		local_levy_size_modifier = 0.02
 	}

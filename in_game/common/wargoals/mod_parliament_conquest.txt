@@ -1,4 +1,4 @@
-﻿REPLACE:parliament_conquer_province = {
+REPLACE:parliament_conquer_province = {
 	type = take_province
 	
 	attacker = {

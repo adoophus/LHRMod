@@ -1,4 +1,4 @@
-﻿on_game_start = {
+on_game_start = {
 	on_actions = {
 		mod_run_performance_cleanup
 		mod_nerf_bohemia

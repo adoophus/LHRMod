@@ -1,4 +1,4 @@
-﻿lhr_player_integration_speed_age1 = {
+lhr_player_integration_speed_age1 = {
 	potential_trigger = {
 		custom_description = {
 			text = lhr_player_integration_speed_age1_req_tt

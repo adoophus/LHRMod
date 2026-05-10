@@ -1,4 +1,4 @@
-﻿naval_scandinavian_town = {
+naval_scandinavian_town = {
 	brewery = 1
 	temple = 1
 	tools_guild = 1

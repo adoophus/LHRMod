@@ -1,4 +1,4 @@
-﻿REPLACE:total_blockaded = {
+REPLACE:total_blockaded = {
 	game_data = {
 		category = country
 	}

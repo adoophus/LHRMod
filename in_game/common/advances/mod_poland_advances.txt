@@ -1,4 +1,4 @@
-﻿pol_hussar_legacy = {
+pol_hussar_legacy = {
 	age = age_2_renaissance
 	potential = {
 		OR = {

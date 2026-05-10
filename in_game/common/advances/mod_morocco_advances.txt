@@ -1,4 +1,4 @@
-﻿# moved from age 6 to 3
+# moved from age 6 to 3
 REPLACE:shurfa_status = {
 	age = age_3_discovery
 	potential = {

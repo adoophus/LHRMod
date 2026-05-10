@@ -1,4 +1,4 @@
-﻿REPLACE:arm_mount_ararat = {
+REPLACE:arm_mount_ararat = {
 	age = age_1_traditions
 	potential = {
 		OR = {

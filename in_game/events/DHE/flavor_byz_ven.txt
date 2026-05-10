@@ -1,4 +1,4 @@
-﻿namespace = flavor_byz_ven
+namespace = flavor_byz_ven
 
 flavor_byz_ven.1 = {
 	type = country_event

@@ -1,4 +1,4 @@
-﻿REPLACE:offensive_vs_defensive = {
+REPLACE:offensive_vs_defensive = {
 	left_modifier = {
 		siege_ability = 0.1
 		assault_ability = 0.33

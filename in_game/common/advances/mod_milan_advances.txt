@@ -1,4 +1,4 @@
-﻿## moved from age 4 to 1
+## moved from age 4 to 1
 REPLACE:encouragement_of_philosophers = {
 	age = age_1_traditions
 	potential = {

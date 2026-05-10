@@ -1,4 +1,4 @@
-﻿valley_proximity_impact = {
+valley_proximity_impact = {
 	positive = "gfx/interface/icons/modifier_types/valley_proximity_impact.dds"
 }
 

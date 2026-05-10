@@ -1,4 +1,4 @@
-﻿# North Germany population buffs
+# North Germany population buffs
 
 north_german_region_buff = {
     regions = { north_german_region }

@@ -1,4 +1,4 @@
-﻿# moved from age 3 to 1
+# moved from age 3 to 1
 REPLACE:ven_magistrato_alla_sanita = {
 	age = age_1_traditions
 	potential = {

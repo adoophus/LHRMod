@@ -1,4 +1,4 @@
-﻿hesse_1 = {
+hesse_1 = {
 	estate = nobles_estate
 
 	potential = { tag = HES }
