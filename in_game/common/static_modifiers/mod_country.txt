@@ -117,7 +117,7 @@ lhr_chi_permanent_nerf = {
 	great_power_score = -1000
 }
 
-bra_waldemar_rallies_nobility = {
+REPLACE:bra_waldemar_rallies_nobility = {
 	game_data = {
 		category = country
 	}
@@ -126,7 +126,7 @@ bra_waldemar_rallies_nobility = {
 	nobles_estate_target_satisfaction = large_permanent_target_satisfaction_penalty
 }
 
-bra_wittelsbacher_neglect = {
+REPLACE:bra_wittelsbacher_neglect = {
 	game_data = {
 		category = country
 	}
