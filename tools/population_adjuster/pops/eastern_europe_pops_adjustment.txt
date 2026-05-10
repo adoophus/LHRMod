@@ -1,0 +1,11 @@
+# Eastern Europe population adjustments
+
+transylvania_pop_nerf = {
+    areas = { transylvania_area }
+    multiply = 0.9
+}
+
+lesser_poland_pop_buff = {
+    areas = { lesser_poland_area }
+    multiply = 1.15
+}

@@ -7526,168 +7526,13 @@ zalaegerszeg = {
 	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
 	define_pop = {	type = peasants	size = 22.171	culture = hungarian	religion = catholic }
 }
-dabaca = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 3.358	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.842	culture = hungarian	religion = catholic }
-}
-baita = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 8.666	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.091	culture = hungarian	religion = catholic }
-}
-bistrita = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 11.096	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 4.755	culture = german_transylvanian	religion = catholic }
-}
-dej = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 9.229	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.551	culture = hungarian	religion = catholic }
-}
-sic = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 3.203	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.402	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 10.409	culture = hungarian	religion = catholic }
-}
 eastern_carpathians3 = {
 }
 eastern_carpathians4 = {
 }
-alba_iulia = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.626	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 12.725	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.783	culture = german_transylvanian	religion = catholic }
-}
-aiud = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.772	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 13.128	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.966	culture = german_transylvanian	religion = catholic }
-}
-cetatea_balta = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.866	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 13.384	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.083	culture = german_transylvanian	religion = catholic }
-}
-deva = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.518	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.149	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.628	culture = german_transylvanian	religion = catholic }
-}
-felvint = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.755	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.075	culture = hungarian	religion = catholic }
-}
-hateg = {
-	define_pop = {	type = clergy	size = 0.009	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 11.806	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.949	culture = hungarian	religion = catholic }
-}
-hunedoara = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 9.816	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.852	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.962	culture = german_transylvanian	religion = catholic }
-}
 southern_carpathians4 = {
 }
-sibiu = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 9.435	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 11.794	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 2.356	culture = hungarian	religion = catholic }
-}
-brasov = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.754	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.795	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 2.036	culture = szekely_culture	religion = catholic }
-}
-cincu = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.862	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.376	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 2.511	culture = szekely_culture	religion = catholic }
-}
-fagaras = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 9.298	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.857	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.238	culture = hungarian	religion = catholic }
-}
-medias = {
-	define_pop = {	type = nobles	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.524	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.907	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.376	culture = hungarian	religion = catholic }
-}
-sebes = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.310	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.828	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 3.033	culture = hungarian	religion = catholic }
-}
-sighisoara = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 5.684	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 8.122	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 2.435	culture = szekely_culture	religion = catholic }
-}
 southern_carpathians2 = {
-}
-targu_mures = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.415	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 12.765	culture = szekely_culture	religion = catholic }
-}
-chezdi_osorheiu = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 0.827	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 7.470	culture = szekely_culture	religion = catholic }
-}
-covasna = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 0.729	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 6.586	culture = szekely_culture	religion = catholic }
-}
-cristuru_secuiesc = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.132	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 10.206	culture = szekely_culture	religion = catholic }
-}
-gheorgheni = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.099	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.916	culture = szekely_culture	religion = catholic }
-}
-gurghiu = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.574	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.107	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 7.910	culture = hungarian	religion = catholic }
-}
-odorhei = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.171	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 10.559	culture = szekely_culture	religion = catholic }
-}
-sfantu_gheorghe = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.190	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 10.725	culture = szekely_culture	religion = catholic }
-}
-miercurea_cluc = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.058	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 9.543	culture = szekely_culture	religion = catholic }
 }
 eastern_carpathians5 = {
 }
@@ -7700,32 +7545,6 @@ eastern_carpathians6c = {
 eastern_carpathians7 = {
 }
 eastern_carpathians8 = {
-}
-turda = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.697	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 18.811	culture = hungarian	religion = catholic }
-}
-baia_de_aries = {
-	define_pop = {	type = clergy	size = 0.009	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 8.287	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.068	culture = german_transylvanian	religion = catholic }
-	define_pop = {	type = peasants	size = 3.450	culture = hungarian	religion = catholic }
-}
-cluj = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.273	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 17.113	culture = hungarian	religion = catholic }
-}
-huedin = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
-	define_pop = {	type = peasants	size = 8.772	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 13.158	culture = hungarian	religion = catholic }
-}
-reghin = {
-	define_pop = {	type = clergy	size = 0.009	culture = szekely_culture	religion = catholic }
-	define_pop = {	type = peasants	size = 1.153	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 10.408	culture = szekely_culture	religion = catholic }
 }
 inner_carpathians = {
 }
@@ -8423,148 +8242,6 @@ chodziez = {
 }
 szubin = {
 	define_pop = {	type = peasants	size = 8.821	culture = greater_polish	religion = catholic }
-}
-kielce = {
-	define_pop = {	type = peasants	size = 19.747	culture = lesser_polish	religion = catholic }
-}
-opoczno = {
-	define_pop = {	type = peasants	size = 12.894	culture = lesser_polish	religion = catholic }
-}
-przedborz = {
-	define_pop = {	type = peasants	size = 13.795	culture = lesser_polish	religion = catholic }
-}
-zarnow = {
-	define_pop = {	type = peasants	size = 6.252	culture = lesser_polish	religion = catholic }
-}
-czestochowa = {
-	define_pop = {	type = peasants	size = 15.543	culture = lesser_polish	religion = catholic }
-}
-lelow = {
-	define_pop = {	type = peasants	size = 5.731	culture = lesser_polish	religion = catholic }
-}
-mstow = {
-	define_pop = {	type = peasants	size = 12.076	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 1.781	culture = german_silesian	religion = catholic }
-}
-krakow = {
-	define_pop = {	type = nobles	size = 0.004	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = clergy	size = 0.029	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = burghers	size = 0.861	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 32.401	culture = lesser_polish	religion = catholic }
-}
-chrzanow = {
-	define_pop = {	type = peasants	size = 16.594	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 3.294	culture = silesian	religion = catholic }
-}
-ksiaz_wielki = {
-	define_pop = {	type = peasants	size = 23.837	culture = lesser_polish	religion = catholic }
-}
-proszowice = {
-	define_pop = {	type = peasants	size = 9.825	culture = lesser_polish	religion = catholic }
-}
-lublin = {
-	define_pop = {	type = peasants	size = 22.638	culture = lesser_polish	religion = catholic }
-}
-janow_lubelski = {
-	define_pop = {	type = peasants	size = 12.696	culture = lesser_polish	religion = catholic }
-}
-kazimierz = {
-	define_pop = {	type = peasants	size = 27.368	culture = lesser_polish	religion = catholic }
-}
-lukow = {
-	define_pop = {	type = peasants	size = 19.761	culture = lesser_polish	religion = catholic }
-}
-lubartow = {
-	define_pop = {	type = peasants	size = 18.974	culture = lesser_polish	religion = catholic }
-}
-urzedow = {
-	define_pop = {	type = peasants	size = 8.596	culture = lesser_polish	religion = catholic }
-}
-nowy_sacz = {
-	define_pop = {	type = peasants	size = 18.275	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 1.071	culture = german_carpathian	religion = catholic }
-	define_pop = {	type = peasants	size = 0.213	culture = ashkenazi	religion = judaism }
-}
-biecz = {
-	define_pop = {	type = peasants	size = 6.877	culture = lesser_polish	religion = catholic }
-}
-czchow = {
-	define_pop = {	type = peasants	size = 7.641	culture = lesser_polish	religion = catholic }
-}
-jaslo = {
-	define_pop = {	type = peasants	size = 14.928	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 0.855	culture = german_carpathian	religion = catholic }
-	define_pop = {	type = peasants	size = 0.170	culture = ashkenazi	religion = judaism }
-}
-nowy_targ = {
-	define_pop = {	type = peasants	size = 10.433	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 0.611	culture = german_carpathian	religion = catholic }
-	define_pop = {	type = peasants	size = 0.121	culture = ashkenazi	religion = judaism }
-}
-pilzno = {
-	define_pop = {	type = peasants	size = 6.877	culture = lesser_polish	religion = catholic }
-}
-busko_zdroj = {
-	define_pop = {	type = peasants	size = 15.352	culture = lesser_polish	religion = catholic }
-}
-debica = {
-	define_pop = {	type = peasants	size = 15.300	culture = lesser_polish	religion = catholic }
-}
-tarnow = {
-	define_pop = {	type = peasants	size = 16.496	culture = lesser_polish	religion = catholic }
-}
-wislica = {
-	define_pop = {	type = peasants	size = 9.825	culture = lesser_polish	religion = catholic }
-}
-radom = {
-	define_pop = {	type = peasants	size = 15.057	culture = lesser_polish	religion = catholic }
-}
-ilza = {
-	define_pop = {	type = peasants	size = 15.224	culture = lesser_polish	religion = catholic }
-}
-stezyca = {
-	define_pop = {	type = peasants	size = 19.487	culture = lesser_polish	religion = catholic }
-}
-szydlowiec = {
-	define_pop = {	type = peasants	size = 12.686	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 1.086	culture = low_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 0.775	culture = ashkenazi	religion = judaism }
-}
-zwolen = {
-	define_pop = {	type = peasants	size = 12.853	culture = lesser_polish	religion = catholic }
-}
-sandomierz = {
-	define_pop = {	type = peasants	size = 21.261	culture = lesser_polish	religion = catholic }
-}
-kunow = {
-	define_pop = {	type = peasants	size = 11.462	culture = lesser_polish	religion = catholic }
-}
-opatow = {
-	define_pop = {	type = peasants	size = 13.377	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 1.143	culture = rhine_alemannic	religion = catholic }
-	define_pop = {	type = peasants	size = 0.816	culture = ashkenazi	religion = judaism }
-}
-rudnik_poland = {
-	define_pop = {	type = peasants	size = 15.695	culture = lesser_polish	religion = catholic }
-}
-wieliczka = {
-	define_pop = {	type = peasants	size = 38.281	culture = lesser_polish	religion = catholic }
-}
-myslenice = {
-	define_pop = {	type = peasants	size = 21.183	culture = lesser_polish	religion = catholic }
-}
-oswiecim = {
-	define_pop = {	type = nobles	size = 0.002	culture = silesian	religion = catholic }
-	define_pop = {	type = clergy	size = 0.004	culture = silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.906	culture = silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.265	culture = german_silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.402	culture = lesser_polish	religion = catholic }
-}
-zywiec = {
-	define_pop = {	type = clergy	size = 0.004	culture = silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 22.076	culture = silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 8.961	culture = lesser_polish	religion = catholic }
-	define_pop = {	type = peasants	size = 1.576	culture = german_silesian	religion = catholic }
 }
 ashmyany = {
 	define_pop = {	type = clergy	size = 0.005	culture = aukstaitian	religion = romuva }
@@ -107399,6 +107076,329 @@ sassari = {
 	define_pop = {	type = burghers	size = 0.642	culture = ligurian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.639	culture = corsican	religion = catholic }
 	define_pop = {	type = peasants	size = 14.559	culture = sardinian	religion = catholic }
+}
+dabaca = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.022	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.058	culture = hungarian	religion = catholic }
+}
+baita = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.799	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.382	culture = hungarian	religion = catholic }
+}
+bistrita = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.986	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 4.279	culture = german_transylvanian	religion = catholic }
+}
+dej = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.306	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.796	culture = hungarian	religion = catholic }
+}
+sic = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.883	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.162	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.368	culture = hungarian	religion = catholic }
+}
+alba_iulia = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.163	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 11.453	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.205	culture = german_transylvanian	religion = catholic }
+}
+aiud = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.295	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 11.815	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.369	culture = german_transylvanian	religion = catholic }
+}
+cetatea_balta = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.379	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 12.046	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.475	culture = german_transylvanian	religion = catholic }
+}
+deva = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.866	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.334	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.465	culture = german_transylvanian	religion = catholic }
+}
+felvint = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.579	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.368	culture = hungarian	religion = catholic }
+}
+hateg = {
+	define_pop = {	type = clergy	size = 0.008	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 10.625	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.654	culture = hungarian	religion = catholic }
+}
+hunedoara = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.834	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.067	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.766	culture = german_transylvanian	religion = catholic }
+}
+sibiu = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.492	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 10.615	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.120	culture = hungarian	religion = catholic }
+}
+brasov = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.279	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.115	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.832	culture = szekely_culture	religion = catholic }
+}
+cincu = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.276	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.538	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.260	culture = szekely_culture	religion = catholic }
+}
+fagaras = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.368	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.671	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.114	culture = hungarian	religion = catholic }
+}
+medias = {
+	define_pop = {	type = nobles	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.972	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.216	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.238	culture = hungarian	religion = catholic }
+}
+sebes = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.779	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.145	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.730	culture = hungarian	religion = catholic }
+}
+sighisoara = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.116	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 7.310	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.192	culture = szekely_culture	religion = catholic }
+}
+targu_mures = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.274	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 11.489	culture = szekely_culture	religion = catholic }
+}
+chezdi_osorheiu = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 0.744	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 6.723	culture = szekely_culture	religion = catholic }
+}
+covasna = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 0.656	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 5.927	culture = szekely_culture	religion = catholic }
+}
+cristuru_secuiesc = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.019	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 9.185	culture = szekely_culture	religion = catholic }
+}
+gheorgheni = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 0.989	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 8.924	culture = szekely_culture	religion = catholic }
+}
+gurghiu = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.417	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.896	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.119	culture = hungarian	religion = catholic }
+}
+odorhei = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.054	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 9.503	culture = szekely_culture	religion = catholic }
+}
+sfantu_gheorghe = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.071	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 9.652	culture = szekely_culture	religion = catholic }
+}
+miercurea_cluc = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 0.952	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 8.589	culture = szekely_culture	religion = catholic }
+}
+turda = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.227	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 16.930	culture = hungarian	religion = catholic }
+}
+baia_de_aries = {
+	define_pop = {	type = clergy	size = 0.008	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.458	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.861	culture = german_transylvanian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.105	culture = hungarian	religion = catholic }
+}
+cluj = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.846	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 15.402	culture = hungarian	religion = catholic }
+}
+huedin = {
+	define_pop = {	type = clergy	size = 0.008	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.895	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 11.842	culture = hungarian	religion = catholic }
+}
+reghin = {
+	define_pop = {	type = clergy	size = 0.008	culture = szekely_culture	religion = catholic }
+	define_pop = {	type = peasants	size = 1.038	culture = transylvanian	religion = orthodox }
+	define_pop = {	type = peasants	size = 9.367	culture = szekely_culture	religion = catholic }
+}
+kielce = {
+	define_pop = {	type = peasants	size = 22.709	culture = lesser_polish	religion = catholic }
+}
+opoczno = {
+	define_pop = {	type = peasants	size = 14.828	culture = lesser_polish	religion = catholic }
+}
+przedborz = {
+	define_pop = {	type = peasants	size = 15.864	culture = lesser_polish	religion = catholic }
+}
+zarnow = {
+	define_pop = {	type = peasants	size = 7.190	culture = lesser_polish	religion = catholic }
+}
+czestochowa = {
+	define_pop = {	type = peasants	size = 17.874	culture = lesser_polish	religion = catholic }
+}
+lelow = {
+	define_pop = {	type = peasants	size = 6.591	culture = lesser_polish	religion = catholic }
+}
+mstow = {
+	define_pop = {	type = peasants	size = 13.887	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 2.048	culture = german_silesian	religion = catholic }
+}
+krakow = {
+	define_pop = {	type = nobles	size = 0.005	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = clergy	size = 0.033	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = burghers	size = 0.990	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 37.261	culture = lesser_polish	religion = catholic }
+}
+chrzanow = {
+	define_pop = {	type = peasants	size = 19.083	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 3.788	culture = silesian	religion = catholic }
+}
+ksiaz_wielki = {
+	define_pop = {	type = peasants	size = 27.413	culture = lesser_polish	religion = catholic }
+}
+proszowice = {
+	define_pop = {	type = peasants	size = 11.299	culture = lesser_polish	religion = catholic }
+}
+lublin = {
+	define_pop = {	type = peasants	size = 26.034	culture = lesser_polish	religion = catholic }
+}
+janow_lubelski = {
+	define_pop = {	type = peasants	size = 14.600	culture = lesser_polish	religion = catholic }
+}
+kazimierz = {
+	define_pop = {	type = peasants	size = 31.473	culture = lesser_polish	religion = catholic }
+}
+lukow = {
+	define_pop = {	type = peasants	size = 22.725	culture = lesser_polish	religion = catholic }
+}
+lubartow = {
+	define_pop = {	type = peasants	size = 21.820	culture = lesser_polish	religion = catholic }
+}
+urzedow = {
+	define_pop = {	type = peasants	size = 9.885	culture = lesser_polish	religion = catholic }
+}
+nowy_sacz = {
+	define_pop = {	type = peasants	size = 21.016	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 1.232	culture = german_carpathian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.245	culture = ashkenazi	religion = judaism }
+}
+biecz = {
+	define_pop = {	type = peasants	size = 7.909	culture = lesser_polish	religion = catholic }
+}
+czchow = {
+	define_pop = {	type = peasants	size = 8.787	culture = lesser_polish	religion = catholic }
+}
+jaslo = {
+	define_pop = {	type = peasants	size = 17.167	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 0.983	culture = german_carpathian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.196	culture = ashkenazi	religion = judaism }
+}
+nowy_targ = {
+	define_pop = {	type = peasants	size = 11.998	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 0.703	culture = german_carpathian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.139	culture = ashkenazi	religion = judaism }
+}
+pilzno = {
+	define_pop = {	type = peasants	size = 7.909	culture = lesser_polish	religion = catholic }
+}
+busko_zdroj = {
+	define_pop = {	type = peasants	size = 17.655	culture = lesser_polish	religion = catholic }
+}
+debica = {
+	define_pop = {	type = peasants	size = 17.595	culture = lesser_polish	religion = catholic }
+}
+tarnow = {
+	define_pop = {	type = peasants	size = 18.970	culture = lesser_polish	religion = catholic }
+}
+wislica = {
+	define_pop = {	type = peasants	size = 11.299	culture = lesser_polish	religion = catholic }
+}
+radom = {
+	define_pop = {	type = peasants	size = 17.316	culture = lesser_polish	religion = catholic }
+}
+ilza = {
+	define_pop = {	type = peasants	size = 17.508	culture = lesser_polish	religion = catholic }
+}
+stezyca = {
+	define_pop = {	type = peasants	size = 22.410	culture = lesser_polish	religion = catholic }
+}
+szydlowiec = {
+	define_pop = {	type = peasants	size = 14.589	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 1.249	culture = low_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.891	culture = ashkenazi	religion = judaism }
+}
+zwolen = {
+	define_pop = {	type = peasants	size = 14.781	culture = lesser_polish	religion = catholic }
+}
+sandomierz = {
+	define_pop = {	type = peasants	size = 24.450	culture = lesser_polish	religion = catholic }
+}
+kunow = {
+	define_pop = {	type = peasants	size = 13.181	culture = lesser_polish	religion = catholic }
+}
+opatow = {
+	define_pop = {	type = peasants	size = 15.384	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 1.314	culture = rhine_alemannic	religion = catholic }
+	define_pop = {	type = peasants	size = 0.938	culture = ashkenazi	religion = judaism }
+}
+rudnik_poland = {
+	define_pop = {	type = peasants	size = 18.049	culture = lesser_polish	religion = catholic }
+}
+wieliczka = {
+	define_pop = {	type = peasants	size = 44.023	culture = lesser_polish	religion = catholic }
+}
+myslenice = {
+	define_pop = {	type = peasants	size = 24.360	culture = lesser_polish	religion = catholic }
+}
+oswiecim = {
+	define_pop = {	type = nobles	size = 0.002	culture = silesian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.005	culture = silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 15.992	culture = silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.455	culture = german_silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 14.262	culture = lesser_polish	religion = catholic }
+}
+zywiec = {
+	define_pop = {	type = clergy	size = 0.005	culture = silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 25.387	culture = silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 10.305	culture = lesser_polish	religion = catholic }
+	define_pop = {	type = peasants	size = 1.812	culture = german_silesian	religion = catholic }
 }
 
 }
