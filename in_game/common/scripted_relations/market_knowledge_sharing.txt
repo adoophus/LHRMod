@@ -174,76 +174,76 @@
 			not = {
 				OR = {
 					AND = {
-						scope:actor = { has_embraced_institution = institution:feudalism }
-						scope:recipient = { capital = { institution_progress:feudalism < 100 } }
+						scope:first = { has_embraced_institution = institution:feudalism }
+						scope:second = { capital = { institution_progress:feudalism < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:legalism }
-						scope:recipient = { capital = { institution_progress:legalism < 100 } }
+						scope:first = { has_embraced_institution = institution:legalism }
+						scope:second = { capital = { institution_progress:legalism < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:meritocracy }
-						scope:recipient = { capital = { institution_progress:meritocracy < 100 } }
+						scope:first = { has_embraced_institution = institution:meritocracy }
+						scope:second = { capital = { institution_progress:meritocracy < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:renaissance }
-						scope:recipient = { capital = { institution_progress:renaissance < 100 } }
+						scope:first = { has_embraced_institution = institution:renaissance }
+						scope:second = { capital = { institution_progress:renaissance < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:banking }
-						scope:recipient = { capital = { institution_progress:banking < 100 } }
+						scope:first = { has_embraced_institution = institution:banking }
+						scope:second = { capital = { institution_progress:banking < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:professional_armies }
-						scope:recipient = { capital = { institution_progress:professional_armies < 100 } }
+						scope:first = { has_embraced_institution = institution:professional_armies }
+						scope:second = { capital = { institution_progress:professional_armies < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:new_world }
-						scope:recipient = { capital = { institution_progress:new_world < 100 } }
+						scope:first = { has_embraced_institution = institution:new_world }
+						scope:second = { capital = { institution_progress:new_world < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:printing_press }
-						scope:recipient = { capital = { institution_progress:printing_press < 100 } }
+						scope:first = { has_embraced_institution = institution:printing_press }
+						scope:second = { capital = { institution_progress:printing_press < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:pike_and_shot }
-						scope:recipient = { capital = { institution_progress:pike_and_shot < 100 } }
+						scope:first = { has_embraced_institution = institution:pike_and_shot }
+						scope:second = { capital = { institution_progress:pike_and_shot < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:confessionalism }
-						scope:recipient = { capital = { institution_progress:confessionalism < 100 } }
+						scope:first = { has_embraced_institution = institution:confessionalism }
+						scope:second = { capital = { institution_progress:confessionalism < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:global_trade }
-						scope:recipient = { capital = { institution_progress:global_trade < 100 } }
+						scope:first = { has_embraced_institution = institution:global_trade }
+						scope:second = { capital = { institution_progress:global_trade < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:artillery_institution }
-						scope:recipient = { capital = { institution_progress:artillery_institution < 100 } }
+						scope:first = { has_embraced_institution = institution:artillery_institution }
+						scope:second = { capital = { institution_progress:artillery_institution < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:manufactories }
-						scope:recipient = { capital = { institution_progress:manufactories < 100 } }
+						scope:first = { has_embraced_institution = institution:manufactories }
+						scope:second = { capital = { institution_progress:manufactories < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:scientific_revolution }
-						scope:recipient = { capital = { institution_progress:scientific_revolution < 100 } }
+						scope:first = { has_embraced_institution = institution:scientific_revolution }
+						scope:second = { capital = { institution_progress:scientific_revolution < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:military_revolution }
-						scope:recipient = { capital = { institution_progress:military_revolution < 100 } }
+						scope:first = { has_embraced_institution = institution:military_revolution }
+						scope:second = { capital = { institution_progress:military_revolution < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:enlightenment }
-						scope:recipient = { capital = { institution_progress:enlightenment < 100 } }
+						scope:first = { has_embraced_institution = institution:enlightenment }
+						scope:second = { capital = { institution_progress:enlightenment < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:industrialization }
-						scope:recipient = { capital = { institution_progress:industrialization < 100 } }
+						scope:first = { has_embraced_institution = institution:industrialization }
+						scope:second = { capital = { institution_progress:industrialization < 100 } }
 					}
 					AND = {
-						scope:actor = { has_embraced_institution = institution:levee_en_masse }
-						scope:recipient = { capital = { institution_progress:levee_en_masse < 100 } }
+						scope:first = { has_embraced_institution = institution:levee_en_masse }
+						scope:second = { capital = { institution_progress:levee_en_masse < 100 } }
 					}
 				}
 			}
