@@ -1,4 +1,4 @@
-INJECT:fort_limit_2_advance = {
+﻿INJECT:fort_limit_2_advance = {
 	max_city_walls = 1
 }
 

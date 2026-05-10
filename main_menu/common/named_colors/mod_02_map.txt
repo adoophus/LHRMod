@@ -1,4 +1,4 @@
-
+﻿
 
 colors = {
 	#eu4 map colors

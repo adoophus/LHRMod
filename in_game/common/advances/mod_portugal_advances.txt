@@ -1,4 +1,4 @@
-# moved from age 6 to 1
+﻿# moved from age 6 to 1
 REPLACE:por_vinho_porto = {
 	age = age_1_traditions
 	potential = {

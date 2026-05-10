@@ -1,4 +1,4 @@
-REPLACE:superiority_restore_roman_borders = {
+﻿REPLACE:superiority_restore_roman_borders = {
 	type = take_country
 	attacker = { conquer_cost = 0.8 subjugate_cost = 0.8 antagonism = 0.8 }
 	defender = { conquer_cost = 0.8 antagonism = 0.8 }

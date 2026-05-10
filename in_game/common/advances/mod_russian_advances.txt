@@ -1,4 +1,4 @@
-REPLACE:russian_integration = {
+﻿REPLACE:russian_integration = {
 	age = age_1_traditions
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }

@@ -1,4 +1,4 @@
-# AGE 1 - GAME START
+﻿# AGE 1 - GAME START
 
 hes_marburg_university = {
     age = age_1_traditions

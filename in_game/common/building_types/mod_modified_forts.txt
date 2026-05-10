@@ -1,4 +1,4 @@
-INJECT:stockade = {
+﻿INJECT:stockade = {
 	modifier = {
         local_monthly_food_modifier = -0.1
 	}

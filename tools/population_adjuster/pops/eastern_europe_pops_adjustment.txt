@@ -1,4 +1,4 @@
-# Eastern Europe population adjustments
+﻿# Eastern Europe population adjustments
 
 transylvania_pop_nerf = {
     areas = { transylvania_area }

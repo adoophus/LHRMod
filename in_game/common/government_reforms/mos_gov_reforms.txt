@@ -1,4 +1,4 @@
-# this is a strong buff, however:
+﻿# this is a strong buff, however:
 # look at the ottomans, they have 3 reforms that give them extra cabinet (legacy of osman?)
 # this is a very strong buff for the early game, but it is not game breaking
 # muscovy traditionally struggles in the early game, so this is meant to help them out and make them more fun

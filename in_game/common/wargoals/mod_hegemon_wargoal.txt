@@ -1,4 +1,4 @@
-REPLACE:take_capital_imperial = {
+﻿REPLACE:take_capital_imperial = {
 	type = take_capital
 	
 	attacker = {

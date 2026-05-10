@@ -1,4 +1,4 @@
-REPLACE:plc_cossack_treaty_of_hadiach = {
+﻿REPLACE:plc_cossack_treaty_of_hadiach = {
 	estate = cossacks_estate
 
 	potential = {

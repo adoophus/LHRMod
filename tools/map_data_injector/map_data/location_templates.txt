@@ -1,4 +1,4 @@
-# muscovy
+﻿# muscovy
 
 khatun = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = iron}
 
