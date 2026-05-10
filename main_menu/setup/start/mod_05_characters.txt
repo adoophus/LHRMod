@@ -1,4 +1,4 @@
-REPLACE:hes_ludwig_hesse = {
+hes_ludwig_hesse = {
 	first_name = { name = name_louis }
 	culture = rhine_franconian
 	religion = catholic
@@ -10,7 +10,7 @@ REPLACE:hes_ludwig_hesse = {
 	tag = MLGH
 }
 
-REPLACE:hes_herman_i_hesse = {
+hes_herman_i_hesse = {
 	first_name = { name = name_herman }
 	culture = rhine_franconian
 	religion = catholic
@@ -22,7 +22,7 @@ REPLACE:hes_herman_i_hesse = {
 	tag = GSN
 }
 
-REPLACE:hes_otto_brother_hesse = {
+hes_otto_brother_hesse = {
 	first_name = { name = name_otto }
 	culture = rhine_franconian
 	religion = catholic
