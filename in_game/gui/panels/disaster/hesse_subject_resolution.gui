@@ -1,4 +1,4 @@
-disaster_panel = {
+﻿disaster_panel = {
 	blockoverride "disaster_secondary_tab" {
 		margin_top = 10
 		spacing = 5

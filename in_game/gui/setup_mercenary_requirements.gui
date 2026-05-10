@@ -1,4 +1,4 @@
-lateralview = {
+﻿lateralview = {
 	name = "setup_mercenary_requirements_left"
 
 	blockoverride "panel_header" {

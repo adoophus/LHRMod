@@ -1,4 +1,4 @@
-hesse_compromise_with_subject = {
+﻿hesse_compromise_with_subject = {
 	type = disaster
 
 	potential = {

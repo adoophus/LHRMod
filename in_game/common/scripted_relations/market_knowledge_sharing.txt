@@ -1,4 +1,4 @@
-market_knowledge_sharing = {
+﻿market_knowledge_sharing = {
 	type = diplomacy
 	relation_type = oneway
 	break_on_war = yes

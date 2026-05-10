@@ -1,4 +1,4 @@
-REPLACE:rom_all_roads_lead_to_rome = {
+﻿REPLACE:rom_all_roads_lead_to_rome = {
 	age = age_4_reformation
 
 	potential = { has_or_had_tag = ROM }

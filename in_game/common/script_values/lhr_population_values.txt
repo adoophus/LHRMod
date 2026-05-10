@@ -1,4 +1,4 @@
-lhr_total_population_with_subjects = {
+﻿lhr_total_population_with_subjects = {
 	value = total_population
 	add = {
 		every_subject = {

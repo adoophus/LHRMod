@@ -1,4 +1,4 @@
-river_law = {
+﻿river_law = {
 	law_category = socioeconomic
 
 	law_country_group = HES

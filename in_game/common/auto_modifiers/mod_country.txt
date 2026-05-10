@@ -1,4 +1,4 @@
-eng_hundred_years_war_amphibious = {
+﻿eng_hundred_years_war_amphibious = {
 	potential_trigger = {
 		has_or_had_tag = ENG
 		is_situation_active = situation:hundred_years_war

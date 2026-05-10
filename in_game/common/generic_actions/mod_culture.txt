@@ -1,4 +1,4 @@
-REPLACE:add_accepted_culture = {
+﻿REPLACE:add_accepted_culture = {
 	type = owncountry
 
 	potential = {

@@ -1,4 +1,4 @@
-gilak_culture = {
+﻿gilak_culture = {
 	language = persian_language
 	
 	color = map_gilak

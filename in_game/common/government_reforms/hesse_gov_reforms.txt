@@ -1,4 +1,4 @@
-hesse_monarchy_reform = {
+﻿hesse_monarchy_reform = {
 	unique = yes
 	major = yes
 	government = monarchy

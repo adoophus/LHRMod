@@ -1,4 +1,4 @@
-hesse_baron = {
+﻿hesse_baron = {
 	subject_pays = subject_pays_vassal
 	color = subject_vassal
 	level = 2

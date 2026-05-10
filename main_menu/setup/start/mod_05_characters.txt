@@ -22,7 +22,7 @@ REPLACE:hes_herman_i_hesse = {
 	tag = GSN
 }
 
-hes_otto_brother_hesse = {
+REPLACE:hes_otto_brother_hesse = {
 	first_name = { name = name_otto }
 	culture = rhine_franconian
 	religion = catholic

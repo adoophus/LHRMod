@@ -1,4 +1,4 @@
-integration_surge = {
+﻿integration_surge = {
 	texture = "modifier_types/global_integration_speed_modifier"
 }
 

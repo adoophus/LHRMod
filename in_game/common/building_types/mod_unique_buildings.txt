@@ -1,4 +1,4 @@
-hes_hofkanzlei = {
+﻿hes_hofkanzlei = {
 	pop_type = nobles
 	max_levels = 1
 	employment_size = 0.25

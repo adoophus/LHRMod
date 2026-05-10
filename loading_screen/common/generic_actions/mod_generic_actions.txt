@@ -1,4 +1,4 @@
-INJECT:create_colonial_charter = {
+﻿INJECT:create_colonial_charter = {
 	select_trigger = {
 		top_widget = colony_item_card_at_province_select
 		looking_for_a = province_definition
