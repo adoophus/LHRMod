@@ -13,11 +13,6 @@ REPLACE:unlock_halberdiers_advance = {
 	unlock_unit = a_halberdiers
 	
 	requires = training_fields_advance
-
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_halberdiers)"
-	}
-
 	allow = {
 		always = no
 	}
@@ -49,10 +44,6 @@ REPLACE:unlock_early_arquebusiers_advance = {
 	unlock_unit = a_halberdiers
 	unlock_levy = levy_a_matchlock_levy
 	requires = matchlock_gun
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_early_arquebusiers)"
-	}
 }
 
 ######################
@@ -63,11 +54,6 @@ REPLACE:unlock_lancers_advance = {
 	age = age_3_discovery
 	unlock_unit = a_lancers
 	unlock_unit = a_light_lancers
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_lancers)"
-	}
-
 	requires = training_fields_advance
 }
 
@@ -78,10 +64,6 @@ REPLACE:unlock_lancers_advance = {
 REPLACE:unlock_light_lancers_advance = {
 	age = age_3_discovery
 	unlock_unit = a_light_lancers
-	
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_light_lancers)"
-	}
 
 	requires = training_fields_advance
 
@@ -113,10 +95,6 @@ REPLACE:unlock_supply_convoy = {
 	age = age_3_discovery
 	unlock_unit = a_supply_convoy
 	
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_supply_convoy)"
-	}
-
 	requires = training_fields_advance
 
 	allow = {

@@ -20,10 +20,6 @@ REPLACE:unlock_men_at_arms_advance = {
 			} 
 		} 
 	}
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_men_at_arms)"
-	}
 }
 
 # country fixes: done
@@ -40,9 +36,6 @@ REPLACE:unlock_crossbowmen_advance = {
 	}
 	allow = {
 		always = no
-	}
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_crossbowmen)"
 	}
 }
 
@@ -73,10 +66,6 @@ REPLACE:unlock_cavalry_advance = {
 	unlock_unit = a_cavalrymen
 	unlock_unit = a_heavy_cavalrymen
 
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_cavalrymen)"
-	}
-
 	requires = correct_box_advance_renaissance
 }
 
@@ -86,10 +75,6 @@ REPLACE:unlock_cavalry_advance = {
 REPLACE:unlock_heavy_cavalry_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_heavy_cavalrymen
-	
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_heavy_cavalrymen)"
-	}
 
 	requires = unlock_cavalry_advance
 
@@ -111,10 +96,6 @@ REPLACE:unlock_houfnice_advance = {
 	unlock_unit = a_handgonners
 	
 	requires = cannon_maker_advance
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_houfnice)"
-	}
 }
 
 
@@ -131,10 +112,6 @@ REPLACE:unlock_supply_carts = {
 	
 	requires = supply_depot_advance_age_2_renaissance
 
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_supply_carts)"
-	}
-
 	allow = {
 		always = no
 	}
@@ -150,10 +127,6 @@ REPLACE:supply_depot_advance_age_2_renaissance = {
 	supply_depot_capacity = 500
 	unlock_unit = a_supply_carts
 	requires = regiment_reinforcement_speed_renaissance
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_supply_carts)"
-	}
 }
 
 

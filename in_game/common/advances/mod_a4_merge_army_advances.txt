@@ -14,10 +14,6 @@ REPLACE:unlock_arquebusiers_advance = {
 	
 	requires = flintlock_gun
 
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_arquebusiers)"
-	}
-
 	allow = {
 		always = no
 	}
@@ -33,10 +29,6 @@ REPLACE:unlock_pikemen_advance = {
 	unlock_levy = levy_a_flintlock_levy
 
 	requires = barracks_advance
-
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_pikemen)"
-	}
 }
 
 # country fixes: done
@@ -66,10 +58,6 @@ REPLACE:unlock_flintlock_levy = {
 REPLACE:unlock_pistoleers_advance = {
 	age = age_4_reformation
 	unlock_unit = a_pistoleers
-	
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_pistoleers)"
-	}
 
 	requires = flintlock_gun
 
@@ -85,9 +73,6 @@ REPLACE:unlock_heavy_lancers_advance = {
 	age = age_4_reformation
 	unlock_unit = a_heavy_lancers
 	
-	ai_weight = { 
-		add = "ai_unlock_unit_score(a_heavy_lancers)"
-	}
 	unlock_unit = a_pistoleers
 	requires = barracks_advance
 }
@@ -102,10 +87,6 @@ REPLACE:unlock_heavy_lancers_advance = {
 REPLACE:unlock_baggage_train = {
 	age = age_4_reformation
 	unlock_unit = a_baggage_train
-	
-	ai_weight = {
-		add = "ai_unlock_unit_score(a_baggage_train)"
-	}
 
 	requires = recruitment_improvements_reformation
 
