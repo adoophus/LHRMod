@@ -10,7 +10,6 @@
 		cossacks_estate_allowed_in_cabinet = yes
 		cossacks_estate_allowed_leading_military = yes
 		cossacks_estate_blocked_from_leading_military = no
-		army_cavalry_power = 0.1
 		amount_looted_modifier = 0.5
 	}
 }
