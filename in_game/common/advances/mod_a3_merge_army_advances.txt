@@ -85,7 +85,7 @@ REPLACE:supply_lines = {
 	age = age_3_discovery
 	unlock_unit = a_supply_convoy
 	requires = pike_square
-	army_logistics_distance = 500
+	army_logistics_distance = 1000
 }
 
 # country fixes: done

@@ -124,7 +124,7 @@ REPLACE:unlock_supply_carts = {
 REPLACE:supply_depot_advance_age_2_renaissance = {
 	age = age_2_renaissance
 			
-	supply_depot_capacity = 500
+	supply_depot_capacity = 1000
 	unlock_unit = a_supply_carts
 	requires = regiment_reinforcement_speed_renaissance
 }

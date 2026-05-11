@@ -102,7 +102,7 @@ REPLACE:supply_depot_advance_age_4_reformation = {
 	age = age_4_reformation
 	icon = zmw_merchant_taxes
 			
-	supply_depot_capacity = 500
+	supply_depot_capacity = 1000
 	unlock_unit = a_baggage_train
 	requires = correct_box_advance_reformation
 }

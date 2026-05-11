@@ -26,9 +26,9 @@ INJECT:country_base_values = {
 	#army_heavy_cavalry_build_cost_modifier = -0.1
 	#army_artillery_build_cost_modifier = -0.1
 	#army_auxiliary_build_cost_modifier = -0.33
-	supply_depot_capacity = 500
+	supply_depot_capacity = 1000
 	max_city_walls = 2
-	
+
 }
 
 INJECT:capital_occupied = {
