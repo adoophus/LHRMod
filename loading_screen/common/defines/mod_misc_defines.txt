@@ -3,4 +3,5 @@
 
 	DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 1		# def 1 # Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
 	WARGOAL_MAX_TICKING_WAR_SCORE = 50
+	SEND_GIFT_COOLDOWN = 12
 }
