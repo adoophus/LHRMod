@@ -20,14 +20,15 @@ INJECT:country_base_values = {
 	land_morale_movement_cost = 0 # PREV: 0.001 (remove morale loss while moving)
 	naval_morale_movement_cost = 0 # PREV: 0.0 (explicitly keep no morale loss while moving)
 	annexation_speed_base = 0.6
-	army_light_infantry_build_cost_modifier = -0.33
-	army_heavy_infantry_build_cost_modifier = -0.2
-	army_light_cavalry_build_cost_modifier = -0.2
-	army_heavy_cavalry_build_cost_modifier = -0.1
-	army_artillery_build_cost_modifier = -0.1
-	army_auxiliary_build_cost_modifier = -0.33
+	#army_light_infantry_build_cost_modifier = -0.33
+	#army_heavy_infantry_build_cost_modifier = -0.2
+	#army_light_cavalry_build_cost_modifier = -0.2
+	#army_heavy_cavalry_build_cost_modifier = -0.1
+	#army_artillery_build_cost_modifier = -0.1
+	#army_auxiliary_build_cost_modifier = -0.33
 	supply_depot_capacity = 500
 	max_city_walls = 2
+	
 }
 
 INJECT:capital_occupied = {
