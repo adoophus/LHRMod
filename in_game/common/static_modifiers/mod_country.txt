@@ -11,7 +11,7 @@ REPLACE:liturgical_language_power = {
 	game_data = {
 		category = country
 	}
-	research_speed_modifier = 0.2
+	research_speed_modifier = 0.1
 }
 
 hes_noble_pension_compacts = {
