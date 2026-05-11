@@ -169,6 +169,7 @@
 		positive_opinion = 0.2
 	}
 
+
 	will_expire_trigger = {
 		OR = {
 			not = {
