@@ -20,7 +20,7 @@ INJECT:is_occupied = {
 		category = location
 	}
 	local_monthly_prosperity = -0.025
-	local_monthly_control = -0.015
+	local_monthly_control = -0.02
 	
 	hostile_food_multiplier = -0.5
 	
