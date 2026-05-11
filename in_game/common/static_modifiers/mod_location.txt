@@ -82,3 +82,10 @@ hes_mainz_second_estate_80 = {
 	local_clergy_estate_power = 1.0
 	local_proximity_source = 80
 }
+REPLACE:integration_integrated = {
+	game_data = {
+		category = location
+	}
+	local_separatism = 0.1
+	local_max_control = 0.05
+}
