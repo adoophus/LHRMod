@@ -1,0 +1,239 @@
+﻿namespace = latinization_vs_hellenization
+
+latinization_vs_hellenization.10 = {	#Renovating non-capital city with Roman Architecture
+	type = country_event
+	title = latinization_vs_hellenization.10.title
+	desc = latinization_vs_hellenization.10.desc
+	outcome = neutral
+	trigger = {
+		has_societal_value = societal_value_type:latinization_vs_hellenization
+		has_dlc = "d008_fate_of_the_phoenix"
+		num_of_non_rural > 1
+		
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+
+		random_list = {
+			1 = { set_variable = LvH_event_10_1_variable }
+			1 = { set_variable = LvH_event_10_2_variable }
+			1 = { set_variable = LvH_event_10_3_variable }
+			1 = { set_variable = LvH_event_10_4_variable }
+		}
+
+		ordered_owned_non_rural_location = {
+			order_by = {
+				value = population
+				add = proximity
+				# divide = rank_index
+				add = num_buildings
+				if = {
+					limit = { 
+						OR = { 
+							has_location_modifier = roman_styled_architecture_modifier 
+							has_location_modifier = roman_style_infrastructure_and_water_works_modifier
+						}
+					}
+					multiply = 0.01
+				}
+			}
+			max = {
+				value = num_provinces
+				multiply = 0.1
+				ceiling = yes
+			}
+			check_range_bounds = no
+			add_to_list = LvH_event_10_list
+		}
+
+		random_in_list = {
+			list = LvH_event_10_list
+
+			save_scope_as = target_location
+
+			province = { save_scope_as = target_province }
+		}
+
+		if = {
+			limit = {
+				any_artist = { artist_type = architect }
+			}
+			random_artist = {
+				limit = { artist_type = architect }
+				save_scope_as = target_character
+			}
+		}
+	}
+
+	option = {
+		name = latinization_vs_hellenization.10.a
+
+		change_gold_effect = { scale = -1 }
+
+		if = {
+			limit = { has_country_modifier = suppressing_latinization_modifier  }
+			custom_tooltip = bonus_weakened_because_of_suppressing_latinization_modifier
+		}
+
+		switch = {
+			trigger = has_variable
+
+			LvH_event_10_1_variable = {
+				scope:target_location = {
+					add_location_modifier = {
+						modifier = roman_styled_architecture_modifier
+						years = modifier_duration_years_extended
+						mode = extend
+						size = {
+							add = {
+								desc = BASE_VALUE
+								value = 1
+							}
+							if = {
+								limit = {
+									root = { has_country_modifier = suppressing_latinization_modifier }
+								}
+								multiply = {
+									value = 0.5
+									desc = "[ShowModifier('suppressing_latinization_modifier')]"
+								}
+							}
+							if = {
+								limit = {
+									exists = scope:target_character
+								}
+								add = {
+									value = scope:target_character.artist_skill
+									desc = target_character_artist_skill
+								}
+							}
+						}
+					}
+				}
+			}
+
+			LvH_event_10_2_variable = {
+				scope:target_location = {
+					change_development = {
+						value = {
+							add = development_extreme_bonus
+							if = {
+								limit = {
+									root = { has_country_modifier = suppressing_latinization_modifier }
+								}
+								multiply = { value = 0.5 }
+							}
+							if = {
+								limit = {
+									exists = scope:target_character
+								}
+								add = {
+									value = scope:target_character.artist_skill
+									multiply = 2
+								}
+							}
+						}
+					}
+				}
+			}
+
+			LvH_event_10_3_variable = {
+				scope:target_location = {
+					add_location_modifier = {
+						modifier = roman_style_infrastructure_and_water_works_modifier
+						years = modifier_duration_years_extended
+						mode = extend
+						size = {
+							add = {
+								desc = BASE_VALUE
+								value = 1
+							}
+							if = {
+								limit = {
+									root = { has_country_modifier = suppressing_latinization_modifier }
+								}
+								multiply = {
+									value = 0.5
+									desc = "[ShowModifier('suppressing_latinization_modifier')]"
+								}
+							}
+							if = {
+								limit = {
+									exists = scope:target_character
+								}
+								add = {
+									value = scope:target_character.artist_skill
+									desc = target_character_artist_skill
+								}
+							}
+						}
+					}
+				}
+			}
+
+			LvH_event_10_4_variable = {
+				scope:target_location = {
+					add_location_modifier = {
+						modifier = roman_administrative_center_modifier
+						years = modifier_duration_years_extended
+						mode = extend
+						size = {
+							add = {
+								desc = BASE_VALUE
+								value = 1
+							}
+							if = {
+								limit = {
+									root = { has_country_modifier = suppressing_latinization_modifier }
+								}
+								multiply = {
+									value = 0.5
+									desc = "[ShowModifier('suppressing_latinization_modifier')]"
+								}
+							}
+							if = {
+								limit = {
+									exists = scope:target_character
+								}
+								add = {
+									value = scope:target_character.artist_skill
+									desc = target_character_artist_skill
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		change_societal_value = {
+			type = latinization_vs_hellenization
+			value = societal_value_move_to_left
+		}
+	}
+
+	option = {
+		name = latinization_vs_hellenization.10.b
+
+		scope:target_province = {
+			every_location_in_province = {
+				change_prosperity = prosperity_mild_bonus
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			remove_variable = LvH_event_10_1_variable
+			remove_variable = LvH_event_10_2_variable
+			remove_variable = LvH_event_10_3_variable
+			remove_variable = LvH_event_10_4_variable
+		}
+	}
+}
