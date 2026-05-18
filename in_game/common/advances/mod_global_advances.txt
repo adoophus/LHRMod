@@ -1,3 +1,0 @@
-﻿INJECT:banking_advance = {
-	unlock_country_interaction = take_over_loan
-}
