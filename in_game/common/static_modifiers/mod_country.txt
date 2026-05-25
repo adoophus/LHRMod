@@ -1,20 +1,4 @@
-﻿REPLACE:total_blockaded = {
-	game_data = {
-		category = country
-	}
-	#monthly_war_exhaustion = 0.4
-    monthly_legitimacy = -0.2
-	global_merchant_power = -0.5
-}
-
-REPLACE:liturgical_language_power = {
-	game_data = {
-		category = country
-	}
-	research_speed_modifier = 0.1
-}
-
-hes_noble_pension_compacts = {
+﻿hes_noble_pension_compacts = {
 	game_data = {
 		category = country
 	}
