@@ -174,15 +174,6 @@ lhr_natural_selection = {
 	global_population_growth = -0.01
 }
 
-REPLACE:eng_hyw_invasion_preparation = {
-	game_data = {
-		category = country
-	}
-	ship_build_speed = 0.66
-	army_movement_speed = 0.10
-	navy_transport_build_cost_modifier = -0.33
-}
-
 mod_location_disabled_static_modifier = {
 	game_data = {
 		category = location
