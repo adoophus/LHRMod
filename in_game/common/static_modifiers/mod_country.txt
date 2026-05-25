@@ -132,38 +132,6 @@ bra_wittelsbacher_neglect = {
 	}
 }
 
-REPLACE:is_bankrupt = {
-	game_data = {
-		category = country
-	}
-	
-	total_loan_capacity_modifier = -0.5
-	
-	
-	global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
-	
-	global_crown_estate_power = -0.9
-	
-	
-	global_pop_promotion_speed = -0.05
-	global_pop_demotion_speed = 0.20
-	
-	land_morale_modifier = -0.9
-	naval_morale_modifier = -0.9
-	
-	
-	research_speed_modifier = -0.9
-	global_construction_speed = -0.9
-
-	mercenary_maintenance_efficiency = -2.5
-	hire_mercenary_premium_cost_modifier = 2.5
-	hire_mercenary_leader_cost_modifier = 2.5
-
-	great_power_score = -100
-	global_defensive = -0.90
-	monthly_towards_traditional_economy = societal_value_huge_monthly_move
-}
-
 REPLACE:PRU_end_of_robber_barons = {
 	game_data = {
 		category = country 
